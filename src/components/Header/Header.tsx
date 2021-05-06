@@ -10,8 +10,7 @@ import { ExpandLess, ExpandMore, Apps } from '@material-ui/icons'
 import InboxIcon from '@material-ui/icons/MoveToInbox'
 import Home from '@material-ui/icons/Home'
 import CloseIcon from '@material-ui/icons/Close'
-import CommonButton from '@components/CommonButton/CommonButton'
-import OutlinedGradientButton from '@components/OutlinedGradientButton/OutlinedGradientButton'
+import MenuOutlinedButton from '@components/Header/MenuOutlinedButton/MenuOutlinedButton'
 
 export interface IHeaderAction {
   name: string
@@ -115,7 +114,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
               <MenuButton name='Resources' actions={actions} />
             </Grid>
             <Grid>
-              <CommonButton name='go to app' onClick={() => {}} />
+              <MenuOutlinedButton name='go to app' onClick={() => {}} />
             </Grid>
           </Grid>
         </Grid>

@@ -9,7 +9,7 @@ export interface IProps {
   className?: string
   color?: PropTypes.Color
 }
-export const CommonButton: React.FC<IProps> = ({ name, onClick, className, color = 'primary' }) => {
+export const MenuOutlinedButton: React.FC<IProps> = ({ name, onClick, className, color = 'primary' }) => {
   const classes = useStyles()
   return (
     <Button
@@ -21,4 +21,4 @@ export const CommonButton: React.FC<IProps> = ({ name, onClick, className, color
     </Button>
   )
 }
-export default CommonButton
+export default MenuOutlinedButton
