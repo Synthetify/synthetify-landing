@@ -11,6 +11,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox'
 import Home from '@material-ui/icons/Home'
 import CloseIcon from '@material-ui/icons/Close'
 import CommonButton from '@components/CommonButton/CommonButton'
+import OutlinedGradientButton from '@components/OutlinedGradientButton/OutlinedGradientButton'
 
 export interface IHeaderAction {
   name: string
@@ -114,7 +115,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
               <MenuButton name='Resources' actions={actions} />
             </Grid>
             <Grid>
-              <CommonButton name='Go to app' color='default' onClick={() => {}} />
+              <CommonButton name='go to app' onClick={() => {}} />
             </Grid>
           </Grid>
         </Grid>

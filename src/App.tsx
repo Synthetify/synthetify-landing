@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from '@material-ui/core'
 import HeaderWrapper from '@containers/HeaderWrapper/HeaderWrapper'
-import FrontPage from '@containers/FrontPage/FrontPage'
+import FrontPage from '@pages/FrontPage/FrontPage'
 import { theme } from '@static/theme'
 
 const App: React.FC = () => {

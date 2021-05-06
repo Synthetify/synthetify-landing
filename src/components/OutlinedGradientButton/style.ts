@@ -1,13 +1,13 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   button: {
     borderRadius: 10,
-    fontWeight: 'normal',
-    color: theme.palette.text.primary,
+    fontWeight: 700,
     fontSize: '22px',
     textTransform: 'uppercase',
+    color: theme.palette.text.secondary,
+    background: 'linear-gradient(225deg, #00F9BB -0.21%, #627EEA 100.21%)',
     lineHeight: '26px',
     transition: '500ms',
     transitionDuration: '0.4s',
@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     letterSpacing: 0,
     border: `1px solid ${theme.palette.primary.contrastText}`,
     '&:hover': {
-      color: colors.black.background,
-      backgroundColor: theme.palette.primary.main
+      color: theme.palette.primary.main,
+      background: theme.palette.text.secondary
     }
   }
 }))

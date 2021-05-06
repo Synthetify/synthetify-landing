@@ -1,8 +1,10 @@
 import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import useStyles from './style'
-import MainButton from '@components/MainButton/MainButton'
 import LogoTypeSolana from '@static/svg/logotype-white.svg'
+import CommonButton from '@components/CommonButton/CommonButton'
+import OutlinedGradientButton from '@components/OutlinedGradientButton/OutlinedGradientButton'
+import OutlinedButton from '@components/OutlinedButton/OutlinedButton'
 
 export const FrontPage: React.FC = () => {
   const classes = useStyles()
@@ -10,14 +12,17 @@ export const FrontPage: React.FC = () => {
   return (
     <Grid
       container
+      spacing={6}
       direction='column'
       justify='center'
       alignItems='center'
       className={classes.root}>
       <Grid item>
         <Typography variant='h1' className={classes.title}>
-          <Grid>Decentralized synthetic</Grid>
-          <Grid>assets exchange</Grid>
+          Decentralized synthetic
+        </Typography>
+        <Typography variant='h1' className={classes.title}>
+          assets exchange
         </Typography>
       </Grid>
       <Grid item>
@@ -40,9 +45,9 @@ export const FrontPage: React.FC = () => {
           <img src={LogoTypeSolana} alt='Solana Logo' />
         </Grid>
       </Grid>
-      <Grid item>
-        <MainButton name='LAUNCH APP' onClick={() => {}} />
-        <MainButton name='LEARN MORE' onClick={() => {}} />
+      <Grid item container justify='space-between' className={classes.buttons}>
+        <OutlinedButton name='launch app' onClick={() => {}} />
+        <OutlinedGradientButton name='learn more' onClick={() => {}} />
       </Grid>
     </Grid>
   )

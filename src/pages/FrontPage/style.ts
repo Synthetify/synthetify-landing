@@ -3,7 +3,11 @@ import { Theme } from '@material-ui/core'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    height: '100%'
+    paddingTop: 100,
+    paddingBottom: 100,
+    maxWidth: 1200,
+    marginLeft: 'auto',
+    marginRight: 'auto'
   },
   title: {
     color: theme.palette.text.primary,
@@ -14,6 +18,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   subtitle: {
     color: theme.palette.text.primary,
     fontWeight: 400,
+    fontStyle: 'normal',
     size: 32,
     textAlign: 'center'
   },
@@ -28,8 +33,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 300,
     fontStyle: 'normal',
     fontSize: 20,
-    lineHeight: 24,
     textTransform: 'uppercase'
+  },
+  buttons: {
+    maxWidth: 450
   }
 }))
 
