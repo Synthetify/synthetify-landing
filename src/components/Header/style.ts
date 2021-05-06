@@ -3,11 +3,20 @@ import { colors } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
+    marginTop: 15,
+    marginBottom: 15,
+    paddingLeft: '5%',
+    paddingRight: '5%'
+  },
+  xlRoot: {
     height: 110,
-    paddingLeft: '2%',
-    paddingRight: '2%',
     [theme.breakpoints.down('md')]: {
       display: 'none'
+    }
+  },
+  buttonSpacing30: {
+    '& Button': {
+      marginRight: 30
     }
   },
   appBar: {

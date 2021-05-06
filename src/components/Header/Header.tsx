@@ -10,6 +10,7 @@ import { ExpandLess, ExpandMore, Apps } from '@material-ui/icons'
 import InboxIcon from '@material-ui/icons/MoveToInbox'
 import Home from '@material-ui/icons/Home'
 import CloseIcon from '@material-ui/icons/Close'
+import CommonButton from '@components/CommonButton/CommonButton'
 
 export interface IHeaderAction {
   name: string
@@ -35,7 +36,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
   }
 
   return (
-    <>
+    <div className={classes.root}>
       <>
         <Grid container className={classes.appBar} justify='space-between' alignItems='center'>
           <Grid item>
@@ -100,25 +101,25 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
           </List>
         </Collapse>
       </>
-      <Grid container className={classes.root} justify='space-between' alignItems='center'>
+      <Grid container className={classes.xlRoot} justify='space-between' alignItems='center'>
         <Grid item>
           <SynthetifyIconHorizontal className={classes.logo} />
         </Grid>
         <Grid item>
-          <Grid container>
+          <Grid container className={classes.buttonSpacing30}>
             <Grid className={classes.marginButton} item>
               <MainButton name='Home' onClick={() => {}} />
             </Grid>
             <Grid className={classes.marginButton} item>
               <MenuButton name='Resources' actions={actions} />
             </Grid>
-            <Grid className={classes.marginButton} item>
-              <MainButton name='Go to app' onClick={() => {}} />
+            <Grid>
+              <CommonButton name='Go to app' color='default' onClick={() => {}} />
             </Grid>
           </Grid>
         </Grid>
       </Grid>
-    </>
+    </div>
   )
 }
 export default Header

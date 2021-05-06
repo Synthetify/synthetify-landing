@@ -1,11 +1,10 @@
 import React from 'react'
-import './App.css'
 import { ThemeProvider } from '@material-ui/core'
 import HeaderWrapper from '@containers/HeaderWrapper/HeaderWrapper'
 import FrontPage from '@containers/FrontPage/FrontPage'
 import { theme } from '@static/theme'
 
-function App() {
+const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <HeaderWrapper />
