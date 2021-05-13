@@ -13,14 +13,32 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: theme.palette.text.primary,
     fontWeight: 700,
     fontSize: 70,
-    textAlign: 'center'
+    textAlign: 'center',
+    [theme.breakpoints.down('md')]: {
+      fontSize: 65
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 45
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 35
+    }
   },
   subtitle: {
     color: theme.palette.text.primary,
     fontWeight: 400,
     fontStyle: 'normal',
     size: 32,
-    textAlign: 'center'
+    textAlign: 'center',
+    [theme.breakpoints.down('md')]: {
+      fontSize: 30
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 24
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 20
+    }
   },
   text: {
     color: theme.palette.text.primary
@@ -35,8 +53,21 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 20,
     textTransform: 'uppercase'
   },
+  smDown: {
+    [theme.breakpoints.up('md')]: {
+      display: 'none'
+    }
+  },
+  mdUp: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  },
   buttons: {
-    maxWidth: 450
+    maxWidth: 450,
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: 360
+    }
   }
 }))
 

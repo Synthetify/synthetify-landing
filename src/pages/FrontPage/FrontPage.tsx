@@ -23,10 +23,17 @@ export const FrontPage: React.FC = () => {
           assets exchange
         </Typography>
       </Grid>
-      <Grid item>
+      <Grid item className={classes.mdUp}>
         <Typography variant='h2' className={classes.subtitle}>
           <Grid>a decentralized synthetic assets exchange build on Solana,</Grid>
           <Grid>providing ultimate trading experiences</Grid>
+        </Typography>
+      </Grid>
+      <Grid item className={classes.smDown}>
+        <Typography variant='h2' className={classes.subtitle}>
+          <Grid>a decentralized synthetic assets</Grid>
+          <Grid>exchange build on Solana, providing</Grid>
+          <Grid>ultimate trading experienceses</Grid>
         </Typography>
       </Grid>
       <Grid

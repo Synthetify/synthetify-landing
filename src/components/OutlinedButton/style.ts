@@ -8,10 +8,13 @@ const useStyles = makeStyles((theme: Theme) => ({
     textTransform: 'uppercase',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
     lineHeight: '26px',
-    transition: '500ms',
-    transitionDuration: '0.4s',
+    // transition: '500ms',
     padding: '10px 19px',
-    letterSpacing: 0
+    letterSpacing: 0,
+    [theme.breakpoints.down('xs')]: {
+      padding: '9px 18px',
+      fontSize: '14px'
+    }
   },
   blackGradient: {
     color: theme.palette.text.primary,
