@@ -1,25 +1,31 @@
 import React from 'react'
-import NoFrontRunning from '@static/svg/no-front-running.svg'
 import { Grid, Typography } from '@material-ui/core'
+
 import useStyles from './style'
 
-export const Feature: React.FC = () => {
+export interface IFeatureProps {
+  title: string
+  text: string
+  icon: string
+}
+
+export const Feature: React.FC<IFeatureProps> = ({ title, text, icon }) => {
   const classes = useStyles()
 
+  const firstWord = title.split(' ')[0]
+  const restTitle = title.replace(firstWord, '')
+
   return (
-    <Grid container direction='row' spacing={3}>
+    <Grid container direction='row'>
       <Grid item>
-        <img src={NoFrontRunning} alt='No front-running' />
+        <img src={icon} alt={title} />
       </Grid>
       <Grid item>
         <Grid item>
           <Typography className={classes.title}>
-            <span className={classes.bold}>No</span> front-running
+            <span className={classes.bold}>{firstWord}</span> {restTitle}
           </Typography>
-          <Typography className={classes.text}>
-            Synthetify contracts are of the highest quality, therefore your funds are safe from
-            front-running attacks
-          </Typography>
+          <Typography className={classes.text}>{text}</Typography>
         </Grid>
       </Grid>
     </Grid>
