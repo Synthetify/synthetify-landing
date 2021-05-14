@@ -7,7 +7,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingBottom: 100,
     maxWidth: 1200,
     marginLeft: 'auto',
-    marginRight: 'auto'
+    marginRight: 'auto',
+    '& > *': {
+      marginTop: 20,
+      marginBottom: 20
+    }
   },
   title: {
     color: theme.palette.text.primary,

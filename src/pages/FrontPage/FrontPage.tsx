@@ -8,13 +8,7 @@ export const FrontPage: React.FC = () => {
   const classes = useStyles()
 
   return (
-    <Grid
-      container
-      spacing={6}
-      direction='column'
-      justify='center'
-      alignItems='center'
-      className={classes.root}>
+    <Grid container direction='column' alignItems='center' className={classes.root}>
       <Grid item>
         <Typography variant='h1' className={classes.title}>
           Decentralized synthetic
