@@ -3,29 +3,27 @@ import { Theme } from '@material-ui/core'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    '& > *': {
-      padding: 10,
-      marginBottom: 60
-    }
+    background: 'linear-gradient(180deg, #15151F 0%, #030313 100%)',
+    width: '100%',
+    paddingRight: '3%',
+    paddingLeft: '3%'
   },
-  textPanel: {
-    '& > *': {
-      paddingBottom: 20
-    }
+  header: {
+    paddingTop: 140,
+    paddingBottom: 140
   },
   title: {
+    color: theme.palette.text.primary,
+    fontWeight: 700,
+    fontSize: 56
+  },
+  description: {
     color: theme.palette.text.primary,
     fontWeight: 300,
     fontSize: 40
   },
-  text: {
-    color: theme.palette.text.primary,
-    fontWeight: 300,
-    fontSize: 30,
-    maxWidth: 600
-  },
-  bold: {
-    fontWeight: 700
+  solution: {
+    color: '#00F9BB'
   }
 }))
 

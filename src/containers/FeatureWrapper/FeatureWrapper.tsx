@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-
 import Feature, { IFeatureProps } from '@components/Feature/Feature'
 import InstantTransactions from '@static/svg/instant-transaction.svg'
 import Oracle from '@static/svg/oracle.svg'

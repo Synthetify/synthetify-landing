@@ -16,17 +16,15 @@ export const Feature: React.FC<IFeatureProps> = ({ title, text, icon }) => {
   const restTitle = title.replace(firstWord, '')
 
   return (
-    <Grid container direction='row'>
+    <Grid container direction='row' className={classes.root}>
       <Grid item>
         <img src={icon} alt={title} />
       </Grid>
-      <Grid item>
-        <Grid item>
-          <Typography className={classes.title}>
-            <span className={classes.bold}>{firstWord}</span> {restTitle}
-          </Typography>
-          <Typography className={classes.text}>{text}</Typography>
-        </Grid>
+      <Grid item className={classes.textPanel}>
+        <Typography className={classes.title}>
+          <span className={classes.bold}>{firstWord}</span> {restTitle}
+        </Typography>
+        <Typography className={classes.text}>{text}</Typography>
       </Grid>
     </Grid>
   )
