@@ -22,10 +22,10 @@ const useStyles = makeStyles((theme: Theme) => ({
       fontSize: 65
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 45
+      fontSize: 60
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 35
+      fontSize: 42
     }
   },
   subtitle: {
@@ -38,10 +38,10 @@ const useStyles = makeStyles((theme: Theme) => ({
       fontSize: 30
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 24
+      fontSize: 26
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 20
+      fontSize: 21
     }
   },
   text: {

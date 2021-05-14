@@ -18,7 +18,7 @@ export const Feature: React.FC<IFeatureProps> = ({ title, text, icon }) => {
   return (
     <Grid container direction='row' className={classes.root}>
       <Grid item>
-        <img src={icon} alt={title} />
+        <img src={icon} alt={title} className={classes.icon} />
       </Grid>
       <Grid item className={classes.textPanel}>
         <Typography className={classes.title}>
