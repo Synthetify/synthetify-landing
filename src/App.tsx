@@ -3,6 +3,7 @@ import { ThemeProvider } from '@material-ui/core'
 import HeaderWrapper from '@containers/HeaderWrapper/HeaderWrapper'
 import FrontPage from '@pages/FrontPage/FrontPage'
 import Details from '@pages/Details/Details'
+import MoreInformation from '@pages/MoreInformation/MoreInformation'
 import { theme } from '@static/theme'
 
 const App: React.FC = () => {
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <HeaderWrapper />
       <FrontPage />
       <Details />
+      <MoreInformation />
     </ThemeProvider>
   )
 }
