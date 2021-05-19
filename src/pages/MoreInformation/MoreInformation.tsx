@@ -8,11 +8,15 @@ export const MoreInformation: React.FC = () => {
   const classes = useStyles()
 
   return (
-    <Grid container direction='row' className={classes.root}>
-      <Grid item xs={4}>
-        <img src={SynthetifyLitepaper} alt='' />
+    <Grid container direction='row' wrap='wrap-reverse' className={classes.root}>
+      <Grid item sm={12} md={6} className={classes.imgContainer}>
+        <img
+          src={SynthetifyLitepaper}
+          className={classes.whitePaperImg}
+          alt='Synthetify Litepaper'
+        />
       </Grid>
-      <Grid item container xs={8} justify='space-around' className={classes.rightSide}>
+      <Grid item container sm={12} md={6} justify='space-around' className={classes.rightSide}>
         <Grid item>
           <Typography className={classes.title}>Need more information?</Typography>
         </Grid>
