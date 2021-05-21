@@ -6,6 +6,7 @@ import Details from '@pages/Details/Details'
 import MoreInformation from '@pages/MoreInformation/MoreInformation'
 import { OurPartners } from '@pages/OurPartners/OurPartners'
 import { theme } from '@static/theme'
+import StayInTouch from '@pages/StayInTouch/StayInTouch'
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Details />
       <MoreInformation />
       <OurPartners />
+      <StayInTouch />
     </ThemeProvider>
   )
 }
