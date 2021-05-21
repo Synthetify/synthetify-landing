@@ -7,7 +7,7 @@ import MoreInformation from '@pages/MoreInformation/MoreInformation'
 import OurPartners from '@pages/OurPartners/OurPartners'
 import StayInTouch from '@pages/StayInTouch/StayInTouch'
 import Footer from '@components/Footer/Footer'
-import { ReactComponent as PageSeparator } from '@static/svg/page-separator.svg'
+import SectionSeparator from '@components/SectionSeparator/SectionSeparator'
 
 import { theme } from '@static/theme'
 
@@ -16,13 +16,13 @@ const App: React.FC = () => {
     <ThemeProvider theme={theme}>
       <HeaderWrapper />
       <FrontPage />
-      <PageSeparator />
+      <SectionSeparator />
       <Details />
-      <PageSeparator />
+      <SectionSeparator />
       <MoreInformation />
-      <PageSeparator />
+      <SectionSeparator />
       <OurPartners />
-      <PageSeparator />
+      <SectionSeparator />
       <StayInTouch />
       <Footer />
     </ThemeProvider>
