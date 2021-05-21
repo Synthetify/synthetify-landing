@@ -4,9 +4,11 @@ import HeaderWrapper from '@containers/HeaderWrapper/HeaderWrapper'
 import FrontPage from '@pages/FrontPage/FrontPage'
 import Details from '@pages/Details/Details'
 import MoreInformation from '@pages/MoreInformation/MoreInformation'
-import { OurPartners } from '@pages/OurPartners/OurPartners'
-import { theme } from '@static/theme'
+import OurPartners from '@pages/OurPartners/OurPartners'
 import StayInTouch from '@pages/StayInTouch/StayInTouch'
+import Footer from '@components/Footer/Footer'
+
+import { theme } from '@static/theme'
 
 const App: React.FC = () => {
   return (
@@ -17,6 +19,7 @@ const App: React.FC = () => {
       <MoreInformation />
       <OurPartners />
       <StayInTouch />
+      <Footer />
     </ThemeProvider>
   )
 }

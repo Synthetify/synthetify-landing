@@ -25,3 +25,5 @@ export const OurPartners: React.FC = () => {
     </Grid>
   )
 }
+
+export default OurPartners
