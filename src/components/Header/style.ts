@@ -3,8 +3,8 @@ import { colors } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    marginTop: 15,
-    marginBottom: 15,
+    paddingTop: 15,
+    paddingBottom: 15,
     paddingLeft: '5%',
     paddingRight: '5%'
   },
