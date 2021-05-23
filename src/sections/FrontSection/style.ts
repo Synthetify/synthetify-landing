@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   title: {
     color: theme.palette.text.primary,
+    maxWidth: 820,
     fontWeight: 700,
     fontSize: 70,
     textAlign: 'center',
@@ -57,20 +58,19 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 20,
     textTransform: 'uppercase'
   },
-  smDown: {
-    [theme.breakpoints.up('md')]: {
-      display: 'none'
-    }
-  },
-  mdUp: {
-    [theme.breakpoints.down('sm')]: {
-      display: 'none'
+  textContainer: {
+    maxWidth: 1180,
+    paddingLeft: 30,
+    paddingRight: 30,
+    [theme.breakpoints.down('md')]: {
+      maxWidth: 900
     }
   },
   buttons: {
     maxWidth: 450,
     [theme.breakpoints.down('xs')]: {
-      maxWidth: 360
+      maxWidth: 360,
+      justifyContent: 'space-around'
     }
   }
 }))

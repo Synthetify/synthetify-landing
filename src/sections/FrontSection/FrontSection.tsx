@@ -17,23 +17,13 @@ export const FrontSection: React.FC = () => {
       className={classes.root}>
       <Grid item>
         <Typography variant='h1' className={classes.title}>
-          Decentralized synthetic
-        </Typography>
-        <Typography variant='h1' className={classes.title}>
-          assets exchange
+          Decentralized synthetic assets exchange
         </Typography>
       </Grid>
-      <Grid item className={classes.mdUp}>
+      <Grid item className={classes.textContainer}>
         <Typography variant='h2' className={classes.subtitle}>
-          <Grid>a decentralized synthetic assets exchange build on Solana,</Grid>
-          <Grid>providing ultimate trading experiences</Grid>
-        </Typography>
-      </Grid>
-      <Grid item className={classes.smDown}>
-        <Typography variant='h2' className={classes.subtitle}>
-          <Grid>a decentralized synthetic assets</Grid>
-          <Grid>exchange build on Solana, providing</Grid>
-          <Grid>ultimate trading experienceses</Grid>
+          a decentralized synthetic assets exchange build on Solana, providing ultimate trading
+          experiences
         </Typography>
       </Grid>
       <Grid
