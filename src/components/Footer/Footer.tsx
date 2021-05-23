@@ -6,9 +6,9 @@ import { ReactComponent as LinkedinIcFooter } from '@static/svg/linkedin-ic-foot
 import { ReactComponent as TwitterIcFooter } from '@static/svg/twitter-ic-footer.svg'
 import { ReactComponent as DiscordIcFooter } from '@static/svg/discord-ic-footer.svg'
 import { ReactComponent as GithubIcFooter } from '@static/svg/github-ic-footer.svg'
+import links from '@static/constants/links'
 import useStyles from './style'
 
-//TODO: use links as config
 export const Footer: React.FC = () => {
   const classes = useStyles()
 
@@ -20,20 +20,40 @@ export const Footer: React.FC = () => {
       alignItems='center'
       className={classes.root}>
       <Grid item className={classes.leftSide}>
-        <SynthetifyIcFooter className={classes.link} onClick={() => {}} />
+        <SynthetifyIcFooter
+          className={classes.link}
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            })
+          }
+        />
       </Grid>
       <Grid item container direction='row' justify='center' className={classes.rightSide}>
         <Grid item>
-          <LinkedinIcFooter className={classes.link} onClick={() => {}} />
+          <LinkedinIcFooter
+            className={classes.link}
+            onClick={() => window.open(links.socialMedia.linkedin)}
+          />
         </Grid>
         <Grid item>
-          <TwitterIcFooter className={classes.link} onClick={() => {}} />
+          <TwitterIcFooter
+            className={classes.link}
+            onClick={() => window.open(links.socialMedia.twitter)}
+          />
         </Grid>
         <Grid item>
-          <DiscordIcFooter className={classes.link} onClick={() => {}} />
+          <DiscordIcFooter
+            className={classes.link}
+            onClick={() => window.open(links.socialMedia.discord)}
+          />
         </Grid>
         <Grid item>
-          <GithubIcFooter className={classes.link} onClick={() => {}} />
+          <GithubIcFooter
+            className={classes.link}
+            onClick={() => window.open(links.socialMedia.github)}
+          />
         </Grid>
       </Grid>
     </Grid>

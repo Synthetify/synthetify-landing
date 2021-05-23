@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import OutlinedButton from '@components/OutlinedButton/OutlinedButton'
+import links from '@static/constants/links'
 import useStyles from './styles'
 
 export const StayInTouch: React.FC = () => {
@@ -26,7 +27,11 @@ export const StayInTouch: React.FC = () => {
         </Typography>
       </Grid>
       <Grid item>
-        <OutlinedButton name='join discord' buttonColor='black' onClick={() => {}} />
+        <OutlinedButton
+          name='join discord'
+          buttonColor='black'
+          onClick={() => window.open(links.socialMedia.discord)}
+        />
       </Grid>
     </Grid>
   )

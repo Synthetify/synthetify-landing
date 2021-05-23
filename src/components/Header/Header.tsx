@@ -10,6 +10,7 @@ import MenuButton from '@components/Header/MenuButton/MenuButton'
 import MainButton from '@components/MainButton/MainButton'
 import MenuOutlinedButton from '@components/Header/MenuOutlinedButton/MenuOutlinedButton'
 import SynthetifyIconHorizontal from '@components/SynthetifyIconHorizontal/SynthetifyIconHorizontal'
+import links from '@static/constants/links'
 import useStyles from './style'
 
 export interface IHeaderAction {
@@ -115,7 +116,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
               <MenuButton name='Resources' actions={actions} />
             </Grid>
             <Grid>
-              <MenuOutlinedButton name='go to app' onClick={() => {}} />
+              <MenuOutlinedButton name='go to app' onClick={() => window.open(links.app)} />
             </Grid>
           </Grid>
         </Grid>

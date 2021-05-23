@@ -1,8 +1,9 @@
 import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
-import useStyles from './style'
-import LogoTypeSolana from '@static/svg/logotype-white.svg'
 import OutlinedButton from '@components/OutlinedButton/OutlinedButton'
+import LogoTypeSolana from '@static/svg/logotype-white.svg'
+import links from '@static/constants/links'
+import useStyles from './style'
 
 export const FrontSection: React.FC = () => {
   const classes = useStyles()
@@ -50,8 +51,16 @@ export const FrontSection: React.FC = () => {
         </Grid>
       </Grid>
       <Grid item container justify='space-between' className={classes.buttons}>
-        <OutlinedButton name='launch app' buttonColor='black' onClick={() => {}} />
-        <OutlinedButton name='learn more' buttonColor='blue' onClick={() => {}} />
+        <OutlinedButton
+          name='launch app'
+          buttonColor='black'
+          onClick={() => window.open(links.app)}
+        />
+        <OutlinedButton
+          name='learn more'
+          buttonColor='blue'
+          onClick={() => window.open(links.docs)}
+        />
       </Grid>
     </Grid>
   )
