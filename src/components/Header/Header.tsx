@@ -1,5 +1,6 @@
 import React from 'react'
 import { Grid, IconButton, List, ListItem, Collapse, ListItemIcon } from '@material-ui/core'
+import { useHistory } from 'react-router'
 import MenuIcon from '@material-ui/icons/Menu'
 import ListItemText from '@material-ui/core/ListItemText'
 import { ExpandLess, ExpandMore, Apps } from '@material-ui/icons'
@@ -12,7 +13,6 @@ import MenuOutlinedButton from '@components/Header/MenuOutlinedButton/MenuOutlin
 import SynthetifyIconHorizontal from '@components/SynthetifyIconHorizontal/SynthetifyIconHorizontal'
 import links from '@static/constants/links'
 import useStyles from './style'
-import { useHistory } from 'react-router'
 
 export interface IHeaderAction {
   name: string
@@ -39,7 +39,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
   }
 
   return (
-    <div className={classes.root}>
+    <Grid className={classes.root}>
       <>
         <Grid container className={classes.appBar} justify='space-between' alignItems='center'>
           <Grid item onClick={() => history.push('/')}>
@@ -62,7 +62,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
               className={classes.submenuButton}
               onClick={() => {
                 toggleMenu()
-                history.push('./')
+                history.push('/')
               }}>
               <ListItemIcon>
                 <Home />
@@ -125,7 +125,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
           </Grid>
         </Grid>
       </Grid>
-    </div>
+    </Grid>
   )
 }
 export default Header
