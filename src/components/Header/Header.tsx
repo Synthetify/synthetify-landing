@@ -88,6 +88,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
                 {actions.map(action => (
                   <ListItem
                     button
+                    key={action.name}
                     className={classes.submenuButton}
                     onClick={() => {
                       action.action()

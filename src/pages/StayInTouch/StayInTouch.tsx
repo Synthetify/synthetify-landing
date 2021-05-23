@@ -20,7 +20,9 @@ export const StayInTouch: React.FC = () => {
         <Typography className={classes.text}>
           Synthetify is growing intesibely every day, so stay in touch by following our social media
           and make sure you never miss any news! Join our Discord to connect with the Synthetify fam
-          💚
+          <span role='img' aria-label='heart'>
+            💚
+          </span>
         </Typography>
       </Grid>
       <Grid item>
