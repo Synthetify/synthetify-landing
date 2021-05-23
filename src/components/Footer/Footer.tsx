@@ -8,9 +8,11 @@ import { ReactComponent as DiscordIcFooter } from '@static/svg/discord-ic-footer
 import { ReactComponent as GithubIcFooter } from '@static/svg/github-ic-footer.svg'
 import links from '@static/constants/links'
 import useStyles from './style'
+import { useHistory } from 'react-router'
 
 export const Footer: React.FC = () => {
   const classes = useStyles()
+  const history = useHistory()
 
   return (
     <Grid
@@ -22,12 +24,13 @@ export const Footer: React.FC = () => {
       <Grid item className={classes.leftSide}>
         <SynthetifyIcFooter
           className={classes.link}
-          onClick={() =>
+          onClick={() => {
+            history.push('/')
             window.scrollTo({
               top: 0,
               behavior: 'smooth'
             })
-          }
+          }}
         />
       </Grid>
       <Grid item container direction='row' justify='center' className={classes.rightSide}>

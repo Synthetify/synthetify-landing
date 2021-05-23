@@ -12,6 +12,7 @@ import MenuOutlinedButton from '@components/Header/MenuOutlinedButton/MenuOutlin
 import SynthetifyIconHorizontal from '@components/SynthetifyIconHorizontal/SynthetifyIconHorizontal'
 import links from '@static/constants/links'
 import useStyles from './style'
+import { useHistory } from 'react-router'
 
 export interface IHeaderAction {
   name: string
@@ -24,6 +25,7 @@ export interface IHeaderProps {
 
 export const Header: React.FC<IHeaderProps> = ({ actions }) => {
   const classes = useStyles()
+  const history = useHistory()
 
   const [open, setOpen] = React.useState(false)
   const [openSubmenu, setOpenSubmenu] = React.useState(false)
@@ -40,7 +42,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
     <div className={classes.root}>
       <>
         <Grid container className={classes.appBar} justify='space-between' alignItems='center'>
-          <Grid item>
+          <Grid item onClick={() => history.push('/')}>
             <SynthetifyIconHorizontal className={classes.logo} />
           </Grid>
           <Grid item>
@@ -60,6 +62,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
               className={classes.submenuButton}
               onClick={() => {
                 toggleMenu()
+                history.push('./')
               }}>
               <ListItemIcon>
                 <Home />
@@ -71,6 +74,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
               className={classes.submenuButton}
               onClick={() => {
                 toggleMenu()
+                window.open(links.app)
               }}>
               <ListItemIcon>
                 <Apps />
@@ -104,13 +108,13 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
         </Collapse>
       </>
       <Grid container className={classes.xlRoot} justify='space-between' alignItems='center'>
-        <Grid item>
+        <Grid item onClick={() => history.push('/')}>
           <SynthetifyIconHorizontal className={classes.logo} />
         </Grid>
         <Grid item>
           <Grid container className={classes.buttonSpacing30}>
             <Grid className={classes.marginButton} item>
-              <MainButton name='Home' onClick={() => {}} />
+              <MainButton name='Home' onClick={() => history.push('/')} />
             </Grid>
             <Grid className={classes.marginButton} item>
               <MenuButton name='Resources' actions={actions} />
