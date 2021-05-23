@@ -8,15 +8,15 @@ const useStyles = makeStyles((theme: Theme) => ({
   partners: {
     padding: 30,
     '& > *': {
-      paddingLeft: 20,
-      paddingRight: 20,
+      paddingLeft: 30,
+      paddingRight: 30,
       paddingBottom: 80
     }
   },
   title: {
     color: theme.palette.text.primary,
     fontWeight: 400,
-    fontSize: 40,
+    fontSize: 46,
     textAlign: 'center'
   },
   bold: {

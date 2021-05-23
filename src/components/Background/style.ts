@@ -4,7 +4,8 @@ import { Theme } from '@material-ui/core'
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: '100%',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
   }
 }))
 

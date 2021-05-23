@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 400,
     fontStyle: 'normal',
     fontSize: 32,
-    textAlign: 'start',
+    textAlign: 'center',
     [theme.breakpoints.down('md')]: {
       fontSize: 26
     },
