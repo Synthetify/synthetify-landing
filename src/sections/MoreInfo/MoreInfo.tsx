@@ -4,7 +4,7 @@ import OutlinedButton from '@components/OutlinedButton/OutlinedButton'
 import SynthetifyLitepaper from '@static/svg/synthetify-litepaper.svg'
 import useStyles from './styles'
 
-export const MoreInformation: React.FC = () => {
+export const MoreInfo: React.FC = () => {
   const classes = useStyles()
 
   return (
@@ -34,4 +34,4 @@ export const MoreInformation: React.FC = () => {
   )
 }
 
-export default MoreInformation
+export default MoreInfo

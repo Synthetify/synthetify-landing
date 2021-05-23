@@ -4,11 +4,16 @@ import useStyles from './style'
 import LogoTypeSolana from '@static/svg/logotype-white.svg'
 import OutlinedButton from '@components/OutlinedButton/OutlinedButton'
 
-export const FrontPage: React.FC = () => {
+export const FrontSection: React.FC = () => {
   const classes = useStyles()
 
   return (
-    <Grid container direction='column' alignItems='center' className={classes.root}>
+    <Grid
+      container
+      direction='column'
+      alignItems='center'
+      justify='space-between'
+      className={classes.root}>
       <Grid item>
         <Typography variant='h1' className={classes.title}>
           Decentralized synthetic
@@ -52,4 +57,4 @@ export const FrontPage: React.FC = () => {
   )
 }
 
-export default FrontPage
+export default FrontSection

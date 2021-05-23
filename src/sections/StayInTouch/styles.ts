@@ -5,6 +5,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     maxWidth: 840,
     marginLeft: 'auto',
     marginRight: 'auto',
+    paddingTop: '3%',
+    paddingBottom: '3%',
     '& > *': {
       padding: 40
     }

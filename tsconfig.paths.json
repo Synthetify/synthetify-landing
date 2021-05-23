@@ -5,6 +5,7 @@
       "@components/*": ["./src/components/*"],
       "@containers/*": ["./src/containers/*"],
       "@pages/*": ["./src/pages/*"],
+      "@sections/*": ["./src/sections/*"],
       "@reducers/*": ["./src/store/reducers/*"],
       "@selectors/*": ["./src/store/selectors/*"],
       "@sagas/*": ["./src/store/sagas/*"],

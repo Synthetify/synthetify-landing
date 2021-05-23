@@ -3,7 +3,7 @@ import { Grid, Typography } from '@material-ui/core'
 import useStyles from './style'
 import FeatureWrapper from '@containers/FeatureWrapper/FeatureWrapper'
 
-export const Details: React.FC = () => {
+export const Features: React.FC = () => {
   const classes = useStyles()
 
   return (
@@ -21,4 +21,4 @@ export const Details: React.FC = () => {
   )
 }
 
-export default Details
+export default Features

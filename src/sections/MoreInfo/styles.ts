@@ -5,6 +5,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     paddingLeft: '5%',
     paddingRight: '5%',
+    paddingTop: '3%',
+    paddingBottom: '3%',
     [theme.breakpoints.down('sm')]: {
       padding: 5
     }

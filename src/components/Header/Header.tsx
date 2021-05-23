@@ -1,16 +1,16 @@
 import React from 'react'
-import useStyles from './style'
 import { Grid, IconButton, List, ListItem, Collapse, ListItemIcon } from '@material-ui/core'
-import SynthetifyIconHorizontal from '@components/SynthetifyIconHorizontal/SynthetifyIconHorizontal'
-import MenuButton from './MenuButton/MenuButton'
-import MainButton from '../MainButton/MainButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import ListItemText from '@material-ui/core/ListItemText'
 import { ExpandLess, ExpandMore, Apps } from '@material-ui/icons'
 import InboxIcon from '@material-ui/icons/MoveToInbox'
 import Home from '@material-ui/icons/Home'
 import CloseIcon from '@material-ui/icons/Close'
+import MenuButton from '@components/Header/MenuButton/MenuButton'
+import MainButton from '@components/MainButton/MainButton'
 import MenuOutlinedButton from '@components/Header/MenuOutlinedButton/MenuOutlinedButton'
+import SynthetifyIconHorizontal from '@components/SynthetifyIconHorizontal/SynthetifyIconHorizontal'
+import useStyles from './style'
 
 export interface IHeaderAction {
   name: string
