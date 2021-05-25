@@ -18,10 +18,12 @@ export const MoreInfo: React.FC = () => {
       </Grid>
       <Grid item container sm={12} md={6} justify='space-around' className={classes.rightSide}>
         <Grid item>
-          <Typography className={classes.title}>Need more information?</Typography>
+          <Typography variant='h2' className={classes.title}>
+            Need more information?
+          </Typography>
         </Grid>
         <Grid item>
-          <Typography className={classes.text}>
+          <Typography variant='body1' className={classes.text}>
             We aim to provide a bridge between cryptocurrencies, stocks, fiat currencies and other
             financial instruments decentralized exchange. You can learn more form out Whitepaper!
           </Typography>

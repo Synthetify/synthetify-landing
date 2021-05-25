@@ -15,10 +15,12 @@ export const StayInTouch: React.FC = () => {
       alignItems='center'
       className={classes.root}>
       <Grid item>
-        <Typography className={classes.title}>Stay in touch!</Typography>
+        <Typography variant='h2' className={classes.title}>
+          Stay in touch!
+        </Typography>
       </Grid>
       <Grid item>
-        <Typography className={classes.text}>
+        <Typography variant='body1' className={classes.text}>
           Synthetify is growing intesibely every day, so stay in touch by following our social media
           and make sure you never miss any news! Join our Discord to connect with the Synthetify fam
           <span role='img' aria-label='heart'>
