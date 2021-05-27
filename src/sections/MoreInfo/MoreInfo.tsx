@@ -2,6 +2,8 @@ import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import OutlinedButton from '@components/OutlinedButton/OutlinedButton'
 import SynthetifyLitepaper from '@static/svg/synthetify-litepaper.svg'
+import links from '@static/constants/links'
+
 import useStyles from './styles'
 
 export const MoreInfo: React.FC = () => {
@@ -29,7 +31,13 @@ export const MoreInfo: React.FC = () => {
           </Typography>
         </Grid>
         <Grid item className={classes.button}>
-          <OutlinedButton name='read whitepaper' buttonColor='black' onClick={() => {}} />
+          <OutlinedButton
+            name='read whitepaper'
+            buttonColor='black'
+            onClick={() => {
+              window.open(links.whitepaper)
+            }}
+          />
         </Grid>
       </Grid>
     </Grid>

@@ -1,6 +1,7 @@
 export const links = {
-  app: 'https://synthetify.io',
+  app: 'https://app.synthetify.io',
   docs: 'https://docs.synthetify.io/',
+  whitepaper: 'https://resources.synthetify.io/synthetify-whitepaper.pdf',
   socialMedia: {
     twitter: 'https://twitter.com/synthetify',
     linkedin: 'https://www.linkedin.com/company/synthetify',
