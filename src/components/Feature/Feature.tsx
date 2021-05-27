@@ -21,10 +21,10 @@ export const Feature: React.FC<IFeatureProps> = ({ title, text, icon }) => {
         <img src={icon} alt={title} className={classes.icon} />
       </Grid>
       <Grid item className={classes.textPanel}>
-        <Typography className={classes.title}>
+        <Typography variant='h3' className={classes.title}>
           <span className={classes.bold}>{firstWord}</span> {restTitle}
         </Typography>
-        <Typography className={classes.text}>{text}</Typography>
+        <Typography variant='body1' className={classes.text}>{text}</Typography>
       </Grid>
     </Grid>
   )

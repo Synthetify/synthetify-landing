@@ -34,7 +34,9 @@ export const FrontSection: React.FC = () => {
         justify='space-around'
         className={classes.maxWidth300}>
         <Grid item>
-          <Typography className={classes.buildOn}>build on</Typography>
+          <Typography variant='body1' className={classes.buildOn}>
+            build on
+          </Typography>
         </Grid>
         <Grid item>
           <img src={LogoTypeSolana} alt='Solana Logo' />

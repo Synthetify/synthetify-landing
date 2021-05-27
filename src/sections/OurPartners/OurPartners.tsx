@@ -9,7 +9,7 @@ export const OurPartners: React.FC = () => {
   return (
     <Grid container direction='column' justify='space-around' className={classes.root}>
       <Grid item>
-        <Typography className={classes.title}>
+        <Typography variant='h2' className={classes.title}>
           <span className={classes.bold}>Our</span> partners
         </Typography>
       </Grid>
