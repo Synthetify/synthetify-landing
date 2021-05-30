@@ -22,7 +22,7 @@ export const FrontSection: React.FC = () => {
       </Grid>
       <Grid item className={classes.textContainer}>
         <Typography variant='h2' className={classes.subtitle}>
-          a decentralized synthetic assets exchange build on Solana, providing ultimate trading
+          a decentralized synthetic assets exchange built on Solana, providing ultimate trading
           experiences
         </Typography>
       </Grid>
@@ -35,7 +35,7 @@ export const FrontSection: React.FC = () => {
         className={classes.maxWidth300}>
         <Grid item>
           <Typography variant='body1' className={classes.buildOn}>
-            build on
+            built on
           </Typography>
         </Grid>
         <Grid item>

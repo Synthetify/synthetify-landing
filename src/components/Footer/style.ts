@@ -14,8 +14,13 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   rightSide: {
     maxWidth: 420,
+    marginRight: 50,
+    [theme.breakpoints.down('sm')]: {
+      marginRight: 20
+    },
     [theme.breakpoints.down('xs')]: {
-      maxWidth: 300
+      marginRight: 0,
+      maxWidth: 280
     }
   },
   link: {

@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     textTransform: 'uppercase',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
     lineHeight: '26px',
-    // transition: '500ms',
+    transition: '300ms',
     padding: '10px 19px',
     letterSpacing: 0,
     [theme.breakpoints.down('xs')]: {
