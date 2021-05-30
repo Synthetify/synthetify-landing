@@ -1,6 +1,8 @@
+import React from 'react'
 import { IPartnerIProps, Partner } from '@components/Partner/Partner'
 import SolanaLogo from '@static/svg/solana-logo.svg'
-import React from 'react'
+import Alameda from '@static/png/partners/alameda.png'
+import GenblockCapital from '@static/png/partners/genblock-capital.png'
 
 const partners: IPartnerIProps[] = [
   {
@@ -8,18 +10,18 @@ const partners: IPartnerIProps[] = [
     name: 'Solana'
   },
   {
-    logo: SolanaLogo,
-    name: 'Solana'
+    logo: Alameda,
+    name: 'Alameda Research'
   },
   {
-    logo: SolanaLogo,
-    name: 'Solana'
+    logo: GenblockCapital,
+    name: 'Genblock Capital'
   }
 ]
 
 export const PartnerWrapper: React.FC = () => {
   const partnersComponents = partners.map((item, index) => {
-    return <Partner key={index} logo={item.logo} name={item.name} />
+    return <Partner key={index} logo={item.logo} name={item.name} maxWidth={item.maxWidth} />
   })
   return <>{partnersComponents}</>
 }
