@@ -52,14 +52,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: theme.palette.text.primary
   },
   maxWidth300: {
-    marginTop: 10,
-    maxWidth: 200
+    maxWidth: 300,
+    marginTop: 10
   },
-  buildOn: {
+  builtOn: {
     color: theme.palette.text.primary,
     fontWeight: 300,
     fontStyle: 'normal',
-    fontSize: 14,
+    fontSize: 20,
     textTransform: 'uppercase'
   },
   textContainer: {
@@ -69,9 +69,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('md')]: {
       maxWidth: 900
     }
-  },
-  solanaLogo: {
-    width: 80
   },
   buttons: {
     maxWidth: 420,

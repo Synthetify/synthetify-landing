@@ -30,16 +30,16 @@ export const FrontSection: React.FC = () => {
         item
         container
         direction='row'
-        alignItems='flex-start'
+        alignItems='center'
         justify='space-around'
         className={classes.maxWidth300}>
         <Grid item>
-          <Typography variant='body1' className={classes.buildOn}>
+          <Typography variant='body1' className={classes.builtOn}>
             built on
           </Typography>
         </Grid>
         <Grid item>
-          <img className={classes.solanaLogo} src={LogoTypeSolana} alt='Solana Logo' />
+          <img src={LogoTypeSolana} alt='Solana Logo' />
         </Grid>
       </Grid>
       <Grid item container justify='space-between' className={classes.buttons}>
