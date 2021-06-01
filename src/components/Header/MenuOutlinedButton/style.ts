@@ -9,9 +9,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: '22px',
     textTransform: 'uppercase',
     lineHeight: '26px',
-    transition: '500ms',
     transitionDuration: '0.4s',
-    padding: '10px 19px',
+    padding: '4px 19px',
     letterSpacing: 0,
     border: `1px solid ${theme.palette.primary.contrastText}`,
     '&:hover': {

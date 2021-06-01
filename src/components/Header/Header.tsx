@@ -112,7 +112,7 @@ export const Header: React.FC<IHeaderProps> = ({ actions }) => {
           <SynthetifyIconHorizontal className={classes.logo} />
         </Grid>
         <Grid item>
-          <Grid container className={classes.buttonSpacing30}>
+          <Grid container alignItems='center' className={classes.buttonSpacing30}>
             <Grid className={classes.marginButton} item>
               <MainButton name='Home' onClick={() => history.push('/')} />
             </Grid>
