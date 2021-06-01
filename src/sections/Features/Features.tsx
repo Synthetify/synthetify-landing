@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
-import useStyles from './style'
 import FeatureWrapper from '@containers/FeatureWrapper/FeatureWrapper'
+import useStyles from './style'
 
 export const Features: React.FC = () => {
   const classes = useStyles()

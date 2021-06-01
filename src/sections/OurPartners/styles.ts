@@ -17,7 +17,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: theme.palette.text.primary,
     fontWeight: 400,
     fontSize: 46,
-    textAlign: 'center'
+    padding: 60,
+    textAlign: 'center',
+    [theme.breakpoints.down('xs')]: {
+      lineHeight: '30px',
+      fontSize: 40
+    }
   },
   bold: {
     fontWeight: 700

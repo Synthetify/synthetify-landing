@@ -26,9 +26,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   title: {
     color: theme.palette.text.primary,
     fontWeight: 700,
-    fontSize: 56,
+    fontSize: 44,
     [theme.breakpoints.down('md')]: {
-      fontSize: 36
+      fontSize: 28
     },
     [theme.breakpoints.down('xs')]: {
       textAlign: 'center'
@@ -37,11 +37,13 @@ const useStyles = makeStyles((theme: Theme) => ({
   text: {
     color: theme.palette.text.primary,
     fontWeight: 400,
+    fontSize: 28,
     fontStyle: 'normal',
-    fontSize: 32,
     textAlign: 'start',
+    lineHeight: '45px',
     [theme.breakpoints.down('md')]: {
-      fontSize: 26
+      lineHeight: '30px',
+      fontSize: 20
     },
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center'

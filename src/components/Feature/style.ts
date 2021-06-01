@@ -16,25 +16,21 @@ const useStyles = makeStyles((theme: Theme) => ({
   title: {
     color: theme.palette.text.primary,
     fontWeight: 300,
-    fontSize: 40,
+    fontSize: 32,
     [theme.breakpoints.down('sm')]: {
-      fontSize: 30
+      fontSize: 24
     }
   },
   text: {
     color: theme.palette.text.primary,
     fontWeight: 300,
-    fontSize: 30,
-    maxWidth: 620,
-    [theme.breakpoints.down('lg')]: {
-      maxWidth: 800
-    },
-    [theme.breakpoints.down('md')]: {
-      maxWidth: 620
-    },
+    fontSize: 24,
+    maxWidth: 500,
+    lineHeight: '45px',
     [theme.breakpoints.down('sm')]: {
       maxWidth: 470,
-      fontSize: 22
+      fontSize: 18,
+      lineHeight: '30px'
     }
   },
   icon: {

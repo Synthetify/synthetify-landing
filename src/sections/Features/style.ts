@@ -14,23 +14,23 @@ const useStyles = makeStyles((theme: Theme) => ({
   title: {
     color: theme.palette.text.primary,
     fontWeight: 700,
-    fontSize: 56,
+    fontSize: 45,
     [theme.breakpoints.down('md')]: {
-      fontSize: 48
+      fontSize: 38
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 42
+      fontSize: 32
     }
   },
   description: {
     color: theme.palette.text.primary,
     fontWeight: 300,
-    fontSize: 40,
+    fontSize: 38,
     [theme.breakpoints.down('md')]: {
-      fontSize: 34
+      fontSize: 28
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 28
+      fontSize: 22
     }
   },
   solution: {

@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
     lineHeight: '26px',
     transition: '300ms',
-    padding: '10px 19px',
+    padding: '7px 19px',
     letterSpacing: 0,
     [theme.breakpoints.down('xs')]: {
       padding: '9px 18px',
