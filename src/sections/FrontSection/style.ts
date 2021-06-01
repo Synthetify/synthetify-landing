@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginLeft: 'auto',
     marginRight: 'auto',
     '& > *': {
-      marginTop: 20,
+      marginTop: 50,
       marginBottom: 20
     }
   },
@@ -32,8 +32,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   subtitle: {
     color: theme.palette.text.primary,
     fontWeight: 400,
+    maxWidth: 1000,
+    fontSize: 32,
+    lineHeight: '45px',
     fontStyle: 'normal',
-    size: 32,
     textAlign: 'center',
     [theme.breakpoints.down('md')]: {
       fontSize: 30
@@ -42,6 +44,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       fontSize: 26
     },
     [theme.breakpoints.down('xs')]: {
+      lineHeight: '30px',
       fontSize: 21
     }
   },
@@ -49,13 +52,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: theme.palette.text.primary
   },
   maxWidth300: {
-    maxWidth: 300
+    marginTop: 10,
+    maxWidth: 200
   },
   buildOn: {
     color: theme.palette.text.primary,
     fontWeight: 300,
     fontStyle: 'normal',
-    fontSize: 20,
+    fontSize: 14,
     textTransform: 'uppercase'
   },
   textContainer: {
@@ -66,8 +70,11 @@ const useStyles = makeStyles((theme: Theme) => ({
       maxWidth: 900
     }
   },
+  solanaLogo: {
+    width: 80
+  },
   buttons: {
-    maxWidth: 450,
+    maxWidth: 420,
     [theme.breakpoints.down('xs')]: {
       maxWidth: 360,
       justifyContent: 'space-around'
