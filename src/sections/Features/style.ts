@@ -9,7 +9,15 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   header: {
     paddingTop: 140,
-    paddingBottom: 140
+    paddingBottom: 140,
+    [theme.breakpoints.down('md')]: {
+      paddingTop: 100,
+      paddingBottom: 100
+    },
+    [theme.breakpoints.down('xs')]: {
+      paddingTop: 60,
+      paddingBottom: 60
+    }
   },
   title: {
     color: theme.palette.text.primary,

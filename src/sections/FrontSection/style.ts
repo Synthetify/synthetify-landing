@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     '& > *': {
       marginTop: 50,
       marginBottom: 20
+    },
+    [theme.breakpoints.down('xs')]: {
+      paddingTop: 20
     }
   },
   title: {
