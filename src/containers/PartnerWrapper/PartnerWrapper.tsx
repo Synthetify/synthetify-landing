@@ -4,6 +4,7 @@ import SolanaLogo from '@static/svg/solana-logo.svg'
 import Alameda from '@static/png/partners/alameda.png'
 import GenblockCapital from '@static/png/partners/genblock-capital.png'
 import BuidlHodlCapital from '@static/png/partners/buidl-hodl-capital.png'
+import CSM from '@static/png/partners/cms-white.png'
 
 const partners: IPartnerIProps[] = [
   {
@@ -21,6 +22,10 @@ const partners: IPartnerIProps[] = [
   {
     logo: BuidlHodlCapital,
     name: 'Buidl Hodl Capital'
+  },
+  {
+    logo: CSM,
+    name: 'CMS'
   }
 ]
 

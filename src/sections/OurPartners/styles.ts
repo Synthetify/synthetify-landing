@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     '& > *': {
       paddingLeft: 30,
       paddingRight: 30,
-      paddingBottom: 80
+      paddingBottom: 50,
+      paddingTop: 50
     }
   },
   title: {
