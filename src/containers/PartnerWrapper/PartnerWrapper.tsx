@@ -3,6 +3,7 @@ import { IPartnerIProps, Partner } from '@components/Partner/Partner'
 import SolanaLogo from '@static/svg/solana-logo.svg'
 import Alameda from '@static/png/partners/alameda.png'
 import GenblockCapital from '@static/png/partners/genblock-capital.png'
+import BuidlHodlCapital from '@static/png/partners/buidl-hodl-capital.png'
 
 const partners: IPartnerIProps[] = [
   {
@@ -16,6 +17,10 @@ const partners: IPartnerIProps[] = [
   {
     logo: GenblockCapital,
     name: 'Genblock Capital'
+  },
+  {
+    logo: BuidlHodlCapital,
+    name: 'Buidl Hodl Capital'
   }
 ]
 
