@@ -5,6 +5,9 @@ import Alameda from '@static/png/partners/alameda.png'
 import GenblockCapital from '@static/png/partners/genblock-capital.png'
 import BuidlHodlCapital from '@static/png/partners/buidl-hodl-capital.png'
 import CSM from '@static/png/partners/cms-white.png'
+import DefiAlliance from '@static/png/partners/defi-alliance-white.png'
+import DivergenceVentures from '@static/png/partners/divergence-ventures.png'
+import EIVentures from '@static/png/partners/e-i-ventures.png'
 
 const partners: IPartnerIProps[] = [
   {
@@ -26,6 +29,18 @@ const partners: IPartnerIProps[] = [
   {
     logo: CSM,
     name: 'CMS'
+  },
+  {
+    logo: DefiAlliance,
+    name: 'Defi Alliance'
+  },
+  {
+    logo: DivergenceVentures,
+    name: 'Divergence Ventures'
+  },
+  {
+    logo: EIVentures,
+    name: 'e^i Ventures'
   }
 ]
 
