@@ -1,4 +1,5 @@
 import React from 'react'
+import useStyles from './style'
 
 export interface IPartnerIProps {
   logo: string
@@ -7,10 +8,11 @@ export interface IPartnerIProps {
 }
 
 export const Partner: React.FC<IPartnerIProps> = ({ logo, name, maxWidth }) => {
+  const classes = useStyles()
   const defaultMaxWidth = 300
-
-  if (maxWidth) {
-    return <img src={logo} alt={name} style={{ maxWidth: maxWidth }} />
+  if (!maxWidth) {
+    maxWidth = defaultMaxWidth
   }
-  return <img src={logo} alt={name} style={{ maxWidth: defaultMaxWidth }} />
+
+  return <img src={logo} alt={name} style={{ maxWidth }} className={classes.root} />
 }
