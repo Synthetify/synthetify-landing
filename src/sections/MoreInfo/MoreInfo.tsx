@@ -27,7 +27,8 @@ export const MoreInfo: React.FC = () => {
         <Grid item>
           <Typography variant='body1' className={classes.text}>
             We aim to provide a bridge between cryptocurrencies, stocks, fiat currencies and other
-            financial instruments decentralized exchange. You can learn more form out Whitepaper!
+            financial instruments directly from one decentralized exchange. You can learn more from
+            our Whitepaper!
           </Typography>
         </Grid>
         <Grid item className={classes.button}>

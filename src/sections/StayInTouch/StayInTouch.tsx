@@ -21,8 +21,9 @@ export const StayInTouch: React.FC = () => {
       </Grid>
       <Grid item className={classes.textWrapper}>
         <Typography variant='body1' className={classes.text}>
-          Synthetify is growing intesibely every day, so stay in touch by following our social media
-          and make sure you never miss any news! Join our Discord to connect with the Synthetify fam
+          Synthetify is growing intensively every day, so stay in touch by following our social
+          media and make sure you never miss any news! Join our Discord to connect with the
+          Synthetify fam 💚
           <span role='img' aria-label='heart'>
             💚
           </span>
