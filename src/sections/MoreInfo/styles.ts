@@ -23,11 +23,16 @@ const useStyles = makeStyles((theme: Theme) => ({
       margin: 15
     }
   },
+  titleWrapper: {
+    width: '100%'
+  },
   title: {
     color: theme.palette.text.primary,
+    textAlign: 'left',
     fontWeight: 700,
     fontSize: 44,
     [theme.breakpoints.down('md')]: {
+      textAlign: 'center',
       fontSize: 28
     },
     [theme.breakpoints.down('xs')]: {

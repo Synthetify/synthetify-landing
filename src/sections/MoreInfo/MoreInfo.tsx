@@ -19,7 +19,7 @@ export const MoreInfo: React.FC = () => {
         />
       </Grid>
       <Grid item container sm={12} md={6} justify='space-around' className={classes.rightSide}>
-        <Grid item>
+        <Grid item className={classes.titleWrapper}>
           <Typography variant='h2' className={classes.title}>
             Need more information?
           </Typography>
