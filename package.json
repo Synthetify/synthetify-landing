@@ -45,7 +45,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .js,.ts .",
+    "lint": "eslint --ext .js,.ts,.tsx .",
     "storybook": "start-storybook -p 9009 -c .storybook watch-css -s public",
     "build-storybook": "build-storybook -s public"
   },
