@@ -5,7 +5,7 @@ export const links = {
   socialMedia: {
     twitter: 'https://twitter.com/synthetify',
     linkedin: 'https://www.linkedin.com/company/synthetify',
-    discord: 'https://discord.gg/hhT78UM',
+    discord: 'https://discord.gg/EDrf437',
     github: 'https://github.com/Synthetify'
   }
 }
