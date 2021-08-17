@@ -1,20 +1,22 @@
-import React, { ReactNode } from 'react'
-import { Grid } from '@material-ui/core'
+import React from 'react'
+// import background from '@static/background.mp4'
 import useStyles from './style'
 
-interface IBackgroundProps {
-  children: ReactNode
-  background: string
-}
-
-export const Background: React.FC<IBackgroundProps> = ({ children, background }) => {
+export const Background: React.FC = () => {
   const classes = useStyles()
 
   return (
-    <Grid className={classes.root} style={{ backgroundImage: `url(${background})` }}>
-      {children}
-    </Grid>
+    <video
+      playsInline
+      autoPlay
+      muted
+      loop
+      disablePictureInPicture
+      preload='auto'
+      className={classes.video}
+    >
+      <source src='background.mp4' type="video/mp4" />
+    </video>
   )
 }
-
 export default Background
