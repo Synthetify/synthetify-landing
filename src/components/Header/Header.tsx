@@ -1,131 +1,157 @@
-import React from 'react'
-import { Grid, IconButton, List, ListItem, Collapse, ListItemIcon } from '@material-ui/core'
-import { useHistory } from 'react-router'
-import MenuIcon from '@material-ui/icons/Menu'
-import ListItemText from '@material-ui/core/ListItemText'
-import { ExpandLess, ExpandMore, Apps } from '@material-ui/icons'
-import InboxIcon from '@material-ui/icons/MoveToInbox'
-import Home from '@material-ui/icons/Home'
-import CloseIcon from '@material-ui/icons/Close'
-import MenuButton from '@components/Header/MenuButton/MenuButton'
-import MainButton from '@components/MainButton/MainButton'
-import MenuOutlinedButton from '@components/Header/MenuOutlinedButton/MenuOutlinedButton'
-import SynthetifyIconHorizontal from '@components/SynthetifyIconHorizontal/SynthetifyIconHorizontal'
+import React, { useContext } from 'react'
+import { Grid, IconButton, Divider, Hidden, Button, Typography, CardMedia } from '@material-ui/core'
+import { Menu } from '@material-ui/icons'
+import MenuModal from '@components/Modals/MenuModal/MenuModal'
+import { blurContent, unblurContent } from '@utils/uiUtils'
+import snyIcon from '@static/svg/sny_green.svg'
+import snyName from '@static/svg/sny_name.svg'
+import ChangeLanguageButton from './ChangeLanguageButton/ChangeLanguageButton'
+import Link from 'next/link'
 import links from '@static/constants/links'
+import { LanguageContext, useTranslate } from '@utils/translations'
+import { Language } from '@static/translations'
+import AboutUsModal from '@components/Modals/AboutUsModal/AboutUsModal'
+import { useRouter } from 'next/router'
+import CommunityModal from '@components/Modals/CommunityModal/CommunityModal'
 import useStyles from './style'
+import classNames from 'classnames'
+import { SoonMark } from '@components/LinkMarks/LinkMarks'
 
-export interface IHeaderAction {
-  name: string
-  action: () => void
-}
-
-export interface IHeaderProps {
-  actions: IHeaderAction[]
-}
-
-export const Header: React.FC<IHeaderProps> = ({ actions }) => {
+export const Header: React.FC = () => {
   const classes = useStyles()
-  const history = useHistory()
+  const translate = useTranslate()
+  const router = useRouter()
 
-  const [open, setOpen] = React.useState(false)
-  const [openSubmenu, setOpenSubmenu] = React.useState(false)
+  const { setLanguage, language } = useContext(LanguageContext)
 
-  const toggleMenu = () => {
-    setOpen(!open)
-    setOpenSubmenu(false)
+  const languages: {[key in Language]: { label: string, greeting: string }} = {
+    english: {
+      label: 'English',
+      greeting: 'Hello!'
+    }
   }
-  const toggleSubmenu = () => {
-    setOpenSubmenu(!openSubmenu)
-  }
+
+  const [routesModalOpen, setRoutesModalOpen] = React.useState(false)
+  const [routesModalAnchor, setRoutesModalAnchor] = React.useState<HTMLButtonElement | null>(null)
+
+  const [aboutUsModalOpen, setAboutUsModalOpen] = React.useState(false)
+  const [aboutUsModalAnchor, setAboutUsModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
+
+  const [communityModalOpen, setCommunityModalOpen] = React.useState(false)
+  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
 
   return (
-    <Grid className={classes.root}>
-      <>
-        <Grid container className={classes.appBar} justify='space-between' alignItems='center'>
-          <Grid item onClick={() => history.push('/')}>
-            <SynthetifyIconHorizontal className={classes.logo} />
-          </Grid>
-          <Grid item>
+    <>
+      <Grid container className={classes.root} wrap='nowrap' alignItems='center' justifyContent="space-between">
+        <Grid container item wrap='nowrap' alignItems='center'>
+          <CardMedia className={classes.snyLogo} image={snyIcon.src} />
+
+          <Hidden smDown>
+            <CardMedia className={classes.snyName} image={snyName.src}/>
+          </Hidden>
+
+          <Hidden mdUp>
+            <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginRight: 20 }} />
+          </Hidden>
+
+          <ChangeLanguageButton
+            languages={Object.entries(languages).map(([lang, { label, greeting }]) => ({ language: lang as Language, label, greeting }))}
+            onSelect={setLanguage}
+            current={languages[language].label}
+          />
+        </Grid>
+
+        <Grid container item wrap='nowrap' alignItems='center' justifyContent="flex-end">
+          <Hidden smDown>
+            <Link href='/' passHref>
+              <a style={{ textDecoration: 'none' }}><Typography className={classes.route}>{translate('header.home')}</Typography></a>
+            </Link>
+            <Typography
+              className={classes.route}
+              onClick={(event: React.MouseEvent<HTMLSpanElement>) => {
+                setAboutUsModalAnchor(event.currentTarget)
+                setAboutUsModalOpen(true)
+                blurContent()
+              }}
+            >
+              {translate('header.aboutUs')}
+            </Typography>
+            <Typography
+              className={classes.route}
+              onClick={(event: React.MouseEvent<HTMLSpanElement>) => {
+                setCommunityModalAnchor(event.currentTarget)
+                setCommunityModalOpen(true)
+                blurContent()
+              }}
+            >
+              {translate('header.community')}
+            </Typography>
+            <Grid style={{ marginRight: 22, display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+              <Typography className={classNames(classes.route, classes.blocked)} style={{ marginRight: 8 }}>{translate('header.blog')}</Typography>
+              <SoonMark className={classes.mark} />
+            </Grid>
+          </Hidden>
+
+          <Button
+            className={classes.tradeLink}
+            href={links.app.main}
+            variant='contained'
+          >
+            {translate('header.trade')}
+          </Button>
+
+          <Hidden mdUp>
+            <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginLeft: 20 }} />
             <IconButton
-              className={classes.menuButton}
-              aria-label='open drawer'
-              edge='end'
-              onClick={toggleMenu}>
-              {open ? <CloseIcon fontSize='large' /> : <MenuIcon fontSize='large' />}
+              className={classes.dehazeButton}
+              onClick={(event: React.MouseEvent<HTMLButtonElement>) => {
+                setRoutesModalAnchor(event.currentTarget)
+                setRoutesModalOpen(true)
+                blurContent()
+              }}>
+              <Menu className={classes.dehazeIcon} />
             </IconButton>
-          </Grid>
-        </Grid>
-        <Collapse in={open} className={classes.submenuCollapse}>
-          <List>
-            <ListItem
-              button
-              className={classes.submenuButton}
-              onClick={() => {
-                toggleMenu()
-                history.push('/')
-              }}>
-              <ListItemIcon>
-                <Home />
-              </ListItemIcon>
-              <ListItemText primary='Home' />
-            </ListItem>
-            <ListItem
-              button
-              className={classes.submenuButton}
-              onClick={() => {
-                toggleMenu()
-                window.open(links.app)
-              }}>
-              <ListItemIcon>
-                <Apps />
-              </ListItemIcon>
-              <ListItemText primary='Go to app' />
-            </ListItem>
-            <ListItem button onClick={toggleSubmenu} className={classes.submenuButton}>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary='Resources' />
-              {openSubmenu ? <ExpandLess /> : <ExpandMore />}
-            </ListItem>
-            <Collapse in={openSubmenu} timeout='auto' unmountOnExit>
-              <List component='div' disablePadding className={classes.subList}>
-                {actions.map(action => (
-                  <ListItem
-                    button
-                    key={action.name}
-                    className={classes.submenuButton}
-                    onClick={() => {
-                      action.action()
-                      toggleMenu()
-                    }}>
-                    <ListItemText primary={action.name} />
-                  </ListItem>
-                ))}
-              </List>
-            </Collapse>
-          </List>
-        </Collapse>
-      </>
-      <Grid container className={classes.xlRoot} justify='space-between' alignItems='center'>
-        <Grid item onClick={() => history.push('/')}>
-          <SynthetifyIconHorizontal className={classes.logo} />
-        </Grid>
-        <Grid item>
-          <Grid container alignItems='center' className={classes.buttonSpacing30}>
-            <Grid className={classes.marginButton} item>
-              <MainButton name='Home' onClick={() => history.push('/')} />
-            </Grid>
-            <Grid className={classes.marginButton} item>
-              <MenuButton name='Resources' actions={actions} />
-            </Grid>
-            <Grid>
-              <MenuOutlinedButton name='go to app' onClick={() => window.open(links.app)} />
-            </Grid>
-          </Grid>
+            <MenuModal
+              anchorEl={routesModalAnchor}
+              open={routesModalOpen}
+              current={router.asPath}
+              handleClose={() => {
+                setRoutesModalOpen(false)
+              }}
+              aboutUsClickHandler={() => {
+                setAboutUsModalAnchor(routesModalAnchor)
+                setAboutUsModalOpen(true)
+              }}
+              communityClickHandler={() => {
+                setCommunityModalAnchor(routesModalAnchor)
+                setCommunityModalOpen(true)
+              }}
+            />
+          </Hidden>
         </Grid>
       </Grid>
-    </Grid>
+
+      <Divider className={classes.divider} />
+
+      <AboutUsModal
+        anchorEl={aboutUsModalAnchor}
+        open={aboutUsModalOpen}
+        handleClose={() => {
+          setAboutUsModalOpen(false)
+          unblurContent()
+        }}
+        current={router.asPath}
+      />
+
+      <CommunityModal
+        anchorEl={communityModalAnchor}
+        open={communityModalOpen}
+        handleClose={() => {
+          setCommunityModalOpen(false)
+          unblurContent()
+        }}
+      />
+    </>
   )
 }
 export default Header

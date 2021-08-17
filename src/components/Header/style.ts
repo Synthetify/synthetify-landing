@@ -1,65 +1,98 @@
-import { makeStyles, Theme } from '@material-ui/core'
+import { makeStyles, Theme } from '@material-ui/core/styles'
 import { colors } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    paddingTop: 15,
-    paddingBottom: 15,
-    paddingLeft: '5%',
-    paddingRight: '5%'
-  },
-  xlRoot: {
-    height: 110,
-    [theme.breakpoints.down('md')]: {
-      display: 'none'
+    height: 95,
+    paddingInline: 40,
+    backdropFilter: 'blur(9px)',
+
+    [theme.breakpoints.down('sm')]: {
+      height: 60,
+      paddingInline: 0
     }
   },
-  buttonSpacing30: {
-    '& Button': {
-      marginRight: 30
-    }
+  divider: {
+    background: colors.navy[292956]
   },
-  appBar: {
-    height: 110,
-    [theme.breakpoints.up('lg')]: {
-      display: 'none'
-    }
+  verticalDivider: {
+    background: colors.navy.grey,
+    height: 36
   },
-  submenuCollapse: {
-    [theme.breakpoints.up('lg')]: {
-      display: 'none'
-    }
-  },
-  logo: {
-    height: 36,
-    marginTop: 6,
-    cursor: 'pointer'
-  },
-  marginButton: {
-    marginLeft: 20,
-    marginRight: 20
-  },
-  poper: {
-    backgroundColor: colors.black.light,
-    minWidth: 180,
-    marginTop: 8
-  },
-  menuButton: {
-    color: colors.white.main,
-    fontSize: 40
-  },
-  submenuButton: {
-    color: theme.palette.primary.main,
-    '&:hover': {
-      color: colors.black.background,
-      backgroundColor: `${theme.palette.primary.main}`
+  tradeLink: {
+    backgroundColor: colors.green.actionButton,
+    color: colors.navy.background,
+    fontSize: 16,
+    width: 66,
+    height: 41,
+    textTransform: 'none',
+    fontWeight: 'bold',
+    borderRadius: 10,
+
+    [theme.breakpoints.down('sm')]: {
+      width: 95,
+      height: 36,
+      fontSize: 13
     },
-    '& .MuiListItemIcon-root': {
-      color: 'currentColor'
+
+    '&:hover': {
+      opacity: 0.9,
+      backgroundColor: colors.green.actionButton
     }
   },
-  subList: {
-    paddingLeft: 55
+  route: {
+    fontSize: 16,
+    marginRight: 22,
+    color: '#CFCFCF',
+    cursor: 'pointer',
+
+    '&:hover': {
+      color: colors.navy.veryLightGrey
+    }
+  },
+  snyLogo: {
+    width: 43,
+    height: 33,
+    marginRight: 16,
+    marginLeft: 0,
+
+    [theme.breakpoints.down('sm')]: {
+      height: 28,
+      width: 33,
+      marginLeft: 16
+    }
+  },
+  snyName: {
+    width: 162,
+    height: 28,
+    marginRight: 25
+  },
+  dehazeButton: {
+    borderRadius: 10,
+    marginInline: 10,
+    padding: 0,
+
+    '&:hover': {
+      background: colors.navy.navButton
+    }
+  },
+  dehazeIcon: {
+    width: 45,
+    height: 38,
+    fill: colors.navy.lightGrey
+  },
+  blocked: {
+    opacity: 0.6,
+    cursor: 'unset',
+
+    '&:hover': {
+      color: '#CFCFCF'
+    }
+  },
+  mark: {
+    width: 39,
+    height: 19,
+    fontSize: 11
   }
 }))
 
