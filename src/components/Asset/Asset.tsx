@@ -11,7 +11,9 @@ export interface IAsset {
   icon: ReactNode
   price: number
   change: number
-  border: string
+  borderHue: number
+  borderSaturation: number
+  borderLuminosity: number
   className: string
 }
 
@@ -21,19 +23,17 @@ export const Asset: React.FC<IAsset> = ({
   icon,
   price,
   change,
-  border,
+  borderHue,
+  borderSaturation,
+  borderLuminosity,
   className
 }) => {
-  const classes = useStyles()
+  const classes = useStyles({ borderHue, borderSaturation, borderLuminosity })
 
   return (
     <Grid
       container
       className={classNames(classes.root, className)}
-      style={{
-        borderColor: border,
-        boxShadow: `0 0 16px 0px ${border}`
-      }}
       justifyContent='space-between'
     >
       <Grid container item alignItems='flex-start'>

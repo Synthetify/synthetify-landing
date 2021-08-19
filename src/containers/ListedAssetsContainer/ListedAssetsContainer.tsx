@@ -109,42 +109,64 @@ export const ListedAssetsContainer: React.FC = () => {
 
   const assetConsts = {
     BTC: {
-      border: 'rgba(255, 180, 9, 0.3)',
+      borderHue: 42,
+      borderSaturation: 100,
+      borderLuminosity: 52,
       icon: <CardMedia image={BTC.src} className={classes.BTC} />,
       name: translate('home.assets.BTC')
     },
     ETH: {
-      border: 'rgba(169, 180, 222, 0.3)',
+      borderHue: 228,
+      borderSaturation: 45,
+      borderLuminosity: 77,
       icon: <CardMedia image={ETH.src} className={classes.ETH} />,
       name: translate('home.assets.ETH')
     },
     LTC: {
-      border: 'rgba(75, 131, 218, 0.3)',
+      border: '#4B83DA',
+      borderHue: 217,
+      borderSaturation: 66,
+      borderLuminosity: 57,
       icon: <CardMedia image={LTC.src} className={classes.LTC} />,
       name: translate('home.assets.LTC')
     },
     SOL: {
-      border: 'rgba(169, 82, 234, 0.3)',
+      border: '#C23AF4',
+      borderHue: 284,
+      borderSaturation: 89,
+      borderLuminosity: 59,
       icon: <CardMedia image={SOL.src} className={classes.SOL} />,
       name: translate('home.assets.SOL')
     },
     FTT: {
-      border: 'rgba(95, 202, 222, 0.3)',
+      border: '#5FCADE',
+      borderHue: 189,
+      borderSaturation: 66,
+      borderLuminosity: 62,
       icon: <CardMedia image={FTT.src} className={classes.FTT} />,
       name: translate('home.assets.FTT')
     },
     BNB: {
-      border: 'rgba(255, 180, 9, 0.3)',
+      border: '#F3BA2F',
+      borderHue: 43,
+      borderSaturation: 89,
+      borderLuminosity: 57,
       icon: <CardMedia image={BNB.src} className={classes.BNB} />,
       name: translate('home.assets.BNB')
     },
     SRM: {
-      border: 'rgba(52, 193, 214, 0.3)',
+      border: '#6CDDEA',
+      borderHue: 186,
+      borderSaturation: 75,
+      borderLuminosity: 67,
       icon: <CardMedia image={SRM.src} className={classes.SRM} />,
       name: translate('home.assets.SRM')
     },
     USD: {
-      border: 'rgba(134, 144, 223, 0.3)',
+      border: '#C3C8EF',
+      borderHue: 233,
+      borderSaturation: 58,
+      borderLuminosity: 85,
       icon: <CardMedia image={USD.src} className={classes.USD} />,
       name: translate('home.assets.USD')
     }

@@ -1,8 +1,12 @@
 import { colors } from '@static/theme'
 import { makeStyles, Theme } from '@material-ui/core/styles'
 
-const useStyles = makeStyles((theme: Theme) => ({
-  root: {
+const useStyles = makeStyles<Theme, {
+  borderHue: number
+  borderSaturation: number
+  borderLuminosity: number
+}>((theme: Theme) => ({
+  root: ({ borderHue, borderSaturation, borderLuminosity }) => ({
     width: 258,
     height: 129,
     borderRadius: 20,
@@ -12,12 +16,16 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingTop: 18,
     paddingInline: 12,
     paddingBottom: 10,
+    borderColor: `hsla(${borderHue}, ${borderSaturation}%, ${borderLuminosity}%, 0.3)`,
+    boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${borderLuminosity}%, 0.3)`,
 
     [theme.breakpoints.up('lg')]: {
-      transition: 'transform 300ms linear',
+      transition: 'transform 300ms linear, border-color 300ms linear, box-shadow 300ms linear',
 
       '&:hover': {
-        transform: 'scale(1.0775)'
+        transform: 'scale(1.085) translateY(-5px)',
+        borderColor: `hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`,
+        boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`
       }
     },
 
@@ -37,7 +45,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       paddingBottom: 12,
       paddingInline: 8
     }
-  },
+  }),
   token: {
     fontSize: 28,
     lineHeight: '28px',
