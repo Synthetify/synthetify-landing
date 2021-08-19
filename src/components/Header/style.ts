@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   divider: {
-    background: colors.navy[292956]
+    background: colors.navy.darkGrey
   },
   verticalDivider: {
     background: colors.navy.grey,

@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   divider: {
-    background: colors.navy.info
+    background: colors.navy.darkGrey
   },
   column: {
     width: 161,
