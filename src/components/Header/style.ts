@@ -29,15 +29,23 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 'bold',
     borderRadius: 10,
 
+    '&:hover': {
+      opacity: 1,
+      backgroundColor: colors.green.actionButton
+    },
+
+    [theme.breakpoints.up('lg')]: {
+      transition: 'transform 300ms linear',
+
+      '&:hover': {
+        transform: 'scale(1.0976)'
+      }
+    },
+
     [theme.breakpoints.down('sm')]: {
       width: 95,
       height: 36,
       fontSize: 13
-    },
-
-    '&:hover': {
-      opacity: 0.9,
-      backgroundColor: colors.green.actionButton
     }
   },
   route: {

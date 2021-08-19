@@ -13,6 +13,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingInline: 12,
     paddingBottom: 10,
 
+    [theme.breakpoints.up('lg')]: {
+      transition: 'transform 300ms linear',
+
+      '&:hover': {
+        transform: 'scale(1.0775)'
+      }
+    },
+
     [theme.breakpoints.down('md')]: {
       width: 174,
       height: 82,
