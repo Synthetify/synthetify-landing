@@ -184,10 +184,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     alignItems: 'center',
 
     '& $link, & $columnHeader': {
-      marginRight: 8,
+      marginRight: 10,
 
       [theme.breakpoints.down('sm')]: {
-        marginRight: 4
+        marginRight: 8
+      },
+
+      [theme.breakpoints.down('xs')]: {
+        marginRight: 6
       }
     }
   },
@@ -209,22 +213,21 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   mark: {
     [theme.breakpoints.down('md')]: {
-      width: 44,
-      height: 22
+      paddingBlock: 4.5,
+      paddingInline: 6
     },
 
     [theme.breakpoints.down('sm')]: {
-      width: 27,
-      height: 13,
-      fontSize: 7,
-      lineHeight: '7px'
+      paddingBlock: 4,
+      paddingInline: 5,
+      fontSize: 9,
+      lineHeight: '9px'
     },
 
     [theme.breakpoints.down('xs')]: {
-      width: 23,
-      height: 12,
-      fontSize: 6,
-      lineHeight: '6px'
+      padding: 3,
+      fontSize: 7,
+      lineHeight: '7px'
     }
   },
   description: {

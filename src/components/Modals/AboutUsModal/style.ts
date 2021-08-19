@@ -81,8 +81,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   mark: {
-    width: 39,
-    height: 19,
+    paddingBlock: 5,
+    paddingInline: 6,
     fontSize: 11
   }
 }))
