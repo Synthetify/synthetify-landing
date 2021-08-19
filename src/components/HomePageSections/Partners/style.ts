@@ -110,21 +110,22 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   defi: {
-    height: 65,
+    display: 'flex',
+    height: 67,
     width: 175,
 
     [theme.breakpoints.down('md')]: {
-      height: 59.8,
-      width: 161
+      height: 62,
+      width: 162
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 52,
+      height: 53.6,
       width: 140
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 37.89,
+      height: 39.05,
       width: 102
     }
   },
@@ -138,32 +139,32 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 51.6,
-      width: 154
+      height: 52.27,
+      width: 156
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 37.5,
-      width: 112
+      height: 37.86,
+      width: 113
     }
   },
   cms: {
-    height: 59,
+    height: 62,
     width: 161,
 
     [theme.breakpoints.down('md')]: {
-      height: 54.23,
-      width: 148
+      height: 57.38,
+      width: 149
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 47,
-      width: 128
+      height: 50.06,
+      width: 130
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 34,
-      width: 93
+      height: 36.58,
+      width: 95
     }
   },
   buidl: {
@@ -171,56 +172,56 @@ const useStyles = makeStyles((theme: Theme) => ({
     width: 173,
 
     [theme.breakpoints.down('md')]: {
-      height: 48.71,
-      width: 159
+      height: 49,
+      width: 160
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 42,
-      width: 137
+      height: 42.28,
+      width: 138
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 31,
-      width: 101
+      height: 31.25,
+      width: 102
     }
   },
   divergence: {
-    height: 51,
+    height: 53,
     width: 177,
 
     [theme.breakpoints.down('md')]: {
-      height: 46.68,
-      width: 162
+      height: 48,
+      width: 165
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 40,
-      width: 139
+      height: 42.22,
+      width: 141
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 29.61,
-      width: 102.75
+      height: 31.44,
+      width: 105
     }
   },
   genblock: {
     height: 75,
-    width: 143,
+    width: 145,
 
     [theme.breakpoints.down('md')]: {
-      height: 70.8,
-      width: 135
+      height: 70.34,
+      width: 136
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 60.83,
-      width: 116
+      height: 61.03,
+      width: 118
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 44.58,
-      width: 85
+      height: 45,
+      width: 87
     }
   },
   solLogo: {
@@ -256,32 +257,32 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 13.5,
+      height: 13.42,
       width: 109
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 10,
-      width: 81
+      height: 9.85,
+      width: 80
     }
   },
   ei: {
-    height: 49,
-    width: 184,
+    height: 51,
+    width: 185,
 
     [theme.breakpoints.down('md')]: {
-      height: 45,
+      height: 46.59,
       width: 169
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 38.69,
-      width: 145.31
+      height: 41,
+      width: 147
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 28.5,
-      width: 107
+      height: 29.77,
+      width: 108
     }
   }
 }))
