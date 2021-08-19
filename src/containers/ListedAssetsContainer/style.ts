@@ -2,39 +2,59 @@ import { makeStyles, Theme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme: Theme) => ({
   BTC: {
-    width: 55,
-    height: 49,
+    width: 50,
+    height: 50,
 
     [theme.breakpoints.down('md')]: {
-      width: 41.5,
-      height: 37
+      width: 41,
+      height: 41
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: 39,
+      height: 39
     }
   },
   ETH: {
-    width: 55,
-    height: 55,
+    width: 52,
+    height: 52,
 
     [theme.breakpoints.down('md')]: {
-      width: 38,
-      height: 38
+      width: 42,
+      height: 42
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: 39,
+      height: 39
     }
   },
   LTC: {
-    width: 51,
-    height: 54,
+    width: 50,
+    height: 50,
 
     [theme.breakpoints.down('md')]: {
-      width: 41.5,
-      height: 38
+      width: 46,
+      height: 46
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: 43,
+      height: 43
     }
   },
   SOL: {
-    width: 55,
-    height: 47,
+    width: 49,
+    height: 49,
 
     [theme.breakpoints.down('md')]: {
-      width: 36,
-      height: 38
+      width: 42,
+      height: 42
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: 40,
+      height: 40
     }
   },
   FTT: {
@@ -42,35 +62,55 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: 55,
 
     [theme.breakpoints.down('md')]: {
-      width: 38,
-      height: 38
+      width: 41,
+      height: 41
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: 40,
+      height: 40
     }
   },
   BNB: {
-    width: 60,
+    width: 53,
     height: 53,
 
     [theme.breakpoints.down('md')]: {
-      width: 44.2,
-      height: 39
+      width: 44,
+      height: 44
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: 41,
+      height: 41
     }
   },
   SRM: {
-    width: 55,
-    height: 48,
-
-    [theme.breakpoints.down('md')]: {
-      width: 43.5,
-      height: 38
-    }
-  },
-  USD: {
-    width: 59,
+    width: 50,
     height: 50,
 
     [theme.breakpoints.down('md')]: {
-      width: 45,
-      height: 38
+      width: 42,
+      height: 42
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: 40,
+      height: 40
+    }
+  },
+  USD: {
+    width: 50,
+    height: 50,
+
+    [theme.breakpoints.down('md')]: {
+      width: 42,
+      height: 42
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: 40,
+      height: 40
     }
   }
 }))
