@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '&:hover $greeting': {
-      color: colors.navy.button
+      color: colors.navy['8584D2']
     }
   },
   current: {
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '& $greeting': {
-      color: colors.navy.button
+      color: colors.navy['8584D2']
     }
   },
   paper: {

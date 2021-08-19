@@ -253,6 +253,14 @@ const useStyles = makeStyles((theme: Theme) => ({
   linkWrapper: {
     marginBottom: 25,
 
+    '&:hover $link': {
+      color: colors.navy.lightGrey
+    },
+
+    '&:hover $description': {
+      color: colors.navy['8584D2']
+    },
+
     [theme.breakpoints.down('md')]: {
       marginBottom: 23
     },
