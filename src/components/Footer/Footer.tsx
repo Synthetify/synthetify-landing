@@ -9,9 +9,9 @@ import discord from '@static/svg/discord-circle.svg'
 import twitter from '@static/svg/twitter-circle.svg'
 import links from '@static/constants/links'
 import Link from 'next/link'
-import useStyles from './style'
 import classNames from 'classnames'
 import { SoonMark } from '@components/LinkMarks/LinkMarks'
+import useStyles from './style'
 
 interface ILinkProps {
   href: string

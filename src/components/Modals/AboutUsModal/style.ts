@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '&:hover $description': {
-      color: colors.navy.button
+      color: colors.navy['8584D2']
     }
   },
   description: {
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '& $description': {
-      color: colors.navy.button
+      color: colors.navy['8584D2']
     }
   },
   paper: {
@@ -81,8 +81,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   mark: {
-    width: 39,
-    height: 19,
+    paddingBlock: 5,
+    paddingInline: 6,
     fontSize: 11
   }
 }))
