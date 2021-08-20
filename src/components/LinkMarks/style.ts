@@ -5,14 +5,12 @@ const useStyles = makeStyles(() => ({
   root: {
     backgroundColor: `${colors.navy.info}B4`,
     borderRadius: 4,
-    width: 48,
-    height: 24,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    paddingBlock: 6,
+    paddingInline: 7,
     color: colors.navy.lightGrey,
     fontSize: 12,
-    lineHeight: '12px'
+    lineHeight: '12px',
+    fontWeight: 600
   }
 }))
 

@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '&:hover $description': {
-      color: colors.navy.button
+      color: colors.navy['8584D2']
     },
 
     '&:hover $icon': {

@@ -8,7 +8,7 @@ import useStyles from './style'
 export interface IListedAssets {
   prices: {[key in ListedAsset]: number}
   changes: {[key in ListedAsset]: number}
-  assetConsts: {[key in ListedAsset]: Pick<IAsset, 'icon' | 'border' | 'name'>}
+  assetConsts: {[key in ListedAsset]: Pick<IAsset, 'icon' | 'borderHue' | 'borderSaturation' | 'borderLuminosity' | 'name'>}
 }
 
 export const ListedAssets: React.FC<IListedAssets> = ({ prices, changes, assetConsts }) => {

@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     backdropFilter: 'blur(4px)',
     backgroundColor: 'rgba(157, 160, 174, 0.1)',
     position: 'fixed',
-    top: 270,
+    bottom: 25,
     right: 25,
     zIndex: 1,
 

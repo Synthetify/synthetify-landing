@@ -93,6 +93,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 30,
     lineHeight: '40px',
     fontWeight: 700,
+    transition: 'transform 300ms linear',
 
     [theme.breakpoints.down('sm')]: {
       fontSize: 19
@@ -102,6 +103,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 16,
     lineHeight: '25px',
     color: colors.navy.lightGrey,
+    transition: 'transform 300ms linear',
 
     [theme.breakpoints.down('md')]: {
       fontSize: 12,
@@ -115,9 +117,24 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   feature: {
     width: 607,
+    transition: 'transform 300ms linear',
 
     '&:not(:last-child)': {
       marginBottom: 40
+    },
+
+    [theme.breakpoints.up('lg')]: {
+      '&:hover': {
+        transform: 'scale(1.11) translateX(4%)'
+      },
+
+      '$left &:hover': {
+        transform: 'scale(1.11)'
+      },
+
+      '&:hover $featureDescription, &:hover $featureTitle': {
+        transform: 'translateX(-4px)'
+      }
     },
 
     [theme.breakpoints.down('lg')]: {
