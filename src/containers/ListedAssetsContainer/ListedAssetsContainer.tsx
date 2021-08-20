@@ -123,7 +123,6 @@ export const ListedAssetsContainer: React.FC = () => {
       name: translate('home.assets.ETH')
     },
     LTC: {
-      border: '#4B83DA',
       borderHue: 217,
       borderSaturation: 66,
       borderLuminosity: 57,
@@ -131,7 +130,6 @@ export const ListedAssetsContainer: React.FC = () => {
       name: translate('home.assets.LTC')
     },
     SOL: {
-      border: '#C23AF4',
       borderHue: 284,
       borderSaturation: 89,
       borderLuminosity: 59,
@@ -139,7 +137,6 @@ export const ListedAssetsContainer: React.FC = () => {
       name: translate('home.assets.SOL')
     },
     FTT: {
-      border: '#5FCADE',
       borderHue: 189,
       borderSaturation: 66,
       borderLuminosity: 62,
@@ -147,7 +144,6 @@ export const ListedAssetsContainer: React.FC = () => {
       name: translate('home.assets.FTT')
     },
     BNB: {
-      border: '#F3BA2F',
       borderHue: 43,
       borderSaturation: 89,
       borderLuminosity: 57,
@@ -155,7 +151,6 @@ export const ListedAssetsContainer: React.FC = () => {
       name: translate('home.assets.BNB')
     },
     SRM: {
-      border: '#6CDDEA',
       borderHue: 186,
       borderSaturation: 75,
       borderLuminosity: 67,
@@ -163,7 +158,6 @@ export const ListedAssetsContainer: React.FC = () => {
       name: translate('home.assets.SRM')
     },
     USD: {
-      border: '#C3C8EF',
       borderHue: 233,
       borderSaturation: 58,
       borderLuminosity: 85,

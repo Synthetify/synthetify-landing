@@ -28,13 +28,23 @@ export const Asset: React.FC<IAsset> = ({
   borderLuminosity,
   className
 }) => {
-  const classes = useStyles({ borderHue, borderSaturation, borderLuminosity })
+  const classes = useStyles()
+
+  const haloStyle = {
+    borderColor: `hsla(${borderHue}, ${borderSaturation}%, ${borderLuminosity}%, 0.3)`,
+    boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${borderLuminosity}%, 0.3)`,
+    '&:hover': {
+      borderColor: `hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`,
+      boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`
+    }
+  }
 
   return (
     <Grid
       container
       className={classNames(classes.root, className)}
       justifyContent='space-between'
+      style={haloStyle}
     >
       <Grid container item alignItems='flex-start'>
         {icon}
