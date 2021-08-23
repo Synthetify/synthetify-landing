@@ -110,179 +110,151 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   defi: {
-    display: 'flex',
-    height: 67,
-    width: 175,
+    maxWidth: 175,
+    backgroundSize: '175px 67px',
 
     [theme.breakpoints.down('md')]: {
-      height: 62,
-      width: 162
+      maxWidth: 162
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 53.6,
-      width: 140
+      maxWidth: 140
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 39.05,
-      width: 102
+      maxWidth: 102
     }
   },
   alameda: {
-    height: 65,
-    width: 194,
+    maxWidth: 194,
+    backgroundSize: '194px 65px',
 
     [theme.breakpoints.down('md')]: {
-      height: 59.63,
-      width: 178
+      maxWidth: 178
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 52.27,
-      width: 156
+      maxWidth: 156
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 37.86,
-      width: 113
+      maxWidth: 113
     }
   },
   cms: {
-    height: 62,
-    width: 161,
+    maxWidth: 161,
+    backgroundSize: '161px 62px',
 
     [theme.breakpoints.down('md')]: {
-      height: 57.38,
-      width: 149
+      maxWidth: 149
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 50.06,
-      width: 130
+      maxWidth: 130
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 36.58,
-      width: 95
+      maxWidth: 95
     }
   },
   buidl: {
-    height: 53,
-    width: 173,
+    maxWidth: 173,
+    backgroundSize: '173px 53px',
 
     [theme.breakpoints.down('md')]: {
-      height: 49,
-      width: 160
+      maxWidth: 160
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 42.28,
-      width: 138
+      maxWidth: 138
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 31.25,
-      width: 102
+      maxWidth: 102
     }
   },
   divergence: {
-    height: 53,
-    width: 177,
+    maxWidth: 177,
+    backgroundSize: '177px 53px',
 
     [theme.breakpoints.down('md')]: {
-      height: 48,
-      width: 165
+      maxWidth: 165
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 42.22,
-      width: 141
+      maxWidth: 141
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 31.44,
-      width: 105
+      maxWidth: 105
     }
   },
   genblock: {
-    height: 75,
-    width: 145,
+    maxWidth: 145,
+    backgroundSize: '145px 75px',
 
     [theme.breakpoints.down('md')]: {
-      height: 70.34,
-      width: 136
+      maxWidth: 136
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 61.03,
-      width: 118
+      maxWidth: 118
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 45,
-      width: 87
+      maxWidth: 87
     }
   },
   solLogo: {
-    height: 32,
-    width: 32,
+    maxWidth: 32,
     marginRight: 12,
+    backgroundSize: '32px 32px',
 
     [theme.breakpoints.down('md')]: {
-      height: 29.3,
-      width: 29.3,
+      maxWidth: 29.3,
       marginRight: 11
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 25.27,
-      width: 25.27,
+      maxWidth: 25.27,
       marginRight: 9
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 18.58,
-      width: 18.58,
+      maxWidth: 18.58,
       marginRight: 7
     }
   },
   solText: {
-    height: 17,
-    width: 138,
+    maxWidth: 138,
+    backgroundSize: '138px 17px',
 
     [theme.breakpoints.down('md')]: {
-      height: 15.57,
-      width: 126.36
+      maxWidth: 126.36
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 13.42,
-      width: 109
+      maxWidth: 109
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 9.85,
-      width: 80
+      maxWidth: 80
     }
   },
   ei: {
-    height: 51,
-    width: 185,
+    maxWidth: 185,
+    backgroundSize: '185px 51px',
 
     [theme.breakpoints.down('md')]: {
-      height: 46.59,
-      width: 169
+      maxWidth: 169
     },
 
     [theme.breakpoints.down('sm')]: {
-      height: 41,
-      width: 147
+      maxWidth: 147
     },
 
     [theme.breakpoints.down('xs')]: {
-      height: 29.77,
-      width: 108
+      maxWidth: 108
     }
   }
 }))
