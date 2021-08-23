@@ -268,6 +268,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('xs')]: {
       marginBottom: 19
     }
+  },
+  blockHover: {
+    '&:hover $link': {
+      color: colors.navy.grey
+    },
+
+    '&:hover $description': {
+      color: colors.navy.info
+    }
   }
 }))
 
