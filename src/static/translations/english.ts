@@ -59,7 +59,15 @@ const dictionary = {
   'home.assets.LTC': 'Litecoin',
   'home.assets.SOL': 'Solana',
   'home.assets.SRM': 'Serum',
-  'home.assets.USD': 'Dollar'
+  'home.assets.USD': 'Dollar',
+  'brand.title': 'Brand',
+  'brand.description': 'Synthetify\'s resources',
+  'brand.greenLogo': 'Green logo',
+  'brand.greenLogoVertical': 'Green logo vertical',
+  'brand.greenLogoHorizontal': 'Green logo horizontal',
+  'brand.whiteLogo': 'White logo',
+  'brand.whiteLogoVertical': 'White logo vertical',
+  'brand.whiteLogoHorizontal': 'White logo horizontal'
 }
 
 export default dictionary
