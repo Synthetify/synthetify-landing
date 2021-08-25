@@ -7,20 +7,22 @@ import useStyles from './style'
 export interface IPageHeader {
   label: string
   logo: ReactNode
-  onDownload: () => void
   className?: string
+  filePath: string
 }
 
-export const LogoTile: React.FC<IPageHeader> = ({ label, logo, onDownload, className }) => {
+export const LogoTile: React.FC<IPageHeader> = ({ label, logo, className, filePath }) => {
   const classes = useStyles()
 
   return (
     <Grid className={classNames(classes.logoTile, className)}>
-      <Grid container alignItems='center' justifyContent='space-between'>
+      <Grid container alignItems='center' justifyContent='space-between' className={classes.top}>
         <Typography className={classes.logoLabel}>{label}</Typography>
-        <CardMedia src={download.src} className={classes.downloadIcon} onClick={onDownload} component='img' />
+        <a href={filePath} download>
+          <CardMedia src={download.src} className={classes.downloadIcon} component='img' />
+        </a>
       </Grid>
-      <Grid container justifyContent='center' alignItems='center'>{logo}</Grid>
+      <Grid container justifyContent='center' alignItems='center' className={classes.imgWrapper}>{logo}</Grid>
     </Grid>
   )
 }

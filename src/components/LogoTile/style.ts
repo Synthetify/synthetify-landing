@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: 284,
     border: `1px solid ${colors.navy.grey}`,
     background: 'rgba(30, 30, 67, 0.3)',
-    // backdropFilter: 'blur(4px)',
+    backdropFilter: 'blur(4px)',
 
     [theme.breakpoints.down('md')]: {
       padding: 13,
@@ -24,30 +24,26 @@ const useStyles = makeStyles((theme: Theme) => ({
       height: 169
     }
   },
-  // top: {
-  //   height: 45,
+  top: {
+    paddingLeft: 9,
 
-  //   [theme.breakpoints.down('md')]: {
-  //     height: 40
-  //   },
-
-  //   [theme.breakpoints.down('sm')]: {
-  //     height: 32
-  //   }
-  // },
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: 6
+    }
+  },
   logoLabel: {
     fontSize: 22,
     lineHeight: '40px',
     color: colors.navy.grey,
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 16
+      fontSize: 16,
+      lineHeight: '32px'
     }
   },
   downloadIcon: {
     width: 45,
     height: 45,
-    cursor: 'pointer',
 
     [theme.breakpoints.down('md')]: {
       width: 40,
@@ -57,6 +53,17 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('sm')]: {
       width: 32,
       height: 32
+    }
+  },
+  imgWrapper: {
+    height: 207,
+
+    [theme.breakpoints.down('md')]: {
+      height: 188
+    },
+
+    [theme.breakpoints.down('sm')]: {
+      height: 119
     }
   }
 }))
