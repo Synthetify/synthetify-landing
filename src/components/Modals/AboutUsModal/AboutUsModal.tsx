@@ -4,7 +4,8 @@ import { useTranslate } from '@utils/translations'
 import useStyles from './style'
 import links from '@static/constants/links'
 import classNames from 'classnames'
-import { SoonMark } from '@components/LinkMarks/LinkMarks'
+import { NewMark, SoonMark } from '@components/LinkMarks/LinkMarks'
+import Link from 'next/link'
 
 export interface IAboutUsModal {
   open: boolean
@@ -71,23 +72,27 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
           </Typography>
         </Grid>
 
-        <Grid
-          item
-          className={classNames(classes.listItem, classes.blocked, (current === '/brand' ? classes.current : undefined))}
-          onClick={() => {
-            handleClose()
-          }}
-        >
-          <Grid className={classes.linkWithMarkWrapper}>
-            <Typography className={classes.name}>
-              {translate('header.brand')}
-            </Typography>
-            <SoonMark className={classes.mark} />
-          </Grid>
-          <Typography className={classes.description}>
-            {translate('header.brandDescription')}
-          </Typography>
-        </Grid>
+        <Link href='/brand' passHref>
+          <a style={{ textDecoration: 'none' }}>
+            <Grid
+              item
+              className={classNames(classes.listItem, (current === '/brand' ? classes.current : undefined))}
+              onClick={() => {
+                handleClose()
+              }}
+            >
+              <Grid className={classes.linkWithMarkWrapper}>
+                <Typography className={classes.name}>
+                  {translate('header.brand')}
+                </Typography>
+                <NewMark className={classes.mark} />
+              </Grid>
+              <Typography className={classes.description}>
+                {translate('header.brandDescription')}
+              </Typography>
+            </Grid>
+          </a>
+        </Link>
       </Grid>
     </Popover>
   )

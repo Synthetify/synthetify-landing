@@ -99,7 +99,6 @@ const useStyles = makeStyles((theme: Theme) => ({
   link: {
     fontSize: 22,
     lineHeight: '25px',
-    cursor: 'pointer',
     color: colors.navy.grey,
 
     [theme.breakpoints.down('sm')]: {
@@ -113,7 +112,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   a: {
-    textDecoration: 'none'
+    textDecoration: 'none',
+    cursor: 'pointer'
   },
   copyright: {
     fontSize: 16,
@@ -175,8 +175,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   blocked: {
-    opacity: 0.6,
-    cursor: 'unset'
+    opacity: 0.6
   },
   linkWithMarkWrapper: {
     display: 'flex',
