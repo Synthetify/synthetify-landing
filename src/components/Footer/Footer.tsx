@@ -10,23 +10,35 @@ import twitter from '@static/svg/twitter-circle.svg'
 import links from '@static/constants/links'
 import Link from 'next/link'
 import classNames from 'classnames'
-import { SoonMark } from '@components/LinkMarks/LinkMarks'
+import { NewMark, SoonMark } from '@components/LinkMarks/LinkMarks'
 import useStyles from './style'
 
 interface ILinkProps {
   href: string
   name: string
   description: string
+  isNew?: boolean
 }
 
-export const InsideLink: React.FC<ILinkProps> = ({ href, name, description }) => {
+export const InsideLink: React.FC<ILinkProps> = ({ href, name, description, isNew = false }) => {
   const classes = useStyles()
 
   return (
     <a className={classes.a}>
       <Link href={href} passHref>
         <Grid className={classes.linkWrapper}>
-          <Typography className={classes.link}>{name}</Typography>
+          {
+            isNew
+              ? (
+                <Typography className={classes.link}>{name}</Typography>
+              )
+              : (
+                <Grid className={classes.linkWithMarkWrapper}>
+                  <Typography className={classes.link}>{name}</Typography>
+                  <NewMark className={classes.mark} />
+                </Grid>
+              )
+          }
           <Typography className={classes.description}>{description}</Typography>
         </Grid>
       </Link>

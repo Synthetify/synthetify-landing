@@ -4,7 +4,7 @@ import { useTranslate } from '@utils/translations'
 import useStyles from './style'
 import links from '@static/constants/links'
 import classNames from 'classnames'
-import { SoonMark } from '@components/LinkMarks/LinkMarks'
+import { NewMark, SoonMark } from '@components/LinkMarks/LinkMarks'
 import Link from 'next/link'
 
 export interface IAboutUsModal {
@@ -81,9 +81,12 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
                 handleClose()
               }}
             >
-              <Typography className={classes.name}>
-                {translate('header.brand')}
-              </Typography>
+              <Grid className={classes.linkWithMarkWrapper}>
+                <Typography className={classes.name}>
+                  {translate('header.brand')}
+                </Typography>
+                <NewMark className={classes.mark} />
+              </Grid>
               <Typography className={classes.description}>
                 {translate('header.brandDescription')}
               </Typography>
