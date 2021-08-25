@@ -24,35 +24,48 @@ const useStyles = makeStyles((theme: Theme) => ({
       height: 169
     }
   },
-  top: {
-    paddingLeft: 9,
-
-    [theme.breakpoints.down('sm')]: {
-      paddingLeft: 6
-    }
-  },
   logoLabel: {
     fontSize: 22,
     lineHeight: '40px',
     color: colors.navy.grey,
+    marginLeft: 9,
 
     [theme.breakpoints.down('sm')]: {
       fontSize: 16,
-      lineHeight: '32px'
+      lineHeight: '32px',
+      marginLeft: 6
     }
   },
   downloadIcon: {
     width: 45,
     height: 45,
+    position: 'absolute',
+    top: 16,
+    right: 16,
+
+    [theme.breakpoints.up('lg')]: {
+      transition: 'width 300ms, height 300ms, top 300ms, right 300ms',
+
+      '&:hover': {
+        width: 50,
+        height: 50,
+        top: 13.5,
+        right: 13.5
+      }
+    },
 
     [theme.breakpoints.down('md')]: {
       width: 40,
-      height: 40
+      height: 40,
+      top: 13,
+      right: 13
     },
 
     [theme.breakpoints.down('sm')]: {
       width: 32,
-      height: 32
+      height: 32,
+      top: 9,
+      right: 9
     }
   },
   imgWrapper: {
