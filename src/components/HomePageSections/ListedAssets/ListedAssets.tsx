@@ -19,12 +19,11 @@ export const ListedAssets: React.FC<IListedAssets> = ({ prices, changes, assetCo
     <Grid container className={classes.root} direction='column'>
       <Typography className={classes.title}>{translate('home.supportedAssets')}</Typography>
       <Typography className={classes.description}>{translate('home.supportedAssets.description')}</Typography>
-      <Grid container item className={classes.assets} direction='row'>
+      <Grid className={classes.assets}>
         {Object.entries(prices).map(([symbol, price], index) => (
           <Asset
             key={index}
             symbol={symbol}
-            className={classes.asset}
             price={price}
             change={changes[symbol as ListedAsset]}
             {...assetConsts[symbol as ListedAsset]}
