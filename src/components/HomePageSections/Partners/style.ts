@@ -45,71 +45,37 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   logos: {
+    display: 'grid',
     marginInline: 0,
     width: 914,
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    gridTemplateRows: '80px 80px',
+    columnGap: 46,
+    rowGap: 91,
 
     [theme.breakpoints.down('md')]: {
-      width: 848
+      width: 848,
+      columnGap: 24,
+      rowGap: 78
     },
 
     [theme.breakpoints.down('sm')]: {
-      width: 370
+      width: 370,
+      gridTemplateColumns: '1fr 1fr',
+      gridTemplateRows: 'repeat(4, 70px)',
+      columnGap: 28,
+      rowGap: 28
     },
 
     [theme.breakpoints.down('xs')]: {
-      width: 267
-    }
-  },
-  logoWrapper: {
-    width: 194,
-    height: 80,
-
-    '&:not(:nth-last-child(-n+4))': {
-      marginBottom: 91
-    },
-
-    '&:not(:nth-child(4n))': {
-      marginRight: 46
-    },
-
-    [theme.breakpoints.down('md')]: {
-      '&:not(:nth-last-child(-n+4))': {
-        marginBottom: 78
-      },
-
-      '&:not(:nth-child(4n))': {
-        marginRight: 24
-      }
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      width: 171,
-      height: 70,
-
-      '&:not(:nth-child(4n))': {
-        marginRight: 'unset'
-      },
-      '&:not(:nth-child(2n))': {
-        marginRight: 28
-      },
-      '&:not(:nth-last-child(-n+2))': {
-        marginBottom: 28
-      }
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 126,
-      height: 51,
-
-      '&:not(:nth-child(2n))': {
-        marginRight: 15
-      },
-      '&:not(:nth-last-child(-n+2))': {
-        marginBottom: 15
-      }
+      width: 267,
+      gridTemplateRows: 'repeat(4, 51px)',
+      columnGap: 15,
+      rowGap: 15
     }
   },
   defi: {
+    placeSelf: 'center',
     maxWidth: 175,
     backgroundSize: '175px 67px',
 
@@ -126,6 +92,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   alameda: {
+    placeSelf: 'center',
     maxWidth: 194,
     backgroundSize: '194px 65px',
 
@@ -142,6 +109,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   cms: {
+    placeSelf: 'center',
     maxWidth: 161,
     backgroundSize: '161px 62px',
 
@@ -158,6 +126,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   buidl: {
+    placeSelf: 'center',
     maxWidth: 173,
     backgroundSize: '173px 53px',
 
@@ -174,6 +143,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   divergence: {
+    placeSelf: 'center',
     maxWidth: 177,
     backgroundSize: '177px 53px',
 
@@ -190,6 +160,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   genblock: {
+    placeSelf: 'center',
     maxWidth: 145,
     backgroundSize: '145px 75px',
 
@@ -242,6 +213,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   ei: {
+    placeSelf: 'center',
     maxWidth: 185,
     backgroundSize: '185px 51px',
 

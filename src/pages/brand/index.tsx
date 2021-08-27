@@ -21,41 +21,35 @@ export const Brand: React.FC = () => {
         title={translate('brand.title')}
         description={translate('brand.description')}
       />
-      <Grid container direction='row' className={classes.gridWrapper}>
+      <Grid className={classes.gridWrapper}>
         <LogoTile
-          className={classes.logo}
           label={translate('brand.greenLogo')}
           logo={<CardMedia src={greenLogo.src} className={classes.simpleLogo} component='img' />}
           filePath='/brand/synthetify_logo_green.svg'
         />
         <LogoTile
-          className={classes.logo}
           label={translate('brand.whiteLogo')}
           logo={<CardMedia src={whiteLogo.src} className={classes.simpleLogo} component='img' />}
           filePath='/brand/synthetify_logo_white.svg'
         />
 
         <LogoTile
-          className={classes.logo}
           label={translate('brand.greenLogoVertical')}
           logo={<CardMedia src={greenLogoVertical.src} className={classes.verticalLogo} component='img' />}
           filePath='/brand/synthetify_vertical_logo_green.svg'
         />
         <LogoTile
-          className={classes.logo}
           label={translate('brand.whiteLogoVertical')}
           logo={<CardMedia src={whiteLogoVertical.src} className={classes.verticalLogo} component='img' />}
           filePath='/brand/synthetify_vertical_logo_white.svg'
         />
 
         <LogoTile
-          className={classes.logo}
           label={translate('brand.greenLogoHorizontal')}
           logo={<CardMedia src={greenLogoHorizontal.src} className={classes.horizontalLogo} component='img' />}
           filePath='/brand/synthetify_horizontal_logo_green.svg'
         />
         <LogoTile
-          className={classes.logo}
           label={translate('brand.whiteLogoHorizontal')}
           logo={<CardMedia src={whiteLogoHorizontal.src} className={classes.horizontalLogo} component='img' />}
           filePath='/brand/synthetify_horizontal_logo_white.svg'
