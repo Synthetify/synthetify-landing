@@ -67,7 +67,22 @@ const dictionary = {
   'brand.greenLogoHorizontal': 'Green logo horizontal',
   'brand.whiteLogo': 'White logo',
   'brand.whiteLogoVertical': 'White logo vertical',
-  'brand.whiteLogoHorizontal': 'White logo horizontal'
+  'brand.whiteLogoHorizontal': 'White logo horizontal',
+  'faq.title': 'FAQ',
+  'faq.description': 'Frequently asked questions',
+  'faq.question1': 'Who\'s Synthetify?',
+  'faq.question2': 'Who\'s Solana?',
+  'faq.question3': 'What we can offer?',
+  'faq.question4': 'What can you get?',
+  'faq.question5': 'How to start?',
+  'faq.question6': 'How does is work?',
+  'faq.answer1': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae fugit alias maxime quis non sapiente corporis iste pariatur atque necessitatibus ducimus veniam aperiam sequi earum, dolores minus. Quam sequi doloremque optio quis ipsum rerum laudantium, debitis reprehenderit excepturi tenetur dolorem.',
+  'faq.answer2': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis esse doloremque rerum similique assumenda hic.',
+  'faq.answer3': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum tempore obcaecati. Porro quis, distinctio soluta quidem quos nobis perspiciatis!',
+  'faq.answer4': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae fugit alias maxime quis non sapiente corporis iste pariatur atque necessitatibus ducimus veniam aperiam sequi earum, dolores minus. Quam sequi doloremque optio quis ipsum rerum laudantium, debitis reprehenderit excepturi tenetur dolorem.',
+  'faq.answer5': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aperiam?',
+  'faq.answer6': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste corrupti voluptatem natus esse beatae facilis nobis ut ea cumque, tenetur quam, distinctio dicta sint mollitia repellat dignissimos et maiores?'
 }
+
 
 export default dictionary

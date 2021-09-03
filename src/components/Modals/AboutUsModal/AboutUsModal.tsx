@@ -54,7 +54,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
           </Grid>
         </a>
 
-        <Grid
+        {/* <Grid
           item
           className={classNames(classes.listItem, classes.blocked, (current === '/faq' ? classes.current : undefined))}
           onClick={() => {
@@ -70,7 +70,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
           <Typography className={classes.description}>
             {translate('header.faqDescription')}
           </Typography>
-        </Grid>
+        </Grid> */}
 
         <Link href='/brand' passHref>
           <a style={{ textDecoration: 'none' }}>
@@ -89,6 +89,27 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
               </Grid>
               <Typography className={classes.description}>
                 {translate('header.brandDescription')}
+              </Typography>
+            </Grid>
+          </a>
+        </Link>
+        <Link href='/FAQ' passHref>
+          <a style={{ textDecoration: 'none' }}>
+            <Grid
+              item
+              className={classNames(classes.listItem, (current === '/brand' ? classes.current : undefined))}
+              onClick={() => {
+                handleClose()
+              }}
+            >
+              <Grid className={classes.linkWithMarkWrapper}>
+                <Typography className={classes.name}>
+                  {translate('header.faq')}
+                </Typography>
+                <NewMark className={classes.mark} />
+              </Grid>
+              <Typography className={classes.description}>
+                {translate('header.faqDescription')}
               </Typography>
             </Grid>
           </a>
