@@ -9,7 +9,7 @@ import greenLogoHorizontal from '@static/svg/brand/synthetify_horizontal_logo_gr
 import whiteLogo from '@static/svg/brand/synthetify_logo_white.svg'
 import whiteLogoVertical from '@static/svg/brand/synthetify_vertical_logo_white.svg'
 import whiteLogoHorizontal from '@static/svg/brand/synthetify_horizontal_logo_white.svg'
-import useStyles from './style'
+import useStyles from '@pagesStyles/brand/style'
 
 export const Brand: React.FC = () => {
   const classes = useStyles()
