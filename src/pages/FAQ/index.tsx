@@ -8,6 +8,14 @@ import useStyles from './style'
 const FAQ: React.FC = () => {
   const classes = useStyles()
   const translate = useTranslate()
+  const questionsTab = translate('faq.questions').toString().split('?,')
+  const answersTab = translate('faq.answers')
+  const quesions = questionsTab.map((item, index) => {
+    return <Grid key={index}
+      item className={classes.questionBlock}>
+      <Question key={index} question={item} answer={answersTab[index]} />
+    </Grid>
+  })
   return (
     <>
       <PageHeader
@@ -15,8 +23,8 @@ const FAQ: React.FC = () => {
         description={translate('brand.description')}
       />
       <Grid container direction='column' className={classes.container}>
-        <Grid item className={classes.questionBlock}>
-          <Question question={translate('faq.question1')} answer={translate('faq.answer1')}/>
+        {/* <Grid item className={classes.questionBlock}>
+          <Question question={questionsTab[0]} answer={translate('faq.answer1')}/>
         </Grid>
         <Grid item className={classes.questionBlock}>
           <Question question={translate('faq.question2')} answer={translate('faq.answer2')}/>
@@ -32,7 +40,8 @@ const FAQ: React.FC = () => {
         </Grid>
         <Grid item className={classes.questionBlock}>
           <Question question={translate('faq.question6')} answer={translate('faq.answer6')}/>
-        </Grid>
+        </Grid> */}
+        {quesions}
       </Grid>
     </>
   )

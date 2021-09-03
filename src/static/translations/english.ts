@@ -81,7 +81,15 @@ const dictionary = {
   'faq.answer3': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum tempore obcaecati. Porro quis, distinctio soluta quidem quos nobis perspiciatis!',
   'faq.answer4': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae fugit alias maxime quis non sapiente corporis iste pariatur atque necessitatibus ducimus veniam aperiam sequi earum, dolores minus. Quam sequi doloremque optio quis ipsum rerum laudantium, debitis reprehenderit excepturi tenetur dolorem.',
   'faq.answer5': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aperiam?',
-  'faq.answer6': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste corrupti voluptatem natus esse beatae facilis nobis ut ea cumque, tenetur quam, distinctio dicta sint mollitia repellat dignissimos et maiores?'
+  'faq.answer6': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste corrupti voluptatem natus esse beatae facilis nobis ut ea cumque, tenetur quam, distinctio dicta sint mollitia repellat dignissimos et maiores?',
+  'faq.questions': ['Who\'s Synthetify?', 'Who\'s Solana?', 'What we can offer?', 'What can you get?', 'How to start?', 'How does is work?'],
+  'faq.answers': [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim. In augue erat, ultricies id risus id, rutrum pellentesque nisi. Suspendisse et nisi magna. Nam convallis leo gravida nisl varius, at rhoncus quam viverra. Duis interdum sapien ut suscipit tincidunt. Aenean pharetra, mi id vulputate pulvinar, nibh erat tristique tortor, non dignissim mauris nisl tempus eros. Nunc id lacinia ipsum.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim. In augue erat, ultricies id risus id, rutrum pellentesque nisi.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim. In augue erat, ultricies id risus id, rutrum pellentesque nisi. Suspendisse et nisi magna. Nam convallis leo gravida nisl varius, at rhoncus quam viverra. Duis interdum sapien ut suscipit tincidunt. Aenean pharetra, mi id vulputate pulvinar, nibh erat tristique tortor, non dignissim mauris nisl tempus eros. Nunc id lacinia ipsum.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim. In augue erat, ultricies id risus id, rutrum pellentesque nisi.']
 }
 
 export default dictionary
