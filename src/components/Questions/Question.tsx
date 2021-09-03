@@ -33,11 +33,11 @@ export const Question = ({ question, answer }: Props) => {
         <Button
           className={classes.more}
           classes={{ root: classes.root, label: classes.label }}
-          style={{ visibility: `${isVisible(answer) ? 'hidden' : 'visible'}` }}
+          style={{ display: `${isVisible(answer) ? 'none' : 'inline-flex'}` }}
           onClick={() => {
             changeHeight()
           }}>
-          {isOpen ? 'Show less' : 'Show more'}
+          {isOpen ? 'Show less.' : 'Show more.'}
           <i className={`${classes.arrow} ${isOpen ? classes.arrowUp : classes.arrowDown}`}></i>
         </Button>
       </Grid>

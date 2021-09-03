@@ -84,5 +84,4 @@ const dictionary = {
   'faq.answer6': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste corrupti voluptatem natus esse beatae facilis nobis ut ea cumque, tenetur quam, distinctio dicta sint mollitia repellat dignissimos et maiores?'
 }
 
-
 export default dictionary
