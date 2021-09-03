@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createTheme } from '@material-ui/core/styles'
 
 export const colors = {
   black: {
@@ -15,13 +15,31 @@ export const colors = {
   },
   green: {
     main: '#00F9BB',
+    actionButton: '#40BFA0',
     hover: 'rgba(0,249,187,0.15)'
+  },
+  red: {
+    error: '#C52727'
   },
   white: {
     main: '#FFFFFF'
+  },
+  navy: {
+    background: '#0C0D2C',
+    dark: '#0E0E2A',
+    component: '#1E1E43',
+    navBar: '#F9F9FB',
+    navButton: '#3D3F72',
+    grey: '#A3A8CE',
+    lightGrey: '#DADCF1',
+    veryLightGrey: '#FBFBFB',
+    button: '#6C6BC7',
+    info: '#6F6EAA',
+    darkGrey: '#292956',
+    '8584D2': '#8584D2'
   }
 }
-export const theme = createMuiTheme({
+export const theme = createTheme({
   palette: {
     primary: {
       main: '#00F9BB',
