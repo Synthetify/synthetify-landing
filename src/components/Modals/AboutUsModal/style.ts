@@ -68,6 +68,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '&:hover $description': {
+      color: colors.navy.info,
       opacity: 0.6
     }
   },
