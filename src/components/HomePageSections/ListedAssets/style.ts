@@ -56,55 +56,29 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   assets: {
+    display: 'grid',
     marginInline: 'auto',
     width: 1098,
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    columnGap: 22,
+    rowGap: 20,
 
     [theme.breakpoints.down('md')]: {
-      width: 747
+      width: 747,
+      columnGap: 17
     },
 
     [theme.breakpoints.down('sm')]: {
-      width: 365
+      width: 365,
+      gridTemplateColumns: '1fr 1fr',
+      columnGap: 17,
+      rowGap: 17
     },
 
     [theme.breakpoints.down('xs')]: {
-      width: 338
-    }
-  },
-  asset: {
-    '&:not(:nth-last-child(-n+4))': {
-      marginBottom: 20
-    },
-
-    '&:not(:nth-child(4n))': {
-      marginRight: 22
-    },
-
-    [theme.breakpoints.down('md')]: {
-      '&:not(:nth-child(4n))': {
-        marginRight: 17
-      }
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      '&:not(:nth-child(4n))': {
-        marginRight: 'unset'
-      },
-      '&:not(:nth-child(2n))': {
-        marginRight: 17
-      },
-      '&:not(:nth-last-child(-n+2))': {
-        marginBottom: 17
-      }
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      '&:not(:nth-child(2n))': {
-        marginRight: 10
-      },
-      '&:not(:nth-last-child(-n+2))': {
-        marginBottom: 10
-      }
+      width: 338,
+      columnGap: 10,
+      rowGap: 10
     }
   }
 }))

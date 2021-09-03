@@ -10,25 +10,39 @@ import twitter from '@static/svg/twitter-circle.svg'
 import links from '@static/constants/links'
 import Link from 'next/link'
 import classNames from 'classnames'
-import { SoonMark } from '@components/LinkMarks/LinkMarks'
+import { NewMark, SoonMark } from '@components/LinkMarks/LinkMarks'
 import useStyles from './style'
 
 interface ILinkProps {
   href: string
   name: string
   description: string
+  isNew?: boolean
 }
 
-export const InsideLink: React.FC<ILinkProps> = ({ href, name, description }) => {
+export const InsideLink: React.FC<ILinkProps> = ({ href, name, description, isNew = false }) => {
   const classes = useStyles()
 
   return (
-    <Grid className={classes.linkWrapper}>
+    <a className={classes.a}>
       <Link href={href} passHref>
-        <a className={classes.a}><Typography className={classes.link}>{name}</Typography></a>
+        <Grid className={classes.linkWrapper}>
+          {
+            isNew
+              ? (
+                <Typography className={classes.link}>{name}</Typography>
+              )
+              : (
+                <Grid className={classes.linkWithMarkWrapper}>
+                  <Typography className={classes.link}>{name}</Typography>
+                  <NewMark className={classes.mark} />
+                </Grid>
+              )
+          }
+          <Typography className={classes.description}>{description}</Typography>
+        </Grid>
       </Link>
-      <Typography className={classes.description}>{description}</Typography>
-    </Grid>
+    </a>
   )
 }
 
@@ -36,10 +50,12 @@ export const OutsideLink: React.FC<ILinkProps> = ({ href, name, description }) =
   const classes = useStyles()
 
   return (
-    <Grid className={classes.linkWrapper}>
-      <a href={href} className={classes.a}><Typography className={classes.link}>{name}</Typography></a>
-      <Typography className={classes.description}>{description}</Typography>
-    </Grid>
+    <a href={href} className={classes.a}>
+      <Grid className={classes.linkWrapper}>
+        <Typography className={classes.link}>{name}</Typography>
+        <Typography className={classes.description}>{description}</Typography>
+      </Grid>
+    </a>
   )
 }
 
@@ -47,7 +63,7 @@ export const SoonLink: React.FC<Omit<ILinkProps, 'href'>> = ({ name, description
   const classes = useStyles()
 
   return (
-    <Grid className={classes.linkWrapper}>
+    <Grid className={classNames(classes.linkWrapper, classes.blockHover)}>
       <Grid className={classes.linkWithMarkWrapper}>
         <Typography className={classNames(classes.link, classes.blocked)}>{name}</Typography>
         <SoonMark className={classes.mark} />
@@ -98,7 +114,8 @@ export const Footer: React.FC = () => {
             name={translate('header.faq')}
             description={translate('header.faqDescription')}
           />
-          <SoonLink
+          <InsideLink
+            href='/brand'
             name={translate('header.brand')}
             description={translate('header.brandDescription')}
           />

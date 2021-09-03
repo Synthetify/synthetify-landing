@@ -1,7 +1,7 @@
-import { Grid, Typography } from '@material-ui/core'
-import React, { ReactNode } from 'react'
+import { Grid, Typography, useMediaQuery } from '@material-ui/core'
+import React, { ReactNode, useState } from 'react'
 import AnimatedNumber from '@components/AnimatedNumber'
-import { colors } from '@static/theme'
+import theme, { colors } from '@static/theme'
 import useStyles from './style'
 import classNames from 'classnames'
 
@@ -14,7 +14,7 @@ export interface IAsset {
   borderHue: number
   borderSaturation: number
   borderLuminosity: number
-  className: string
+  className?: string
 }
 
 export const Asset: React.FC<IAsset> = ({
@@ -29,13 +29,28 @@ export const Asset: React.FC<IAsset> = ({
   className
 }) => {
   const classes = useStyles()
+  const isLg = useMediaQuery(theme.breakpoints.up('lg'))
 
   const haloStyle = {
     borderColor: `hsla(${borderHue}, ${borderSaturation}%, ${borderLuminosity}%, 0.3)`,
-    boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${borderLuminosity}%, 0.3)`,
-    '&:hover': {
-      borderColor: `hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`,
-      boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`
+    boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${borderLuminosity}%, 0.3)`
+  }
+  const hoverHaloStyle = {
+    borderColor: `hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`,
+    boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`
+  }
+
+  const [halo, setHalo] = useState(haloStyle)
+
+  const onMouseEnter = () => { // next.js has some issues with using useStyles with props, so I had to do this that way
+    if (isLg) {
+      setHalo(hoverHaloStyle)
+    }
+  }
+
+  const onMouseLeave = () => {
+    if (isLg) {
+      setHalo(haloStyle)
     }
   }
 
@@ -44,7 +59,9 @@ export const Asset: React.FC<IAsset> = ({
       container
       className={classNames(classes.root, className)}
       justifyContent='space-between'
-      style={haloStyle}
+      style={halo}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       <Grid container item alignItems='flex-start'>
         {icon}

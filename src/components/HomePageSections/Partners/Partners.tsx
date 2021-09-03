@@ -20,77 +20,61 @@ export const Partners: React.FC = () => {
     <Grid container className={classes.root} direction='column'>
       <Typography className={classes.title}>{translate('home.ourInvestors')}</Typography>
       <Typography className={classes.description}>{translate('home.ourInvestors.description')}</Typography>
-      <Grid container className={classes.logos}>
-        <Grid item container className={classes.logoWrapper} justifyContent='center' alignItems='center'>
+      <Grid className={classes.logos}>
+        <CardMedia
+          image={defi.src}
+          component='img'
+          className={classes.defi}
+        />
+
+        <CardMedia
+          image={alameda.src}
+          component='img'
+          className={classes.alameda}
+        />
+
+        <CardMedia
+          image={cms.src}
+          component='img'
+          className={classes.cms}
+        />
+
+        <CardMedia
+          image={buidl.src}
+          component='img'
+          className={classes.buidl}
+        />
+
+        <CardMedia
+          image={divergence.src}
+          component='img'
+          className={classes.divergence}
+        />
+
+        <CardMedia
+          image={genblock.src}
+          component='img'
+          className={classes.genblock}
+        />
+
+        <Grid container style={{ placeSelf: 'center', height: 'fit-content', width: 'fit-content' }} alignItems='center'>
           <CardMedia
-            image={defi.src}
+            image={solLogo.src}
             component='img'
-            className={classes.defi}
+            className={classes.solLogo}
+          />
+          <CardMedia
+            image={solText.src}
+            component='img'
+            className={classes.solText}
           />
         </Grid>
 
-        <Grid item container className={classes.logoWrapper} justifyContent='center' alignItems='center'>
-          <CardMedia
-            image={alameda.src}
-            component='img'
-            className={classes.alameda}
-          />
-        </Grid>
-
-        <Grid item container className={classes.logoWrapper} justifyContent='center' alignItems='center'>
-          <CardMedia
-            image={cms.src}
-            component='img'
-            className={classes.cms}
-          />
-        </Grid>
-
-        <Grid item container className={classes.logoWrapper} justifyContent='center' alignItems='center'>
-          <CardMedia
-            image={buidl.src}
-            component='img'
-            className={classes.buidl}
-          />
-        </Grid>
-
-        <Grid item container className={classes.logoWrapper} justifyContent='center' alignItems='center'>
-          <CardMedia
-            image={divergence.src}
-            component='img'
-            className={classes.divergence}
-          />
-        </Grid>
-
-        <Grid item container className={classes.logoWrapper} justifyContent='center' alignItems='center'>
-          <CardMedia
-            image={genblock.src}
-            component='img'
-            className={classes.genblock}
-          />
-        </Grid>
-
-        <Grid item container className={classes.logoWrapper} justifyContent='center' alignItems='center'>
-          <Grid container style={{ height: 'fit-content', width: 'fit-content' }} alignItems='center'>
-            <CardMedia
-              image={solLogo.src}
-              component='img'
-              className={classes.solLogo}
-            />
-            <CardMedia
-              image={solText.src}
-              component='img'
-              className={classes.solText}
-            />
-          </Grid>
-        </Grid>
-
-        <Grid item container className={classes.logoWrapper} justifyContent='center' alignItems='center'>
-          <CardMedia
-            image={ei.src}
-            component='img'
-            className={classes.ei}
-          />
-        </Grid>
+        <CardMedia
+          image={ei.src}
+          component='img'
+          className={classes.ei}
+        />
       </Grid>
     </Grid>
   )
