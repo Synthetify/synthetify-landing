@@ -4,6 +4,7 @@ import AnimatedNumber from '@components/AnimatedNumber'
 import theme, { colors } from '@static/theme'
 import useStyles from './style'
 import classNames from 'classnames'
+import AssetPlot from '@components/AssetPlot/AssetPlot'
 
 export interface IAsset {
   symbol: string
@@ -15,6 +16,7 @@ export interface IAsset {
   borderSaturation: number
   borderLuminosity: number
   className?: string
+  data: Array<{ x: number, y: number }>
 }
 
 export const Asset: React.FC<IAsset> = ({
@@ -26,7 +28,8 @@ export const Asset: React.FC<IAsset> = ({
   borderHue,
   borderSaturation,
   borderLuminosity,
-  className
+  className,
+  data
 }) => {
   const classes = useStyles()
   const isLg = useMediaQuery(theme.breakpoints.up('lg'))
@@ -36,13 +39,20 @@ export const Asset: React.FC<IAsset> = ({
     boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${borderLuminosity}%, 0.3)`
   }
   const hoverHaloStyle = {
-    borderColor: `hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`,
-    boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${Math.min(borderLuminosity + 15, 100)}%, 0.3)`
+    borderColor: `hsla(${borderHue}, ${borderSaturation}%, ${Math.min(
+      borderLuminosity + 15,
+      100
+    )}%, 0.3)`,
+    boxShadow: `0 0 16px 0px hsla(${borderHue}, ${borderSaturation}%, ${Math.min(
+      borderLuminosity + 15,
+      100
+    )}%, 0.3)`
   }
 
   const [halo, setHalo] = useState(haloStyle)
 
-  const onMouseEnter = () => { // next.js has some issues with using useStyles with props, so I had to do this that way
+  const onMouseEnter = () => {
+    // next.js has some issues with using useStyles with props, so I had to do this that way
     if (isLg) {
       setHalo(hoverHaloStyle)
     }
@@ -61,14 +71,14 @@ export const Asset: React.FC<IAsset> = ({
       justifyContent='space-between'
       style={halo}
       onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
+      onMouseLeave={onMouseLeave}>
       <Grid container item alignItems='flex-start'>
         {icon}
         <Grid style={{ marginLeft: 6 }}>
           <Typography className={classes.token}>{symbol}</Typography>
           <Typography className={classes.tokenName}>{name}</Typography>
         </Grid>
+        <AssetPlot data={ data } />
       </Grid>
       <Grid container item alignItems='center' justifyContent='space-between' wrap='nowrap'>
         <Typography className={classes.value}>
@@ -100,31 +110,25 @@ export const Asset: React.FC<IAsset> = ({
               return (value / 1000000).toFixed(2)
             }}
           />
-          {price >= 10000
-            ? 'K'
-            : (price >= 1000000 ? 'M' : '')
-          }
+          {price >= 10000 ? 'K' : price >= 1000000 ? 'M' : ''}
         </Typography>
         <Grid className={classes.change}>
           <Typography className={classes.chg}>CHG</Typography>
           <Typography
             className={classes.percent}
             style={{
-              color: change > 0
-                ? colors.green.actionButton
-                : (
-                  change < 0
-                    ? colors.red.error
-                    : colors.navy.veryLightGrey
-                )
-            }}
-          >
+              color:
+                change > 0
+                  ? colors.green.actionButton
+                  : change < 0 ? colors.red.error : colors.navy.veryLightGrey
+            }}>
             {change > 0 ? '+' : ''}
             <AnimatedNumber
               value={change}
               duration={300}
               formatValue={(value: number) => value.toFixed(2)}
-            />%
+            />
+            %
           </Typography>
         </Grid>
       </Grid>
