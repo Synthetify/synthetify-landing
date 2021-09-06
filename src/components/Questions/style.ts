@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     transform: 'rotate(-135deg) translateX(-50%) translateY(0%)'
   },
   fixedHeight: {
-    maxHeight: '30px',
+    maxHeight: '36px',
     overflow: 'hidden',
     transition: '3s ease-out'
   },

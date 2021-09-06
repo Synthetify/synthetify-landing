@@ -25,7 +25,7 @@ export const Question = ({ question, answer }: Props) => {
         <Typography className={`${classes.text} ${classes.question}`} component='h2'>{question}</Typography>
         <AnimateHeight
           className={`${classes.text} ${classes.answer}`}
-          height={isOpen || isVisible(answer) ? 'auto' : 30}
+          height={isOpen || isVisible(answer) ? 'auto' : 36}
           duration={400}
         >
           {answer}
