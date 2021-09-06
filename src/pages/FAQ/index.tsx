@@ -11,11 +11,11 @@ const FAQ: React.FC = () => {
   const questionsTab: string[] = translate('faq.questions').toString().split(',')
   const answersTab: string = translate('faq.answers')
   const questions: JSX.Element[] = questionsTab.map((item, index) => {
-    return (
-      <Grid key={index}
-        item className={classes.questionBlock}>
-        <Question key={index} question={item} answer={answersTab[index]} />
-      </Grid>)
+    console.log(answersTab[index])
+    return <Grid key={index}
+      item className={classes.questionBlock}>
+      <Question key={index} question={item} answer={answersTab[index]} />
+    </Grid>
   })
   return (
     <>

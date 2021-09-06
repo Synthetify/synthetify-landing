@@ -1,5 +1,4 @@
 import { Button, Grid, Typography } from '@material-ui/core'
-import AnimateHeight from 'react-animate-height'
 import React, { useState } from 'react'
 import useStyles from './style'
 
@@ -17,19 +16,15 @@ export const Question = ({ question, answer }: Props) => {
   }
 
   const isVisible = (text: string): boolean => {
-    return text.length < 150
+    return typeof text === 'string' ? text.length < 75 : false
   }
   return (
     <>
       <Grid container direction='column' classes={{ container: classes.container }}>
         <Typography className={`${classes.text} ${classes.question}`} component='h2'>{question}</Typography>
-        <AnimateHeight
-          className={`${classes.text} ${classes.answer}`}
-          height={isOpen || isVisible(answer) ? 'auto' : 36}
-          duration={400}
-        >
-          {answer}
-        </AnimateHeight>
+        <div className={`${classes.answer} ${isOpen ? classes.open : ''}`}>
+          <p className={classes.text}>{answer}</p>
+        </div>
         <Button
           className={classes.more}
           classes={{ root: classes.root, label: classes.label }}

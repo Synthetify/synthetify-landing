@@ -9,6 +9,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 22,
     color: colors.navy.veryLightGrey,
     lineHeight: '40px',
+    animation: 'close 2s linear',
+    overflow: 'ellipsis',
     [theme.breakpoints.down('sm')]: {
       fontSize: 18,
       lineHeight: '34px'
@@ -22,7 +24,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 'bold'
   },
   answer: {
-    fontWeight: 400
+    fontWeight: 400,
+    maxHeight: 60,
+    transition: 'max-height 2s',
+    overflow: 'hidden'
   },
   more: {
     color: colors.navy.button,
@@ -63,15 +68,26 @@ const useStyles = makeStyles((theme: Theme) => ({
   arrowUp: {
     transform: 'rotate(-135deg) translateX(-50%) translateY(0%)'
   },
-  fixedHeight: {
-    maxHeight: '36px',
-    overflow: 'hidden',
-    transition: '3s ease-out'
+  open: {
+    maxHeight: '100rem',
+    transition: 'max-height 3s linear',
+    animation: 'close 2s'
   },
-  autoHeight: {
-    maxHeight: 'auto',
-    overflow: 'auto',
-    transition: '3s ease-out'
+  '@keyframes open': {
+    '0%': {
+      lineClamp: 1
+    },
+    '100%': {
+      lineClamp: 'initial'
+    }
+  },
+  '@keyframes close': {
+    '0%': {
+      lineClamp: 'initial'
+    },
+    '100%': {
+      lineClamp: 1
+    }
   }
 }))
 
