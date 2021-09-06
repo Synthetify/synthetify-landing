@@ -22,56 +22,56 @@ export const Partners: React.FC = () => {
       <Typography className={classes.description}>{translate('home.ourInvestors.description')}</Typography>
       <Grid className={classes.logos}>
         <CardMedia
-          image={defi.src}
+          image={defi}
           component='img'
           className={classes.defi}
         />
 
         <CardMedia
-          image={alameda.src}
+          image={alameda}
           component='img'
           className={classes.alameda}
         />
 
         <CardMedia
-          image={cms.src}
+          image={cms}
           component='img'
           className={classes.cms}
         />
 
         <CardMedia
-          image={buidl.src}
+          image={buidl}
           component='img'
           className={classes.buidl}
         />
 
         <CardMedia
-          image={divergence.src}
+          image={divergence}
           component='img'
           className={classes.divergence}
         />
 
         <CardMedia
-          image={genblock.src}
+          image={genblock}
           component='img'
           className={classes.genblock}
         />
 
         <Grid container style={{ placeSelf: 'center', height: 'fit-content', width: 'fit-content' }} alignItems='center'>
           <CardMedia
-            image={solLogo.src}
+            image={solLogo}
             component='img'
             className={classes.solLogo}
           />
           <CardMedia
-            image={solText.src}
+            image={solText}
             component='img'
             className={classes.solText}
           />
         </Grid>
 
         <CardMedia
-          image={ei.src}
+          image={ei}
           component='img'
           className={classes.ei}
         />

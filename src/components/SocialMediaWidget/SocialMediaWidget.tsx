@@ -13,10 +13,10 @@ export const SocialMediaWidget: React.FC = () => {
   return (
     <Hidden smDown>
       <Grid className={classes.socials} container direction='column' wrap='nowrap' alignItems='center'>
-        <CardMedia className={classes.circle} image={github.src} onClick={() => window.open(links.socialMedia.github)} />
-        <CardMedia className={classes.circle} image={linkedin.src} onClick={() => window.open(links.socialMedia.linkedin)} />
-        <CardMedia className={classes.circle} image={twitter.src} onClick={() => window.open(links.socialMedia.twitter)} />
-        <CardMedia className={classes.circle} image={discord.src} onClick={() => window.open(links.socialMedia.discord)} />
+        <CardMedia className={classes.circle} image={github} onClick={() => window.open(links.socialMedia.github)} />
+        <CardMedia className={classes.circle} image={linkedin} onClick={() => window.open(links.socialMedia.linkedin)} />
+        <CardMedia className={classes.circle} image={twitter} onClick={() => window.open(links.socialMedia.twitter)} />
+        <CardMedia className={classes.circle} image={discord} onClick={() => window.open(links.socialMedia.discord)} />
       </Grid>
     </Hidden>
   )

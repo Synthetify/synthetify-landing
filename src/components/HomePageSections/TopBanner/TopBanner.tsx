@@ -28,11 +28,11 @@ export const TopBanner: React.FC = () => {
         <Grid container alignItems='center'>
           <Typography className={classes.builtOn}>{translate('home.banner.builtOn')}</Typography>
           <CardMedia
-            image={logo.src}
+            image={logo}
             className={classes.solLogo}
           />
           <CardMedia
-            image={text.src}
+            image={text}
             className={classes.solText}
           />
         </Grid>

@@ -44,10 +44,10 @@ export const Header: React.FC = () => {
     <>
       <Grid container className={classes.root} wrap='nowrap' alignItems='center' justifyContent="space-between">
         <Grid container item wrap='nowrap' alignItems='center'>
-          <CardMedia className={classes.snyLogo} image={snyIcon.src} />
+          <CardMedia className={classes.snyLogo} image={snyIcon} />
 
           <Hidden smDown>
-            <CardMedia className={classes.snyName} image={snyName.src}/>
+            <CardMedia className={classes.snyName} image={snyName}/>
           </Hidden>
 
           <Hidden mdUp>
