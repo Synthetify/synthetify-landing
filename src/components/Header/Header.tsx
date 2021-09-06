@@ -46,11 +46,11 @@ export const Header: React.FC = () => {
         <Grid container item wrap='nowrap' alignItems='center'>
           <CardMedia className={classes.snyLogo} image={snyIcon} />
 
-          <Hidden smDown>
+          <Hidden smDown implementation='css'>
             <CardMedia className={classes.snyName} image={snyName}/>
           </Hidden>
 
-          <Hidden mdUp>
+          <Hidden mdUp implementation='css'>
             <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginRight: 20 }} />
           </Hidden>
 
@@ -62,7 +62,7 @@ export const Header: React.FC = () => {
         </Grid>
 
         <Grid container item wrap='nowrap' alignItems='center' justifyContent="flex-end">
-          <Hidden smDown>
+          <Grid className={classes.hideOnSm}>
             <Link href='/' passHref>
               <a style={{ textDecoration: 'none' }}><Typography className={classes.route}>{translate('header.home')}</Typography></a>
             </Link>
@@ -90,7 +90,7 @@ export const Header: React.FC = () => {
               <Typography className={classNames(classes.route, classes.blocked)} style={{ marginRight: 8 }}>{translate('header.blog')}</Typography>
               <SoonMark className={classes.mark} />
             </Grid>
-          </Hidden>
+          </Grid>
 
           <Button
             className={classes.tradeLink}
@@ -100,7 +100,7 @@ export const Header: React.FC = () => {
             {translate('header.trade')}
           </Button>
 
-          <Hidden mdUp>
+          <Grid className={classes.hideOnMdUp}>
             <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginLeft: 20 }} />
             <IconButton
               className={classes.dehazeButton}
@@ -127,7 +127,7 @@ export const Header: React.FC = () => {
                 setCommunityModalOpen(true)
               }}
             />
-          </Hidden>
+          </Grid>
         </Grid>
       </Grid>
 

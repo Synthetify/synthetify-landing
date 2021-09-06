@@ -101,6 +101,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingBlock: 5,
     paddingInline: 6,
     fontSize: 11
+  },
+  hideOnMdUp: {
+    display: 'none',
+
+    [theme.breakpoints.down('sm')]: {
+      display: 'flex'
+    }
+  },
+  hideOnSm: {
+    display: 'flex',
+
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
   }
 }))
 

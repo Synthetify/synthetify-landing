@@ -170,6 +170,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   socials: {
+    [theme.breakpoints.up('md')]: {
+      display: 'none'
+    },
+
     [theme.breakpoints.down('xs')]: {
       minWidth: 211
     }
@@ -275,6 +279,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:hover $description': {
       color: colors.navy.info
+    }
+  },
+  hideOnSm: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
     }
   }
 }))

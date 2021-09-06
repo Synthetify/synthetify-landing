@@ -11,7 +11,7 @@ export const SocialMediaWidget: React.FC = () => {
   const classes = useStyles()
 
   return (
-    <Hidden smDown>
+    <Hidden smDown implementation='css'>
       <Grid className={classes.socials} container direction='column' wrap='nowrap' alignItems='center'>
         <CardMedia className={classes.circle} image={github} onClick={() => window.open(links.socialMedia.github)} />
         <CardMedia className={classes.circle} image={linkedin} onClick={() => window.open(links.socialMedia.linkedin)} />
