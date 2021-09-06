@@ -10,11 +10,12 @@ const FAQ: React.FC = () => {
   const translate = useTranslate()
   const questionsTab: string[] = translate('faq.questions').toString().split(',')
   const answersTab: string = translate('faq.answers')
-  const quesions: JSX.Element[] = questionsTab.map((item, index) => {
-    return <Grid key={index}
-      item className={classes.questionBlock}>
-      <Question key={index} question={item} answer={answersTab[index]} />
-    </Grid>
+  const questions: JSX.Element[] = questionsTab.map((item, index) => {
+    return (
+      <Grid key={index}
+        item className={classes.questionBlock}>
+        <Question key={index} question={item} answer={answersTab[index]} />
+      </Grid>)
   })
   return (
     <>
@@ -23,7 +24,7 @@ const FAQ: React.FC = () => {
         description={translate('brand.description')}
       />
       <Grid container direction='column' className={classes.container}>
-        {quesions}
+        {questions}
       </Grid>
     </>
   )
