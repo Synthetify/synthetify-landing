@@ -8,7 +8,7 @@ import useStyles from './style'
 const FAQ: React.FC = () => {
   const classes = useStyles()
   const translate = useTranslate()
-  const questionsTab: string[] = translate('faq.questions').toString().split('?,')
+  const questionsTab: string[] = translate('faq.questions').toString().split(',')
   const answersTab: string = translate('faq.answers')
   const quesions: JSX.Element[] = questionsTab.map((item, index) => {
     return <Grid key={index}
