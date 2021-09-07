@@ -50,7 +50,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               <Typography className={classes.name}>
                 {translate('header.discord')}
               </Typography>
-              <CardMedia className={classes.icon} image={discord.src} onClick={() => window.open(links.socialMedia.discord)} />
+              <CardMedia className={classes.icon} image={discord} onClick={() => window.open(links.socialMedia.discord)} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.discordDescription')}
@@ -72,7 +72,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               <Typography className={classes.name}>
                 {translate('header.twitter')}
               </Typography>
-              <CardMedia className={classes.icon} image={twitter.src} onClick={() => window.open(links.socialMedia.twitter)} />
+              <CardMedia className={classes.icon} image={twitter} onClick={() => window.open(links.socialMedia.twitter)} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.twitterDescription')}
@@ -94,7 +94,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               <Typography className={classes.name}>
                 {translate('header.telegram')}
               </Typography>
-              <CardMedia className={classes.icon} image={telegram.src} onClick={() => window.open(links.socialMedia.telegram)} />
+              <CardMedia className={classes.icon} image={telegram} onClick={() => window.open(links.socialMedia.telegram)} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.telegramDescription')}
@@ -116,7 +116,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               <Typography className={classes.name}>
                 {translate('header.github')}
               </Typography>
-              <CardMedia className={classes.icon} image={github.src} onClick={() => window.open(links.socialMedia.github)} />
+              <CardMedia className={classes.icon} image={github} onClick={() => window.open(links.socialMedia.github)} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.githubDescription')}

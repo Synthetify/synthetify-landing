@@ -110,7 +110,10 @@ export const Asset: React.FC<IAsset> = ({
               return (value / 1000000).toFixed(2)
             }}
           />
-          {price >= 10000 ? 'K' : price >= 1000000 ? 'M' : ''}
+          {price >= 10000
+            ? (price >= 1000000 ? 'M' : 'K')
+            : ''
+          }
         </Typography>
         <Grid className={classes.change}>
           <Typography className={classes.chg}>CHG</Typography>
