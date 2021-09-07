@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   defi: {
     placeSelf: 'center',
     maxWidth: 175,
-    backgroundSize: '175px 67px',
+    backgroundSize: '1920px 734px',
 
     [theme.breakpoints.down('md')]: {
       maxWidth: 162
@@ -94,7 +94,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   alameda: {
     placeSelf: 'center',
     maxWidth: 194,
-    backgroundSize: '194px 65px',
+    backgroundSize: '1920px 650px',
 
     [theme.breakpoints.down('md')]: {
       maxWidth: 178
@@ -111,7 +111,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   cms: {
     placeSelf: 'center',
     maxWidth: 161,
-    backgroundSize: '161px 62px',
+    backgroundSize: '1920px 730px',
 
     [theme.breakpoints.down('md')]: {
       maxWidth: 149
@@ -128,7 +128,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   buidl: {
     placeSelf: 'center',
     maxWidth: 173,
-    backgroundSize: '173px 53px',
+    backgroundSize: '1920px 587px',
 
     [theme.breakpoints.down('md')]: {
       maxWidth: 160
@@ -145,7 +145,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   divergence: {
     placeSelf: 'center',
     maxWidth: 177,
-    backgroundSize: '177px 53px',
+    backgroundSize: '1920px 565px',
 
     [theme.breakpoints.down('md')]: {
       maxWidth: 165
@@ -162,7 +162,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   genblock: {
     placeSelf: 'center',
     maxWidth: 145,
-    backgroundSize: '145px 75px',
+    backgroundSize: '1920px 1001.5197px',
 
     [theme.breakpoints.down('md')]: {
       maxWidth: 136
