@@ -3,8 +3,8 @@ import { Grid, IconButton, Divider, Hidden, Button, Typography, CardMedia } from
 import { Menu } from '@material-ui/icons'
 import MenuModal from '@components/Modals/MenuModal/MenuModal'
 import { blurContent, unblurContent } from '@utils/uiUtils'
-import snyIcon from '@static/svg/sny_green.svg'
-import snyName from '@static/svg/sny_name.svg'
+import snyShort from '@static/svg/brand/synthetify_logo_green.svg'
+import snyLong from '@static/svg/brand/synthetify_horizontal_logo_green.svg'
 import ChangeLanguageButton from './ChangeLanguageButton/ChangeLanguageButton'
 import Link from 'next/link'
 import links from '@static/constants/links'
@@ -13,9 +13,9 @@ import { Language } from '@static/translations'
 import AboutUsModal from '@components/Modals/AboutUsModal/AboutUsModal'
 import { useRouter } from 'next/router'
 import CommunityModal from '@components/Modals/CommunityModal/CommunityModal'
-import useStyles from './style'
 import classNames from 'classnames'
 import { SoonMark } from '@components/LinkMarks/LinkMarks'
+import useStyles from './style'
 
 export const Header: React.FC = () => {
   const classes = useStyles()
@@ -44,13 +44,11 @@ export const Header: React.FC = () => {
     <>
       <Grid container className={classes.root} wrap='nowrap' alignItems='center' justifyContent="space-between">
         <Grid container item wrap='nowrap' alignItems='center'>
-          <CardMedia className={classes.snyLogo} image={snyIcon.src} />
 
-          <Hidden smDown>
-            <CardMedia className={classes.snyName} image={snyName.src}/>
-          </Hidden>
+          <CardMedia className={classes.snyShort} image={snyShort} component='img' />
+          <CardMedia className={classes.snyLong} image={snyLong} component='img' />
 
-          <Hidden mdUp>
+          <Hidden mdUp implementation='css'>
             <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginRight: 20 }} />
           </Hidden>
 
@@ -62,7 +60,7 @@ export const Header: React.FC = () => {
         </Grid>
 
         <Grid container item wrap='nowrap' alignItems='center' justifyContent="flex-end">
-          <Hidden smDown>
+          <Grid className={classes.hideOnSm}>
             <Link href='/' passHref>
               <a style={{ textDecoration: 'none' }}><Typography className={classes.route}>{translate('header.home')}</Typography></a>
             </Link>
@@ -90,7 +88,7 @@ export const Header: React.FC = () => {
               <Typography className={classNames(classes.route, classes.blocked)} style={{ marginRight: 8 }}>{translate('header.blog')}</Typography>
               <SoonMark className={classes.mark} />
             </Grid>
-          </Hidden>
+          </Grid>
 
           <Button
             className={classes.tradeLink}
@@ -100,7 +98,7 @@ export const Header: React.FC = () => {
             {translate('header.trade')}
           </Button>
 
-          <Hidden mdUp>
+          <Grid className={classes.hideOnMdUp}>
             <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginLeft: 20 }} />
             <IconButton
               className={classes.dehazeButton}
@@ -127,7 +125,7 @@ export const Header: React.FC = () => {
                 setCommunityModalOpen(true)
               }}
             />
-          </Hidden>
+          </Grid>
         </Grid>
       </Grid>
 

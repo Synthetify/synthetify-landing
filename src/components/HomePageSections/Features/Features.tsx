@@ -22,7 +22,7 @@ export const Feature: React.FC = () => {
         <Grid className={classes.left}>
           <Grid container item className={classes.feature} direction='row' wrap='nowrap' alignItems='center'>
             <CardMedia
-              image={instant.src}
+              image={instant}
               className={classes.icon}
             />
             <Grid container item>
@@ -32,7 +32,7 @@ export const Feature: React.FC = () => {
           </Grid>
           <Grid container item className={classes.feature} direction='row' wrap='nowrap' alignItems='center'>
             <CardMedia
-              image={fair.src}
+              image={fair}
               className={classes.icon}
             />
             <Grid container item>
@@ -42,7 +42,7 @@ export const Feature: React.FC = () => {
           </Grid>
           <Grid container item className={classes.feature} direction='row' wrap='nowrap' alignItems='center'>
             <CardMedia
-              image={decentralized.src}
+              image={decentralized}
               className={classes.icon}
             />
             <Grid container item>
@@ -55,7 +55,7 @@ export const Feature: React.FC = () => {
         <Grid>
           <Grid container item className={classes.feature} direction='row' wrap='nowrap' alignItems='center'>
             <CardMedia
-              image={layerOne.src}
+              image={layerOne}
               className={classes.icon}
             />
             <Grid container item>
@@ -65,7 +65,7 @@ export const Feature: React.FC = () => {
           </Grid>
           <Grid container item className={classes.feature} direction='row' wrap='nowrap' alignItems='center'>
             <CardMedia
-              image={userFriendly.src}
+              image={userFriendly}
               className={classes.icon}
             />
             <Grid container item>
@@ -75,7 +75,7 @@ export const Feature: React.FC = () => {
           </Grid>
           <Grid container item className={classes.feature} direction='row' wrap='nowrap' alignItems='center'>
             <CardMedia
-              image={nonCustodial.src}
+              image={nonCustodial}
               className={classes.icon}
             />
             <Grid container item>
