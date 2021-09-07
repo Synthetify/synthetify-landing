@@ -112,56 +112,56 @@ export const ListedAssetsContainer: React.FC = () => {
       borderHue: 42,
       borderSaturation: 100,
       borderLuminosity: 52,
-      icon: <CardMedia image={BTC.src} className={classes.BTC} />,
+      icon: <CardMedia image={BTC} className={classes.BTC} />,
       name: translate('home.assets.BTC')
     },
     ETH: {
       borderHue: 228,
       borderSaturation: 45,
       borderLuminosity: 77,
-      icon: <CardMedia image={ETH.src} className={classes.ETH} />,
+      icon: <CardMedia image={ETH} className={classes.ETH} />,
       name: translate('home.assets.ETH')
     },
     LTC: {
       borderHue: 217,
       borderSaturation: 66,
       borderLuminosity: 57,
-      icon: <CardMedia image={LTC.src} className={classes.LTC} />,
+      icon: <CardMedia image={LTC} className={classes.LTC} />,
       name: translate('home.assets.LTC')
     },
     SOL: {
       borderHue: 284,
       borderSaturation: 89,
       borderLuminosity: 59,
-      icon: <CardMedia image={SOL.src} className={classes.SOL} />,
+      icon: <CardMedia image={SOL} className={classes.SOL} />,
       name: translate('home.assets.SOL')
     },
     FTT: {
       borderHue: 189,
       borderSaturation: 66,
       borderLuminosity: 62,
-      icon: <CardMedia image={FTT.src} className={classes.FTT} />,
+      icon: <CardMedia image={FTT} className={classes.FTT} />,
       name: translate('home.assets.FTT')
     },
     BNB: {
       borderHue: 43,
       borderSaturation: 89,
       borderLuminosity: 57,
-      icon: <CardMedia image={BNB.src} className={classes.BNB} />,
+      icon: <CardMedia image={BNB} className={classes.BNB} />,
       name: translate('home.assets.BNB')
     },
     SRM: {
       borderHue: 186,
       borderSaturation: 75,
       borderLuminosity: 67,
-      icon: <CardMedia image={SRM.src} className={classes.SRM} />,
+      icon: <CardMedia image={SRM} className={classes.SRM} />,
       name: translate('home.assets.SRM')
     },
     USD: {
       borderHue: 233,
       borderSaturation: 58,
       borderLuminosity: 85,
-      icon: <CardMedia image={USD.src} className={classes.USD} />,
+      icon: <CardMedia image={USD} className={classes.USD} />,
       name: translate('home.assets.USD')
     }
   }
