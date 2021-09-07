@@ -12,3 +12,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #0C0D2C;
 }
+html{
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
