@@ -101,8 +101,8 @@ export const Asset: React.FC<IAsset> = ({
             }}
           />
           {price >= 10000
-            ? 'K'
-            : (price >= 1000000 ? 'M' : '')
+            ? (price >= 1000000 ? 'M' : 'K')
+            : ''
           }
         </Typography>
         <Grid className={classes.change}>
