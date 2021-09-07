@@ -1,8 +1,7 @@
 import { CardMedia, Grid, Typography } from '@material-ui/core'
 import { useTranslate } from '@utils/translations'
 import React from 'react'
-import logo from '@static/svg/sol-logo.svg'
-import text from '@static/svg/sol-text.svg'
+import logo from '@static/svg/solana.svg'
 import useStyles from './style'
 
 export const TopBanner: React.FC = () => {
@@ -12,7 +11,7 @@ export const TopBanner: React.FC = () => {
   return (
     <Grid container className={classes.root}>
       <Grid item className={classes.photoWrapper}>
-        <CardMedia
+        {/* <CardMedia
           playsInline
           autoPlay
           muted
@@ -22,18 +21,20 @@ export const TopBanner: React.FC = () => {
           image='animation.mp4'
           className={classes.photo}
           component='video'
+        /> */}
+        <CardMedia
+          image='screen.png'
+          className={classes.photo}
+          component='img'
         />
       </Grid>
       <Grid item container className={classes.right} direction='column' justifyContent='center'>
         <Grid container alignItems='center'>
           <Typography className={classes.builtOn}>{translate('home.banner.builtOn')}</Typography>
           <CardMedia
-            image={logo.src}
-            className={classes.solLogo}
-          />
-          <CardMedia
-            image={text.src}
-            className={classes.solText}
+            image={logo}
+            className={classes.solanaLogo}
+            component='img'
           />
         </Grid>
         <Typography className={classes.title}>{translate('home.banner.header')}</Typography>
