@@ -175,8 +175,6 @@ export const ListedAssetsContainer: React.FC = () => {
       })
 
       setChanges(tmpChanges)
-
-      const timestamp = Date.now()
       Object.entries(binanceSymbols).forEach(([name, symbol]) => {
         binanceClient
           .candles({
@@ -189,7 +187,18 @@ export const ListedAssetsContainer: React.FC = () => {
               x: candle.closeTime,
               y: +candle.close
             }))
-            newData[23].x = timestamp // necessary because closeTime on last candle is greater than actual current timestamp
+            binanceClient
+              .dailyStats({ symbol })
+              .then(value => {
+                if (!Array.isArray(value)) {
+                  newData[0].x = value.openTime
+                  newData[0].y = +value.openPrice
+                  newData[23].x = value.closeTime
+                  newData[23].y = +value.lastPrice
+                }
+              })
+              .catch(() => {})
+
             tmpData[name as ListedAsset] = newData
           })
           .catch(() => {})
