@@ -61,12 +61,20 @@ const useStyles = makeStyles((theme: Theme) => ({
   snyShort: {
     backgroundSize: '1920px 1482px',
     maxWidth: 33,
-    marginInline: 16
+    marginInline: 16,
+
+    [theme.breakpoints.up('md')]: {
+      display: 'none'
+    }
   },
   snyLong: {
     backgroundSize: '1920px 276px',
     maxWidth: 222,
-    marginRight: 25
+    marginRight: 25,
+
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
   },
   dehazeButton: {
     borderRadius: 10,

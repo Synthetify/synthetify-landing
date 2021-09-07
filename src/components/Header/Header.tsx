@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Grid, IconButton, Divider, Hidden, Button, Typography, CardMedia, useMediaQuery } from '@material-ui/core'
+import { Grid, IconButton, Divider, Hidden, Button, Typography, CardMedia } from '@material-ui/core'
 import { Menu } from '@material-ui/icons'
 import MenuModal from '@components/Modals/MenuModal/MenuModal'
 import { blurContent, unblurContent } from '@utils/uiUtils'
@@ -15,14 +15,12 @@ import { useRouter } from 'next/router'
 import CommunityModal from '@components/Modals/CommunityModal/CommunityModal'
 import classNames from 'classnames'
 import { SoonMark } from '@components/LinkMarks/LinkMarks'
-import theme from '@static/theme'
 import useStyles from './style'
 
 export const Header: React.FC = () => {
   const classes = useStyles()
   const translate = useTranslate()
   const router = useRouter()
-  const isSmDown = useMediaQuery(theme.breakpoints.down('sm'))
 
   const { setLanguage, language } = useContext(LanguageContext)
 
@@ -47,11 +45,8 @@ export const Header: React.FC = () => {
       <Grid container className={classes.root} wrap='nowrap' alignItems='center' justifyContent="space-between">
         <Grid container item wrap='nowrap' alignItems='center'>
 
-          {
-            isSmDown
-              ? <CardMedia className={classes.snyShort} image={snyShort} component='img' />
-              : <CardMedia className={classes.snyLong} image={snyLong} component='img' />
-          }
+          <CardMedia className={classes.snyShort} image={snyShort} component='img' />
+          <CardMedia className={classes.snyLong} image={snyLong} component='img' />
 
           <Hidden mdUp implementation='css'>
             <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginRight: 20 }} />

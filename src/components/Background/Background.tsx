@@ -15,7 +15,7 @@ export const Background: React.FC = () => {
       preload='auto'
       className={classes.video}
     >
-      <source src='background.mp4' type="video/mp4" />
+      <source src='/background.mp4' type="video/mp4" />
     </video>
   )
 }
