@@ -1,8 +1,7 @@
 import { CardMedia, Grid, Typography } from '@material-ui/core'
 import { useTranslate } from '@utils/translations'
 import React from 'react'
-import logo from '@static/svg/sol-logo.svg'
-import text from '@static/svg/sol-text.svg'
+import logo from '@static/svg/solana.svg'
 import useStyles from './style'
 
 export const TopBanner: React.FC = () => {
@@ -29,11 +28,7 @@ export const TopBanner: React.FC = () => {
           <Typography className={classes.builtOn}>{translate('home.banner.builtOn')}</Typography>
           <CardMedia
             image={logo}
-            className={classes.solLogo}
-          />
-          <CardMedia
-            image={text}
-            className={classes.solText}
+            className={classes.solanaLogo}
           />
         </Grid>
         <Typography className={classes.title}>{translate('home.banner.header')}</Typography>

@@ -1,8 +1,7 @@
 import React from 'react'
 import { CardMedia, Divider, Grid, Typography } from '@material-ui/core'
 import { useTranslate } from '@utils/translations'
-import snyIcon from '@static/svg/sny_white.svg'
-import snyName from '@static/svg/sny_name.svg'
+import snyLogo from '@static/svg/brand/synthetify_horizontal_logo_white.svg'
 import linkedin from '@static/svg/linkedin-circle.svg'
 import github from '@static/svg/github-circle.svg'
 import discord from '@static/svg/discord-circle.svg'
@@ -81,10 +80,7 @@ export const Footer: React.FC = () => {
     <>
       <Divider className={classes.divider} />
       <Grid container className={classes.logos} wrap='nowrap' alignItems='center' justifyContent="space-between">
-        <Grid className={classes.logo} container item wrap='nowrap' alignItems='center'>
-          <CardMedia className={classes.snyLogo} image={snyIcon} />
-          <CardMedia className={classes.snyName} image={snyName}/>
-        </Grid>
+        <CardMedia className={classes.snyLogo} image={snyLogo} component='img' />
         <Grid className={classes.socials} container item wrap='nowrap' alignItems='center' justifyContent="flex-end">
           <CardMedia className={classes.circle} image={github} onClick={() => window.open(links.socialMedia.github)} />
           <CardMedia className={classes.circle} image={linkedin} onClick={() => window.open(links.socialMedia.linkedin)} />

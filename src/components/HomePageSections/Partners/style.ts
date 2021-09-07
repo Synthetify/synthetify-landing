@@ -176,40 +176,21 @@ const useStyles = makeStyles((theme: Theme) => ({
       maxWidth: 87
     }
   },
-  solLogo: {
-    maxWidth: 32,
-    marginRight: 12,
-    backgroundSize: '32px 32px',
+  solana: {
+    placeSelf: 'center',
+    maxWidth: 194,
+    backgroundSize: '1920px 259px',
 
     [theme.breakpoints.down('md')]: {
-      maxWidth: 29.3,
-      marginRight: 11
+      maxWidth: 178
     },
 
     [theme.breakpoints.down('sm')]: {
-      maxWidth: 25.27,
-      marginRight: 9
+      maxWidth: 156
     },
 
     [theme.breakpoints.down('xs')]: {
-      maxWidth: 18.58,
-      marginRight: 7
-    }
-  },
-  solText: {
-    maxWidth: 138,
-    backgroundSize: '138px 17px',
-
-    [theme.breakpoints.down('md')]: {
-      maxWidth: 126.36
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: 109
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      maxWidth: 80
+      maxWidth: 113
     }
   },
   ei: {

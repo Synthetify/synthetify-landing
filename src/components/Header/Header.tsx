@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import { Grid, IconButton, Divider, Hidden, Button, Typography, CardMedia } from '@material-ui/core'
+import { Grid, IconButton, Divider, Hidden, Button, Typography, CardMedia, useMediaQuery } from '@material-ui/core'
 import { Menu } from '@material-ui/icons'
 import MenuModal from '@components/Modals/MenuModal/MenuModal'
 import { blurContent, unblurContent } from '@utils/uiUtils'
-import snyIcon from '@static/svg/sny_green.svg'
-import snyName from '@static/svg/sny_name.svg'
+import snyShort from '@static/svg/brand/synthetify_logo_green.svg'
+import snyLong from '@static/svg/brand/synthetify_horizontal_logo_green.svg'
 import ChangeLanguageButton from './ChangeLanguageButton/ChangeLanguageButton'
 import Link from 'next/link'
 import links from '@static/constants/links'
@@ -13,14 +13,16 @@ import { Language } from '@static/translations'
 import AboutUsModal from '@components/Modals/AboutUsModal/AboutUsModal'
 import { useRouter } from 'next/router'
 import CommunityModal from '@components/Modals/CommunityModal/CommunityModal'
-import useStyles from './style'
 import classNames from 'classnames'
 import { SoonMark } from '@components/LinkMarks/LinkMarks'
+import theme from '@static/theme'
+import useStyles from './style'
 
 export const Header: React.FC = () => {
   const classes = useStyles()
   const translate = useTranslate()
   const router = useRouter()
+  const isSmDown = useMediaQuery(theme.breakpoints.down('sm'))
 
   const { setLanguage, language } = useContext(LanguageContext)
 
@@ -44,11 +46,12 @@ export const Header: React.FC = () => {
     <>
       <Grid container className={classes.root} wrap='nowrap' alignItems='center' justifyContent="space-between">
         <Grid container item wrap='nowrap' alignItems='center'>
-          <CardMedia className={classes.snyLogo} image={snyIcon} />
 
-          <Hidden smDown implementation='css'>
-            <CardMedia className={classes.snyName} image={snyName}/>
-          </Hidden>
+          {
+            isSmDown
+              ? <CardMedia className={classes.snyShort} image={snyShort} component='img' />
+              : <CardMedia className={classes.snyLong} image={snyLong} component='img' />
+          }
 
           <Hidden mdUp implementation='css'>
             <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginRight: 20 }} />

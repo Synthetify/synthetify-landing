@@ -7,8 +7,7 @@ import cms from '@static/svg/partners/cms.svg'
 import buidl from '@static/svg/partners/buidl.svg'
 import divergence from '@static/svg/partners/divergence.svg'
 import genblock from '@static/svg/partners/genblock.svg'
-import solLogo from '@static/svg/partners/solana-logo.svg'
-import solText from '@static/svg/partners/solana-text.svg'
+import solana from '@static/svg/partners/solana.svg'
 import ei from '@static/svg/partners/ei.svg'
 import useStyles from './style'
 
@@ -57,18 +56,11 @@ export const Partners: React.FC = () => {
           className={classes.genblock}
         />
 
-        <Grid container style={{ placeSelf: 'center', height: 'fit-content', width: 'fit-content' }} alignItems='center'>
-          <CardMedia
-            image={solLogo}
-            component='img'
-            className={classes.solLogo}
-          />
-          <CardMedia
-            image={solText}
-            component='img'
-            className={classes.solText}
-          />
-        </Grid>
+        <CardMedia
+          image={solana}
+          component='img'
+          className={classes.solana}
+        />
 
         <CardMedia
           image={ei}

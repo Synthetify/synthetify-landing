@@ -58,21 +58,14 @@ const useStyles = makeStyles((theme: Theme) => ({
       color: colors.navy.veryLightGrey
     }
   },
-  snyLogo: {
-    width: 43,
-    height: 33,
-    marginRight: 16,
-    marginLeft: 0,
-
-    [theme.breakpoints.down('sm')]: {
-      height: 28,
-      width: 33,
-      marginLeft: 16
-    }
+  snyShort: {
+    backgroundSize: '1920px 1482px',
+    maxWidth: 33,
+    marginInline: 16
   },
-  snyName: {
-    width: 162,
-    height: 28,
+  snyLong: {
+    backgroundSize: '1920px 276px',
+    maxWidth: 222,
     marginRight: 25
   },
   dehazeButton: {

@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingInline: 45,
 
     [theme.breakpoints.down('md')]: {
-      height: 76,
+      height: 108,
       paddingInline: 22
     },
 
@@ -125,34 +125,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   snyLogo: {
-    minWidth: 73,
-    minHeight: 55,
-    marginRight: 27,
-
-    [theme.breakpoints.down('md')]: {
-      minHeight: 28,
-      minWidth: 37,
-      marginRight: 14
-    },
+    backgroundSize: '1920px 276px',
+    maxWidth: 420,
 
     [theme.breakpoints.down('sm')]: {
-      minHeight: 18,
-      minWidth: 24,
-      marginRight: 9
-    }
-  },
-  snyName: {
-    width: 273,
-    height: 47,
-
-    [theme.breakpoints.down('md')]: {
-      height: 23,
-      width: 137
+      maxWidth: 207
     },
 
-    [theme.breakpoints.down('sm')]: {
-      height: 15,
-      width: 89
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: 140
     }
   },
   circle: {
@@ -162,11 +143,12 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:not(:first-child)': {
       marginLeft: 25
-    }
-  },
-  logo: {
+    },
+
     [theme.breakpoints.down('xs')]: {
-      maxWidth: 136
+      '&:not(:first-child)': {
+        marginLeft: 16
+      }
     }
   },
   socials: {
@@ -175,7 +157,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('xs')]: {
-      minWidth: 211
+      minWidth: 168
     }
   },
   blocked: {
