@@ -118,24 +118,14 @@ const useStyles = makeStyles((theme: Theme) => ({
       fontSize: 13
     }
   },
-  solLogo: {
-    width: 21,
-    height: 21,
-    marginInline: 8,
+  solanaLogo: {
+    backgroundSize: '1920px 259px',
+    marginLeft: 8,
+    maxWidth: 121,
 
     [theme.breakpoints.down('sm')]: {
-      width: 14,
-      height: 14,
-      marginInline: 5
-    }
-  },
-  solText: {
-    width: 91.95,
-    height: 11.81,
-
-    [theme.breakpoints.down('sm')]: {
-      width: 62.28,
-      height: 8
+      maxWidth: 82,
+      marginLeft: 5
     }
   },
   photoWrapper: {
