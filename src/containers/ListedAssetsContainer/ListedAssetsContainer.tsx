@@ -54,6 +54,7 @@ export const ListedAssetsContainer: React.FC = () => {
       { x: firstTimestamp + 1, y: 1 }
     ]
   })
+
   const [prices, setPrices] = useState<{ [key in ListedAsset]: number }>({
     BTC: 0,
     ETH: 0,
@@ -125,6 +126,40 @@ export const ListedAssetsContainer: React.FC = () => {
         SRM: 0,
         USD: 0
       }
+      const tmpData: { [key in ListedAsset]: Array<{ x: number, y: number }> } = {
+        BTC: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        ETH: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        LTC: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        SOL: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        FTT: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        BNB: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        SRM: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        USD: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ]
+      }
 
       Object.entries(binanceSymbols).forEach(([name, symbol]) => {
         binanceClient
@@ -155,14 +190,15 @@ export const ListedAssetsContainer: React.FC = () => {
               y: +candle.close
             }))
             newData[23].x = timestamp // necessary because closeTime on last candle is greater than actual current timestamp
-            data[name as ListedAsset] = newData
+            tmpData[name as ListedAsset] = newData
           })
           .catch(() => {})
       })
+      setData(tmpData)
     }
 
     connectEvents()
-  }, [data])
+  }, [])
 
   const assetConsts = {
     BTC: {

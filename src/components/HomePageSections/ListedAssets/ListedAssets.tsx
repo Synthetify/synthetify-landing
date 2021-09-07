@@ -15,7 +15,6 @@ export interface IListedAssets {
 export const ListedAssets: React.FC<IListedAssets> = ({ prices, changes, assetConsts, data }) => {
   const classes = useStyles()
   const translate = useTranslate()
-  console.log(data)
   return (
     <Grid container className={classes.root} direction='column'>
       <Typography className={classes.title}>{translate('home.supportedAssets')}</Typography>
