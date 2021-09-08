@@ -8,8 +8,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     backgroundColor: '#ff00f0',
     borderRadius: 20,
     display: 'flex',
-    overflow: 'hidden',
-    marginBottom: 88,
+    overflow:'hidden',
+    margin: '0px 0px 88px 0px',
   },
   infoBar: {
     alignSelf: 'flex-end',
@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     backgroundColor: '#1D1D49',
     color: colors.navy.veryLightGrey,
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    alignSelf:'flex-end'
   },
   title: {
     fontSize: 22,
@@ -26,8 +27,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 600,
     lineHeight: '25px',
     margin: 7,
-    width:375,
-    height:'calc(100% - 7px)'
+    width: 375,
+    height: 'calc(100% - 7px)'
   },
   date: {
     fontSize: 13,
@@ -37,16 +38,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     margin: '0 16px 5px 0',
     width: 90
   },
-  desc: {
-    position: 'absolute',
-    top: 300,
-    fontSize: 13,
-    fontWeight: 400,
-    width: 478,
-    marginLeft:4.5,
-    lineHeight: '15.73px',
-    //color: '#F9F9FBC2'
-}
 }))
 
 export default useStyles

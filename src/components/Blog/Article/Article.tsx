@@ -17,7 +17,6 @@ export const Article: React.FC<DataForArticles> = ({title, date, desc}) => {
         <Typography className={classes.title}>{title}</Typography>
         <Typography className={classes.date}>{date}</Typography>
       </Grid>
-      <Typography className={classes.desc}>{desc}</Typography>
     </Grid>
   )
 }

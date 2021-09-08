@@ -9,23 +9,24 @@ const data = [
   {
     title: 'title1',
     date: 'wczoraj',
-    desc: 'super opis!!!!'
+    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo sunt obcaecati'
   },
   {
-    title: 'title12',
-    date: 'wczoraj123',
-    desc: 'super opis123123!!!!'
+    title: 'title1',
+    date: 'wczoraj',
+    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, modi.'
   },
   {
-    title: 'title14124',
-    date: 'wczorajasdasd',
-    desc: 'super opis!!!sadafsaf!'
+    title: 'title1',
+    date: 'wczoraj',
+    desc: 'desc3'
   },
   {
-    title: 'title14124',
-    date: 'wczorajasdasd',
-    desc: 'super opis!!!sadafsaf!'
+    title: 'title1',
+    date: 'wczoraj',
+    desc: 'desc4'
   }
+
 ]
 
 export const Blog: React.FC = () => {
@@ -40,7 +41,10 @@ export const Blog: React.FC = () => {
       </Grid>
       <Grid className={classes.articlesWrapper}>
         {data.map((article) => (
-          <Article key="article.title" title={article.title} date={article.date} desc={article.desc}/>
+          <div>
+            <Article key="article.title" title={article.title} date={article.date} desc={article.desc}/>
+            <Typography className={classes.desc}>{article.desc}</Typography>
+          </div>
         )
         )}
       </Grid>
