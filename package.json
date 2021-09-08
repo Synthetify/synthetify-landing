@@ -13,6 +13,8 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
+    "@nivo/core": "^0.73.0",
+    "@nivo/line": "^0.73.0",
     "@mdx-js/react": "^1.6.22",
     "@pythnetwork/client": "^2.2.0",
     "@solana/web3.js": "^1.22.0",
