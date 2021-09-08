@@ -68,6 +68,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     minWidth: 72,
     height: 72,
     marginRight: 45,
+    borderRadius: 10,
 
     [theme.breakpoints.down('lg')]: {
       marginRight: 34
@@ -82,7 +83,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('sm')]: {
       minWidth: 40,
       height: 40,
-      marginRight: 10
+      marginRight: 10,
+      borderRadius: 7
     },
 
     [theme.breakpoints.down('xs')]: {

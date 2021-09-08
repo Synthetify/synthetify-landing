@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   simpleLogo: {
-    backgroundSize: '176px 136px',
+    backgroundSize: '1920px 1482px',
     maxWidth: 176,
 
     [theme.breakpoints.down('md')]: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   verticalLogo: {
-    backgroundSize: '196px 196px',
+    backgroundSize: '1920px 1579px',
     maxWidth: 196,
 
     [theme.breakpoints.down('md')]: {
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   horizontalLogo: {
-    backgroundSize: '420px 60px',
+    backgroundSize: '1920px 276px',
     maxWidth: 420,
 
     [theme.breakpoints.down('md')]: {

@@ -58,22 +58,23 @@ const useStyles = makeStyles((theme: Theme) => ({
       color: colors.navy.veryLightGrey
     }
   },
-  snyLogo: {
-    width: 43,
-    height: 33,
-    marginRight: 16,
-    marginLeft: 0,
+  snyShort: {
+    backgroundSize: '1920px 1482px',
+    maxWidth: 33,
+    marginInline: 16,
 
-    [theme.breakpoints.down('sm')]: {
-      height: 28,
-      width: 33,
-      marginLeft: 16
+    [theme.breakpoints.up('md')]: {
+      display: 'none'
     }
   },
-  snyName: {
-    width: 162,
-    height: 28,
-    marginRight: 25
+  snyLong: {
+    backgroundSize: '1920px 276px',
+    maxWidth: 222,
+    marginRight: 25,
+
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
   },
   dehazeButton: {
     borderRadius: 10,
@@ -101,6 +102,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingBlock: 5,
     paddingInline: 6,
     fontSize: 11
+  },
+  hideOnMdUp: {
+    display: 'none',
+
+    [theme.breakpoints.down('sm')]: {
+      display: 'flex'
+    }
+  },
+  hideOnSm: {
+    display: 'flex',
+
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
   }
 }))
 

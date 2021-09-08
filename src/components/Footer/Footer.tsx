@@ -1,8 +1,7 @@
 import React from 'react'
-import { CardMedia, Divider, Grid, Hidden, Typography } from '@material-ui/core'
+import { CardMedia, Divider, Grid, Typography } from '@material-ui/core'
 import { useTranslate } from '@utils/translations'
-import snyIcon from '@static/svg/sny_white.svg'
-import snyName from '@static/svg/sny_name.svg'
+import snyLogo from '@static/svg/brand/synthetify_horizontal_logo_white.svg'
 import linkedin from '@static/svg/linkedin-circle.svg'
 import github from '@static/svg/github-circle.svg'
 import discord from '@static/svg/discord-circle.svg'
@@ -24,8 +23,8 @@ export const InsideLink: React.FC<ILinkProps> = ({ href, name, description, isNe
   const classes = useStyles()
 
   return (
-    <a className={classes.a}>
-      <Link href={href} passHref>
+    <Link href={href} passHref>
+      <a className={classes.a}>
         <Grid className={classes.linkWrapper}>
           {
             isNew
@@ -41,8 +40,8 @@ export const InsideLink: React.FC<ILinkProps> = ({ href, name, description, isNe
           }
           <Typography className={classes.description}>{description}</Typography>
         </Grid>
-      </Link>
-    </a>
+      </a>
+    </Link>
   )
 }
 
@@ -81,27 +80,20 @@ export const Footer: React.FC = () => {
     <>
       <Divider className={classes.divider} />
       <Grid container className={classes.logos} wrap='nowrap' alignItems='center' justifyContent="space-between">
-        <Grid className={classes.logo} container item wrap='nowrap' alignItems='center'>
-          <CardMedia className={classes.snyLogo} image={snyIcon.src} />
-          <CardMedia className={classes.snyName} image={snyName.src}/>
+        <CardMedia className={classes.snyLogo} image={snyLogo} component='img' />
+        <Grid className={classes.socials} container item wrap='nowrap' alignItems='center' justifyContent="flex-end">
+          <CardMedia className={classes.circle} image={github} onClick={() => window.open(links.socialMedia.github)} />
+          <CardMedia className={classes.circle} image={linkedin} onClick={() => window.open(links.socialMedia.linkedin)} />
+          <CardMedia className={classes.circle} image={twitter} onClick={() => window.open(links.socialMedia.twitter)} />
+          <CardMedia className={classes.circle} image={discord} onClick={() => window.open(links.socialMedia.discord)} />
         </Grid>
-        <Hidden mdUp>
-          <Grid className={classes.socials} container item wrap='nowrap' alignItems='center' justifyContent="flex-end">
-            <CardMedia className={classes.circle} image={github.src} onClick={() => window.open(links.socialMedia.github)} />
-            <CardMedia className={classes.circle} image={linkedin.src} onClick={() => window.open(links.socialMedia.linkedin)} />
-            <CardMedia className={classes.circle} image={twitter.src} onClick={() => window.open(links.socialMedia.twitter)} />
-            <CardMedia className={classes.circle} image={discord.src} onClick={() => window.open(links.socialMedia.discord)} />
-          </Grid>
-        </Hidden>
       </Grid>
       <Grid container className={classes.routes} wrap='nowrap' justifyContent="space-between">
-        <Hidden smDown>
-          <Grid container item className={classes.column} direction='column'>
-            <Link href='/' passHref>
-              <a className={classes.a}><Typography className={classes.columnHeader} style={{ cursor: 'pointer' }}>{translate('header.home')}</Typography></a>
-            </Link>
-          </Grid>
-        </Hidden>
+        <Grid container item className={classNames(classes.column, classes.hideOnSm)} direction='column'>
+          <Link href='/' passHref>
+            <a className={classes.a}><Typography className={classes.columnHeader} style={{ cursor: 'pointer' }}>{translate('header.home')}</Typography></a>
+          </Link>
+        </Grid>
 
         <Grid container item className={classes.column} direction='column'>
           <Typography className={classes.columnHeader}>{translate('header.aboutUs')}</Typography>
@@ -146,14 +138,12 @@ export const Footer: React.FC = () => {
           />
         </Grid>
 
-        <Hidden smDown>
-          <Grid container item className={classes.column} direction='column'>
-            <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
-              <Typography className={classNames(classes.columnHeader, classes.blocked)}>{translate('header.blog')}</Typography>
-              <SoonMark className={classes.mark} />
-            </Grid>
+        <Grid container item className={classNames(classes.column, classes.hideOnSm)} direction='column'>
+          <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
+            <Typography className={classNames(classes.columnHeader, classes.blocked)}>{translate('header.blog')}</Typography>
+            <SoonMark className={classes.mark} />
           </Grid>
-        </Hidden>
+        </Grid>
 
         <Grid container item className={classes.column} direction='column'>
           <Typography className={classes.columnHeader}>{translate('header.trade')}</Typography>

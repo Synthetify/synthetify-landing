@@ -19,7 +19,7 @@ export const LogoTile: React.FC<IPageHeader> = ({ label, logo, className, filePa
       <Grid container alignItems='center'>
         <Typography className={classes.logoLabel}>{label}</Typography>
         <a href={filePath} download>
-          <CardMedia src={download.src} className={classes.downloadIcon} component='img' />
+          <CardMedia src={download} className={classes.downloadIcon} component='img' />
         </a>
       </Grid>
       <Grid container justifyContent='center' alignItems='center' className={classes.imgWrapper}>{logo}</Grid>
