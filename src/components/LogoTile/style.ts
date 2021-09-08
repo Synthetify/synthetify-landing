@@ -11,6 +11,16 @@ const useStyles = makeStyles((theme: Theme) => ({
     border: `1px solid ${colors.navy.grey}`,
     background: 'rgba(30, 30, 67, 0.3)',
     backdropFilter: 'blur(4px)',
+    position: 'relative',
+
+    [theme.breakpoints.up('lg')]: {
+      transition: 'transform 300ms linear, border-color 300ms linear',
+
+      '&:hover': {
+        transform: 'scale(1.05) translateY(-7px)',
+        borderColor: colors.navy.lightGrey
+      }
+    },
 
     [theme.breakpoints.down('md')]: {
       padding: 13,
@@ -42,17 +52,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     position: 'absolute',
     top: 16,
     right: 16,
-
-    [theme.breakpoints.up('lg')]: {
-      transition: 'width 300ms, height 300ms, top 300ms, right 300ms',
-
-      '&:hover': {
-        width: 50,
-        height: 50,
-        top: 13.5,
-        right: 13.5
-      }
-    },
+    cursor: 'pointer',
 
     [theme.breakpoints.down('md')]: {
       width: 40,
