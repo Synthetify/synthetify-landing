@@ -102,8 +102,7 @@ export const Footer: React.FC = () => {
             name={translate('header.whitepaper')}
             description={translate('header.whitepaperDescription')}
           />
-          <InsideLink
-            href='/FAQ'
+          <SoonLink
             name={translate('header.faq')}
             description={translate('header.faqDescription')}
           />

@@ -27,7 +27,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 400,
     maxHeight: 60,
     transition: 'max-height 2s',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    [theme.breakpoints.down('sm')]: {
+      maxHeight: 50
+    }
   },
   more: {
     color: colors.navy.button,
