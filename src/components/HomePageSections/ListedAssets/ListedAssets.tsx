@@ -9,12 +9,12 @@ export interface IListedAssets {
   prices: {[key in ListedAsset]: number}
   changes: {[key in ListedAsset]: number}
   assetConsts: {[key in ListedAsset]: Pick<IAsset, 'icon' | 'borderHue' | 'borderSaturation' | 'borderLuminosity' | 'name'>}
+  data: {[key in ListedAsset]: Array<{x: number, y: number}>}
 }
 
-export const ListedAssets: React.FC<IListedAssets> = ({ prices, changes, assetConsts }) => {
+export const ListedAssets: React.FC<IListedAssets> = ({ prices, changes, assetConsts, data }) => {
   const classes = useStyles()
   const translate = useTranslate()
-
   return (
     <Grid container className={classes.root} direction='column'>
       <Typography className={classes.title}>{translate('home.supportedAssets')}</Typography>
@@ -27,8 +27,10 @@ export const ListedAssets: React.FC<IListedAssets> = ({ prices, changes, assetCo
             price={price}
             change={changes[symbol as ListedAsset]}
             {...assetConsts[symbol as ListedAsset]}
+            data= {data[symbol as ListedAsset]}
           />
-        ))}
+        ))
+        }
       </Grid>
     </Grid>
   )
