@@ -24,6 +24,7 @@ const dictionary = {
   'footer.stakingDescription': 'Stake your tokens',
   'footer.statsDescription': 'Check your statistics',
   'footer.exchangeDescription': 'Exchange your assets',
+  'footer.privacyPolicy': 'Privacy Policy',
   'home.banner.builtOn': 'Built on',
   'home.banner.header': 'Decentralized synthetic assets exchange',
   'home.banner.intro': 'Buy, trade and make money.',
