@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { CardMedia } from '@material-ui/core'
 import { ListedAsset, assetsAccounts } from '@static/constants/assets'
-import Binance, { CandleChartInterval } from 'binance-api-node'
+import Binance, { CandleChartInterval, DailyStatsResult } from 'binance-api-node'
 import { parsePriceData } from '@pythnetwork/client'
 import BNB from '@static/svg/assets/BNB.svg'
 import BTC from '@static/svg/assets/BTC.svg'
@@ -162,50 +162,37 @@ export const ListedAssetsContainer: React.FC = () => {
       }
 
       Object.entries(binanceSymbols).forEach(([name, symbol]) => {
-        binanceClient
-          .dailyStats({ symbol })
-          .then(value => {
-            if (!Array.isArray(value)) {
-              tmpChanges[name as ListedAsset] = +value.priceChangePercent
-            }
-          })
-          .catch(() => {
-            tmpChanges[name as ListedAsset] = 0
-          })
-      })
-
-      setChanges(tmpChanges)
-      Object.entries(binanceSymbols).forEach(([name, symbol]) => {
+        let newData: Array<{ x: number, y: number }>
         binanceClient
           .candles({
             symbol: symbol,
             interval: CandleChartInterval.ONE_HOUR,
             limit: 24
           })
-          .then(candles => {
-            const newData = candles.map(candle => ({
+          .then(async (candles) => {
+            newData = candles.map(candle => ({
               x: candle.closeTime,
               y: +candle.close
             }))
-            binanceClient
-              .dailyStats({ symbol })
-              .then(value => {
-                if (!Array.isArray(value)) {
-                  newData[0].x = value.openTime
-                  newData[0].y = +value.openPrice
-                  newData[23].x = value.closeTime
-                  newData[23].y = +value.lastPrice
-                }
-              })
-              .catch(() => {})
 
             tmpData[name as ListedAsset] = newData
+
+            return binanceClient.dailyStats({ symbol })
+          }, () => {})
+          .then(value => {
+            tmpChanges[name as ListedAsset] = +(value as DailyStatsResult).priceChangePercent
+            newData[0].x = (value as DailyStatsResult).openTime
+            newData[0].y = +(value as DailyStatsResult).openPrice
+            newData[23].x = (value as DailyStatsResult).closeTime
+            newData[23].y = +(value as DailyStatsResult).lastPrice
+          }, () => {
+            tmpChanges[name as ListedAsset] = 0
           })
-          .catch(() => {})
       })
+
+      setChanges(tmpChanges)
       setData(tmpData)
     }
-
     connectEvents()
   }, [])
 
