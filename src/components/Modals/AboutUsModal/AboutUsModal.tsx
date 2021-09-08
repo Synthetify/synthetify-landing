@@ -53,6 +53,25 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
             </Typography>
           </Grid>
         </a>
+
+        <Grid
+          item
+          className={classNames(classes.listItem, classes.blocked, (current === '/faq' ? classes.current : undefined))}
+          onClick={() => {
+            handleClose()
+          }}
+        >
+          <Grid className={classes.linkWithMarkWrapper}>
+            <Typography className={classes.name}>
+              {translate('header.faq')}
+            </Typography>
+            <SoonMark className={classes.mark} />
+          </Grid>
+          <Typography className={classes.description}>
+            {translate('header.faqDescription')}
+          </Typography>
+        </Grid>
+
         <Link href='/brand' passHref>
           <a style={{ textDecoration: 'none' }}>
             <Grid
@@ -74,23 +93,6 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
             </Grid>
           </a>
         </Link>
-        <Grid
-          item
-          className={classNames(classes.listItem, classes.blocked, (current === '/faq' ? classes.current : undefined))}
-          onClick={() => {
-            handleClose()
-          }}
-        >
-          <Grid className={classes.linkWithMarkWrapper}>
-            <Typography className={classes.name}>
-              {translate('header.faq')}
-            </Typography>
-            <SoonMark className={classes.mark} />
-          </Grid>
-          <Typography className={classes.description}>
-            {translate('header.faqDescription')}
-          </Typography>
-        </Grid>
       </Grid>
     </Popover>
   )
