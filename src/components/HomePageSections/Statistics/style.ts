@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   fieldName: {
     fontSize: 16,
     lineHeight: '20px',
-    color: colors.navy.grey,
+    color: colors.navy.info,
 
     [theme.breakpoints.down('lg')]: {
       lineHeight: '17px'
