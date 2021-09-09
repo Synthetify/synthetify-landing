@@ -10,8 +10,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     overflow: 'hidden',
     justifyContent: 'center',
-    alignItems: 'center',
-    paddingTop: '591.44px / 1127.34px * 100%',
+    alignItems: 'center', 
     [theme.breakpoints.down('sm')]: {
       width: 412
     },

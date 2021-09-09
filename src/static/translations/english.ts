@@ -1,4 +1,6 @@
 const dictionary = {
+  'blog.title': 'Blog',
+  'blog.subtitle': 'Follow the latest news and updates',
   'header.home': 'Home',
   'header.aboutUs': 'About us',
   'header.community': 'Community',

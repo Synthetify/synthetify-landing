@@ -3,7 +3,7 @@ import { colors } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    color: '#ffffff'
+    color: colors.navy.veryLightGrey,
     // height: 601,
     // height: 1876
   },
@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 100,
     lineHeight: '40px',
     fontWeight: 700,
-    colors: colors.navy.veryLightGrey,
     [theme.breakpoints.down('xs')]: {
       fontSize: 67
     },
@@ -49,6 +48,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   titleWrapper: {
+    
     textAlign: 'center',
     position: 'relative',
     width: 622,
@@ -70,16 +70,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     width: 'calc(100vw - 304px)',
     // gridTemplateColumns: 'repeat( auto-fit, minmax(485px, 1fr))',
     gridTemplateColumns: 'repeat(3,auto)',
-    //columnGap: 80,
+    columnGap: 80,
     rowGap: 88,
-    //justifyItems: 'center',
-    justifyContent:'center',
-    backgroundColor:"#00f",
+//    justifyContent:'center',
     [theme.breakpoints.down('md')]: {
       gridTemplateColumns: 'repeat(2,1fr)',
       top: 445,
       width: 862,
-      rowGap: 38
+      columnGap: 38,
+      rowGap: 97
     },
     [theme.breakpoints.down('sm')]: {
       gridTemplateColumns: 'repeat(2,1fr)',
@@ -90,10 +89,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       // gridTemplateColumns: 'repeat(auto-fill, minMax(100%, 1fr))',
-      gridTemplateColumns: 'repeat(1,1fr)',
+      gridTemplateColumns: 'repeat(1,auto)',
       top: 224,
       width: 'calc(100vw - 62px)',
-      rowGap: 38
+      rowGap: 38,
+      justifyContent:'center',
     }
   },
   desc: {

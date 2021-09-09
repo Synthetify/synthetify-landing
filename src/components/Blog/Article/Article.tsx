@@ -3,9 +3,7 @@ import React from 'react'
 import { DataForArticles } from '@components/Blog/Blog'
 import useStyles from './style'
 
-
-
-export const Article: React.FC<DataForArticles> = ({title, date}) => {
+export const Article: React.FC<DataForArticles> = ({ title, date }) => {
   const classes = useStyles()
 
   return (
