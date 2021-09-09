@@ -18,7 +18,6 @@ export const Question = ({ question, answer }: Props) => {
 
   useEffect(() => {
     setHeight(ref.current?.scrollHeight as number)
-    console.log(ref.current)
   }, [ref])
 
   const isVisible = (text: string): boolean => {
