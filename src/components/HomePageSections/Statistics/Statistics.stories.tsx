@@ -8,6 +8,10 @@ storiesOf('Statistics', module)
   .addDecorator(withKnobs)
   .add('plain', () => (
     <div style={{ backgroundColor: colors.navy.component }}>
-      <Statistics />
+      <Statistics
+        volume={2137000}
+        collaterals={2137}
+        synthetics={91111}
+      />
     </div>
   ))
