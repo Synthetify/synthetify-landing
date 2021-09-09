@@ -6,6 +6,7 @@ export const links = {
   },
   docs: 'https://docs.synthetify.io/',
   whitepaper: 'https://resources.synthetify.io/synthetify-whitepaper.pdf',
+  privacyPolicy: 'https://resources.synthetify.io/privacy_policy.pdf',
   socialMedia: {
     twitter: 'https://twitter.com/synthetify',
     linkedin: 'https://www.linkedin.com/company/synthetify',
