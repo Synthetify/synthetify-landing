@@ -75,6 +75,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.veryLightGrey,
     marginBlock: 15,
     fontWeight: 700,
+    transition: 'all 300ms',
 
     [theme.breakpoints.down('lg')]: {
       fontSize: 38,
@@ -86,6 +87,17 @@ const useStyles = makeStyles((theme: Theme) => ({
       fontSize: 19,
       lineHeight: '26px',
       marginBlock: 7
+    },
+
+    '&:hover': {
+      [theme.breakpoints.up('lg')]: {
+        textShadow: `0 0 20px ${colors.navy.veryLightGrey}80`,
+        fontSize: 42
+      },
+
+      [theme.breakpoints.up('xl')]: {
+        fontSize: 49
+      }
     }
   },
   fieldName: {
