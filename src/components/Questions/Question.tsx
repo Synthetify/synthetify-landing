@@ -1,5 +1,5 @@
 import { Button, Grid, Typography } from '@material-ui/core'
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import useStyles from './style'
 
 interface Props {
@@ -9,14 +9,18 @@ interface Props {
 
 export const Question = ({ question, answer }: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [height, setHeight] = useState(0)
   const classes = useStyles()
-  const ref = useRef<HTMLDivElement>(0)
+  const ref = useRef<HTMLDivElement>(null)
   const changeHeight = (): void => {
     setIsOpen(!isOpen)
   }
 
+  useEffect(() => {
+    setHeight(ref.current?.scrollHeight as number)
+  }, [ref])
+
   const isVisible = (text: string): boolean => {
-    const height: number = ref.current.scrollHeight
     return typeof text === 'string' ? height < 85 : false
   }
   return (
@@ -33,7 +37,6 @@ export const Question = ({ question, answer }: Props) => {
           onClick={() => {
             changeHeight()
           }}>
-          {console.log(ref.current.scrollHeight)}
           {isOpen ? 'Show less.' : 'Show more.'}
           <i className={`${classes.arrow} ${isOpen ? classes.arrowUp : classes.arrowDown}`}></i>
         </Button>
