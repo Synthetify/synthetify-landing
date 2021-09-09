@@ -25,11 +25,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   answer: {
     fontWeight: 400,
-    maxHeight: 60,
+    maxHeight: 40,
     transition: 'max-height 2s',
     overflow: 'hidden',
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 50
+      maxHeight: 30
     }
   },
   more: {

@@ -18,17 +18,18 @@ export const Question = ({ question, answer }: Props) => {
 
   useEffect(() => {
     setHeight(ref.current?.scrollHeight as number)
+    console.log(ref.current)
   }, [ref])
 
   const isVisible = (text: string): boolean => {
-    return typeof text === 'string' ? height < 85 : false
+    return typeof text === 'string' ? height < 45 : false
   }
   return (
     <>
       <Grid container direction='column' classes={{ container: classes.container }}>
         <Typography className={`${classes.text} ${classes.question}`} component='h2'>{question}</Typography>
         <div ref={ref} className={`${classes.answer} ${isOpen ? classes.open : ''}`}>
-          <p className={classes.text}>{answer}</p>
+          <Typography className={classes.text}>{answer}</Typography>
         </div>
         <Button
           className={classes.more}
