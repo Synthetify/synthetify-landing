@@ -3,9 +3,9 @@ import { colors } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    color: '#00ff',
+    color: '#ffffff'
     // height: 601,
-    height: 1876
+    // height: 1876
   },
   title: {
     position: 'relative',
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 100,
     lineHeight: '40px',
     fontWeight: 700,
-    color: '#00f',
+    colors: colors.navy.veryLightGrey,
     [theme.breakpoints.down('xs')]: {
       fontSize: 67
     },
@@ -26,46 +26,55 @@ const useStyles = makeStyles((theme: Theme) => ({
       right: 0,
       top: 90,
       width: '100%',
-      background: colors.navy.lightGrey
+      background: colors.navy.lightGrey,
+      [theme.breakpoints.down('xs')]: {
+        top: 70
+      }
     }
   },
   subtitle: {
     fontSize: 32,
     lineHeight: '40px',
     fontWeight: 700,
-    color: '#00f',
     position: 'relative',
     top: 64,
     marginInline: 'auto',
     [theme.breakpoints.down('xs')]: {
-      fontSize: 20
+      fontSize: 20,
+      top: 33
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 15,
+      top: 33
     }
   },
   titleWrapper: {
     textAlign: 'center',
     position: 'relative',
-    top: 199,
-    height: 162,
     width: 622,
+    top: 199,
+    // height: 162, TODO TRY
+    // width: '57%',
     [theme.breakpoints.down('md')]: {
       top: 120
     },
     [theme.breakpoints.down('xs')]: {
       top: 70,
-      width: 344,
-      height: 104
-
+      width: 344
     }
   },
   articlesWrapper: {
     position: 'relative',
-    top: 601,
+    top: 510,
     display: 'grid',
-    width:  'calc(100vw - 304px)',
-    gridTemplateColumns: 'repeat( auto-fit, minmax(485px, 1fr))',
-    columnGap: 80,
+    width: 'calc(100vw - 304px)',
+    // gridTemplateColumns: 'repeat( auto-fit, minmax(485px, 1fr))',
+    gridTemplateColumns: 'repeat(3,auto)',
+    //columnGap: 80,
     rowGap: 88,
-    justifyItems: 'center',
+    //justifyItems: 'center',
+    justifyContent:'center',
+    backgroundColor:"#00f",
     [theme.breakpoints.down('md')]: {
       gridTemplateColumns: 'repeat(2,1fr)',
       top: 445,
@@ -73,11 +82,11 @@ const useStyles = makeStyles((theme: Theme) => ({
       rowGap: 38
     },
     [theme.breakpoints.down('sm')]: {
-      //gridTemplateColumns: 'repeat(2,1fr)',
-      gridTemplateColumns: 'repeat( auto-fit, minmax(260px, 1fr))',
-      top: 272,
+      gridTemplateColumns: 'repeat(2,1fr)',
+      // gridTemplateColumns: 'repeat( auto-fill, minmax(412px, 1fr))',
+      top: 340,
       width: 'calc(100vw - 55px)',
-      columnGap: 17.47,
+      columnGap: 17.47
     },
     [theme.breakpoints.down('xs')]: {
       // gridTemplateColumns: 'repeat(auto-fill, minMax(100%, 1fr))',
@@ -92,34 +101,62 @@ const useStyles = makeStyles((theme: Theme) => ({
     top: 7,
     fontSize: 13,
     fontWeight: 400,
-    width: 478,
-    marginLeft: 4.5,
-    lineHeight: '15.73px',
-    color: '#00f',
+    width: 'calc(100% - 7px)',
+    maxWidth: 485,
+    // marginLeft: 4.5,
+    lineHeight: '16px',
+    [theme.breakpoints.down('sm')]: {
+      // maxWidth: 406,
+      width: 'calc(100% - 31px)',
+      lineHeight: '14px'
+    },
     [theme.breakpoints.down('xs')]: {
-      width: 'calc(100% - 17px)',
-      fontSize: 9,
-      lineHeight: '10.89px'
+      width: '100%'
+
     }
   },
   menuWrapper: {
-    position: 'absolute',
-    top: 1774,
+    position: 'relative',
+    top: 585,
     right: 151,
     display: 'flex',
     width: 590,
     justifyContent: 'space-between',
-    fontFamily: 'Inter'
+    alignSelf: 'flex-end',
+    fontFamily: 'Inter',
+    [theme.breakpoints.down('sm')]: {
+      left: -63, // 420
+      top: 390,
+      width: 447
+    },
+    [theme.breakpoints.down('xs')]: {
+      left: 0,
+      alignSelf: 'center',
+      top: 247,
+      width: 'calc(100% - 62px)'
+    }
   },
   menuItem: {
     fontWeight: 700,
     fontSize: 32,
-    lineHeight: '40px'
+    lineHeight: '40px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 22
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 20
+    }
   },
   menuButton: {
     fontWeight: 700,
     fontSize: 32,
-    lineHeight: '40px'
+    lineHeight: '40px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 22
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 20
+    }
   },
   articleAndDesc: {
     display: 'flex',
@@ -127,11 +164,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexDirection: 'column',
     width: '100%',
     [theme.breakpoints.down('xs')]: {
-      maxWidth: 400
+      maxWidth: 313
     },
     [theme.breakpoints.down('sm')]: {
-      //maxHeight: 263,
-      //maxWidth: 181,
+      // maxHeight: 263,
+      // maxWidth: 181,
     }
   }
 }))

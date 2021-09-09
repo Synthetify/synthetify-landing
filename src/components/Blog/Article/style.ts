@@ -5,18 +5,19 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: 485,
     height: 284,
-    backgroundColor: '#ff00f0',
+    backgroundColor: '#40BFA0',
     borderRadius: 20,
     display: 'flex',
     overflow: 'hidden',
-    justifyContent:'center',
-    alignItems:'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: '591.44px / 1127.34px * 100%',
     [theme.breakpoints.down('sm')]: {
       width: 412
     },
     [theme.breakpoints.down('xs')]: {
-      //width: 313,
-      width:'100%',
+      // width: 313,
+      width: '100%',
       maxWidth: 400,
       height: 182
     }
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     [theme.breakpoints.down('xs')]: {
-      height: 48,
+      height: 48
     }
   },
   title: {
@@ -42,24 +43,34 @@ const useStyles = makeStyles((theme: Theme) => ({
     position: 'relative',
     top: 7,
     left: 7,
-    width: 375,
+    color: colors.navy.veryLightGrey,
+    // width: 375,
     [theme.breakpoints.down('sm')]: {
       fontSize: 20
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 12
+      fontSize: 12,
+      lineHeight: '13px'
     }
   },
   date: {
     fontSize: 13,
     alignSelf: 'flex-end',
+    textAlign: 'right',
     fontWeight: 400,
     lineHeight: '15.73px',
     marginBottom: 5,
     marginRight: 16,
+    width: 206,
+    color: colors.navy.veryLightGrey,
+    [theme.breakpoints.down('md')]: {
+      width: 160,
+      textAlign: 'right'
+    },
     [theme.breakpoints.down('xs')]: {
       fontSize: 9,
-      lineHeight: '10.89px'
+      lineHeight: '10.89px',
+      width: 120
     }
   }
 }))
