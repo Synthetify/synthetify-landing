@@ -88,8 +88,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       columnGap: 17.47
     },
     [theme.breakpoints.down('xs')]: {
-      // gridTemplateColumns: 'repeat(auto-fill, minMax(100%, 1fr))',
-      gridTemplateColumns: 'repeat(1,auto)',
+      gridTemplateColumns: 'fit-content(100%)',
       top: 224,
       width: 'calc(100vw - 62px)',
       rowGap: 38,

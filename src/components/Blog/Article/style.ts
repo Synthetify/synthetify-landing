@@ -4,7 +4,7 @@ import { makeStyles, Theme } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: 485,
-    height: 284,
+    height:284,
     backgroundColor: '#40BFA0',
     borderRadius: 20,
     display: 'flex',
@@ -12,7 +12,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'center',
     alignItems: 'center', 
     [theme.breakpoints.down('sm')]: {
-      width: 412
+      //width: 412,
+      height: 0,
+      paddingTop: '68.93%',
     },
     [theme.breakpoints.down('xs')]: {
       // width: 313,
@@ -30,6 +32,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    [theme.breakpoints.down('sm')]:{
+      paddingTop: '17.96%'
+    },
     [theme.breakpoints.down('xs')]: {
       height: 48
     }
