@@ -28,6 +28,7 @@ module.exports = {
       '@pagesStyles': resolve('src/pagesStyles'),
       '@providers': resolve('src/providers'),
       '@utils': resolve('src/utils'),
+      '@blogPosts': resolve('src/blogPosts'),
     })
     config.define = { 'process.env.NODE_DEBUG': 'false' }
     // return the customized config
