@@ -124,6 +124,11 @@ const useStyles = makeStyles((theme: Theme) => ({
       fontSize: 8
     }
   },
+  policy: {
+    '&:hover': {
+      opacity: 0.75
+    }
+  },
   snyLogo: {
     backgroundSize: '1920px 276px',
     maxWidth: 420,

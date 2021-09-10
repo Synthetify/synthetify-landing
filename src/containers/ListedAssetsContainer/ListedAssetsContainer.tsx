@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { CardMedia } from '@material-ui/core'
 import { ListedAsset, assetsAccounts } from '@static/constants/assets'
-import Binance from 'binance-api-node'
+import Binance, { CandleChartInterval, DailyStatsResult } from 'binance-api-node'
 import { parsePriceData } from '@pythnetwork/client'
 import BNB from '@static/svg/assets/BNB.svg'
 import BTC from '@static/svg/assets/BTC.svg'
@@ -19,7 +19,43 @@ import useStyles from './style'
 export const ListedAssetsContainer: React.FC = () => {
   const classes = useStyles()
   const translate = useTranslate()
-  const [prices, setPrices] = useState<{[key in ListedAsset]: number}>({
+  const firstTimestamp = Date.now()
+  const [data, setData] = useState<{ [key in ListedAsset]: Array<{ x: number, y: number }> }>({
+    BTC: [
+      { x: firstTimestamp, y: 1 },
+      { x: firstTimestamp + 1, y: 1 }
+    ],
+    ETH: [
+      { x: firstTimestamp, y: 1 },
+      { x: firstTimestamp + 1, y: 1 }
+    ],
+    LTC: [
+      { x: firstTimestamp, y: 1 },
+      { x: firstTimestamp + 1, y: 1 }
+    ],
+    SOL: [
+      { x: firstTimestamp, y: 1 },
+      { x: firstTimestamp + 1, y: 1 }
+    ],
+    FTT: [
+      { x: firstTimestamp, y: 1 },
+      { x: firstTimestamp + 1, y: 1 }
+    ],
+    BNB: [
+      { x: firstTimestamp, y: 1 },
+      { x: firstTimestamp + 1, y: 1 }
+    ],
+    SRM: [
+      { x: firstTimestamp, y: 1 },
+      { x: firstTimestamp + 1, y: 1 }
+    ],
+    USD: [
+      { x: firstTimestamp, y: 1 },
+      { x: firstTimestamp + 1, y: 1 }
+    ]
+  })
+
+  const [prices, setPrices] = useState<{ [key in ListedAsset]: number }>({
     BTC: 0,
     ETH: 0,
     LTC: 0,
@@ -30,7 +66,7 @@ export const ListedAssetsContainer: React.FC = () => {
     USD: 1
   })
 
-  const tmpPrices = useRef<{[key in ListedAsset]: number}>({
+  const tmpPrices = useRef<{ [key in ListedAsset]: number }>({
     BTC: 0,
     ETH: 0,
     LTC: 0,
@@ -41,7 +77,7 @@ export const ListedAssetsContainer: React.FC = () => {
     USD: 1
   })
 
-  const [changes, setChanges] = useState<{[key in ListedAsset]: number}>({
+  const [changes, setChanges] = useState<{ [key in ListedAsset]: number }>({
     BTC: 0,
     ETH: 0,
     LTC: 0,
@@ -68,7 +104,7 @@ export const ListedAssetsContainer: React.FC = () => {
 
     const connectEvents = () => {
       Object.entries(assetsAccounts).forEach(([name, pythKey]) => {
-        connection.onAccountChange(pythKey, (accountInfo) => {
+        connection.onAccountChange(pythKey, accountInfo => {
           tmpPrices.current = {
             ...tmpPrices.current,
             [name as ListedAsset]: parsePriceData(accountInfo.data).price
@@ -80,7 +116,7 @@ export const ListedAssetsContainer: React.FC = () => {
         setPrices(tmpPrices.current)
       }, 1000)
 
-      const tmpChanges: {[key in ListedAsset]: number} = {
+      const tmpChanges: { [key in ListedAsset]: number } = {
         BTC: 0,
         ETH: 0,
         LTC: 0,
@@ -90,20 +126,73 @@ export const ListedAssetsContainer: React.FC = () => {
         SRM: 0,
         USD: 0
       }
+      const tmpData: { [key in ListedAsset]: Array<{ x: number, y: number }> } = {
+        BTC: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        ETH: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        LTC: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        SOL: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        FTT: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        BNB: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        SRM: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ],
+        USD: [
+          { x: firstTimestamp, y: 1 },
+          { x: firstTimestamp + 1, y: 1 }
+        ]
+      }
 
       Object.entries(binanceSymbols).forEach(([name, symbol]) => {
-        binanceClient.dailyStats({ symbol }).then((value) => {
-          if (!Array.isArray(value)) {
-            tmpChanges[name as ListedAsset] = +value.priceChangePercent
-          }
-        }).catch(() => {
-          tmpChanges[name as ListedAsset] = 0
-        })
+        let newData: Array<{ x: number, y: number }>
+        binanceClient
+          .candles({
+            symbol: symbol,
+            interval: CandleChartInterval.ONE_HOUR,
+            limit: 24
+          })
+          .then(async (candles) => {
+            newData = candles.map(candle => ({
+              x: candle.closeTime,
+              y: +candle.close
+            }))
+
+            tmpData[name as ListedAsset] = newData
+
+            return binanceClient.dailyStats({ symbol })
+          }, () => {})
+          .then(value => {
+            tmpChanges[name as ListedAsset] = +(value as DailyStatsResult).priceChangePercent
+            newData[0].x = (value as DailyStatsResult).openTime
+            newData[0].y = +(value as DailyStatsResult).openPrice
+            newData[23].x = (value as DailyStatsResult).closeTime
+            newData[23].y = +(value as DailyStatsResult).lastPrice
+          }, () => {
+            tmpChanges[name as ListedAsset] = 0
+          })
       })
 
       setChanges(tmpChanges)
+      setData(tmpData)
     }
-
     connectEvents()
   }, [])
 
@@ -166,7 +255,7 @@ export const ListedAssetsContainer: React.FC = () => {
     }
   }
 
-  return <ListedAssets prices={prices} changes={changes} assetConsts={assetConsts} />
+  return <ListedAssets prices={prices} changes={changes} assetConsts={assetConsts} data={data} />
 }
 
 export default ListedAssetsContainer

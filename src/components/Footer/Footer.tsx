@@ -29,13 +29,13 @@ export const InsideLink: React.FC<ILinkProps> = ({ href, name, description, isNe
           {
             isNew
               ? (
-                <Typography className={classes.link}>{name}</Typography>
-              )
-              : (
                 <Grid className={classes.linkWithMarkWrapper}>
                   <Typography className={classes.link}>{name}</Typography>
                   <NewMark className={classes.mark} />
                 </Grid>
+              )
+              : (
+                <Typography className={classes.link}>{name}</Typography>
               )
           }
           <Typography className={classes.description}>{description}</Typography>
@@ -110,6 +110,7 @@ export const Footer: React.FC = () => {
             href='/brand'
             name={translate('header.brand')}
             description={translate('header.brandDescription')}
+            isNew
           />
         </Grid>
 
@@ -158,8 +159,13 @@ export const Footer: React.FC = () => {
           />
         </Grid>
       </Grid>
-      <Grid container className={classes.copyrightWrapper} wrap='nowrap' alignItems='center'>
+      <Grid container className={classes.copyrightWrapper} wrap='nowrap' alignItems='center' justifyContent='space-between'>
         <Typography className={classes.copyright}>© 2021 Synthetify Labs</Typography>
+        <a href={links.privacyPolicy} style={{ textDecoration: 'none' }}>
+          <Typography className={classNames(classes.copyright, classes.policy)}>
+            {translate('footer.privacyPolicy')}
+          </Typography>
+        </a>
       </Grid>
     </>
   )
