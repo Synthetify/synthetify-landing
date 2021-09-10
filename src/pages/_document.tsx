@@ -2,11 +2,11 @@
 import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheets } from '@material-ui/core/styles'
-
-export default class MyDocument extends Document {
+/* eslint-disable react/display-name */
+class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head>
           <style jsx global>
             {`
@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
                 font-family: 'Inter';
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
-                background-color: #0C0D2C;
+                background-color: #0c0d2c;
               }
             `}
           </style>
@@ -38,7 +38,7 @@ export default class MyDocument extends Document {
 
 // `getInitialProps` belongs to `_document` (instead of `_app`),
 // it's compatible with server-side generation (SSG).
-MyDocument.getInitialProps = async (ctx) => {
+MyDocument.getInitialProps = async ctx => {
   // Resolution order
   //
   // On the server:
@@ -67,7 +67,7 @@ MyDocument.getInitialProps = async (ctx) => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: (App) => (props) => sheets.collect(<App {...props} />)
+      enhanceApp: App => props => sheets.collect(<App {...props} />)
     })
 
   const initialProps = await Document.getInitialProps(ctx)
@@ -78,3 +78,6 @@ MyDocument.getInitialProps = async (ctx) => {
     styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()]
   }
 }
+// @ts-expect-error
+MyDocument.displayName = 'MyDocument'
+export default MyDocument
