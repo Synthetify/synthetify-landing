@@ -3,7 +3,7 @@ import { makeStyles, Theme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    width: 485,
+    maxWidth: 485,
     height: 284,
     backgroundColor: '#40BFA0',
     borderRadius: 20,
@@ -21,10 +21,6 @@ const useStyles = makeStyles((theme: Theme) => ({
       maxHeight: 182,
       maxWidth: 313,
       width: '100%'
-    },
-    [theme.breakpoints.down('xs')]: {
-      width: '100%',
-      maxWidth: 400
     }
   },
   infoBar: {
@@ -35,14 +31,13 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.veryLightGrey,
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center',
     zIndex: 2,
     position: 'absolute',
     [theme.breakpoints.down('sm')]: {
       maxHeight: 47
     },
     [theme.breakpoints.down('xs')]: {
-      height: 48
+      maxHeight: 48
     }
   },
   title: {
@@ -54,10 +49,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     top: 7,
     left: 7,
     color: colors.navy.veryLightGrey,
-    // width: 375,
     [theme.breakpoints.down('md')]: {
-      fontSize: 20,
-      lineHeight: '25px'
+      fontSize: 20
     },
     [theme.breakpoints.down('sm')]: {
       fontSize: 12,
@@ -78,11 +71,10 @@ const useStyles = makeStyles((theme: Theme) => ({
       width: 160,
       textAlign: 'right'
     },
-    [theme.breakpoints.down('sm')]:{
+    [theme.breakpoints.down('sm')]: {
       fontSize: 9
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 9,
       lineHeight: '10.89px',
       width: 120
     }
@@ -93,10 +85,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     zIndex: 1,
     position: 'absolute',
-    opacity: .8,
+    opacity: 0.8,
     transition: 'all .5s ease-out',
-    '&:hover':{
-      opacity:1,
+    '&:hover': {
+      opacity: 1,
       transform: 'scale(1.1)'
     }
   }

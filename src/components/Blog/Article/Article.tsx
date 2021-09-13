@@ -5,12 +5,10 @@ import useStyles from './style'
 
 export const Article: React.FC<DataForArticles> = ({ title, date, image }) => {
   const classes = useStyles()
-
+  console.log(image)
   return (
     <Grid container className={classes.root} justifyContent='space-between'>
-      
-        <img className={classes.image} alt="" src={image}/>
-
+      <img className={classes.image} alt=" " src={image}/>
       <Grid item className={classes.infoBar}>
         <Typography className={classes.title}>{title}</Typography>
         <Typography className={classes.date}>{date}</Typography>

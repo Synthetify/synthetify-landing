@@ -7,55 +7,55 @@ const large: DataForArticles[] = [
     title: 'Donec quis eros ut ante viverra pulvinar. Donec quis eros.',
     date: 'June 20, 2021 ',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image: 'https://cdn.publish0x.com/prod/fs/images/134538ec7d89fb5f38557935b659a3edfbd220a63a86cb5d4acef65f38130546.jpg'
+    image: 'https://poinformowani.pl/image/868x429/0.93.1140.563/media/2021/09/31809/solana.jpg'
   },
   {
     title: 'Donec quis eros ut ante viverra pulvinar.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros ut ante viverra pulvinar. Donec quis eros.',
     date: 'June 20, 2021 ',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros ut ante viverra pulvinar.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros ut ante viverra pulvinar. Donec quis eros.',
     date: 'June 20, 2021 ',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros ut ante viverra pulvinar.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   }
 ]
 
@@ -64,31 +64,31 @@ const medium: DataForArticles[] = [
     title: 'Donec quis eros ut ante viverra pulvinar. Donec quis eros.',
     date: 'June 20, 2021 ',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image: 'https://cdn.publish0x.com/prod/fs/images/134538ec7d89fb5f38557935b659a3edfbd220a63a86cb5d4acef65f38130546.jpg'
+    image: 'https://poinformowani.pl/image/868x429/0.93.1140.563/media/2021/09/31809/solana.jpg'
   },
   {
     title: 'Donec quis eros ut ante viverra pulvinar.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros ut ante viverra pulvinar. Donec quis eros.',
     date: 'June 20, 2021 ',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   },
   {
     title: 'Donec quis eros ut ante viverra pulvinar.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   }
 ]
 
@@ -97,13 +97,13 @@ const small: DataForArticles[] = [
     title: 'Donec quis eros ut ante viverra pulvinar. Donec quis eros.',
     date: 'June 20, 2021 ',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image: 'https://cdn.publish0x.com/prod/fs/images/134538ec7d89fb5f38557935b659a3edfbd220a63a86cb5d4acef65f38130546.jpg'
+    image: 'https://poinformowani.pl/image/868x429/0.93.1140.563/media/2021/09/31809/solana.jpg'
   },
   {
     title: 'Donec quis eros ut ante viverra pulvinar.',
     date: 'June 20, 2021',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image:''
+    image: ''
   }
 ]
 

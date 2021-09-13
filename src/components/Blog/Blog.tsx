@@ -34,7 +34,7 @@ export const Blog: React.FC<DataForArticles[]> = ({ data }) => {
         <Typography className={classes.subtitle}>{translate('blog.subtitle')}</Typography>
       </div>
       <Grid className={classes.articlesWrapper} id="test">
-        {data.map((article:DataForArticles) => (
+        {data.map((article: DataForArticles) => (
           <div key={article.id + 'wrapper'} className={classes.articleAndDesc}>
             <Article key={article.id + 'Article'} title={article.title} date={article.date} image={article.image} desc={article.desc} className={classes.articles}/>
             <Typography key={article.id + 'desc'} className={classes.desc}>{article.desc}</Typography>
