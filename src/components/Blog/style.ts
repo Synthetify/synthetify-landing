@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: 67
     },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 50,
+    },
     '&::after': {
       content: '""',
       position: 'absolute',
@@ -34,10 +37,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   subtitle: {
     fontSize: 32,
     lineHeight: '40px',
-    fontWeight: 700,
     position: 'relative',
     top: 64,
     marginInline: 'auto',
+    color: '#6261A3',
+    fontWeight: 400,
     [theme.breakpoints.down('sm')]: {
       fontSize: 20,
       top: 56
@@ -55,11 +59,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     top: 199,
     // height: 162, TODO TRY
     // width: '57%',
-    [theme.breakpoints.down('sm')]: {
-      width: 'calc(100% - 206px)'
-    },
     [theme.breakpoints.down('md')]: {
       top: 120
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: 'calc(100% - 206px)'
     },
     [theme.breakpoints.down('xs')]: {
       top: 70,
@@ -76,13 +80,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     gridTemplateColumns: 'repeat(3,auto)',
     columnGap: 80,
     rowGap: 88,
-//    justifyContent:'center',
+    justifyContent:'center',
+    [theme.breakpoints.down('lg')]: {
+      gridTemplateColumns: 'repeat(2,1fr)',
+      top: 480,
+      width: 862,
+      columnGap: 38,
+      rowGap: 97
+    },
     [theme.breakpoints.down('md')]: {
       gridTemplateColumns: 'repeat(2,1fr)',
       top: 340,
       width: 862,
       columnGap: 38,
-      rowGap: 97
+      rowGap: 97,
     },
     [theme.breakpoints.down('sm')]: {
       gridTemplateColumns: 'repeat(2,1fr)',
@@ -93,7 +104,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       gridTemplateColumns: 'fit-content(100%)',
-      top: 224,
+      top: 165,
       width: 'calc(100vw - 62px)',
       rowGap: 38,
       justifyContent:'center',
@@ -111,55 +122,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('sm')]: {
       // maxWidth: 406,
       lineHeight: '11px',
-      FontSize: 9,
+      fontSize: 9,
       maxWidth: 313
     },
     [theme.breakpoints.down('xs')]: {
       width: '100%'
-
-    }
-  },
-  menuWrapper: {
-    position: 'relative',
-    top: 585,
-    right: 151,
-    display: 'flex',
-    width: 590,
-    justifyContent: 'space-between',
-    alignSelf: 'flex-end',
-    fontFamily: 'Inter',
-    [theme.breakpoints.down('sm')]: {
-      left: -63, // 420
-      top: 390,
-      width: 447
-    },
-    [theme.breakpoints.down('xs')]: {
-      left: 0,
-      alignSelf: 'center',
-      top: 247,
-      width: 'calc(100% - 62px)'
-    }
-  },
-  menuItem: {
-    fontWeight: 700,
-    fontSize: 32,
-    lineHeight: '40px',
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 22
-    },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: 20
-    }
-  },
-  menuButton: {
-    fontWeight: 700,
-    fontSize: 32,
-    lineHeight: '40px',
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 22
-    },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: 20
     }
   },
   articleAndDesc: {
@@ -168,11 +135,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexDirection: 'column',
     width: '100%',
     [theme.breakpoints.down('xs')]: {
-      maxWidth: 313,
-    },
-    [theme.breakpoints.down('sm')]: {
-      // maxHeight: 263,
-      // maxWidth: 181,
+      //maxWidth: 313
     }
   }
 }))

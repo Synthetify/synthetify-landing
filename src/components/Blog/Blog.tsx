@@ -9,7 +9,8 @@ export interface DataForArticles{
   title: string
   date: string
   desc?: string
-  id?:string
+  image: string
+  id?: string
 }
 
 export const Blog: React.FC<DataForArticles[]> = ({ data }) => {
@@ -35,7 +36,7 @@ export const Blog: React.FC<DataForArticles[]> = ({ data }) => {
       <Grid className={classes.articlesWrapper} id="test">
         {data.map((article:DataForArticles) => (
           <div key={article.id + 'wrapper'} className={classes.articleAndDesc}>
-            <Article key={article.id + 'Article'} title={article.title} date={article.date} desc={article.desc} className={classes.articles}/>
+            <Article key={article.id + 'Article'} title={article.title} date={article.date} image={article.image} desc={article.desc} className={classes.articles}/>
             <Typography key={article.id + 'desc'} className={classes.desc}>{article.desc}</Typography>
           </div>
         )

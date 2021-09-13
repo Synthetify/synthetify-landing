@@ -4,17 +4,18 @@ import { makeStyles, Theme } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: 485,
-    height:284,
+    height: 284,
     backgroundColor: '#40BFA0',
     borderRadius: 20,
     display: 'flex',
     overflow: 'hidden',
     justifyContent: 'center',
-    alignItems: 'center', 
+    alignItems: 'center',
+    position: 'relative',
     [theme.breakpoints.down('md')]: {
       maxHeight: 284,
       maxWidth: 412,
-      width: '100%',
+      width: '100%'
     },
     [theme.breakpoints.down('sm')]: {
       maxHeight: 182,
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       width: '100%',
-      maxWidth: 400,
+      maxWidth: 400
     }
   },
   infoBar: {
@@ -35,7 +36,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    [theme.breakpoints.down('sm')]:{
+    zIndex: 2,
+    position: 'absolute',
+    [theme.breakpoints.down('sm')]: {
       maxHeight: 47
     },
     [theme.breakpoints.down('xs')]: {
@@ -71,15 +74,28 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginRight: 16,
     width: 206,
     color: colors.navy.veryLightGrey,
-    // [theme.breakpoints.down('md')]: {
-    //   width: 160,
-    //   textAlign: 'right'
-    // },
-    // [theme.breakpoints.down('xs')]: {
-    //   fontSize: 9,
-    //   lineHeight: '10.89px',
-    //   width: 120
-    // }
+    [theme.breakpoints.down('md')]: {
+      width: 160,
+      textAlign: 'right'
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 9,
+      lineHeight: '10.89px',
+      width: 120
+    }
+  },
+  image: {
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    zIndex: 1,
+    position: 'absolute',
+    opacity: .8,
+    transition: 'all .5s ease-out',
+    '&:hover':{
+      opacity:1,
+      transform: 'scale(1.1)'
+    }
   }
 }))
 
