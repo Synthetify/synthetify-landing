@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 100,
     lineHeight: '40px',
     fontWeight: 700,
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 67
     },
     '&::after': {
@@ -38,29 +38,33 @@ const useStyles = makeStyles((theme: Theme) => ({
     position: 'relative',
     top: 64,
     marginInline: 'auto',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 20,
-      top: 33
+      top: 56
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 15,
-      top: 33
+      top: 33,
+      width:'100%',
     }
   },
   titleWrapper: {
-    
     textAlign: 'center',
     position: 'relative',
     width: 622,
     top: 199,
     // height: 162, TODO TRY
     // width: '57%',
+    [theme.breakpoints.down('sm')]: {
+      width: 'calc(100% - 206px)'
+    },
     [theme.breakpoints.down('md')]: {
       top: 120
     },
     [theme.breakpoints.down('xs')]: {
       top: 70,
-      width: 344
+      width: 'calc(100vw - 110px)',
+      maxWidth: 350,
     }
   },
   articlesWrapper: {
@@ -75,7 +79,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 //    justifyContent:'center',
     [theme.breakpoints.down('md')]: {
       gridTemplateColumns: 'repeat(2,1fr)',
-      top: 445,
+      top: 340,
       width: 862,
       columnGap: 38,
       rowGap: 97
@@ -83,7 +87,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('sm')]: {
       gridTemplateColumns: 'repeat(2,1fr)',
       // gridTemplateColumns: 'repeat( auto-fill, minmax(412px, 1fr))',
-      top: 340,
+      top: 270,
       width: 'calc(100vw - 55px)',
       columnGap: 17.47
     },
@@ -100,14 +104,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     top: 7,
     fontSize: 13,
     fontWeight: 400,
-    width: 'calc(100% - 7px)',
+    width: 'calc(100% - 3px)',
     maxWidth: 485,
     // marginLeft: 4.5,
     lineHeight: '16px',
     [theme.breakpoints.down('sm')]: {
       // maxWidth: 406,
-      width: 'calc(100% - 31px)',
-      lineHeight: '14px'
+      lineHeight: '11px',
+      FontSize: 9,
+      maxWidth: 313
     },
     [theme.breakpoints.down('xs')]: {
       width: '100%'
@@ -163,7 +168,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexDirection: 'column',
     width: '100%',
     [theme.breakpoints.down('xs')]: {
-      maxWidth: 313
+      maxWidth: 313,
     },
     [theme.breakpoints.down('sm')]: {
       // maxHeight: 263,

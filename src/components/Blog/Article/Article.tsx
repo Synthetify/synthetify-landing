@@ -9,8 +9,10 @@ export const Article: React.FC<DataForArticles> = ({ title, date }) => {
   return (
     <Grid container className={classes.root} justifyContent='space-between'>
       <Grid item className={classes.infoBar}>
-        <Typography className={classes.title}>{title}</Typography>
-        <Typography className={classes.date}>{date}</Typography>
+        {/* <Typography className={classes.title}>{title}</Typography>
+        <Typography className={classes.date}>{date}</Typography> */}
+        <Typography className={classes.title}>{'Donec quis eros ut ante viverra pulvinar. Donec quis eros.'}</Typography>
+        <Typography className={classes.date}>{'June 20, 2021'}</Typography>
       </Grid>
     </Grid>
   )

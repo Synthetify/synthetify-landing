@@ -11,16 +11,19 @@ const useStyles = makeStyles((theme: Theme) => ({
     overflow: 'hidden',
     justifyContent: 'center',
     alignItems: 'center', 
+    [theme.breakpoints.down('md')]: {
+      maxHeight: 284,
+      maxWidth: 412,
+      width: '100%',
+    },
     [theme.breakpoints.down('sm')]: {
-      //width: 412,
-      height: 0,
-      paddingTop: '68.93%',
+      maxHeight: 182,
+      maxWidth: 313,
+      width: '100%'
     },
     [theme.breakpoints.down('xs')]: {
-      // width: 313,
       width: '100%',
       maxWidth: 400,
-      height: 182
     }
   },
   infoBar: {
@@ -33,7 +36,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     [theme.breakpoints.down('sm')]:{
-      paddingTop: '17.96%'
+      maxHeight: 47
     },
     [theme.breakpoints.down('xs')]: {
       height: 48
@@ -49,10 +52,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     left: 7,
     color: colors.navy.veryLightGrey,
     // width: 375,
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 20
+    [theme.breakpoints.down('md')]: {
+      fontSize: 20,
+      lineHeight: '25px'
     },
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 12,
       lineHeight: '13px'
     }
@@ -67,15 +71,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginRight: 16,
     width: 206,
     color: colors.navy.veryLightGrey,
-    [theme.breakpoints.down('md')]: {
-      width: 160,
-      textAlign: 'right'
-    },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: 9,
-      lineHeight: '10.89px',
-      width: 120
-    }
+    // [theme.breakpoints.down('md')]: {
+    //   width: 160,
+    //   textAlign: 'right'
+    // },
+    // [theme.breakpoints.down('xs')]: {
+    //   fontSize: 9,
+    //   lineHeight: '10.89px',
+    //   width: 120
+    // }
   }
 }))
 

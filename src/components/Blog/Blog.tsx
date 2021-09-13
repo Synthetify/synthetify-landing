@@ -41,15 +41,6 @@ export const Blog: React.FC<DataForArticles[]> = ({ data }) => {
         )
         )}
       </Grid>
-      <div className={classes.menuWrapper}>
-        <p className={classes.menuButton}>Next</p>
-        <p className={classes.menuItem}>1</p>
-        <p className={classes.menuItem}>2</p>
-        <p className={classes.menuItem}>...</p>
-        <p className={classes.menuItem}>7</p>
-        <p className={classes.menuItem}>8</p>
-        <p className={classes.menuButton} style={{ color: colors.navy.darkGrey }}>Previous</p>
-      </div>
     </Grid>
 
   )
