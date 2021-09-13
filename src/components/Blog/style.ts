@@ -80,23 +80,22 @@ const useStyles = makeStyles((theme: Theme) => ({
     gridTemplateColumns: 'repeat(3,auto)',
     columnGap: 80,
     rowGap: 88,
-    justifyContent:'center',
+    justifyContent: 'center',
     [theme.breakpoints.down('lg')]: {
-      gridTemplateColumns: 'repeat(2,1fr)',
+      gridTemplateColumns: 'repeat(2,auto)',
       top: 480,
-      width: 862,
-      columnGap: 38,
+      width: 'calc(100% - 230px)',
+      columnGap: 80,
       rowGap: 97
     },
     [theme.breakpoints.down('md')]: {
-      gridTemplateColumns: 'repeat(2,1fr)',
+      gridTemplateColumns: 'repeat(2,auto)',
       top: 340,
       width: 862,
-      columnGap: 38,
-      rowGap: 97,
+      columnGap: 0
     },
     [theme.breakpoints.down('sm')]: {
-      gridTemplateColumns: 'repeat(2,1fr)',
+      gridTemplateColumns: 'repeat(2,auto)',
       // gridTemplateColumns: 'repeat( auto-fill, minmax(412px, 1fr))',
       top: 270,
       width: 'calc(100vw - 55px)',
@@ -134,9 +133,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     alignItems: 'center',
     flexDirection: 'column',
     width: '100%',
-    [theme.breakpoints.down('xs')]: {
-      //maxWidth: 313
-    }
+
   }
 }))
 

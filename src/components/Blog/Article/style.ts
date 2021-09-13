@@ -78,6 +78,9 @@ const useStyles = makeStyles((theme: Theme) => ({
       width: 160,
       textAlign: 'right'
     },
+    [theme.breakpoints.down('sm')]:{
+      fontSize: 9
+    },
     [theme.breakpoints.down('xs')]: {
       fontSize: 9,
       lineHeight: '10.89px',
