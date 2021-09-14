@@ -12,7 +12,7 @@ const post: string = `
 
 ### Posted July 12, 2021
 
-![example Image](https://resources.synthetify.io/synthetify-metatags.png)
+![example-Image](https://miro.medium.com/max/1838/0*Pn3ZFJ6ZwnaScnJ-)
 >#### Lorem Ipsum
 >Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an
 unknown printer took a galley of type and scrambled it to make a type specimen book. It
@@ -24,7 +24,7 @@ remaining essentially unchanged.
     publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
-![example Image](https://resources.synthetify.io/synthetify-metatags.png)
+![example-Image](https://miro.medium.com/max/1838/0*Pn3ZFJ6ZwnaScnJ-)
 
 >#### Header 2
 > It has survived not only five centuries, but also the leap into electronic typesetting,
@@ -42,7 +42,7 @@ export const SinglePost: React.FC = () => {
 
   return (
     <Grid key={ id } container item justifyContent='center' className={classes.mainContainer}>
-      <ReactMarkdown children={post} remarkPlugins={[remarkGfm]} />
+      <ReactMarkdown children={ post } remarkPlugins={[remarkGfm]} />
       <Button className={classes.backButton}>Back to Blog</Button>
     </Grid>
   )
