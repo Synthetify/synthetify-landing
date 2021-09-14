@@ -9,5 +9,11 @@ export const LanguageContext: Context<{ language: Language, setLanguage: (chosen
 export const useTranslate = () => {
   const { language } = useContext(LanguageContext)
 
-  return (key: string) => dictionary[language][key] ?? ''
+  return (key: string, index?: number): string => {
+    if (index) {
+      return dictionary[language][key][index] ?? ''
+    }
+
+    return dictionary[language][key] as string ?? ''
+  }
 }
