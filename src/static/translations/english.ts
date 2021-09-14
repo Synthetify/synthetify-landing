@@ -69,7 +69,17 @@ const dictionary = {
   'brand.whiteLogo': 'White logo',
   'brand.whiteLogoVertical': 'White logo vertical',
   'brand.whiteLogoHorizontal': 'White logo horizontal',
-  'blog.backButton': 'Back to Blog'
+  'blog.backButton': 'Back to Blog',
+  'faq.title': 'FAQ',
+  'faq.description': 'Frequently asked questions',
+  'faq.questions': ['What\'s Synthetify?', 'What\'s Solana?', 'What we can offer?', 'What can you get?', 'How to start?', 'How does is work?'],
+  'faq.answers': [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim. In augue erat, ultricies id risus id, rutrum pellentesque nisi. Suspendisse et nisi magna. Nam convallis leo gravida nisl varius, at rhoncus quam viverra. Duis interdum sapien ut suscipit tincidunt. Aenean pharetra, mi id vulputate pulvinar, nibh erat tristique tortor, non dignissim mauris nisl tempus eros. Nunc id lacinia ipsum.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim. In augue erat, ultricies id risus id, rutrum pellentesque nisi.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim. In augue erat, ultricies id risus id, rutrum pellentesque nisi. Suspendisse et nisi magna. Nam convallis leo gravida nisl varius, at rhoncus quam viverra. Duis interdum sapien ut suscipit tincidunt. Aenean pharetra, mi id vulputate pulvinar, nibh erat tristique tortor, non dignissim mauris nisl tempus eros. Nunc id lacinia ipsum.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies eleifend leo id dignissim. In augue erat, ultricies id risus id, rutrum pellentesque nisi.']
 }
 
 export default dictionary
