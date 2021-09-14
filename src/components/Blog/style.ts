@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme: Theme) => ({
       background: colors.navy.lightGrey,
       [theme.breakpoints.down('xs')]: {
         top: 70
+      },
+      [theme.breakpoints.down('sm')]: {
+        maxWidth: 344
       }
     }
   },

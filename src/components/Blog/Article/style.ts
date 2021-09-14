@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       maxHeight: 47
     },
     [theme.breakpoints.down('xs')]: {
-      maxHeight: 48
+      maxHeight: 47
     }
   },
   title: {

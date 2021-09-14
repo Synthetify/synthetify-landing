@@ -98,12 +98,6 @@ const small: DataForArticles[] = [
     date: 'June 20, 2021 ',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
     image: 'https://poinformowani.pl/image/868x429/0.93.1140.563/media/2021/09/31809/solana.jpg'
-  },
-  {
-    title: 'Donec quis eros ut ante viverra pulvinar.',
-    date: 'June 20, 2021',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula rutrum laoreet. Nulla quis felis id metus pellentesque ultrices in sed dolor.',
-    image: ''
   }
 ]
 
