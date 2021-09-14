@@ -68,7 +68,8 @@ const dictionary = {
   'brand.greenLogoHorizontal': 'Green logo horizontal',
   'brand.whiteLogo': 'White logo',
   'brand.whiteLogoVertical': 'White logo vertical',
-  'brand.whiteLogoHorizontal': 'White logo horizontal'
+  'brand.whiteLogoHorizontal': 'White logo horizontal',
+  'blog.backButton': 'Back to Blog'
 }
 
 export default dictionary
