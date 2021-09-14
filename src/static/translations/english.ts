@@ -71,6 +71,7 @@ const dictionary = {
   'brand.whiteLogo': 'White logo',
   'brand.whiteLogoVertical': 'White logo vertical',
   'brand.whiteLogoHorizontal': 'White logo horizontal',
+  'blog.backButton': 'Back to Blog',
   'faq.title': 'FAQ',
   'faq.description': 'Frequently asked questions',
   'faq.questions': ['What\'s Synthetify?', 'What\'s Solana?', 'What we can offer?', 'What can you get?', 'How to start?', 'How does is work?'],
