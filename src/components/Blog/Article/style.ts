@@ -3,7 +3,7 @@ import { makeStyles, Theme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    maxWidth: 485,
+    width: '100%',
     height: 284,
     backgroundColor: '#40BFA0',
     borderRadius: 20,
@@ -14,12 +14,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     position: 'relative',
     [theme.breakpoints.down('md')]: {
       maxHeight: 284,
-      maxWidth: 412,
       width: '100%'
     },
     [theme.breakpoints.down('sm')]: {
       maxHeight: 182,
-      maxWidth: 313,
       width: '100%'
     }
   },
@@ -34,9 +32,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     zIndex: 2,
     position: 'absolute',
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 47
-    },
-    [theme.breakpoints.down('xs')]: {
       maxHeight: 47
     }
   },

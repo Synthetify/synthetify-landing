@@ -2,7 +2,7 @@ import React from 'react'
 import { SinglePost } from './SinglePost'
 import { storiesOf } from '@storybook/react'
 
-storiesOf('blog', module).add('singlepost', () => <SinglePost singlePost={post} />)
+storiesOf('blog', module).add('singlepost', () => <SinglePost singlePost={post} title='Welcome' date='2021-01-01' />)
 
 const post: string = `
 ## **Welcome** 

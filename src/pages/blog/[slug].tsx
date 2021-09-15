@@ -1,13 +1,22 @@
 import React from 'react'
 import matter from 'gray-matter'
 import fs from 'fs'
-import { BlogData } from '.'
 import BlogPostMetatags from '@components/Metatags/BlogPostMetatags'
 import { GetStaticProps } from 'next'
 import { ParsedUrlQuery } from 'querystring'
 import path from 'path'
+import { SinglePost } from '@components/Blog/SinglePost/SinglePost'
 
-export const BlogPost: React.FC<BlogData> = ({ title, description, image, slug, date }) => {
+export interface PostData {
+  slug: string
+  title: string
+  description: string
+  image: string
+  date: string
+  content: string
+}
+
+export const BlogPost: React.FC<PostData> = ({ title, description, image, slug, date, content }) => {
   return (
     <>
       <BlogPostMetatags
@@ -16,7 +25,7 @@ export const BlogPost: React.FC<BlogData> = ({ title, description, image, slug, 
         description={description}
         image={image}
       />
-      {title} - {date}
+      <SinglePost singlePost={content} title={title} date={date} />
     </>
   )
 }
@@ -43,7 +52,7 @@ export interface IParams extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params as IParams
   const postData = fs.readFileSync(path.join(`src/blogPosts/${slug}.md`), 'utf-8')
-  const { data: { title, description, image, date } } = matter(postData)
+  const { data: { title, description, image, date }, content } = matter(postData)
 
   return {
     props: {
@@ -51,7 +60,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
       title,
       description,
       image,
-      date
+      date,
+      content
     }
   }
 }

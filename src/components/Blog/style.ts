@@ -5,105 +5,37 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     color: colors.navy.veryLightGrey
   },
-  title: {
-    position: 'relative',
-    marginInline: 'auto',
-    fontSize: 100,
-    lineHeight: '40px',
-    fontWeight: 700,
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 67
-    },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: 50
-    },
-    '&::after': {
-      content: '""',
-      position: 'absolute',
-      height: 2,
-      marginInline: 'auto',
-      left: 0,
-      right: 0,
-      top: 90,
-      width: '100%',
-      maxWidth: 622,
-      background: colors.navy.lightGrey,
-      [theme.breakpoints.down('xs')]: {
-        top: 70
-      },
-      [theme.breakpoints.down('sm')]: {
-        maxWidth: 344
-      }
-    }
-  },
-  subtitle: {
-    fontSize: 32,
-    lineHeight: '40px',
-    position: 'relative',
-    top: 64,
-    marginInline: 'auto',
-    color: '#6261A3',
-    fontWeight: 400,
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 20,
-      top: 56
-    },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: 15,
-      top: 33
-    }
-  },
-  titleWrapper: {
-    textAlign: 'center',
-    position: 'relative',
-    width: 622,
-    top: 199,
-    [theme.breakpoints.down('md')]: {
-      top: 120
-    },
-    [theme.breakpoints.down('sm')]: {
-      width: 'calc(100vw - 206px)'
-    },
-    [theme.breakpoints.down('xs')]: {
-      top: 70,
-      width: 'calc(100vw - 110px)',
-      maxWidth: 350
-    }
-  },
   articlesWrapper: {
-    position: 'relative',
-    top: 510,
     display: 'grid',
     width: 'calc(100vw - 304px)',
-    gridTemplateColumns: 'repeat(3,auto)',
+    gridTemplateColumns: '1fr 1fr 1fr',
     columnGap: 80,
     rowGap: 88,
     justifyContent: 'center',
+    marginBlock: 240,
     [theme.breakpoints.down('lg')]: {
-      gridTemplateColumns: 'repeat(2,auto)',
-      top: 480,
+      gridTemplateColumns: '1fr 1fr',
       width: 'calc(100% - 230px)',
       columnGap: 80,
-      rowGap: 97
+      rowGap: 97,
+      marginBlock: 223
     },
     [theme.breakpoints.down('md')]: {
-      gridTemplateColumns: 'repeat(2,auto)',
-      top: 340,
       width: 'calc(100vw - 100px)',
-      columnGap: 38
+      columnGap: 38,
+      marginBlock: 163
     },
     [theme.breakpoints.down('sm')]: {
-      gridTemplateColumns: 'repeat(2,auto)',
-      top: 270,
       width: 'calc(100vw - 55px)',
-      columnGap: 17.47
+      columnGap: 17.47,
+      marginBlock: 102
     },
     [theme.breakpoints.down('xs')]: {
-      gridTemplateColumns: 'fit-content(100%)',
-      top: 165,
+      gridTemplateColumns: '1fr',
       width: 'calc(100vw - 62px)',
       rowGap: 38,
-      justifyContent: 'center'
+      justifyContent: 'center',
+      marginBlock: 75
     }
   },
   desc: {

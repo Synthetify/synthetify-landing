@@ -4,7 +4,6 @@ import { colors } from '@static/theme'
 const useStyles = makeStyles((theme: Theme) => ({
   mainContainer: {
     fontFamily: 'Inter',
-    background: colors.navy.background,
     display: 'flex',
     flexDirection: 'column',
     alignContent: 'center',
