@@ -7,32 +7,32 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   articlesWrapper: {
     display: 'grid',
-    width: 'calc(100vw - 304px)',
+    width: 1615,
     gridTemplateColumns: '1fr 1fr 1fr',
     columnGap: 80,
     rowGap: 88,
     justifyContent: 'center',
     marginBlock: 240,
+    marginInline: 'auto',
     [theme.breakpoints.down('lg')]: {
       gridTemplateColumns: '1fr 1fr',
-      width: 'calc(100% - 230px)',
-      columnGap: 80,
+      width: 1050,
       rowGap: 97,
       marginBlock: 223
     },
     [theme.breakpoints.down('md')]: {
-      width: 'calc(100vw - 100px)',
+      width: 862,
       columnGap: 38,
       marginBlock: 163
     },
     [theme.breakpoints.down('sm')]: {
-      width: 'calc(100vw - 55px)',
-      columnGap: 17.47,
+      width: 546,
+      columnGap: 18,
       marginBlock: 102
     },
     [theme.breakpoints.down('xs')]: {
       gridTemplateColumns: '1fr',
-      width: 'calc(100vw - 62px)',
+      width: 313,
       rowGap: 38,
       justifyContent: 'center',
       marginBlock: 75

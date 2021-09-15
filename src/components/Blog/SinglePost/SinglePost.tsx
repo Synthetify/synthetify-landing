@@ -18,10 +18,10 @@ export const SinglePost: React.FC<IProps> = ({ singlePost, title, date }) => {
     <>
       <PageHeader
         title={title}
-        description={date}
+        description={(new Date(date)).toLocaleDateString('en-US', { dateStyle: 'long' })}
       />
       <Grid container item justifyContent='center' className={classes.mainContainer}>
-        <ReactMarkdown remarkPlugins={[remarkGfm]} >{ singlePost }</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{singlePost}</ReactMarkdown>
         <Link href='/blog' passHref>
           <a>
             <Button className={classes.backButton}>{translate('blog.backButton')}</Button>
