@@ -8,6 +8,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     padding: '128px 0',
     [theme.breakpoints.down('md')]: {
       width: '88%'
+    },
+    [theme.breakpoints.down('sm')]: {
+      padding: '95px 0'
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: '72px 0'
     }
   },
   questionBlock: {
