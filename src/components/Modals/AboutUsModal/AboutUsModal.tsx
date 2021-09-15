@@ -4,7 +4,7 @@ import { useTranslate } from '@utils/translations'
 import useStyles from './style'
 import links from '@static/constants/links'
 import classNames from 'classnames'
-import { NewMark, SoonMark } from '@components/LinkMarks/LinkMarks'
+import { NewMark } from '@components/LinkMarks/LinkMarks'
 import Link from 'next/link'
 
 export interface IAboutUsModal {
@@ -13,12 +13,7 @@ export interface IAboutUsModal {
   handleClose: () => void
   current?: string
 }
-export const AboutUsModal: React.FC<IAboutUsModal> = ({
-  open,
-  anchorEl,
-  handleClose,
-  current
-}) => {
+export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleClose, current }) => {
   const classes = useStyles()
   const translate = useTranslate()
 
@@ -43,48 +38,48 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
             className={classes.listItem}
             onClick={() => {
               handleClose()
-            }}
-          >
-            <Typography className={classes.name}>
-              {translate('header.whitepaper')}
-            </Typography>
+            }}>
+            <Typography className={classes.name}>{translate('header.whitepaper')}</Typography>
             <Typography className={classes.description}>
               {translate('header.whitepaperDescription')}
             </Typography>
           </Grid>
         </a>
-
-        <Grid
-          item
-          className={classNames(classes.listItem, classes.blocked, (current === '/faq' ? classes.current : undefined))}
-          onClick={() => {
-            handleClose()
-          }}
-        >
-          <Grid className={classes.linkWithMarkWrapper}>
-            <Typography className={classes.name}>
-              {translate('header.faq')}
-            </Typography>
-            <SoonMark className={classes.mark} />
-          </Grid>
-          <Typography className={classes.description}>
-            {translate('header.faqDescription')}
-          </Typography>
-        </Grid>
+        <Link href='/faq' passHref>
+          <a style={{ textDecoration: 'none' }}>
+            <Grid
+              item
+              className={classNames(
+                classes.listItem,
+                current === '/faq' ? classes.current : undefined
+              )}
+              onClick={() => {
+                handleClose()
+              }}>
+              <Grid className={classes.linkWithMarkWrapper}>
+                <Typography className={classes.name}>{translate('header.faq')}</Typography>
+                <NewMark className={classes.mark} />
+              </Grid>
+              <Typography className={classes.description}>
+                {translate('header.faqDescription')}
+              </Typography>
+            </Grid>
+          </a>
+        </Link>
 
         <Link href='/brand' passHref>
           <a style={{ textDecoration: 'none' }}>
             <Grid
               item
-              className={classNames(classes.listItem, (current === '/brand' ? classes.current : undefined))}
+              className={classNames(
+                classes.listItem,
+                current === '/brand' ? classes.current : undefined
+              )}
               onClick={() => {
                 handleClose()
-              }}
-            >
+              }}>
               <Grid className={classes.linkWithMarkWrapper}>
-                <Typography className={classes.name}>
-                  {translate('header.brand')}
-                </Typography>
+                <Typography className={classes.name}>{translate('header.brand')}</Typography>
                 <NewMark className={classes.mark} />
               </Grid>
               <Typography className={classes.description}>

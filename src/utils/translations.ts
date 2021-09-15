@@ -10,7 +10,7 @@ export const useTranslate = () => {
   const { language } = useContext(LanguageContext)
 
   return (key: string, index?: number): string => {
-    if (index) {
+    if (typeof index !== 'undefined') {
       return dictionary[language][key][index] ?? ''
     }
 
