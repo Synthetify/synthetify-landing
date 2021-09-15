@@ -56,7 +56,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
 
         <Grid
           item
-          className={classNames(classes.listItem, classes.blocked, (current === '/faq' ? classes.current : undefined))}
+          className={classNames(classes.listItem, classes.blocked, (current === '/faq/' ? classes.current : undefined))}
           onClick={() => {
             handleClose()
           }}
@@ -76,7 +76,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({
           <a style={{ textDecoration: 'none' }}>
             <Grid
               item
-              className={classNames(classes.listItem, (current === '/brand' ? classes.current : undefined))}
+              className={classNames(classes.listItem, (current === '/brand/' ? classes.current : undefined))}
               onClick={() => {
                 handleClose()
               }}

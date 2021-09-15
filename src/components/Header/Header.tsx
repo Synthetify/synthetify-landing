@@ -13,8 +13,7 @@ import { Language } from '@static/translations'
 import AboutUsModal from '@components/Modals/AboutUsModal/AboutUsModal'
 import { useRouter } from 'next/router'
 import CommunityModal from '@components/Modals/CommunityModal/CommunityModal'
-import classNames from 'classnames'
-import { SoonMark } from '@components/LinkMarks/LinkMarks'
+import { NewMark } from '@components/LinkMarks/LinkMarks'
 import useStyles from './style'
 
 export const Header: React.FC = () => {
@@ -101,20 +100,24 @@ export const Header: React.FC = () => {
               }}>
               {translate('header.community')}
             </Typography>
-            <Grid
-              style={{
-                marginRight: 22,
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center'
-              }}>
-              <Typography
-                className={classNames(classes.route, classes.blocked)}
-                style={{ marginRight: 8 }}>
-                {translate('header.blog')}
-              </Typography>
-              <SoonMark className={classes.mark} />
-            </Grid>
+            <Link href='/blog' passHref>
+              <a style={{ textDecoration: 'none' }}>
+                <Grid
+                  style={{
+                    marginRight: 22,
+                    display: 'flex',
+                    flexDirection: 'row',
+                    alignItems: 'center'
+                  }}>
+                  <Typography
+                    className={classes.route}
+                    style={{ marginRight: 8 }}>
+                    {translate('header.blog')}
+                  </Typography>
+                  <NewMark className={classes.mark} />
+                </Grid>
+              </a>
+            </Link>
           </Grid>
 
           <Button className={classes.tradeLink} href={links.app.main} variant='contained'>
