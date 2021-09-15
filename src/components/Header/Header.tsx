@@ -103,12 +103,7 @@ export const Header: React.FC = () => {
             <Link href='/blog' passHref>
               <a style={{ textDecoration: 'none' }}>
                 <Grid
-                  style={{
-                    marginRight: 22,
-                    display: 'flex',
-                    flexDirection: 'row',
-                    alignItems: 'center'
-                  }}>
+                  className={classes.linkWithMark}>
                   <Typography
                     className={classes.route}
                     style={{ marginRight: 8 }}>
