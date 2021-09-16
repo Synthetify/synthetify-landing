@@ -86,6 +86,22 @@ const useStyles = makeStyles((theme: Theme) => ({
       opacity: 1,
       transform: 'scale(1.1)'
     }
+  },
+  desc: {
+    color: colors.navy.veryLightGrey,
+    marginTop: 7,
+    fontSize: 13,
+    fontWeight: 400,
+    lineHeight: '16px',
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: '11px',
+      fontSize: 9
+    }
+  },
+  articleAndDesc: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%'
   }
 }))
 

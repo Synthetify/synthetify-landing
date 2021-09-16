@@ -1,6 +1,6 @@
 import Article from '@components/Blog/Article/Article'
 import PageHeader from '@components/PageHeader/PageHeader'
-import { Grid, Typography } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import { useTranslate } from '@utils/translations'
 import React, { useEffect } from 'react'
 import useStyles from './style'
@@ -33,11 +33,8 @@ export const Blog: React.FC<IProps> = ({ data }) => {
         description={translate('blog.subtitle')}
       />
       <Grid className={classes.articlesWrapper} id="arcWrapper">
-        {data.map((article: DataForArticles) => (
-          <div key={article.slug} className={classes.articleAndDesc}>
-            <Article title={article.title} date={article.date} image={article.image} description={article.description} slug={article.slug} />
-            <Typography className={classes.desc}>{article.description}</Typography>
-          </div>
+        {data.map((article: DataForArticles, index) => (
+          <Article key={index} title={article.title} date={article.date} image={article.image} description={article.description} slug={article.slug} />
         )
         )}
       </Grid>
