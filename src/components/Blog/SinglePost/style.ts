@@ -33,7 +33,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     '& img': {
       borderRadius: 20,
       maxWidth: 880,
-      margin: '120px 0',
+      display: 'block',
+      margin: '120px auto',
       width: '100%',
 
       [theme.breakpoints.down('md')]: {
@@ -58,6 +59,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       lineHeight: '40px',
       marginBottom: 0,
       textAlign: 'justify',
+      width: '100%',
 
       [theme.breakpoints.down('sm')]: {
         fontSize: 18,
@@ -70,21 +72,8 @@ const useStyles = makeStyles((theme: Theme) => ({
       }
     },
 
-    '& h3': {
-      fontSize: 22,
-      lineHeight: '40px',
-      margin: 0,
-      width: '100%',
-
-      [theme.breakpoints.down('sm')]: {
-        fontSize: 18,
-        lineHeight: '32px'
-      },
-
-      [theme.breakpoints.down('xs')]: {
-        fontSize: 15,
-        lineHeight: '25px'
-      }
+    '& p strong': {
+      fontWeight: 600
     }
   },
   backButton: {
