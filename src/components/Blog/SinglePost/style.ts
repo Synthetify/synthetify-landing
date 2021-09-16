@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     alignItems: 'center',
     color: colors.white.main,
     marginInline: 'auto',
-    marginTop: 128,
+    marginTop: 108,
     marginBottom: 100,
     maxWidth: 1380,
 
@@ -19,77 +19,72 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('sm')]: {
-      marginTop: 96,
+      marginTop: 76,
       marginBottom: 57,
       paddingInline: 32
     },
 
     [theme.breakpoints.down('xs')]: {
-      marginTop: 88,
+      marginTop: 68,
       marginBottom: 40,
       paddingInline: 26
     },
 
-    '& h2': {
-      textAlign: 'center',
-      lineHeight: '120px',
-      fontWeight: 700,
-      fontSize: 100,
-      margin: '30px 0px 30px 0',
+    '& img': {
+      borderRadius: 20,
+      maxWidth: 880,
+      margin: '120px 0',
+      width: '100%',
+
+      [theme.breakpoints.down('md')]: {
+        marginBlock: 80
+      },
 
       [theme.breakpoints.down('sm')]: {
-        fontSize: '67px'
+        marginBlock: 60
       },
 
       [theme.breakpoints.down('xs')]: {
-        fontSize: '50px'
+        marginBlock: 40
+      }
+    },
+
+    '& p:first-child img': {
+      marginTop: 0
+    },
+
+    '& p': {
+      fontSize: 22,
+      lineHeight: '40px',
+      marginBottom: 0,
+      textAlign: 'justify',
+
+      [theme.breakpoints.down('sm')]: {
+        fontSize: 18,
+        lineHeight: '32px'
+      },
+
+      [theme.breakpoints.down('xs')]: {
+        fontSize: 15,
+        lineHeight: '25px'
       }
     },
 
     '& h3': {
-      textAlign: 'center',
-      color: colors.navy.info,
-      fontSize: '32px',
+      fontSize: 22,
       lineHeight: '40px',
-      marginBottom: '15px',
+      margin: 0,
+      width: '100%',
 
       [theme.breakpoints.down('sm')]: {
-        fontSize: '20px'
+        fontSize: 18,
+        lineHeight: '32px'
       },
 
       [theme.breakpoints.down('xs')]: {
-        fontSize: '15px'
+        fontSize: 15,
+        lineHeight: '25px'
       }
-    },
-
-    '& p img': {
-      borderRadius: '20px',
-      width: '880px',
-      margin: '30px 0 30px 0',
-      [theme.breakpoints.down('md')]: {
-        width: '88%'
-      }
-    },
-
-    '&> blockquote': {
-      fontSize: '22px',
-      fontWeight: 400,
-      width: '1300px',
-
-      margin: 0,
-
-      '& p': {
-        marginBottom: 0,
-        textAlign: 'justify'
-      },
-
-      [theme.breakpoints.down('md')]: {
-        width: '88%'
-      }
-    },
-
-    '& h4': {
-      margin: 0
     }
   },
   backButton: {
