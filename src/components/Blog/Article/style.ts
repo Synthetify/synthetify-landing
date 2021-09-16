@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.veryLightGrey,
     display: 'flex',
     justifyContent: 'space-between',
+    flexDirection: 'column',
     zIndex: 2,
     position: 'absolute',
     [theme.breakpoints.down('sm')]: {
