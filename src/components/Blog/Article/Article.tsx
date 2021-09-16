@@ -6,7 +6,7 @@ import useStyles from './style'
 
 export const Article: React.FC<DataForArticles> = ({ title, date, image, slug, description }) => {
   const classes = useStyles()
-  console.log(image)
+
   return (
     <Link href={`/blog/${slug}`} passHref>
       <a style={{ width: '100%', textDecoration: 'none' }}>
@@ -16,7 +16,7 @@ export const Article: React.FC<DataForArticles> = ({ title, date, image, slug, d
               <CardMedia className={classes.image} alt=" " src={image} component='img'/>
               <Grid item className={classes.infoBar}>
                 <Typography className={classes.title}>{title}</Typography>
-                <Typography className={classes.date}>{date}</Typography>
+                <Typography className={classes.date}>{(new Date(date)).toLocaleDateString('en-US', { dateStyle: 'long' })}</Typography>
               </Grid>
             </Grid>
           </div>
