@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       marginTop: 0
     },
 
-    '& p': {
+    '& p, & ul': {
       fontSize: 22,
       lineHeight: '40px',
       marginBottom: 0,
@@ -74,6 +74,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '& p strong': {
       fontWeight: 600
+    },
+
+    '& a': {
+      color: colors.navy.button,
+      textDecoration: 'none'
     }
   },
   backButton: {
