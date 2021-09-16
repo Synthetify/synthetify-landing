@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     lineHeight: '100px',
     fontWeight: 700,
     color: colors.white.main,
+    textAlign: 'center',
 
     [theme.breakpoints.down('sm')]: {
       fontSize: 67,
