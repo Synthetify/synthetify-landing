@@ -2,17 +2,9 @@ import React from 'react'
 import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
-import BlogListing from '@components/Blog/Blog'
+import BlogListing, { DataForArticles } from '@components/Blog/Blog'
 
-export interface BlogData {
-  slug: string
-  title: string
-  description: string
-  image: string
-  date: string
-}
-
-export const Blog: React.FC<{ posts: BlogData[] }> = ({ posts }) => {
+export const Blog: React.FC<{ posts: DataForArticles[] }> = ({ posts }) => {
   return (
     <BlogListing data={posts}/>
   )

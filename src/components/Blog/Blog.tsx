@@ -8,7 +8,7 @@ import useStyles from './style'
 export interface DataForArticles {
   title: string
   date: string
-  description?: string
+  description: string
   image: string
   slug: string
 }
