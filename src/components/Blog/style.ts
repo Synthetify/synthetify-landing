@@ -21,21 +21,21 @@ const useStyles = makeStyles((theme: Theme) => ({
       marginBlock: 223
     },
     [theme.breakpoints.down('md')]: {
-      width: 862,
+      width: 'calc(100% - 98px)',
       columnGap: 38,
       marginBlock: 163
     },
     [theme.breakpoints.down('sm')]: {
-      width: 546,
       columnGap: 18,
-      marginBlock: 102
+      marginBlock: 102,
+      width: 'calc(100% - 56px)'
     },
     [theme.breakpoints.down('xs')]: {
       gridTemplateColumns: '1fr',
-      width: 313,
       rowGap: 38,
       justifyContent: 'center',
-      marginBlock: 75
+      marginBlock: 75,
+      width: 'calc(100% - 62px)'
     }
   },
   desc: {

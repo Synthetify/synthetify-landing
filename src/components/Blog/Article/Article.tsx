@@ -11,13 +11,15 @@ export const Article: React.FC<DataForArticles> = ({ title, date, image, slug, d
     <Link href={`/blog/${slug}`} passHref>
       <a style={{ width: '100%', textDecoration: 'none' }}>
         <div className={classes.articleAndDesc}>
-          <Grid container className={classes.root} justifyContent='space-between'>
-            <CardMedia className={classes.image} alt=" " src={image} component='img'/>
-            <Grid item className={classes.infoBar}>
-              <Typography className={classes.title}>{title}</Typography>
-              <Typography className={classes.date}>{date}</Typography>
+          <div className={classes.aspectRatioBox}>
+            <Grid container className={classes.root} justifyContent='space-between'>
+              <CardMedia className={classes.image} alt=" " src={image} component='img'/>
+              <Grid item className={classes.infoBar}>
+                <Typography className={classes.title}>{title}</Typography>
+                <Typography className={classes.date}>{date}</Typography>
+              </Grid>
             </Grid>
-          </Grid>
+          </div>
           <Typography className={classes.desc}>{description}</Typography>
         </div>
       </a>

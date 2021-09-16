@@ -2,24 +2,33 @@ import { colors } from '@static/theme'
 import { makeStyles, Theme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme: Theme) => ({
+  aspectRatioBox: {
+    overflow: 'hidden',
+    height: 0,
+    paddingTop: '58.6%',
+    width: '100%',
+    position: 'relative',
+
+    [theme.breakpoints.down('md')]: {
+      paddingTop: '68.9%'
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      paddingTop: '58.1%'
+    }
+  },
   root: {
     width: '100%',
-    height: 284,
     backgroundColor: '#40BFA0',
     borderRadius: 20,
     display: 'flex',
     overflow: 'hidden',
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'relative',
-    [theme.breakpoints.down('md')]: {
-      maxHeight: 284,
-      width: '100%'
-    },
-    [theme.breakpoints.down('sm')]: {
-      maxHeight: 182,
-      width: '100%'
-    }
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    height: '100%'
   },
   infoBar: {
     alignSelf: 'flex-end',
@@ -40,9 +49,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     alignSelf: 'flex-start',
     fontWeight: 600,
     lineHeight: '25px',
-    position: 'relative',
-    top: 7,
-    left: 7,
+    marginTop: 7,
+    marginLeft: 7,
     color: colors.navy.veryLightGrey,
     [theme.breakpoints.down('md')]: {
       fontSize: 20
@@ -94,8 +102,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 400,
     lineHeight: '16px',
     [theme.breakpoints.down('sm')]: {
-      lineHeight: '11px',
-      fontSize: 9
+      lineHeight: '13px',
+      fontSize: 12
     }
   },
   articleAndDesc: {
