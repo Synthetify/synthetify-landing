@@ -12,29 +12,27 @@ const useStyles = makeStyles((theme: Theme) => ({
     columnGap: 80,
     rowGap: 88,
     justifyContent: 'center',
-    marginBlock: 240,
+    marginBlock: 144,
     marginInline: 'auto',
     [theme.breakpoints.down('lg')]: {
       gridTemplateColumns: '1fr 1fr',
       width: 1050,
       rowGap: 97,
-      marginBlock: 223
+      marginBlock: 130
     },
     [theme.breakpoints.down('md')]: {
       width: 'calc(100% - 98px)',
       columnGap: 38,
-      marginBlock: 163
+      marginBlock: 94
     },
     [theme.breakpoints.down('sm')]: {
       columnGap: 18,
-      marginBlock: 102,
       width: 'calc(100% - 56px)'
     },
     [theme.breakpoints.down('xs')]: {
       gridTemplateColumns: '1fr',
       rowGap: 38,
       justifyContent: 'center',
-      marginBlock: 75,
       width: 'calc(100% - 62px)'
     }
   },

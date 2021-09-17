@@ -13,10 +13,12 @@ export const Article: React.FC<DataForArticles> = ({ title, date, image, slug, d
         <div className={classes.articleAndDesc}>
           <div className={classes.aspectRatioBox}>
             <Grid container className={classes.root} justifyContent='space-between'>
-              <CardMedia className={classes.image} alt=" " src={image} component='img'/>
+              <Typography className={classes.date}>
+                {new Date(date).toLocaleDateString('en-US', { dateStyle: 'long' })}
+              </Typography>
+              <CardMedia className={classes.image} alt=' ' src={image} component='img' />
               <Grid item className={classes.infoBar}>
                 <Typography className={classes.title}>{title}</Typography>
-                <Typography className={classes.date}>{(new Date(date)).toLocaleDateString('en-US', { dateStyle: 'long' })}</Typography>
               </Grid>
             </Grid>
           </div>

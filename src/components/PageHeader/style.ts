@@ -3,10 +3,10 @@ import { colors } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    paddingTop: 200,
+    paddingTop: 144,
 
     [theme.breakpoints.down('md')]: {
-      paddingTop: 120
+      paddingTop: 104
     },
 
     [theme.breakpoints.down('sm')]: {

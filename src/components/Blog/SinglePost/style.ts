@@ -12,20 +12,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginInline: 'auto',
     marginTop: 108,
     marginBottom: 100,
-    maxWidth: 1380,
+    maxWidth: 800,
 
     [theme.breakpoints.down('lg')]: {
       paddingInline: 67
     },
 
     [theme.breakpoints.down('sm')]: {
-      marginTop: 76,
+      marginTop: 53,
       marginBottom: 57,
       paddingInline: 32
     },
 
     [theme.breakpoints.down('xs')]: {
-      marginTop: 68,
+      marginTop: 43,
       marginBottom: 40,
       paddingInline: 26
     },
@@ -34,19 +34,15 @@ const useStyles = makeStyles((theme: Theme) => ({
       borderRadius: 20,
       maxWidth: 880,
       display: 'block',
-      margin: '120px auto',
+      margin: '90px auto',
       width: '100%',
 
       [theme.breakpoints.down('md')]: {
-        marginBlock: 80
+        marginBlock: 55
       },
 
       [theme.breakpoints.down('sm')]: {
-        marginBlock: 60
-      },
-
-      [theme.breakpoints.down('xs')]: {
-        marginBlock: 40
+        marginBlock: 20
       }
     },
 
@@ -56,7 +52,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '& p, & ul': {
       fontSize: 22,
-      lineHeight: '40px',
+      lineHeight: '35px',
       marginBottom: 0,
       textAlign: 'justify',
       width: '100%',
