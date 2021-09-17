@@ -4,21 +4,21 @@ const useStyles = makeStyles((theme: Theme) => ({
   gridWrapper: {
     display: 'grid',
     marginInline: 'auto',
-    marginBlock: 192,
+    marginBlock: 140,
     maxWidth: 962,
     gridTemplateColumns: '1fr 1fr',
     columnGap: 60,
     rowGap: 60,
 
     [theme.breakpoints.down('md')]: {
-      marginBlock: 173,
+      marginBlock: 100,
       maxWidth: 829,
       columnGap: 25,
       rowGap: 25
     },
 
     [theme.breakpoints.down('sm')]: {
-      marginTop: 96,
+      marginTop: 65,
       marginBottom: 104,
       maxWidth: 554,
       columnGap: 16,
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('xs')]: {
-      marginTop: 80,
+      marginTop: 55,
       marginBottom: 65,
       maxWidth: 269,
       gridTemplateColumns: '1fr'

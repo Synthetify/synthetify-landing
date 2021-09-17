@@ -5,15 +5,15 @@ const useStyles = makeStyles((theme: Theme) => ({
   container: {
     width: '65%',
     margin: '0 auto',
-    padding: '128px 0',
+    padding: '144px 0',
     [theme.breakpoints.down('md')]: {
       width: '88%'
     },
     [theme.breakpoints.down('sm')]: {
-      padding: '95px 0'
+      padding: '70px 0'
     },
     [theme.breakpoints.down('xs')]: {
-      padding: '72px 0'
+      padding: '64px 0'
     }
   },
   questionBlock: {

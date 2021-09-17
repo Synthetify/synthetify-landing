@@ -3,10 +3,10 @@ import { colors } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    paddingTop: 200,
+    paddingTop: 144,
 
     [theme.breakpoints.down('md')]: {
-      paddingTop: 120
+      paddingTop: 104
     },
 
     [theme.breakpoints.down('sm')]: {
@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     lineHeight: '100px',
     fontWeight: 700,
     color: colors.white.main,
+    textAlign: 'center',
 
     [theme.breakpoints.down('sm')]: {
       fontSize: 67,

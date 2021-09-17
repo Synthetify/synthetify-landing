@@ -171,17 +171,15 @@ export const Footer: React.FC = () => {
           />
         </Grid>
 
-        <Grid
-          container
-          item
-          className={classNames(classes.column, classes.hideOnSm)}
-          direction='column'>
-          <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
-            <Typography className={classNames(classes.columnHeader, classes.blocked)}>
-              {translate('header.blog')}
-            </Typography>
-            <SoonMark className={classes.mark} />
-          </Grid>
+        <Grid container item className={classNames(classes.column, classes.hideOnSm)} direction='column'>
+          <Link href='/blog' passHref>
+            <a className={classes.a}>
+              <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
+                <Typography className={classes.columnHeader}>{translate('header.blog')}</Typography>
+                <NewMark className={classes.mark} />
+              </Grid>
+            </a>
+          </Link>
         </Grid>
 
         <Grid container item className={classes.column} direction='column'>

@@ -8,16 +8,16 @@ const useStyles = makeStyles((theme: Theme) => ({
   text: {
     fontSize: 22,
     color: colors.navy.veryLightGrey,
-    lineHeight: '40px',
+    lineHeight: '35px',
     animation: 'close 2s linear',
     overflow: 'ellipsis',
     [theme.breakpoints.down('sm')]: {
       fontSize: 18,
-      lineHeight: '34px'
+      lineHeight: '29px'
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 15,
-      lineHeight: '30px'
+      lineHeight: '25px'
     }
   },
   question: {
@@ -25,11 +25,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   answer: {
     fontWeight: 400,
-    maxHeight: 40,
+    maxHeight: 85,
     transition: 'max-height 2s',
     overflow: 'hidden',
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 30
+      maxHeight: 65
     }
   },
   more: {

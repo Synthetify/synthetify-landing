@@ -21,14 +21,16 @@ export const Question = ({ question, answer }: Props) => {
   }, [ref])
 
   const isVisible = (text: string): boolean => {
-    return typeof text === 'string' ? height < 45 : false
+    return typeof text === 'string' ? height < 80 : false
   }
   return (
     <>
       <Grid container direction='column' classes={{ container: classes.container }}>
-        <Typography className={`${classes.text} ${classes.question}`} component='h2'>{question}</Typography>
+        <Typography className={`${classes.text} ${classes.question}`} component='h2'>
+          {question}
+        </Typography>
         <div ref={ref} className={`${classes.answer} ${isOpen ? classes.open : ''}`}>
-          <Typography className={classes.text} dangerouslySetInnerHTML={{ __html: answer }}/>
+          <Typography className={classes.text} dangerouslySetInnerHTML={{ __html: answer }} />
         </div>
         <Button
           className={classes.more}

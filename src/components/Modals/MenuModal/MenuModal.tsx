@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { useTranslate } from '@utils/translations'
 import { unblurContent } from '@utils/uiUtils'
 import useStyles from './style'
+import { NewMark } from '@components/LinkMarks/LinkMarks'
 import classNames from 'classnames'
-import { SoonMark } from '@components/LinkMarks/LinkMarks'
 
 export interface IMenuModal {
   open: boolean
@@ -54,7 +54,7 @@ export const MenuModal: React.FC<IMenuModal> = ({
             }}
           >
             <a style={{ textDecoration: 'none' }}>
-              <Typography className={current === '/' ? classes.current : classes.name}>
+              <Typography className={classNames(classes.name, current === '/' ? classes.current : undefined)}>
                 {translate('header.home')}
               </Typography>
             </a>
@@ -87,21 +87,25 @@ export const MenuModal: React.FC<IMenuModal> = ({
           </Typography>
         </Grid>
 
-        <Grid
-          item
-          className={classNames(classes.listItem, classes.blocked)}
-          onClick={() => {
-            handleClose()
-            unblurContent()
-          }}
-        >
-          <Grid className={classes.linkWithMarkWrapper}>
-            <Typography className={current === '/blog' ? classes.current : classes.name}>
-              {translate('header.blog')}
-            </Typography>
-            <SoonMark className={classes.mark} />
+        <Link href='/blog' passHref>
+          <Grid
+            item
+            className={classes.listItem}
+            onClick={() => {
+              handleClose()
+              unblurContent()
+            }}
+          >
+            <a style={{ textDecoration: 'none' }}>
+              <Grid className={classes.linkWithMarkWrapper}>
+                <Typography className={classNames(classes.name, current === '/blog/' ? classes.current : undefined)}>
+                  {translate('header.blog')}
+                </Typography>
+                <NewMark className={classes.mark} />
+              </Grid>
+            </a>
           </Grid>
-        </Grid>
+        </Link>
       </Grid>
     </Popover>
   )

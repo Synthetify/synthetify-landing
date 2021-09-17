@@ -4,73 +4,77 @@ import { colors } from '@static/theme'
 const useStyles = makeStyles((theme: Theme) => ({
   mainContainer: {
     fontFamily: 'Inter',
-    background: colors.navy.background,
     display: 'flex',
     flexDirection: 'column',
     alignContent: 'center',
     alignItems: 'center',
     color: colors.white.main,
-    '&> p': {
-      textAlign: 'center'
-    },
-    '& hr': {
-      borderColor: colors.white.main,
-      width: '630px',
-      margin: '15px',
-      [theme.breakpoints.down('sm')]: {
-        width: '60%'
-      }
-    },
-    '& h2': {
-      textAlign: 'center',
-      lineHeight: '120px',
-      fontWeight: 700,
-      fontSize: 100,
-      margin: '30px 0px 30px 0',
-      [theme.breakpoints.down('sm')]: {
-        fontSize: '67px'
-      },
-      [theme.breakpoints.down('xs')]: {
-        fontSize: '50px'
-      }
-    },
-    '& h3': {
-      textAlign: 'center',
-      color: colors.navy.info,
-      fontSize: '32px',
-      lineHeight: '40px',
-      marginBottom: '15px',
-      [theme.breakpoints.down('sm')]: {
-        fontSize: '20px'
-      },
-      [theme.breakpoints.down('xs')]: {
-        fontSize: '15px'
-      }
-    },
-    '& p img': {
-      borderRadius: '20px',
-      width: '880px',
-      margin: '30px 0 30px 0',
-      [theme.breakpoints.down('md')]: {
-        width: '88%'
-      }
-    },
-    '&> blockquote': {
-      fontSize: '22px',
-      fontWeight: 400,
-      width: '1300px',
+    marginInline: 'auto',
+    marginTop: 108,
+    marginBottom: 100,
+    maxWidth: 800,
 
-      margin: 0,
-      '& p': {
-        marginBottom: 0,
-        textAlign: 'justify'
-      },
+    [theme.breakpoints.down('lg')]: {
+      paddingInline: 67
+    },
+
+    [theme.breakpoints.down('sm')]: {
+      marginTop: 53,
+      marginBottom: 57,
+      paddingInline: 32
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      marginTop: 43,
+      marginBottom: 40,
+      paddingInline: 26
+    },
+
+    '& img': {
+      borderRadius: 20,
+      maxWidth: 880,
+      display: 'block',
+      margin: '90px auto',
+      width: '100%',
+
       [theme.breakpoints.down('md')]: {
-        width: '88%'
+        marginBlock: 55
+      },
+
+      [theme.breakpoints.down('sm')]: {
+        marginBlock: 20
       }
     },
-    '& h4': {
-      margin: 0
+
+    '& p:first-child img': {
+      marginTop: 0
+    },
+
+    '& p, & ul': {
+      fontSize: 22,
+      lineHeight: '35px',
+      marginBottom: 0,
+      textAlign: 'justify',
+      width: '100%',
+
+      [theme.breakpoints.down('sm')]: {
+        fontSize: 18,
+        lineHeight: '32px'
+      },
+
+      [theme.breakpoints.down('xs')]: {
+        fontSize: 15,
+        lineHeight: '25px'
+      }
+    },
+
+    '& p strong': {
+      fontWeight: 600
+    },
+
+    '& a': {
+      color: colors.navy.button,
+      textDecoration: 'none'
     }
   },
   backButton: {
@@ -79,12 +83,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: '22px',
     lineHeight: '40px',
     fontWeight: 700,
-    padding: '8px 16px 8px 16px',
+    padding: '8px 16px',
     borderRadius: '10px',
     marginTop: '50px',
-    marginBottom: '20px',
-    width: 'max-content',
     textTransform: 'none',
+
     '&:hover': {
       backgroundColor: '#4ADFBA'
     }
