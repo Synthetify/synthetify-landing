@@ -2,26 +2,33 @@ import { colors } from '@static/theme'
 import { makeStyles, Theme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme: Theme) => ({
+  aspectRatioBox: {
+    overflow: 'hidden',
+    height: 0,
+    paddingTop: '58.6%',
+    width: '100%',
+    position: 'relative',
+
+    [theme.breakpoints.down('md')]: {
+      paddingTop: '68.9%'
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      paddingTop: '58.1%'
+    }
+  },
   root: {
-    maxWidth: 485,
-    height: 284,
+    width: '100%',
     backgroundColor: '#40BFA0',
     borderRadius: 20,
-    display: 'flex',
+    display: 'grid',
     overflow: 'hidden',
-    justifyContent: 'center',
+    justifyContent: 'end',
     alignItems: 'center',
-    position: 'relative',
-    [theme.breakpoints.down('md')]: {
-      maxHeight: 284,
-      maxWidth: 412,
-      width: '100%'
-    },
-    [theme.breakpoints.down('sm')]: {
-      maxHeight: 182,
-      maxWidth: 313,
-      width: '100%'
-    }
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    height: '100%'
   },
   infoBar: {
     alignSelf: 'flex-end',
@@ -31,12 +38,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.veryLightGrey,
     display: 'flex',
     justifyContent: 'space-between',
+    flexDirection: 'column',
     zIndex: 2,
     position: 'absolute',
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 47
-    },
-    [theme.breakpoints.down('xs')]: {
       maxHeight: 47
     }
   },
@@ -45,9 +50,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     alignSelf: 'flex-start',
     fontWeight: 600,
     lineHeight: '25px',
-    position: 'relative',
-    top: 7,
-    left: 7,
+    marginTop: 8,
+    marginLeft: 8,
     color: colors.navy.veryLightGrey,
     [theme.breakpoints.down('md')]: {
       fontSize: 20
@@ -59,14 +63,18 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   date: {
     fontSize: 13,
-    alignSelf: 'flex-end',
+    alignSelf: 'baseline',
     textAlign: 'right',
     fontWeight: 400,
     lineHeight: '15.73px',
-    marginBottom: 5,
-    marginRight: 16,
-    width: 206,
-    color: colors.navy.veryLightGrey,
+    width: 'max-content',
+    justifyContent: 'space-evenly',
+    backgroundColor: colors.navy.lightGrey,
+    color: colors.navy.background,
+    zIndex: 2,
+    padding: 8,
+    display: 'grid',
+    borderRadius: '0px 20px',
     [theme.breakpoints.down('md')]: {
       width: 160,
       textAlign: 'right'
@@ -91,6 +99,23 @@ const useStyles = makeStyles((theme: Theme) => ({
       opacity: 1,
       transform: 'scale(1.1)'
     }
+  },
+  desc: {
+    color: colors.navy.veryLightGrey,
+    marginTop: 7,
+    marginLeft: 7,
+    fontSize: 13,
+    fontWeight: 400,
+    lineHeight: '16px',
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: '13px',
+      fontSize: 12
+    }
+  },
+  articleAndDesc: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%'
   }
 }))
 

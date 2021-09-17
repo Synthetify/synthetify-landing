@@ -116,6 +116,16 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('sm')]: {
       display: 'none'
     }
+  },
+  linkWithMark: {
+    marginRight: 22,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+
+    '&:hover $route': {
+      color: colors.navy.veryLightGrey
+    }
   }
 }))
 

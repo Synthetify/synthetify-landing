@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     position: 'fixed',
     bottom: 50,
     right: 25,
-    zIndex: 1,
+    zIndex: 10,
 
     [theme.breakpoints.down('md')]: {
       right: 17

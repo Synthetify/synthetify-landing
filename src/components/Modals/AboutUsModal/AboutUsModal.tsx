@@ -45,13 +45,14 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
             </Typography>
           </Grid>
         </a>
+
         <Link href='/faq' passHref>
           <a style={{ textDecoration: 'none' }}>
             <Grid
               item
               className={classNames(
                 classes.listItem,
-                current === '/faq' ? classes.current : undefined
+                current === '/faq/' ? classes.current : undefined
               )}
               onClick={() => {
                 handleClose()
@@ -73,7 +74,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               item
               className={classNames(
                 classes.listItem,
-                current === '/brand' ? classes.current : undefined
+                current === '/brand/' ? classes.current : undefined
               )}
               onClick={() => {
                 handleClose()
