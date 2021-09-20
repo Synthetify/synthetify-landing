@@ -10,7 +10,7 @@ export interface IProps {
 export const BlogPostMetatags: React.FC<IProps> = ({ slug, title, description, image }) => (
   <Head>
     {/* Open Graph  */}
-    <meta property="og:url" key="og:url" content={`https://synthetify.io/blog/${slug}`} />
+    <meta property="og:url" key="og:url" content='' />
     <meta property="og:title" key="og:title" content={`${title} - Synthetify`} />
     <meta
       property="og:description"
@@ -20,7 +20,7 @@ export const BlogPostMetatags: React.FC<IProps> = ({ slug, title, description, i
     <meta property="og:image" key="og:image" content={image} />
 
     {/* Twitter Card  */}
-    <meta property="twitter:url" key="twitter:url" content="https://twitter.com/synthetify" />
+    <meta property="twitter:url" key="twitter:url" content='' />
     <meta property="twitter:title" key="twitter:title" content={`${title} - Synthetify`} />
     <meta
       property="twitter:description"

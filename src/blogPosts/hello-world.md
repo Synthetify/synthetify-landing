@@ -2,7 +2,7 @@
 title: "Hello world!"
 date: "2021-09-16"
 description: "Welcome on our all-new blog!"
-image: /blog/snyHello.png
+image: "/blog/snyHello.png"
 ---
 
 ![img1](/blog/snyHello.png)
