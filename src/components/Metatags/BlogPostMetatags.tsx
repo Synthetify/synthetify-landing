@@ -8,7 +8,7 @@ export interface IProps {
 }
 
 export const BlogPostMetatags: React.FC<IProps> = ({ slug, title, description, image }) => {
-  const href: string = typeof window !== 'undefined' ? window.location.origin : ''
+  const href: string = process.env.VERCEL_URL ?? ''
   return (
     <Head>
       {/* Open Graph  */}
