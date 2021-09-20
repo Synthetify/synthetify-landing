@@ -4,11 +4,11 @@ export type ListedAsset = 'BTC' | 'ETH' | 'LTC' | 'SOL' | 'FTT' | 'BNB' | 'SRM' 
 
 // TODO: These are devnet keys. Switch to mainnet ones when available.
 export const assetsAccounts = {
-  BTC: new PublicKey('HovQMDrbAgAYPCmHVSrezcSmkMtXSSUsLDFANExrZh2J'),
-  ETH: new PublicKey('EdVCmQ9FSPcVe5YySXDPCRmc8aDQLKJ9xvYBMZPie1Vw'),
-  LTC: new PublicKey('BLArYBCUYhdWiY8PCUTpvFE21iaJq85dvxLk9bYMobcU'),
-  SOL: new PublicKey('J83w4HKfqxwcq3BEMMkPFSppX3gqekLyLJBexebFVkix'),
-  FTT: new PublicKey('6vivTRs5ZPeeXbjo7dfburfaYDWoXjBtdtuYgQRuGfu'),
-  BNB: new PublicKey('GwzBgrXb4PG59zjce24SF2b9JXbLEjJJTBkmytuEZj1b'),
-  SRM: new PublicKey('992moaMQKs32GKZ9dxi8keyM2bUmbrwBZpK4p2K6X5Vs')
+  BTC: new PublicKey('4aDoSXJ5o3AuvL7QFeR6h44jALQfTmUUCTVGDD6aoJTM'),
+  ETH: new PublicKey('JBu1AL4obBcCMqKBBxhpWCNUt136ijcuMZLFvTP7iWdB'),
+  LTC: new PublicKey('8RMnV1eD55iqUFJLMguPkYBkq8DCtx81XcmAja93LvRR'),
+  SOL: new PublicKey('H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG'),
+  FTT: new PublicKey('8JPJJkmDScpcNmBRKGZuPuG2GYAveQgP3t5gFuMymwvF'),
+  BNB: new PublicKey('4CkQJBxhU8EZ2UjhigbtdaPbpTe6mqf811fipYBFbSYN'),
+  SRM: new PublicKey('3NBReDRTLKMQEKiLD5tGcx4kXbTf88b7f2xLS9UuGjym')
 }
