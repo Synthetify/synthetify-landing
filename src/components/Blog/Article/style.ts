@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   root: {
     width: '100%',
-    backgroundColor: '#40BFA0',
+    backgroundColor: 'transparent',
     borderRadius: 20,
     display: 'grid',
     overflow: 'hidden',
