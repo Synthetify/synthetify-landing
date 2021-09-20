@@ -10,7 +10,7 @@ export interface IProps {
 export const BlogPostMetatags: React.FC<IProps> = ({ slug, title, description, image }) => (
   <Head>
     {/* Open Graph  */}
-    <meta property="og:url" key="og:url" content='' />
+    <meta property="og:url" key="og:url" content={`https://synthetify.io/blog/${slug}`} />
     <meta property="og:title" key="og:title" content={`${title} - Synthetify`} />
     <meta
       property="og:description"
