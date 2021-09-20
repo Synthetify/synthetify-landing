@@ -8,7 +8,7 @@ export interface IProps {
 }
 
 export const BlogPostMetatags: React.FC<IProps> = ({ slug, title, description, image }) => {
-  const href: string = process.env.NEXT_PUBLIC_VERCEL_URL ?? ''
+  const href: string = `https://${process.env.NEXT_PUBLIC_VERCEL_URL ?? 'synthetify.io'}`
   return (
     <Head>
       {/* Open Graph  */}
