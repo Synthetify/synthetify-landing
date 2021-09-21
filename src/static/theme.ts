@@ -36,7 +36,8 @@ export const colors = {
     button: '#6C6BC7',
     info: '#6F6EAA',
     darkGrey: '#292956',
-    '8584D2': '#8584D2'
+    '8584D2': '#8584D2',
+    tooltip: '#5452CE'
   }
 }
 export const theme = createTheme({

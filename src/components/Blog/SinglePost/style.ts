@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   tooltip: {
     fontSize: 13,
-    backgroundColor: colors.navy.info
+    backgroundColor: colors.navy.tooltip
   }
 }))
 
