@@ -94,11 +94,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     zIndex: 1,
     position: 'absolute',
     opacity: 0.8,
-    transition: 'all .5s ease-out',
-    '&:hover': {
-      opacity: 1,
-      transform: 'scale(1.1)'
-    }
+    transition: 'all .5s ease-out'
   },
   desc: {
     color: colors.navy.veryLightGrey,
@@ -115,7 +111,12 @@ const useStyles = makeStyles((theme: Theme) => ({
   articleAndDesc: {
     display: 'flex',
     flexDirection: 'column',
-    width: '100%'
+    width: '100%',
+
+    '&:hover $image': {
+      opacity: 1,
+      transform: 'scale(1.1)'
+    }
   }
 }))
 
