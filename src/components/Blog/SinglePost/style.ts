@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginInline: 'auto',
     marginTop: 108,
     marginBottom: 100,
-    maxWidth: 800,
+    maxWidth: 1200,
 
     [theme.breakpoints.down('lg')]: {
       paddingInline: 67
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '& img': {
       borderRadius: 20,
-      maxWidth: 880,
+      maxWidth: 800,
       display: 'block',
       margin: '90px auto',
       width: '100%',
@@ -46,8 +46,13 @@ const useStyles = makeStyles((theme: Theme) => ({
       }
     },
 
+    '& p:first-child': {
+      maxWidth: '100%'
+    },
+
     '& p:first-child img': {
-      marginTop: 0
+      marginTop: 0,
+      maxWidth: '100%'
     },
 
     '& p, & ul': {
@@ -56,6 +61,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       marginBottom: 0,
       textAlign: 'justify',
       width: '100%',
+      maxWidth: 800,
 
       [theme.breakpoints.down('sm')]: {
         fontSize: 18,
