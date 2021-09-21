@@ -19,10 +19,12 @@ class MyDocument extends Document {
               }
               body {
                 margin: 0;
-                font-family: 'Inter';
+                font-family: 'DM Sans';
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                 background-color: #0c0d2c;
+                letter-spacing: -0.03em;
+                font-weight: 500;
               }
             `}
           </style>

@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     position: 'relative',
     top: 7,
     fontSize: 13,
-    fontWeight: 400,
+    fontWeight: 500,
     width: 'calc(100% - 3px)',
     maxWidth: 485,
     lineHeight: '16px',

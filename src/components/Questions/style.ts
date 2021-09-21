@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 'bold'
   },
   answer: {
-    fontWeight: 400,
+    fontWeight: 500,
     maxHeight: 70,
     transition: 'max-height 350ms cubic-bezier(0.16, 1, 0.3, 1)',
     overflow: 'hidden',

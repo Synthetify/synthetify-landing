@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 13,
     alignSelf: 'baseline',
     textAlign: 'right',
-    fontWeight: 400,
+    fontWeight: 500,
     lineHeight: '15.73px',
     width: 'max-content',
     justifyContent: 'space-evenly',
@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginTop: 7,
     marginLeft: 7,
     fontSize: 13,
-    fontWeight: 400,
+    fontWeight: 500,
     lineHeight: '16px',
     [theme.breakpoints.down('sm')]: {
       lineHeight: '13px',

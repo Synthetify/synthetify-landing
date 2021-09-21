@@ -54,7 +54,8 @@ export const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: 'Inter',
+    fontFamily: 'DM Sans',
+    fontWeightRegular: 500,
     body1: {
       fontSize: 22
     },
