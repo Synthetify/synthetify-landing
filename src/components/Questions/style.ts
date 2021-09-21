@@ -9,8 +9,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontSize: 22,
     color: colors.navy.veryLightGrey,
     lineHeight: '35px',
-    animation: 'close 2s linear',
-    overflow: 'ellipsis',
     [theme.breakpoints.down('sm')]: {
       fontSize: 18,
       lineHeight: '29px'
@@ -25,18 +23,21 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   answer: {
     fontWeight: 400,
-    maxHeight: 85,
-    transition: 'max-height 2s',
+    maxHeight: 70,
+    transition: 'max-height 2s linear',
     overflow: 'hidden',
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 65
+      maxHeight: 60
+    },
+    [theme.breakpoints.down('xs')]: {
+      maxHeight: 50
     }
   },
   more: {
     color: colors.navy.button,
     fontSize: 22,
     fontWeight: 'bold',
-    padding: '8px 0',
+    padding: 0,
     cursor: 'pointer',
     '&:hover': {
       color: '#7C76DA',
@@ -44,11 +45,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     [theme.breakpoints.down('sm')]: {
       fontSize: 18,
-      lineHeight: '34px'
+      lineHeight: '29px'
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 15,
-      lineHeight: '30px'
+      lineHeight: '25px'
     }
   },
   root: {
@@ -72,25 +73,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     transform: 'rotate(-135deg) translateX(-50%) translateY(0%)'
   },
   open: {
-    maxHeight: '100rem',
-    transition: 'max-height 3s linear',
-    animation: 'close 2s'
-  },
-  '@keyframes open': {
-    '0%': {
-      lineClamp: 1
-    },
-    '100%': {
-      lineClamp: 'initial'
-    }
-  },
-  '@keyframes close': {
-    '0%': {
-      lineClamp: 'initial'
-    },
-    '100%': {
-      lineClamp: 1
-    }
+    transition: 'max-height 2s linear',
+    maxHeight: '100rem'
   }
 }))
 
