@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, CardMedia, Divider, Grid, Typography } from '@material-ui/core'
+import { Button, CardMedia, Divider, Grid, Tooltip, Typography } from '@material-ui/core'
 import { useTranslate } from '@utils/translations'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -23,7 +23,7 @@ export const SinglePost: React.FC<IProps> = ({ singlePost, title, date }) => {
   }
 
   const shareOnTwitter = () => {
-    window.open(`https://twitter.com/share?url=${window.location.href.replace('http://', 'https://')}`, '_blank')
+    window.open(`https://twitter.com/share?text=Look, I've found something interesting on Synthetify's blog:&url=${window.location.href.replace('http://', 'https://')}`, '_blank')
   }
 
   return (
@@ -38,8 +38,12 @@ export const SinglePost: React.FC<IProps> = ({ singlePost, title, date }) => {
         <Divider className={classes.divider} />
         <Typography className={classes.shareText}>{translate('blog.shareOn')}</Typography>
         <Grid container direction='row'>
-          <CardMedia image={twitter} className={classes.shareIcon} title='Twitter' onClick={shareOnTwitter} />
-          <CardMedia image={share} className={classes.shareIcon} title='Copy link' onClick={copyLink} />
+          <Tooltip classes={{ tooltip: classes.tooltip }} title='Twitter'>
+            <CardMedia image={twitter} className={classes.shareIcon} onClick={shareOnTwitter} />
+          </Tooltip>
+          <Tooltip classes={{ tooltip: classes.tooltip }} title='Copy link'>
+            <CardMedia image={share} className={classes.shareIcon} onClick={copyLink} />
+          </Tooltip>
         </Grid>
 
         <Link href='/blog' passHref>

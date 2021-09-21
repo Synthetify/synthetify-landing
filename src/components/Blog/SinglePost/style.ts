@@ -117,6 +117,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     '&:not(:last-child)': {
       marginRight: 20
     }
+  },
+  tooltip: {
+    fontSize: 13,
+    backgroundColor: colors.navy.info
   }
 }))
 
