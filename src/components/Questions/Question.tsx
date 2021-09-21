@@ -39,7 +39,7 @@ export const Question = ({ question, answer }: Props) => {
         <Typography className={`${classes.text} ${classes.question}`} component='h2'>
           {question}
         </Typography>
-        <div ref={ref} className={`${classes.answer} ${isOpen ? classes.open : ''}`}>
+        <div ref={ref} className={`${classes.answer} ${isOpen || (typeof ref.current?.scrollHeight === 'undefined') ? classes.open : ''}`}>
           <Typography className={classes.text} dangerouslySetInnerHTML={{ __html: answer }} />
         </div>
         <Button

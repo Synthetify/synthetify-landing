@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   answer: {
     fontWeight: 400,
     maxHeight: 70,
-    transition: 'max-height 2s linear',
+    transition: 'max-height 1s cubic-bezier(0.16, 1, 0.3, 1)',
     overflow: 'hidden',
     [theme.breakpoints.down('sm')]: {
       maxHeight: 60
@@ -73,8 +73,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     transform: 'rotate(-135deg) translateX(-50%) translateY(0%)'
   },
   open: {
-    transition: 'max-height 2s linear',
-    maxHeight: '100rem'
+    transition: 'max-height 1s ease-in',
+    maxHeight: '15rem'
   }
 }))
 
