@@ -4,7 +4,7 @@ export type ListedAsset = 'BTC' | 'ETH' | 'LTC' | 'SOL' | 'FTT' | 'BNB' | 'SRM' 
 
 // TODO: These are devnet keys. Switch to mainnet ones when available.
 export const assetsAccounts = {
-  BTC: new PublicKey('4aDoSXJ5o3AuvL7QFeR6h44jALQfTmUUCTVGDD6aoJTM'),
+  BTC: new PublicKey('GVXRSBjFk6e6J3NbVPXohDJetcTjaeeuykUpbQF8UoMU'),
   ETH: new PublicKey('JBu1AL4obBcCMqKBBxhpWCNUt136ijcuMZLFvTP7iWdB'),
   LTC: new PublicKey('8RMnV1eD55iqUFJLMguPkYBkq8DCtx81XcmAja93LvRR'),
   SOL: new PublicKey('H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG'),
