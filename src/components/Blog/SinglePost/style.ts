@@ -97,6 +97,26 @@ const useStyles = makeStyles((theme: Theme) => ({
     '&:hover': {
       backgroundColor: '#4ADFBA'
     }
+  },
+  divider: {
+    background: colors.navy.darkGrey,
+    width: '100%',
+    marginTop: 36
+  },
+  shareText: {
+    fontSize: 16,
+    color: colors.navy.button,
+    maxWidth: '100% !important',
+    marginBlock: '7px !important'
+  },
+  shareIcon: {
+    width: 42,
+    height: 42,
+    cursor: 'pointer',
+
+    '&:not(:last-child)': {
+      marginRight: 20
+    }
   }
 }))
 
