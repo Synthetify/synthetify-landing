@@ -3,7 +3,11 @@ import { Divider, Grid, Typography } from '@material-ui/core'
 import { useTranslate } from '@utils/translations'
 import React from 'react'
 import useStyles from './style'
-
+interface IProps {
+  volume: number
+  collaterals: number
+  synthetics: number
+}
 interface IProps {
   volume: number
   collaterals: number
@@ -13,7 +17,6 @@ interface IProps {
 export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) => {
   const classes = useStyles()
   const translate = useTranslate()
-
   const formatValue = (value: number) => {
     if (value < 10) {
       return value.toFixed(4)
@@ -63,7 +66,7 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
         <Divider orientation='vertical' className={classes.divider} />
 
         <Grid container direction='column' className={classes.field} justifyContent='center' alignItems='center'>
-          <Typography className={classes.fieldName}>{translate('home.statistics.volume')}</Typography>
+          <Typography className={classes.fieldName}>{translate('home.statistics.collaterals')}</Typography>
           <Typography className={classes.fieldValue}>
           $
             <AnimatedNumber
@@ -82,7 +85,7 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
         <Divider orientation='vertical' className={classes.divider} />
 
         <Grid container direction='column' className={classes.field} justifyContent='center' alignItems='center'>
-          <Typography className={classes.fieldName}>{translate('home.statistics.volume')}</Typography>
+          <Typography className={classes.fieldName}>{translate('home.statistics.synthetics')}</Typography>
           <Typography className={classes.fieldValue}>
           $
             <AnimatedNumber

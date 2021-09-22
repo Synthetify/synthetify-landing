@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import Statistics from '@components/HomePageSections/Statistics/Statistics'
 
-function HomePageStatisticsContainer() {
-  const [data, setData] = useState()
+const HomePageStatisticsContainer = () => {
+  const [data, setData] = useState<number[]>([])
+
   useEffect(() => {
     const fetchData = async () => {
-      await fetch('https://api.synthetify.io/stats/devnet') // pobrac ze stanu jaka siec i tu ja dodac
+      await fetch('https://api.synthetify.io/stats/devnet')
         .then(async response => await response.json())
         .then(value => {
-          setData(value)
+          const helperArray: number[] = [value.at(-1).volume, value.at(-1).collateral, value.at(-1).mint]
+          setData(helperArray)
         })
     }
     fetchData()
@@ -16,9 +18,9 @@ function HomePageStatisticsContainer() {
 
   return (
     <Statistics
-      volume={data?.at(-1)['volume']}
-      collaterals={data?.at(-1)['collateral']}
-      synthetics={91111}
+      volume={data[0]}
+      collaterals={data[1]}
+      synthetics={data[2]}
     />
   )
 }

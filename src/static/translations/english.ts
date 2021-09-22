@@ -61,6 +61,7 @@ const dictionary = {
   'home.statistics.volume': 'Volume',
   'home.statistics.collaterals': 'Collaterals',
   'home.statistics.synthetics': 'Synthetics',
+  'home.statistics.liquidation': 'Liquidation',
   'home.ourInvestors': 'OUR INVESTORS',
   'home.ourInvestors.description': 'Backed by leading venture capital investors',
   'home.assets.BTC': 'Bitcoin',
