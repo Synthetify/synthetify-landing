@@ -57,20 +57,50 @@ export const theme = createTheme({
   typography: {
     fontFamily: 'Be Vietnam',
     fontWeightRegular: 500,
-    body1: {
-      fontSize: 22
-    },
-    body2: {
-      fontSize: 16
-    },
     h1: {
-      fontSize: 56
+      fontSize: 40,
+      lineHeight: '49px',
+      fontWeight: 800
     },
     h2: {
-      fontSize: 40
+      fontSize: 32,
+      lineHeight: '40px',
+      fontWeight: 700
     },
     h3: {
-      fontSize: 32
+      fontSize: 27,
+      lineHeight: '35px',
+      fontWeight: 600
+    },
+    h4: {
+      fontSize: 24,
+      lineHeight: '33px',
+      fontWeight: 700
+    },
+    body1: { // body1 + body2 (when bold use fontWeight 700)
+      fontSize: 22,
+      lineHeight: '30px',
+      fontWeight: 500
+    },
+    subtitle1: {
+      fontSize: 16,
+      lineHeight: '24px',
+      fontWeight: 700
+    },
+    subtitle2: {
+      fontSize: 16,
+      lineHeight: '24px',
+      fontWeight: 500
+    },
+    body2: { // body3 + body4 (when bold use fontWeight 700)
+      fontSize: 13,
+      lineHeight: '20px',
+      fontWeight: 500
+    },
+    caption: { // caption1 + caption2 (when bold use fontWeight 700)
+      fontSize: 11,
+      lineHeight: '16px',
+      fontWeight: 500
     }
   }
 })

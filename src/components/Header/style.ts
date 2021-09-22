@@ -22,11 +22,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   tradeLink: {
     backgroundColor: colors.green.actionButton,
     color: colors.navy.background,
-    fontSize: 16,
+    ...theme.typography.subtitle1,
     width: 66,
     height: 41,
     textTransform: 'none',
-    fontWeight: 'bold',
     borderRadius: 10,
 
     '&:hover': {
@@ -44,12 +43,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     [theme.breakpoints.down('sm')]: {
       width: 95,
-      height: 36,
-      fontSize: 13
+      height: 36
     }
   },
   route: {
-    fontSize: 16,
+    ...theme.typography.subtitle2,
     marginRight: 22,
     color: '#CFCFCF',
     cursor: 'pointer',

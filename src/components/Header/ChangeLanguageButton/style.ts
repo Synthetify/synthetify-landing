@@ -7,8 +7,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.navBar,
     borderRadius: 10,
     textTransform: 'none',
-    fontSize: 16,
-    lineHeight: '40px',
+    ...theme.typography.subtitle2,
     height: 41,
     paddingInline: 12,
 
@@ -25,8 +24,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     textTransform: 'none',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    fontSize: 16,
-    lineHeight: '40px'
+    ...theme.typography.subtitle2
   },
   endIcon: {
     marginLeft: 0,
