@@ -8,11 +8,6 @@ interface IProps {
   collaterals: number
   synthetics: number
 }
-interface IProps {
-  volume: number
-  collaterals: number
-  synthetics: number
-}
 
 export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) => {
   const classes = useStyles()

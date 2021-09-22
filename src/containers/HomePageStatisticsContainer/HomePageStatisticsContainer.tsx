@@ -6,11 +6,10 @@ const HomePageStatisticsContainer = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch('https://api.synthetify.io/stats/devnet')
+      await fetch('https://api.synthetify.io/stats/mainnet')
         .then(async response => await response.json())
         .then(value => {
-          const helperArray: number[] = [value.at(-1).volume, value.at(-1).collateral, value.at(-1).mint]
-          setData(helperArray)
+          setData([value.at(-1).volume, value.at(-1).collateral, value.at(-1).mint])
         })
     }
     fetchData()
