@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   tradeLink: {
     backgroundColor: colors.green.actionButton,
     color: colors.navy.background,
-    ...theme.typography.subtitle1,
+    ...typography.subtitle1,
     width: 66,
     height: 41,
     textTransform: 'none',
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   route: {
-    ...theme.typography.subtitle2,
+    ...typography.subtitle2,
     marginRight: 22,
     color: '#CFCFCF',
     cursor: 'pointer',

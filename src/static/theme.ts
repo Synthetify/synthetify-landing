@@ -40,6 +40,82 @@ export const colors = {
     tooltip: '#5452CE'
   }
 }
+
+export const typography = {
+  fontFamily: 'Be Vietnam',
+  fontWeightRegular: 500,
+  h1: {
+    fontSize: 40,
+    lineHeight: '49px',
+    fontWeight: 800
+  },
+  h2: {
+    fontSize: 32,
+    lineHeight: '40px',
+    fontWeight: 700
+  },
+  h3: {
+    fontSize: 27,
+    lineHeight: '35px',
+    fontWeight: 600
+  },
+  h4: {
+    fontSize: 24,
+    lineHeight: '33px',
+    fontWeight: 800
+  },
+  body1: {
+    fontSize: 22,
+    lineHeight: '30px',
+    fontWeight: 800
+  },
+  body2: {
+    fontSize: 22,
+    lineHeight: '30px',
+    fontWeight: 500
+  },
+  subtitle1: {
+    fontSize: 16,
+    lineHeight: '24px',
+    fontWeight: 800
+  },
+  subtitle2: {
+    fontSize: 16,
+    lineHeight: '24px',
+    fontWeight: 500
+  },
+  body3: {
+    fontSize: 13,
+    lineHeight: '20px',
+    fontWeight: 800
+  },
+  body4: {
+    fontSize: 13,
+    lineHeight: '20px',
+    fontWeight: 700
+  },
+  caption1: {
+    fontSize: 11,
+    lineHeight: '16px',
+    fontWeight: 500
+  },
+  caption2: {
+    fontSize: 11,
+    lineHeight: '16px',
+    fontWeight: 800
+  },
+  caption3: {
+    fontSize: 9,
+    lineHeight: '14px',
+    fontWeight: 500
+  },
+  caption4: {
+    fontSize: 9,
+    lineHeight: '14px',
+    fontWeight: 800
+  }
+}
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -57,51 +133,15 @@ export const theme = createTheme({
   typography: {
     fontFamily: 'Be Vietnam',
     fontWeightRegular: 500,
-    h1: {
-      fontSize: 40,
-      lineHeight: '49px',
-      fontWeight: 800
-    },
-    h2: {
-      fontSize: 32,
-      lineHeight: '40px',
-      fontWeight: 700
-    },
-    h3: {
-      fontSize: 27,
-      lineHeight: '35px',
-      fontWeight: 600
-    },
-    h4: {
-      fontSize: 24,
-      lineHeight: '33px',
-      fontWeight: 700
-    },
-    body1: { // body1 + body2 (when bold use fontWeight 700)
-      fontSize: 22,
-      lineHeight: '30px',
-      fontWeight: 500
-    },
-    subtitle1: {
-      fontSize: 16,
-      lineHeight: '24px',
-      fontWeight: 700
-    },
-    subtitle2: {
-      fontSize: 16,
-      lineHeight: '24px',
-      fontWeight: 500
-    },
-    body2: { // body3 + body4 (when bold use fontWeight 700)
-      fontSize: 13,
-      lineHeight: '20px',
-      fontWeight: 500
-    },
-    caption: { // caption1 + caption2 (when bold use fontWeight 700)
-      fontSize: 11,
-      lineHeight: '16px',
-      fontWeight: 500
-    }
+    h1: typography.h1,
+    h2: typography.h2,
+    h3: typography.h3,
+    h4: typography.h4,
+    body1: typography.body2,
+    subtitle1: typography.subtitle1,
+    subtitle2: typography.subtitle2,
+    body2: typography.body4,
+    caption: typography.caption1
   }
 })
 

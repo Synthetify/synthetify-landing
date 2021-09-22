@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -58,64 +58,47 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('md')]: {
-      fontSize: 40,
-      lineHeight: '46px'
+      ...typography.h1
     },
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 22,
-      lineHeight: '28px'
+      ...typography.h4
     }
   },
   intro: {
-    fontSize: 22,
-    lineHeight: '30px',
+    ...typography.body2,
     color: '#E4E4E4',
 
-    [theme.breakpoints.down('lg')]: {
-      fontSize: 20
-    },
-
     [theme.breakpoints.down('md')]: {
-      fontSize: 18,
-      lineHeight: '28px'
+      ...typography.subtitle2
     },
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 13,
-      lineHeight: '18px'
+      ...typography.body4
     }
   },
   description: {
-    fontSize: 22,
-    lineHeight: '30px',
+    ...typography.body2,
     color: '#9FA7B8',
 
-    [theme.breakpoints.down('lg')]: {
-      fontSize: 20
-    },
-
     [theme.breakpoints.down('md')]: {
-      fontSize: 18,
-      lineHeight: '28px'
+      ...typography.subtitle2
     },
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 13,
-      lineHeight: '18px'
+      ...typography.body4
     }
   },
   builtOn: {
-    fontSize: 22,
-    lineHeight: '40px',
+    ...typography.body2,
     color: '#9FA7B8',
 
     [theme.breakpoints.down('md')]: {
-      fontSize: 18
+      ...typography.subtitle2
     },
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 13
+      ...typography.body4
     }
   },
   solanaLogo: {
