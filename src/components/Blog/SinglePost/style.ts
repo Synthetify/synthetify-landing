@@ -3,7 +3,7 @@ import { colors } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   mainContainer: {
-    fontFamily: 'DM Sans',
+    fontFamily: 'Be Vietnam',
     display: 'flex',
     flexDirection: 'column',
     alignContent: 'center',

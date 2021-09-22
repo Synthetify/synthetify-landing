@@ -55,7 +55,7 @@ export const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: 'DM Sans',
+    fontFamily: 'Be Vietnam',
     fontWeightRegular: 500,
     body1: {
       fontSize: 22
