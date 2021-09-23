@@ -117,6 +117,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   devnet: {
     '&::after': {
       content: '"DEVNET"',
+      position: 'relative',
+      top: -2,
       color: colors.navy.lightGrey,
       backgroundColor: 'rgba(98, 97, 163, 0.7)',
       borderRadius: 4,
@@ -125,9 +127,10 @@ const useStyles = makeStyles((theme: Theme) => ({
       padding: 6,
       marginLeft: 8,
       [theme.breakpoints.down('sm')]: {
-        marginLeft: 5,
-        padding: 3,
-        fontSize: 6
+        marginLeft: 3,
+        padding: 2,
+        fontSize: 7,
+        top: -1
       }
     }
   }

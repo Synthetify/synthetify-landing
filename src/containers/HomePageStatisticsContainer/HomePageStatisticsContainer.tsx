@@ -6,7 +6,7 @@ const HomePageStatisticsContainer = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch('https://api.synthetify.io/stats/mainnet')
+      await fetch('https://api.synthetify.io/stats/devnet')
         .then(async response => {
           const helperVariable = await response.json()
           setData([helperVariable.at(-1).volume, helperVariable.at(-1).collateral, helperVariable.at(-1).synthetic])
