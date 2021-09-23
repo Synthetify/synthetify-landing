@@ -42,24 +42,22 @@ export const colors = {
 }
 
 export const typography = {
-  fontFamily: 'Be Vietnam',
-  fontWeightRegular: 500,
-  h1: {
+  heading1: {
     fontSize: 40,
     lineHeight: '49px',
     fontWeight: 800
   },
-  h2: {
+  heading2: {
     fontSize: 32,
     lineHeight: '40px',
     fontWeight: 700
   },
-  h3: {
+  heading3: {
     fontSize: 27,
     lineHeight: '35px',
     fontWeight: 600
   },
-  h4: {
+  heading4: {
     fontSize: 24,
     lineHeight: '33px',
     fontWeight: 800
@@ -133,10 +131,10 @@ export const theme = createTheme({
   typography: {
     fontFamily: 'Be Vietnam',
     fontWeightRegular: 500,
-    h1: typography.h1,
-    h2: typography.h2,
-    h3: typography.h3,
-    h4: typography.h4,
+    h1: typography.heading1,
+    h2: typography.heading2,
+    h3: typography.heading3,
+    h4: typography.heading4,
     body1: typography.body2,
     subtitle1: typography.subtitle1,
     subtitle2: typography.subtitle2,

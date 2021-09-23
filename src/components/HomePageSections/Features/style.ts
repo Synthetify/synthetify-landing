@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   title: {
-    ...typography.h2,
+    ...typography.heading2,
     color: colors.navy.lightGrey,
     marginInline: 'auto',
 
@@ -87,12 +87,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   featureTitle: {
-    ...typography.h1,
+    ...typography.heading1,
     fontWeight: 700,
     transition: 'transform 300ms linear',
 
     [theme.breakpoints.down('md')]: {
-      ...typography.h2
+      ...typography.heading2
     },
 
     [theme.breakpoints.down('sm')]: {

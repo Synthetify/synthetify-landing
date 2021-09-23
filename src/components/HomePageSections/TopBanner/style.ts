@@ -58,11 +58,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('md')]: {
-      ...typography.h1
+      ...typography.heading1
     },
 
     [theme.breakpoints.down('sm')]: {
-      ...typography.h4
+      ...typography.heading4
     }
   },
   intro: {

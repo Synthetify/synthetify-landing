@@ -38,11 +38,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   token: {
-    ...typography.h2,
+    ...typography.heading2,
     color: colors.navy.veryLightGrey,
 
     [theme.breakpoints.down('md')]: {
-      ...typography.h4
+      ...typography.heading4
     }
   },
   tokenName: {
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   value: {
-    ...typography.h4,
+    ...typography.heading4,
     color: colors.navy.veryLightGrey,
     marginLeft: 4,
 

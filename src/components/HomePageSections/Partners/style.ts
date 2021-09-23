@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   title: {
-    ...typography.h2,
+    ...typography.heading2,
     color: colors.navy.lightGrey,
     marginInline: 'auto',
 

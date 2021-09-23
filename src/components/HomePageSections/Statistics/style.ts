@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   title: {
-    ...typography.h2,
+    ...typography.heading2,
     color: colors.navy.lightGrey,
     marginInline: 'auto',
 
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: '100%'
   },
   fieldValue: {
-    ...typography.h1,
+    ...typography.heading1,
     color: colors.navy.veryLightGrey,
     marginBlock: 25,
     transition: 'all 300ms',

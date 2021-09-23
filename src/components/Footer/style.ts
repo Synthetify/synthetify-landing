@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   columnHeader: {
-    ...typography.h4,
+    ...typography.heading4,
     color: colors.navy.veryLightGrey,
     marginBottom: 20,
 
