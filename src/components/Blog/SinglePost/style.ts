@@ -10,8 +10,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     alignItems: 'center',
     color: colors.white.main,
     marginInline: 'auto',
-    marginTop: 108,
-    marginBottom: 100,
+    marginTop: 80,
+    marginBottom: 90,
     maxWidth: 1200,
 
     [theme.breakpoints.down('lg')]: {
@@ -19,13 +19,13 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('sm')]: {
-      marginTop: 53,
-      marginBottom: 57,
+      marginTop: 50,
+      marginBottom: 60,
       paddingInline: 32
     },
 
     [theme.breakpoints.down('xs')]: {
-      marginTop: 43,
+      marginTop: 30,
       marginBottom: 40,
       paddingInline: 26
     },
@@ -64,10 +64,6 @@ const useStyles = makeStyles((theme: Theme) => ({
 
       [theme.breakpoints.down('sm')]: {
         ...typography.subtitle2
-      },
-
-      [theme.breakpoints.down('xs')]: {
-        ...typography.body4
       }
     },
 
@@ -78,6 +74,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     '& a': {
       color: colors.navy.button,
       textDecoration: 'none'
+    },
+
+    '& a:hover': {
+      color: '#7C76DA'
     }
   },
   backButton: {
