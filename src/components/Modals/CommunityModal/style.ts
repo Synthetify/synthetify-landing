@@ -3,6 +3,7 @@ import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   icon: {
+    marginTop: 9,
     marginLeft: 10,
     width: 16,
     height: 16,

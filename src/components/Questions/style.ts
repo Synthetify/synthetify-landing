@@ -28,6 +28,16 @@ const useStyles = makeStyles((theme: Theme) => ({
     maxHeight: 65,
     transition: 'max-height 350ms cubic-bezier(0.16, 1, 0.3, 1)',
     overflow: 'hidden',
+
+    '& a': {
+      color: colors.navy.button,
+      textDecoration: 'none'
+    },
+
+    '& a:hover': {
+      color: '#7C76DA'
+    },
+
     [theme.breakpoints.down('sm')]: {
       maxHeight: 48
     },

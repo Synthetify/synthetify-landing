@@ -46,7 +46,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               handleClose()
             }}
           >
-            <Grid container item direction='row' wrap='nowrap' alignItems='center'>
+            <Grid container item direction='row' wrap='nowrap'>
               <Typography className={classes.name}>
                 {translate('header.discord')}
               </Typography>
@@ -68,7 +68,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               handleClose()
             }}
           >
-            <Grid container item direction='row' wrap='nowrap' alignItems='center'>
+            <Grid container item direction='row' wrap='nowrap'>
               <Typography className={classes.name}>
                 {translate('header.twitter')}
               </Typography>
@@ -90,7 +90,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               handleClose()
             }}
           >
-            <Grid container item direction='row' wrap='nowrap' alignItems='center'>
+            <Grid container item direction='row' wrap='nowrap'>
               <Typography className={classes.name}>
                 {translate('header.telegram')}
               </Typography>
@@ -112,11 +112,11 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               handleClose()
             }}
           >
-            <Grid container item direction='row' wrap='nowrap' alignItems='center'>
+            <Grid container item direction='row' wrap='nowrap'>
               <Typography className={classes.name}>
                 {translate('header.github')}
               </Typography>
-              <CardMedia className={classes.icon} image={github} onClick={() => window.open(links.socialMedia.github)} />
+              <CardMedia className={classes.icon} style={{ marginTop: 8 }} image={github} onClick={() => window.open(links.socialMedia.github)} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.githubDescription')}
