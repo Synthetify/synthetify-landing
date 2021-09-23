@@ -9,7 +9,7 @@ const HomePageStatisticsContainer = () => {
       await fetch('https://api.synthetify.io/stats/mainnet')
         .then(async response => {
           const helperVariable = await response.json()
-          setData([helperVariable.at(-1).volume, helperVariable.at(-1).collateral, helperVariable.at(-1).mint])
+          setData([helperVariable.at(-1).volume, helperVariable.at(-1).collateral, helperVariable.at(-1).synthetic])
         })
     }
     fetchData()
