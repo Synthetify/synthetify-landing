@@ -113,6 +113,23 @@ const useStyles = makeStyles((theme: Theme) => ({
       fontSize: 12,
       lineHeight: '12px'
     }
+  },
+  devnet: {
+    '&::after': {
+      content: '"DEVNET"',
+      color: colors.navy.lightGrey,
+      backgroundColor: 'rgba(98, 97, 163, 0.7)',
+      borderRadius: 4,
+      fontSize: 10,
+      fontWeight: 600,
+      padding: 6,
+      marginLeft: 8,
+      [theme.breakpoints.down('sm')]: {
+        marginLeft: 5,
+        padding: 3,
+        fontSize: 6
+      }
+    }
   }
 }))
 

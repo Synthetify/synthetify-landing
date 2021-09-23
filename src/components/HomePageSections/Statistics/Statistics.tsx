@@ -1,6 +1,7 @@
 import AnimatedNumber from '@components/AnimatedNumber'
 import { Divider, Grid, Typography } from '@material-ui/core'
 import { useTranslate } from '@utils/translations'
+import classNames from 'classnames'
 import React from 'react'
 import useStyles from './style'
 interface IProps {
@@ -42,7 +43,7 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
       <Typography className={classes.description}>{translate('home.statistics.description')}</Typography>
       <Grid container className={classes.wrapper} direction='row' justifyContent='space-between'>
         <Grid container direction='column' className={classes.field} justifyContent='center' alignItems='center'>
-          <Typography className={classes.fieldName}>{translate('home.statistics.volume')}</Typography>
+          <Typography className={classNames(classes.fieldName, classes.devnet)}>{translate('home.statistics.volume')}</Typography>
           <Typography className={classes.fieldValue}>
             $
             <AnimatedNumber
@@ -61,7 +62,7 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
         <Divider orientation='vertical' className={classes.divider} />
 
         <Grid container direction='column' className={classes.field} justifyContent='center' alignItems='center'>
-          <Typography className={classes.fieldName}>{translate('home.statistics.collaterals')}</Typography>
+          <Typography className={classNames(classes.fieldName, classes.devnet)}>{translate('home.statistics.collaterals')}</Typography>
           <Typography className={classes.fieldValue}>
           $
             <AnimatedNumber
@@ -80,7 +81,7 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
         <Divider orientation='vertical' className={classes.divider} />
 
         <Grid container direction='column' className={classes.field} justifyContent='center' alignItems='center'>
-          <Typography className={classes.fieldName}>{translate('home.statistics.synthetics')}</Typography>
+          <Typography className={classNames(classes.fieldName, classes.devnet)}>{translate('home.statistics.synthetics')}</Typography>
           <Typography className={classes.fieldValue}>
           $
             <AnimatedNumber
