@@ -20,11 +20,11 @@ export const Question = ({ question, answer }: Props) => {
 
   const getMoreThanTwoLinesTextHeight = () => {
     if (isXs) {
-      return 55
+      return 45
     }
 
     if (isSm) {
-      return 65
+      return 55
     }
 
     return 80
@@ -36,7 +36,7 @@ export const Question = ({ question, answer }: Props) => {
   return (
     <>
       <Grid container direction='column' classes={{ container: classes.container }}>
-        <Typography className={`${classes.text} ${classes.question}`} component='h2'>
+        <Typography className={classes.question}>
           {question}
         </Typography>
         <div ref={ref} className={`${classes.answer} ${isOpen || (typeof ref.current?.scrollHeight === 'undefined') ? classes.open : ''}`}>
