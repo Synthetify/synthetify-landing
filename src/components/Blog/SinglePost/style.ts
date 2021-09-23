@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   mainContainer: {
@@ -56,26 +56,23 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '& p, & ul': {
-      fontSize: 22,
-      lineHeight: '35px',
+      ...typography.body2,
       marginBottom: 0,
       textAlign: 'justify',
       width: '100%',
       maxWidth: 800,
 
       [theme.breakpoints.down('sm')]: {
-        fontSize: 18,
-        lineHeight: '32px'
+        ...typography.subtitle2
       },
 
       [theme.breakpoints.down('xs')]: {
-        fontSize: 15,
-        lineHeight: '25px'
+        ...typography.body4
       }
     },
 
     '& p strong': {
-      fontWeight: 600
+      fontWeight: 800
     },
 
     '& a': {
@@ -86,16 +83,16 @@ const useStyles = makeStyles((theme: Theme) => ({
   backButton: {
     backgroundColor: colors.green.actionButton,
     color: colors.navy.dark,
-    fontSize: '22px',
-    lineHeight: '40px',
-    fontWeight: 700,
-    padding: '8px 16px',
+    ...typography.body1,
+    padding: '16px 24px',
     borderRadius: '10px',
     marginTop: '50px',
     textTransform: 'none',
+    transition: 'transform 300ms linear, background-color 300ms linear',
 
     '&:hover': {
-      backgroundColor: '#4ADFBA'
+      backgroundColor: '#4ADFBA',
+      transform: 'scale(1.065)'
     }
   },
   divider: {
@@ -104,10 +101,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginTop: 36
   },
   shareText: {
-    fontSize: 16,
+    ...typography.subtitle2,
     color: colors.navy.button,
     maxWidth: '100% !important',
-    marginBlock: '7px !important'
+    marginBlock: '12px !important'
   },
   shareIcon: {
     width: 42,
@@ -119,7 +116,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   tooltip: {
-    fontSize: 13,
+    ...typography.body4,
     backgroundColor: colors.navy.tooltip
   }
 }))

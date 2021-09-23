@@ -35,32 +35,6 @@ const useStyles = makeStyles((theme: Theme) => ({
       justifyContent: 'center',
       width: 'calc(100% - 62px)'
     }
-  },
-  desc: {
-    position: 'relative',
-    top: 7,
-    fontSize: 13,
-    fontWeight: 500,
-    width: 'calc(100% - 3px)',
-    maxWidth: 485,
-    lineHeight: '16px',
-    [theme.breakpoints.down('md')]: {
-      maxWidth: 412
-    },
-    [theme.breakpoints.down('sm')]: {
-      lineHeight: '11px',
-      fontSize: 9,
-      maxWidth: 313
-    },
-    [theme.breakpoints.down('xs')]: {
-      width: '100%'
-    }
-  },
-  articleAndDesc: {
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
-    width: '100%'
   }
 }))
 
