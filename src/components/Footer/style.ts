@@ -137,26 +137,23 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   circle: {
     width: 30,
-    height: 30,
-    cursor: 'pointer',
-
-    '&:not(:first-child)': {
-      marginLeft: 25
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      '&:not(:first-child)': {
-        marginLeft: 16
-      }
-    }
+    height: 30
   },
   socials: {
     [theme.breakpoints.up('md')]: {
       display: 'none'
     },
 
+    '& a:not(:first-child)': {
+      marginLeft: 25
+    },
+
     [theme.breakpoints.down('xs')]: {
-      minWidth: 168
+      minWidth: 168,
+
+      '& a:not(:first-child)': {
+        marginLeft: 16
+      }
     }
   },
   blocked: {
