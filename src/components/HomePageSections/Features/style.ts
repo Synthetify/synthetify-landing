@@ -39,26 +39,6 @@ const useStyles = makeStyles((theme: Theme) => ({
       marginBottom: 36
     }
   },
-  left: {
-    marginRight: 58,
-
-    [theme.breakpoints.down('lg')]: {
-      marginRight: 20
-    },
-
-    [theme.breakpoints.down('md')]: {
-      marginRight: 24
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      marginRight: 13
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      marginRight: 0,
-      marginBottom: 20
-    }
-  },
   icon: {
     minWidth: 72,
     height: 72,
@@ -113,56 +93,51 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   feature: {
-    width: 607,
     transition: 'transform 300ms linear',
-
-    '&:not(:last-child)': {
-      marginBottom: 40
-    },
 
     [theme.breakpoints.up('lg')]: {
       '&:hover': {
-        transform: 'scale(1.11) translateX(4%)'
+        transform: 'scale(1.11)'
       },
 
-      '$left &:hover': {
-        transform: 'scale(1.11)'
+      '&:nth-child(n+4):hover': {
+        transform: 'scale(1.11) translateX(4%)'
       },
 
       '&:hover $featureDescription, &:hover $featureTitle': {
         transform: 'translateX(-4px)'
       }
-    },
-
-    [theme.breakpoints.down('lg')]: {
-      width: 570
-    },
-
-    [theme.breakpoints.down('md')]: {
-      width: 439,
-
-      '&:not(:last-child)': {
-        marginBottom: 17
-      }
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      width: 278,
-
-      '&:not(:last-child)': {
-        marginBottom: 20
-      }
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 285
     }
   },
   featuresWrapper: {
-    flexDirection: 'row',
+    display: 'grid',
+    gridAutoFlow: 'column',
+    marginInline: 'auto',
+    width: 1272,
+    gridTemplateRows: 'auto auto auto',
+    columnGap: 58,
+    rowGap: 40,
+
+    [theme.breakpoints.down('lg')]: {
+      width: 1160,
+      columnGap: 20
+    },
+
+    [theme.breakpoints.down('md')]: {
+      width: 902,
+      columnGap: 24,
+      rowGap: 17
+    },
+
+    [theme.breakpoints.down('sm')]: {
+      width: 569,
+      columnGap: 13,
+      rowGap: 20
+    },
 
     [theme.breakpoints.down('xs')]: {
-      flexDirection: 'column'
+      gridTemplateRows: 'repeat(6, auto)',
+      width: 285
     }
   }
 }))
