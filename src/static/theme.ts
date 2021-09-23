@@ -27,14 +27,14 @@ export const colors = {
   navy: {
     background: '#0C0D2C',
     dark: '#0E0E2A',
-    component: '#1E1E43',
+    component: '#1D1D49',
     navBar: '#F9F9FB',
     navButton: '#3D3F72',
     grey: '#A3A8CE',
     lightGrey: '#DADCF1',
     veryLightGrey: '#FBFBFB',
-    button: '#6C6BC7',
-    info: '#6F6EAA',
+    button: '#655ed4',
+    info: '#6261a3',
     darkGrey: '#292956',
     '8584D2': '#8584D2',
     tooltip: '#5452CE'
