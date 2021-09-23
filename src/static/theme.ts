@@ -92,7 +92,7 @@ export const typography = {
   body4: {
     fontSize: 13,
     lineHeight: '20px',
-    fontWeight: 700
+    fontWeight: 500
   },
   caption1: {
     fontSize: 11,
