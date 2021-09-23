@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   logos: {
@@ -80,35 +80,25 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   columnHeader: {
-    fontSize: 22,
-    lineHeight: '40px',
+    ...typography.h4,
     color: colors.navy.veryLightGrey,
-    fontWeight: 'bold',
     marginBottom: 20,
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 18,
+      ...typography.subtitle1,
       marginBottom: 15
     },
 
     [theme.breakpoints.down('xs')]: {
-      fontSize: 15,
       marginBottom: 10
     }
   },
   link: {
-    fontSize: 22,
-    lineHeight: '25px',
+    ...typography.body2,
     color: colors.navy.grey,
 
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 16,
-      lineHeight: '19px'
-    },
-
     [theme.breakpoints.down('xs')]: {
-      fontSize: 13,
-      lineHeight: '16px'
+      ...typography.subtitle2
     }
   },
   a: {
@@ -116,12 +106,16 @@ const useStyles = makeStyles((theme: Theme) => ({
     cursor: 'pointer'
   },
   copyright: {
-    fontSize: 16,
+    ...typography.body2,
     color: colors.white.main,
     opacity: 0.5,
 
+    [theme.breakpoints.down('md')]: {
+      ...typography.body4
+    },
+
     [theme.breakpoints.down('sm')]: {
-      fontSize: 8
+      ...typography.caption3
     }
   },
   policy: {
@@ -186,10 +180,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   headerWithMark: {
-    height: 40,
+    height: 33,
     marginBottom: 20,
 
     [theme.breakpoints.down('sm')]: {
+      height: 24,
       marginBottom: 15
     },
 
@@ -221,23 +216,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   description: {
-    fontSize: 11,
-    lineHeight: '16px',
+    ...typography.caption1,
     color: colors.navy.info,
 
-    [theme.breakpoints.down('md')]: {
-      fontSize: 10,
-      lineHeight: '12px'
-    },
-
     [theme.breakpoints.down('sm')]: {
-      fontSize: 11,
-      lineHeight: '16px'
+      ...typography.caption3
     },
 
     [theme.breakpoints.down('xs')]: {
-      fontSize: 8,
-      lineHeight: '12px'
+      fontSize: 8
     }
   },
   linkWrapper: {
