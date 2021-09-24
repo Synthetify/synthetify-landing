@@ -104,12 +104,13 @@ const useStyles = makeStyles((theme: Theme) => ({
       borderRadius: 4,
       fontSize: 10,
       fontWeight: 600,
-      padding: 5,
+      padding: '2.5px 8px 2.5px',
       marginLeft: 8,
       [theme.breakpoints.down('sm')]: {
         marginLeft: 3,
-        padding: 2,
-        fontSize: 7,
+        padding: '0.5px 2px 0.5px',
+        borderRadius: 2,
+        fontSize: 6,
         top: -1
       }
     }
