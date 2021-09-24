@@ -3,7 +3,7 @@ const optimizedImages = require('next-optimized-images');
 
 module.exports = withPlugins([[
   optimizedImages, {
-    handleImages: ['svg']
+    handleImages: ['svg', 'png']
   }
 ]], {
   reactStrictMode: true,

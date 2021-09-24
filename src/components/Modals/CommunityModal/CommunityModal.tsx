@@ -36,7 +36,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
         horizontal: 'center'
       }}>
       <Grid className={classes.root} container alignContent='space-around' direction='column'>
-        <a href={links.socialMedia.discord} style={{ textDecoration: 'none' }}>
+        <a href={links.socialMedia.discord} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
           <Grid
             item
             container
@@ -46,11 +46,11 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               handleClose()
             }}
           >
-            <Grid container item direction='row' wrap='nowrap' alignItems='center'>
+            <Grid container item direction='row' wrap='nowrap'>
               <Typography className={classes.name}>
                 {translate('header.discord')}
               </Typography>
-              <CardMedia className={classes.icon} image={discord} onClick={() => window.open(links.socialMedia.discord)} />
+              <CardMedia className={classes.icon} image={discord} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.discordDescription')}
@@ -58,7 +58,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
           </Grid>
         </a>
 
-        <a href={links.socialMedia.twitter} style={{ textDecoration: 'none' }}>
+        <a href={links.socialMedia.twitter} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
           <Grid
             item
             container
@@ -68,11 +68,11 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               handleClose()
             }}
           >
-            <Grid container item direction='row' wrap='nowrap' alignItems='center'>
+            <Grid container item direction='row' wrap='nowrap'>
               <Typography className={classes.name}>
                 {translate('header.twitter')}
               </Typography>
-              <CardMedia className={classes.icon} image={twitter} onClick={() => window.open(links.socialMedia.twitter)} />
+              <CardMedia className={classes.icon} image={twitter} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.twitterDescription')}
@@ -80,7 +80,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
           </Grid>
         </a>
 
-        <a href={links.socialMedia.telegram} style={{ textDecoration: 'none' }}>
+        <a href={links.socialMedia.telegram} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
           <Grid
             item
             container
@@ -90,11 +90,11 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               handleClose()
             }}
           >
-            <Grid container item direction='row' wrap='nowrap' alignItems='center'>
+            <Grid container item direction='row' wrap='nowrap'>
               <Typography className={classes.name}>
                 {translate('header.telegram')}
               </Typography>
-              <CardMedia className={classes.icon} image={telegram} onClick={() => window.open(links.socialMedia.telegram)} />
+              <CardMedia className={classes.icon} image={telegram} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.telegramDescription')}
@@ -102,7 +102,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
           </Grid>
         </a>
 
-        <a href={links.socialMedia.github} style={{ textDecoration: 'none' }}>
+        <a href={links.socialMedia.github} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
           <Grid
             item
             container
@@ -112,11 +112,11 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               handleClose()
             }}
           >
-            <Grid container item direction='row' wrap='nowrap' alignItems='center'>
+            <Grid container item direction='row' wrap='nowrap'>
               <Typography className={classes.name}>
                 {translate('header.github')}
               </Typography>
-              <CardMedia className={classes.icon} image={github} onClick={() => window.open(links.socialMedia.github)} />
+              <CardMedia className={classes.icon} style={{ marginTop: 8 }} image={github} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.githubDescription')}

@@ -182,6 +182,7 @@ export const ListedAssetsContainer: React.FC = () => {
           }, () => {})
           .then(value => {
             tmpChanges[name as ListedAsset] = +(value as DailyStatsResult).priceChangePercent
+            newData.sort((a, b) => a.x - b.x)
             newData[0].x = (value as DailyStatsResult).openTime
             newData[0].y = +(value as DailyStatsResult).openPrice
             newData[23].x = (value as DailyStatsResult).closeTime
