@@ -13,7 +13,7 @@ const HomePageStatisticsContainer = () => {
           let volume: number = 0
           let collateral: number = 0
           let synthetic: number = 0
-          helperVariable.map((oneDayData: {volume: number, collateral: number, synthetic: number}) => {
+          helperVariable.slice(0, 30).map((oneDayData: {volume: number, collateral: number, synthetic: number}, index: number) => {
             volume += oneDayData.volume
             collateral += oneDayData.collateral
             synthetic += oneDayData.synthetic ?? 0
