@@ -81,6 +81,7 @@ const dictionary = {
   'brand.whiteLogoVertical': 'White logo vertical',
   'brand.whiteLogoHorizontal': 'White logo horizontal',
   'blog.backButton': 'Back to Blog',
+  'blog.shareOn': 'Share on',
   'faq.title': 'FAQ',
   'faq.description': 'Frequently asked questions',
   'faq.questions': [

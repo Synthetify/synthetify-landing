@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -20,27 +20,22 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   title: {
-    fontSize: 30,
-    lineHeight: '40px',
+    ...typography.heading2,
     color: colors.navy.lightGrey,
     marginInline: 'auto',
-    fontWeight: 700,
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 16,
-      lineHeight: '30px'
+      ...typography.subtitle1
     }
   },
   description: {
-    fontSize: 20,
-    lineHeight: '25px',
+    ...typography.subtitle2,
     color: colors.navy.info,
     marginInline: 'auto',
     marginBottom: 50,
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 10,
-      lineHeight: '13px',
+      ...typography.caption1,
       marginBottom: 36
     }
   },
@@ -70,48 +65,33 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: '100%'
   },
   fieldValue: {
-    fontSize: 45,
-    lineHeight: '69px',
+    ...typography.heading1,
     color: colors.navy.veryLightGrey,
-    marginBlock: 15,
-    fontWeight: 700,
+    marginBlock: 25,
     transition: 'all 300ms',
 
     [theme.breakpoints.down('lg')]: {
-      fontSize: 38,
-      lineHeight: '57px',
-      marginBlock: 13
+      marginBlock: 15
     },
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 19,
-      lineHeight: '26px',
-      marginBlock: 7
+      ...typography.body1,
+      marginBlock: 4
     },
 
     '&:hover': {
       [theme.breakpoints.up('lg')]: {
         textShadow: `0 0 20px ${colors.navy.veryLightGrey}80`,
-        fontSize: 42
-      },
-
-      [theme.breakpoints.up('xl')]: {
         fontSize: 49
       }
     }
   },
   fieldName: {
-    fontSize: 16,
-    lineHeight: '20px',
+    ...typography.subtitle2,
     color: colors.navy.info,
 
-    [theme.breakpoints.down('lg')]: {
-      lineHeight: '17px'
-    },
-
     [theme.breakpoints.down('sm')]: {
-      fontSize: 12,
-      lineHeight: '12px'
+      ...typography.caption3
     }
   },
   devnet: {

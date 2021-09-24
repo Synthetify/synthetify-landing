@@ -115,7 +115,7 @@ export const Header: React.FC = () => {
             </Link>
           </Grid>
 
-          <Button className={classes.tradeLink} href={links.app.main} variant='contained'>
+          <Button className={classes.tradeLink} href={links.app.main} variant='contained' target='_blank' rel='noopener noreferrer'>
             {translate('header.trade')}
           </Button>
 

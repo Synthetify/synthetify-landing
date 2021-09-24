@@ -1,5 +1,5 @@
 import React from 'react'
-import { Divider, Grid, Typography } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 import classNames from 'classnames'
 import useStyles from './style'
 
@@ -15,7 +15,6 @@ export const PageHeader: React.FC<IPageHeader> = ({ title, description, classNam
   return (
     <Grid container direction='column' alignItems='center' className={classNames(classes.root, className)}>
       <Typography className={classes.title}>{title}</Typography>
-      <Divider className={classes.divider} />
       <Typography className={classes.description}>{description}</Typography>
     </Grid>
   )

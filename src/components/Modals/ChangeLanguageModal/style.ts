@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -15,13 +15,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   name: {
-    fontSize: 22,
-    lineHeight: '40px',
+    ...typography.body2,
     color: colors.navy.grey
   },
   greeting: {
-    fontSize: 11,
-    lineHeight: '13px',
+    ...typography.caption1,
     color: colors.navy.info
   },
   listItem: {
@@ -34,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
-      fontWeight: 600
+      ...typography.body1
     },
 
     '&:hover $greeting': {
@@ -44,7 +42,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   current: {
     '& $name': {
       color: colors.navy.veryLightGrey,
-      fontWeight: 600
+      ...typography.body1
     },
 
     '& $greeting': {
