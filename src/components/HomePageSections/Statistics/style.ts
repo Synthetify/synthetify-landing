@@ -104,7 +104,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       borderRadius: 4,
       fontSize: 10,
       fontWeight: 600,
-      padding: 6,
+      padding: 5,
       marginLeft: 8,
       [theme.breakpoints.down('sm')]: {
         marginLeft: 3,

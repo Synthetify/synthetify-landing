@@ -62,9 +62,9 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
         <Divider orientation='vertical' className={classes.divider} />
 
         <Grid container direction='column' className={classes.field} justifyContent='center' alignItems='center'>
-          
+
           <Typography className={classNames(classes.fieldName, classes.devnet)}>{translate('home.statistics.collaterals')}</Typography>
-          
+
           <Typography className={classes.fieldValue}>
           $
             <AnimatedNumber

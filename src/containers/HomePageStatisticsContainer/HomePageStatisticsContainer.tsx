@@ -9,7 +9,16 @@ const HomePageStatisticsContainer = () => {
       await fetch('https://api.synthetify.io/stats/devnet')
         .then(async response => {
           const helperVariable = await response.json()
-          setData([helperVariable.at(-1).volume, helperVariable.at(-1).collateral, helperVariable.at(-1).synthetic])
+          helperVariable.reverse()
+          let volume: number = 0
+          let collateral: number = 0
+          let synthetic: number = 0
+          helperVariable.map((oneDayData: {volume: number, collateral: number, synthetic: number}) => {
+            volume += oneDayData.volume
+            collateral += oneDayData.collateral
+            synthetic += oneDayData.synthetic ?? 0
+          })
+          setData([volume, collateral, synthetic])
         })
     }
     fetchData()
