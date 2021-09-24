@@ -1,4 +1,4 @@
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 import { makeStyles, Theme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   root: {
     width: '100%',
-    backgroundColor: '#40BFA0',
+    backgroundColor: 'transparent',
     borderRadius: 20,
     display: 'grid',
     overflow: 'hidden',
@@ -46,27 +46,19 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   title: {
-    fontSize: 22,
+    ...typography.body1,
     alignSelf: 'flex-start',
-    fontWeight: 600,
-    lineHeight: '25px',
     marginTop: 8,
     marginLeft: 8,
     color: colors.navy.veryLightGrey,
-    [theme.breakpoints.down('md')]: {
-      fontSize: 20
-    },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 12,
-      lineHeight: '13px'
+      ...typography.body3
     }
   },
   date: {
-    fontSize: 13,
+    ...typography.body4,
     alignSelf: 'baseline',
     textAlign: 'right',
-    fontWeight: 400,
-    lineHeight: '15.73px',
     width: 'max-content',
     justifyContent: 'space-evenly',
     backgroundColor: colors.navy.lightGrey,
@@ -79,11 +71,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       width: 160,
       textAlign: 'right'
     },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 9
-    },
     [theme.breakpoints.down('xs')]: {
-      lineHeight: '10.89px',
       width: 120
     }
   },
@@ -94,28 +82,26 @@ const useStyles = makeStyles((theme: Theme) => ({
     zIndex: 1,
     position: 'absolute',
     opacity: 0.8,
-    transition: 'all .5s ease-out',
-    '&:hover': {
-      opacity: 1,
-      transform: 'scale(1.1)'
-    }
+    transition: 'all .5s ease-out'
   },
   desc: {
     color: colors.navy.veryLightGrey,
     marginTop: 7,
     marginLeft: 7,
-    fontSize: 13,
-    fontWeight: 400,
-    lineHeight: '16px',
+    ...typography.body4,
     [theme.breakpoints.down('sm')]: {
-      lineHeight: '13px',
-      fontSize: 12
+      ...typography.caption3
     }
   },
   articleAndDesc: {
     display: 'flex',
     flexDirection: 'column',
-    width: '100%'
+    width: '100%',
+
+    '&:hover $image': {
+      opacity: 1,
+      transform: 'scale(1.1)'
+    }
   }
 }))
 

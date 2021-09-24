@@ -1,54 +1,64 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {
-    alignItems: 'start'
+    alignItems: 'start',
+    color: colors.navy.veryLightGrey
   },
   text: {
-    fontSize: 22,
-    color: colors.navy.veryLightGrey,
-    lineHeight: '35px',
-    animation: 'close 2s linear',
-    overflow: 'ellipsis',
+    ...typography.body2,
     [theme.breakpoints.down('sm')]: {
-      fontSize: 18,
-      lineHeight: '29px'
+      ...typography.subtitle2
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 15,
-      lineHeight: '25px'
+      ...typography.body4
     }
   },
   question: {
-    fontWeight: 'bold'
+    ...typography.body1,
+    [theme.breakpoints.down('sm')]: {
+      ...typography.subtitle1
+    },
+    [theme.breakpoints.down('xs')]: {
+      ...typography.body3
+    }
   },
   answer: {
-    fontWeight: 400,
-    maxHeight: 85,
-    transition: 'max-height 2s',
+    maxHeight: 65,
+    transition: 'max-height 350ms cubic-bezier(0.16, 1, 0.3, 1)',
     overflow: 'hidden',
+
+    '& a': {
+      color: colors.navy.button,
+      textDecoration: 'none'
+    },
+
+    '& a:hover': {
+      color: '#7C76DA'
+    },
+
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 65
+      maxHeight: 48
+    },
+    [theme.breakpoints.down('xs')]: {
+      maxHeight: 40
     }
   },
   more: {
     color: colors.navy.button,
-    fontSize: 22,
-    fontWeight: 'bold',
-    padding: '8px 0',
+    ...typography.body1,
+    padding: 0,
     cursor: 'pointer',
     '&:hover': {
       color: '#7C76DA',
       background: 'none'
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 18,
-      lineHeight: '34px'
+      ...typography.subtitle1
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: 15,
-      lineHeight: '30px'
+      ...typography.body3
     }
   },
   root: {
@@ -63,34 +73,23 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'inline-block',
     padding: '3px',
     marginLeft: '7px',
-    borderWidth: '0 3px 3px 0'
+    borderWidth: '0 3px 3px 0',
+
+    [theme.breakpoints.down('sm')]: {
+      padding: '2px',
+      borderWidth: '0 2px 2px 0',
+      marginLeft: 5
+    }
   },
   arrowDown: {
-    transform: 'rotate(45deg) translateX(0%) translateY(-50%)'
+    transform: 'rotate(45deg) translateX(0%) translateY(0%)'
   },
   arrowUp: {
     transform: 'rotate(-135deg) translateX(-50%) translateY(0%)'
   },
   open: {
-    maxHeight: '100rem',
-    transition: 'max-height 3s linear',
-    animation: 'close 2s'
-  },
-  '@keyframes open': {
-    '0%': {
-      lineClamp: 1
-    },
-    '100%': {
-      lineClamp: 'initial'
-    }
-  },
-  '@keyframes close': {
-    '0%': {
-      lineClamp: 'initial'
-    },
-    '100%': {
-      lineClamp: 1
-    }
+    transition: 'max-height 200ms ease-in',
+    maxHeight: '15rem'
   }
 }))
 
