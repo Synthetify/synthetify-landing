@@ -61,6 +61,7 @@ const dictionary = {
   'home.statistics.volume': 'Volume',
   'home.statistics.collaterals': 'Collaterals',
   'home.statistics.synthetics': 'Synthetics',
+  'home.statistics.liquidation': 'Liquidation',
   'home.ourInvestors': 'OUR INVESTORS',
   'home.ourInvestors.description': 'Backed by leading venture capital investors',
   'home.assets.BTC': 'Bitcoin',
@@ -80,6 +81,7 @@ const dictionary = {
   'brand.whiteLogoVertical': 'White logo vertical',
   'brand.whiteLogoHorizontal': 'White logo horizontal',
   'blog.backButton': 'Back to Blog',
+  'blog.shareOn': 'Share on',
   'faq.title': 'FAQ',
   'faq.description': 'Frequently asked questions',
   'faq.questions': [

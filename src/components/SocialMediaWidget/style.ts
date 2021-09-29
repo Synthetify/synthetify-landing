@@ -4,10 +4,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   circle: {
     width: 43,
     height: 43,
-    cursor: 'pointer',
+    transition: 'transform 300ms',
 
-    '&:not(:last-child)': {
-      marginBottom: 6
+    '&:hover': {
+      transform: 'scale(1.1) rotate(-20deg)'
     }
   },
   socials: {
@@ -22,6 +22,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     bottom: 50,
     right: 25,
     zIndex: 10,
+
+    '& a:not(:last-child)': {
+      marginBottom: 6
+    },
 
     [theme.breakpoints.down('md')]: {
       right: 17

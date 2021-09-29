@@ -18,7 +18,7 @@ const FAQ: React.FC = () => {
     <>
       <PageHeader
         title={translate('faq.title')}
-        description={translate('brand.description')}
+        description={translate('faq.description')}
       />
       <Grid container direction='column' className={classes.container}>
         {questions}

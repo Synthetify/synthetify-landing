@@ -45,7 +45,7 @@ export const OutsideLink: React.FC<ILinkProps> = ({ href, name, description }) =
   const classes = useStyles()
 
   return (
-    <a href={href} className={classes.a}>
+    <a href={href} className={classes.a} target='_blank' rel='noopener noreferrer'>
       <Grid className={classes.linkWrapper}>
         <Typography className={classes.link}>{name}</Typography>
         <Typography className={classes.description}>{description}</Typography>
@@ -89,26 +89,34 @@ export const Footer: React.FC = () => {
           wrap='nowrap'
           alignItems='center'
           justifyContent='flex-end'>
-          <CardMedia
-            className={classes.circle}
-            image={github}
-            onClick={() => window.open(links.socialMedia.github)}
-          />
-          <CardMedia
-            className={classes.circle}
-            image={linkedin}
-            onClick={() => window.open(links.socialMedia.linkedin)}
-          />
-          <CardMedia
-            className={classes.circle}
-            image={twitter}
-            onClick={() => window.open(links.socialMedia.twitter)}
-          />
-          <CardMedia
-            className={classes.circle}
-            image={discord}
-            onClick={() => window.open(links.socialMedia.discord)}
-          />
+          <a
+            href={links.socialMedia.github}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <CardMedia className={classes.circle} image={github} />
+          </a>
+          <a
+            href={links.socialMedia.linkedin}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <CardMedia className={classes.circle} image={linkedin} />
+          </a>
+          <a
+            href={links.socialMedia.twitter}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <CardMedia className={classes.circle} image={twitter} />
+          </a>
+          <a
+            href={links.socialMedia.discord}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <CardMedia className={classes.circle} image={discord} />
+          </a>
         </Grid>
       </Grid>
       <Grid container className={classes.routes} wrap='nowrap' justifyContent='space-between'>
