@@ -4,7 +4,7 @@ import { colors } from '@static/theme'
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     marginTop: 105,
-    marginBottom: 235,
+    marginBottom: 188,
     marginInline: 'auto',
     flexDirection: 'row',
     flexWrap: 'nowrap',
