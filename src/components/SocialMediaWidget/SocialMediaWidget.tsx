@@ -13,10 +13,34 @@ export const SocialMediaWidget: React.FC = () => {
   return (
     <Hidden smDown implementation='css'>
       <Grid className={classes.socials} container direction='column' wrap='nowrap' alignItems='center'>
-        <CardMedia className={classes.circle} image={github} onClick={() => window.open(links.socialMedia.github)} />
-        <CardMedia className={classes.circle} image={linkedin} onClick={() => window.open(links.socialMedia.linkedin)} />
-        <CardMedia className={classes.circle} image={twitter} onClick={() => window.open(links.socialMedia.twitter)} />
-        <CardMedia className={classes.circle} image={discord} onClick={() => window.open(links.socialMedia.discord)} />
+        <a
+          href={links.socialMedia.github}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <CardMedia className={classes.circle} image={github} />
+        </a>
+        <a
+          href={links.socialMedia.linkedin}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <CardMedia className={classes.circle} image={linkedin} />
+        </a>
+        <a
+          href={links.socialMedia.twitter}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <CardMedia className={classes.circle} image={twitter} />
+        </a>
+        <a
+          href={links.socialMedia.discord}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <CardMedia className={classes.circle} image={discord} />
+        </a>
       </Grid>
     </Hidden>
   )

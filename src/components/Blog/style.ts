@@ -12,55 +12,29 @@ const useStyles = makeStyles((theme: Theme) => ({
     columnGap: 80,
     rowGap: 88,
     justifyContent: 'center',
-    marginBlock: 144,
+    marginBlock: 90,
     marginInline: 'auto',
     [theme.breakpoints.down('lg')]: {
       gridTemplateColumns: '1fr 1fr',
       width: 1050,
-      rowGap: 97,
-      marginBlock: 130
+      rowGap: 97
     },
     [theme.breakpoints.down('md')]: {
       width: 'calc(100% - 98px)',
-      columnGap: 38,
-      marginBlock: 94
+      columnGap: 38
     },
     [theme.breakpoints.down('sm')]: {
       columnGap: 18,
-      width: 'calc(100% - 56px)'
+      width: 'calc(100% - 56px)',
+      marginBlock: 60
     },
     [theme.breakpoints.down('xs')]: {
       gridTemplateColumns: '1fr',
       rowGap: 38,
       justifyContent: 'center',
-      width: 'calc(100% - 62px)'
+      width: 'calc(100% - 62px)',
+      marginBlock: 40
     }
-  },
-  desc: {
-    position: 'relative',
-    top: 7,
-    fontSize: 13,
-    fontWeight: 400,
-    width: 'calc(100% - 3px)',
-    maxWidth: 485,
-    lineHeight: '16px',
-    [theme.breakpoints.down('md')]: {
-      maxWidth: 412
-    },
-    [theme.breakpoints.down('sm')]: {
-      lineHeight: '11px',
-      fontSize: 9,
-      maxWidth: 313
-    },
-    [theme.breakpoints.down('xs')]: {
-      width: '100%'
-    }
-  },
-  articleAndDesc: {
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
-    width: '100%'
   }
 }))
 

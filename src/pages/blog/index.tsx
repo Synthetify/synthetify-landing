@@ -3,10 +3,14 @@ import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
 import BlogListing, { DataForArticles } from '@components/Blog/Blog'
+import { BlogMetatags } from '@components/Metatags/BlogMetatags'
 
 export const Blog: React.FC<{ posts: DataForArticles[] }> = ({ posts }) => {
   return (
-    <BlogListing data={posts}/>
+    <>
+      <BlogMetatags />
+      <BlogListing data={posts}/>
+    </>
   )
 }
 
