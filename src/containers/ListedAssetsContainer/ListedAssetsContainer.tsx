@@ -88,6 +88,8 @@ export const ListedAssetsContainer: React.FC = () => {
     USD: 0
   })
 
+  const subscriptions = useRef<number[]>([])
+
   useEffect(() => {
     const connection = getConnection()
     const binanceClient = Binance()
@@ -104,8 +106,8 @@ export const ListedAssetsContainer: React.FC = () => {
     }
 
     const connectEvents = () => {
-      Object.entries(assetsAccounts).forEach(([name, pythKey]) => {
-        connection.onAccountChange(pythKey, accountInfo => {
+      subscriptions.current = Object.entries(assetsAccounts).map(([name, pythKey]) => {
+        return connection.onAccountChange(pythKey, accountInfo => {
           tmpPrices.current = {
             ...tmpPrices.current,
             [name as ListedAsset]: parsePriceData(accountInfo.data).price
@@ -196,6 +198,13 @@ export const ListedAssetsContainer: React.FC = () => {
       setData(tmpData)
     }
     connectEvents()
+
+    return () => {
+      subscriptions.current.forEach((id) => {
+        const connection = getConnection()
+        connection.removeAccountChangeListener(id).then(() => {}, () => {})
+      })
+    }
   }, [])
 
   const assetConsts = {
