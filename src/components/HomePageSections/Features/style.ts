@@ -3,20 +3,20 @@ import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    marginBottom: 241,
+    marginBottom: 160,
     marginInline: 'auto',
     width: 'fit-content',
 
     [theme.breakpoints.down('md')]: {
-      marginBottom: 157
+      marginBottom: 150
     },
 
     [theme.breakpoints.down('sm')]: {
-      marginBottom: 110
+      marginBottom: 75
     },
 
     [theme.breakpoints.down('xs')]: {
-      marginBottom: 77
+      marginBottom: 60
     }
   },
   title: {

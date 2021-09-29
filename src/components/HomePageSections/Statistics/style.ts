@@ -3,20 +3,20 @@ import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    marginBottom: 317,
+    marginBottom: 160,
     marginInline: 'auto',
     width: 'fit-content',
 
     [theme.breakpoints.down('md')]: {
-      marginBottom: 174
+      marginBottom: 150
     },
 
     [theme.breakpoints.down('sm')]: {
-      marginBottom: 107
+      marginBottom: 75
     },
 
     [theme.breakpoints.down('xs')]: {
-      marginBottom: 75
+      marginBottom: 60
     }
   },
   title: {
@@ -61,7 +61,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     width: '33%'
   },
   divider: {
-    background: 'linear-gradient(0deg, rgba(157, 160, 174, 0) 0%, #4D527A 49.61%, rgba(157, 160, 174, 0) 100%)',
+    background:
+      'linear-gradient(0deg, rgba(157, 160, 174, 0) 0%, #4D527A 49.61%, rgba(157, 160, 174, 0) 100%)',
     height: '100%'
   },
   fieldValue: {
