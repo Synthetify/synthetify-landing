@@ -1,8 +1,8 @@
 import { Connection } from '@solana/web3.js'
 
-let connection: Connection
+let connection: Connection | null = null
 
-export const getConnection = () => {
+export const getConnection = (): Connection => {
   if (connection) {
     return connection
   }
