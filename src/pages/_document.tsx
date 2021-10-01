@@ -23,8 +23,8 @@ class MyDocument extends Document {
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                 background-color: #0c0d2c;
-                letter-spacing: -0.01em;
-                font-weight: 500;
+                letter-spacing: -0.03em;
+                font-weight: 600;
               }
             `}
           </style>
