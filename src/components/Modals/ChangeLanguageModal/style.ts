@@ -4,9 +4,11 @@ import { colors, typography } from '@static/theme'
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     background: colors.navy.component,
+    width: 160,
     borderRadius: 10,
     marginTop: 13,
-    padding: 8,
+    paddingInline: 20,
+    paddingBlock: 10,
 
     [theme.breakpoints.down('sm')]: {
       marginTop: 24
@@ -17,25 +19,16 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.grey
   },
   greeting: {
-    ...typography.body4,
-    color: colors.navy.info,
-    position: 'relative',
-    top: -4
+    ...typography.caption1,
+    color: colors.navy.info
   },
   listItem: {
-    borderRadius: 8,
+    borderRadius: 10,
+    paddingBlock: 8,
     paddingLeft: 8,
-    paddingTop: 2,
-    minWidth: 120,
-    height: 51,
+    minWidth: 122,
+    marginBottom: 5,
     cursor: 'pointer',
-    '&:hover': {
-      backgroundColor: colors.navy.navButton
-    },
-
-    '&:not(:last-child)': {
-      marginBottom: 4
-    },
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
@@ -43,7 +36,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '&:hover $greeting': {
-      color: '#9D9CEE'
+      color: colors.navy['8584D2']
     }
   },
   current: {
@@ -53,7 +46,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '& $greeting': {
-      color: '#9D9CEE'
+      color: colors.navy['8584D2']
     }
   },
   paper: {

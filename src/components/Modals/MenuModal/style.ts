@@ -6,7 +6,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     background: colors.navy.component,
     borderRadius: 10,
     marginTop: 13,
-    padding: 8,
+    paddingInline: 24,
+    paddingBlock: 10,
 
     [theme.breakpoints.down('sm')]: {
       marginTop: 24
@@ -18,20 +19,12 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   listItem: {
     color: colors.navy.grey,
-    borderRadius: 8,
-    paddingTop: 4,
-    paddingLeft: 12,
-    minWidth: 142,
-    height: 40,
+    borderRadius: 10,
+    paddingBlock: 8,
+    paddingLeft: 5,
+    minWidth: 130,
+    marginBottom: 5,
     cursor: 'pointer',
-
-    '&:not(:last-child)': {
-      marginBottom: 4
-    },
-
-    '&:hover': {
-      backgroundColor: colors.navy.navButton
-    },
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
@@ -40,6 +33,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   current: {
     ...typography.body1,
+    fontWeight: 600,
     color: colors.navy.veryLightGrey
   },
   paper: {
