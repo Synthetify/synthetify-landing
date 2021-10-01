@@ -6,8 +6,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     background: colors.navy.component,
     borderRadius: 10,
     marginTop: 13,
-    paddingInline: 24,
-    paddingBlock: 10,
+    padding: 8,
 
     [theme.breakpoints.down('sm')]: {
       marginTop: 24
@@ -18,12 +17,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.grey
   },
   listItem: {
-    borderRadius: 10,
-    paddingBlock: 8,
-    paddingInline: 8,
-    minWidth: 175,
-    marginBottom: 5,
+    borderRadius: 8,
+    paddingLeft: 8,
+    paddingTop: 2,
+    minWidth: 184,
+    height: 51,
     cursor: 'pointer',
+
+    '&:hover': {
+      backgroundColor: colors.navy.navButton
+    },
+
+    'a:not(:last-child) &': {
+      marginBottom: 4
+    },
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
@@ -31,12 +38,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '&:hover $description': {
-      color: colors.navy['8584D2']
+      color: '#9D9CEE'
     }
   },
   description: {
-    ...typography.caption1,
-    color: colors.navy.info
+    ...typography.body4,
+    color: colors.navy.info,
+    position: 'relative',
+    top: -4
   },
   current: {
     '& $name': {
@@ -45,7 +54,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '& $description': {
-      color: colors.navy['8584D2']
+      color: '#9D9CEE'
     }
   },
   paper: {
@@ -82,7 +91,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   mark: {
     paddingBlock: 5,
     paddingInline: 6,
-    fontSize: 11
+    fontSize: 11,
+    marginTop: 2
   }
 }))
 
