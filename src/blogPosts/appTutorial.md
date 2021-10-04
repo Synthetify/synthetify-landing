@@ -1,8 +1,8 @@
 ---
 title: "Hello there!"
-date: do ustawienia
+date: "2021-10-04"
 description: "Synthetify DEX described"
-image: do ustalenia
+image: "/blog/appTutorial.png"
 ---
 
 **Hello there!**
