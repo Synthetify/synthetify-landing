@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   devnet: {
     '&::after': {
-      content: '"DEVNET"',
+      content: '',
       position: 'relative',
       top: -2,
       color: colors.navy.lightGrey,

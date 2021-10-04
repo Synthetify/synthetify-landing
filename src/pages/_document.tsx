@@ -11,7 +11,6 @@ class MyDocument extends Document {
           <style jsx global>
             {`
               @import url('https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,600,700,800,900');
-
               * {
                 min-width: 0;
                 min-height: 0;

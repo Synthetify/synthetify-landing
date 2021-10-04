@@ -200,7 +200,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('sm')]: {
-      paddingBlock: 4,
+      paddingBottom: 4,
+      paddingTop: 3,
       paddingInline: 5,
       fontSize: 9,
       lineHeight: '9px'
