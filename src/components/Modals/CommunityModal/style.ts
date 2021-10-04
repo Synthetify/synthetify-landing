@@ -21,7 +21,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   name: {
     ...typography.body2,
-    color: colors.navy.grey
+    color: colors.navy.grey,
+    position: 'relative',
+    top: -1
   },
   listItem: {
     borderRadius: 8,
@@ -56,7 +58,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.body4,
     color: colors.navy.info,
     position: 'relative',
-    top: -4
+    top: -3
   },
   paper: {
     background: 'transparent',
