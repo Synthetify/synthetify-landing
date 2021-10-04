@@ -6,7 +6,7 @@ const HomePageStatisticsContainer = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch('https://api.synthetify.io/stats/devnet')
+      await fetch('https://api.synthetify.io/stats/mainnet')
         .then(async response => {
           const helperVariable = await response.json()
           helperVariable.reverse()
