@@ -9,7 +9,7 @@ image: "/blog/firstPost.png"
 
 **Hi everyone!**
 
-Tomorrow is going to be a big day! Synthetify launch into the mainnet! Check it out [here](https://app.synthetify.io/staking)!
+Today is a big day! Synthetify launch into the mainnet! Check it out [here](https://app.synthetify.io/staking)!
 
 What you should know now:
 1. SNY is the only collateral asset in the beginning. Keep an eye on it, we are going to add more tokens in the upcoming weeks.
