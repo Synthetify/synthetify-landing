@@ -13,7 +13,7 @@ Today is a big day! Synthetify launch into the mainnet! Check it out [here](http
 
 What you should know now:
 1. SNY is the only collateral asset in the beginning. Keep an eye on it, we are going to add more tokens in the upcoming weeks.
-2. In the beginning, you can swap five different synthetic assets: xUSD, xBTC, xSOL, xFF and xETH.
+2. In the beginning, you can swap five different synthetic assets: xUSD, xBTC, xSOL, xFTT and xETH.
 3. You have approx. 40h to subscribe for the first staking round. In this round, the total rewards pool is 20.000 SNY. It increases every week.
 
 We prepared a [quick guide](../app-tutorial) on Synthetify.
