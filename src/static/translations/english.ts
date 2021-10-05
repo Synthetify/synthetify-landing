@@ -48,7 +48,7 @@ const dictionary = {
     'Access the world of synthetic stocks, crypto and other assets without any restrictions.',
   'home.features.layerOneSolution': 'Layer-one solution',
   'home.features.layerOneSolution.description':
-    'Synthetify takes the compostability of DeFi block to the next level. Our platform and assets work on Solana blockchain and can be easily integrated into leading applications like Serum.',
+    'Synthetify takes the composability of DeFi block to the next level. Our platform and assets work on Solana blockchain and can be easily integrated into leading applications like Serum.',
   'home.features.userFriendly': 'User-friendly',
   'home.features.userFriendly.description':
     'You can use Synthetify platform on any device. We support all laptops, tablets and phones.',
