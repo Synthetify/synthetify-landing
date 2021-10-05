@@ -1,7 +1,7 @@
 ---
 title: "Mainnet launch"
-date: "2021-10-05 11:00:00"
-description: "The awaited day is coming"
+date: "2021-10-05 12:00:00"
+description: "The long awaited day! See what you need to know!"
 image: "/blog/firstPost.png"
 ---
 
@@ -9,7 +9,7 @@ image: "/blog/firstPost.png"
 
 **Hi everyone!**
 
-Tomorrow is going to be a big day! Synthetify launch into the mainnet! Check it out [here](https://app.synthetify.io/staking)!
+Today is a big day! Synthetify launch into the mainnet! Check it out [here](https://app.synthetify.io/staking)!
 
 What you should know now:
 1. SNY is the only collateral asset in the beginning. Keep an eye on it, we are going to add more tokens in the upcoming weeks.
