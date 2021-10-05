@@ -56,7 +56,7 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
               : ''
             }
           </Typography>
-          <Typography className={classes.fieldName}>{translate('home.statistics.lastMonth')}</Typography>
+          <Typography className={classes.fieldName}>{translate('home.statistics.last24h')}</Typography>
         </Grid>
 
         <Divider orientation='vertical' className={classes.divider} />
@@ -77,7 +77,7 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
               : ''
             }
           </Typography>
-          <Typography className={classes.fieldName}>{translate('home.statistics.lastMonth')}</Typography>
+          <Typography className={classes.fieldName}>{translate('home.statistics.current')}</Typography>
         </Grid>
 
         <Divider orientation='vertical' className={classes.divider} />
@@ -96,7 +96,7 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
               : ''
             }
           </Typography>
-          <Typography className={classes.fieldName}>{translate('home.statistics.lastMonth')}</Typography>
+          <Typography className={classes.fieldName}>{translate('home.statistics.current')}</Typography>
         </Grid>
       </Grid>
     </Grid>
