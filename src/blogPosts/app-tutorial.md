@@ -1,6 +1,6 @@
 ---
 title: "Application tutorial"
-date: "2021-10-05 12:00:00"
+date: "2021-10-05 11:00:00"
 description: "The milestone reached!"
 image: "/blog/appTutorial.png"
 ---
