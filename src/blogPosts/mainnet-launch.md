@@ -1,7 +1,7 @@
 ---
 title: "Mainnet launch"
 date: "2021-10-05 11:00:00"
-description: "The awaited day is coming"
+description: "The long awaited day! See what you need to know!"
 image: "/blog/firstPost.png"
 ---
 
