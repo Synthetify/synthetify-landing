@@ -1,5 +1,13 @@
 import { Connection } from '@solana/web3.js'
 
-const connection = new Connection('https://api.devnet.solana.com') // TODO: change to mainnet url when mainnet pyth will be available
+let connection: Connection | null = null
 
-export const getConnection = () => connection
+export const getConnection = (): Connection => {
+  if (connection) {
+    return connection
+  }
+
+  connection = new Connection('https://solana-api.projectserum.com')
+
+  return connection
+}

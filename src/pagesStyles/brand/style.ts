@@ -4,30 +4,27 @@ const useStyles = makeStyles((theme: Theme) => ({
   gridWrapper: {
     display: 'grid',
     marginInline: 'auto',
-    marginBlock: 192,
+    marginBlock: 90,
     maxWidth: 962,
     gridTemplateColumns: '1fr 1fr',
     columnGap: 60,
     rowGap: 60,
 
     [theme.breakpoints.down('md')]: {
-      marginBlock: 173,
       maxWidth: 829,
       columnGap: 25,
       rowGap: 25
     },
 
     [theme.breakpoints.down('sm')]: {
-      marginTop: 96,
-      marginBottom: 104,
+      marginBlock: 60,
       maxWidth: 554,
       columnGap: 16,
       rowGap: 16
     },
 
     [theme.breakpoints.down('xs')]: {
-      marginTop: 80,
-      marginBottom: 65,
+      marginBlock: 40,
       maxWidth: 269,
       gridTemplateColumns: '1fr'
     }

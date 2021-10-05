@@ -1,53 +1,62 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     background: colors.navy.component,
     borderRadius: 10,
     marginTop: 13,
-    paddingInline: 24,
-    paddingBlock: 10,
+    padding: 8,
 
     [theme.breakpoints.down('sm')]: {
       marginTop: 24
     }
   },
   name: {
-    fontSize: 22,
-    lineHeight: '40px',
-    color: colors.navy.grey
+    ...typography.body2,
+    color: colors.navy.grey,
+    position: 'relative',
+    top: -1
   },
   listItem: {
-    borderRadius: 10,
-    paddingBlock: 8,
-    paddingInline: 8,
-    minWidth: 175,
-    marginBottom: 5,
+    borderRadius: 8,
+    paddingLeft: 8,
+    paddingTop: 2,
+    minWidth: 184,
+    height: 51,
     cursor: 'pointer',
+
+    '&:hover': {
+      backgroundColor: colors.navy.navButton
+    },
+
+    'a:not(:last-child) &': {
+      marginBottom: 4
+    },
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
-      fontWeight: 600
+      ...typography.body1
     },
 
     '&:hover $description': {
-      color: colors.navy['8584D2']
+      color: '#9D9CEE'
     }
   },
   description: {
-    fontSize: 11,
-    lineHeight: '13px',
-    color: colors.navy.info
+    ...typography.body4,
+    color: colors.navy.info,
+    position: 'relative',
+    top: -3
   },
   current: {
     '& $name': {
       color: colors.navy.veryLightGrey,
-      fontWeight: 600
+      ...typography.body1
     },
 
     '& $description': {
-      color: colors.navy['8584D2']
+      color: '#9D9CEE'
     }
   },
   paper: {
@@ -63,7 +72,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:hover $name': {
       color: colors.navy.grey,
-      fontWeight: 'unset',
+      ...typography.body2,
       opacity: 0.6
     },
 
@@ -84,7 +93,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   mark: {
     paddingBlock: 5,
     paddingInline: 6,
-    fontSize: 11
+    fontSize: 11,
+    marginTop: 2
   }
 }))
 

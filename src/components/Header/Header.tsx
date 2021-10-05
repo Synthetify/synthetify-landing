@@ -13,8 +13,7 @@ import { Language } from '@static/translations'
 import AboutUsModal from '@components/Modals/AboutUsModal/AboutUsModal'
 import { useRouter } from 'next/router'
 import CommunityModal from '@components/Modals/CommunityModal/CommunityModal'
-import classNames from 'classnames'
-import { SoonMark } from '@components/LinkMarks/LinkMarks'
+import { NewMark } from '@components/LinkMarks/LinkMarks'
 import useStyles from './style'
 
 export const Header: React.FC = () => {
@@ -24,7 +23,7 @@ export const Header: React.FC = () => {
 
   const { setLanguage, language } = useContext(LanguageContext)
 
-  const languages: {[key in Language]: { label: string, greeting: string }} = {
+  const languages: { [key in Language]: { label: string, greeting: string } } = {
     english: {
       label: 'English',
       greeting: 'Hello!'
@@ -35,34 +34,53 @@ export const Header: React.FC = () => {
   const [routesModalAnchor, setRoutesModalAnchor] = React.useState<HTMLButtonElement | null>(null)
 
   const [aboutUsModalOpen, setAboutUsModalOpen] = React.useState(false)
-  const [aboutUsModalAnchor, setAboutUsModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
+  const [aboutUsModalAnchor, setAboutUsModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null
+  >(null)
 
   const [communityModalOpen, setCommunityModalOpen] = React.useState(false)
-  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
+  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null
+  >(null)
 
   return (
     <>
-      <Grid container className={classes.root} wrap='nowrap' alignItems='center' justifyContent="space-between">
+      <Grid
+        container
+        className={classes.root}
+        wrap='nowrap'
+        alignItems='center'
+        justifyContent='space-between'>
         <Grid container item wrap='nowrap' alignItems='center'>
-
-          <CardMedia className={classes.snyShort} image={snyShort} component='img' />
-          <CardMedia className={classes.snyLong} image={snyLong} component='img' />
-
+          <Link href='/' passHref>
+            <a>
+              <CardMedia className={classes.snyShort} image={snyShort} component='img' />
+              <CardMedia className={classes.snyLong} image={snyLong} component='img' />
+            </a>
+          </Link>
           <Hidden mdUp implementation='css'>
-            <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginRight: 20 }} />
+            <Divider
+              orientation='vertical'
+              className={classes.verticalDivider}
+              style={{ marginRight: 20 }}
+            />
           </Hidden>
 
           <ChangeLanguageButton
-            languages={Object.entries(languages).map(([lang, { label, greeting }]) => ({ language: lang as Language, label, greeting }))}
+            languages={Object.entries(languages).map(([lang, { label, greeting }]) => ({
+              language: lang as Language,
+              label,
+              greeting
+            }))}
             onSelect={setLanguage}
             current={languages[language].label}
           />
         </Grid>
 
-        <Grid container item wrap='nowrap' alignItems='center' justifyContent="flex-end">
+        <Grid container item wrap='nowrap' alignItems='center' justifyContent='flex-end'>
           <Grid className={classes.hideOnSm}>
             <Link href='/' passHref>
-              <a style={{ textDecoration: 'none' }}><Typography className={classes.route}>{translate('header.home')}</Typography></a>
+              <a style={{ textDecoration: 'none' }}>
+                <Typography className={classes.route}>{translate('header.home')}</Typography>
+              </a>
             </Link>
             <Typography
               className={classes.route}
@@ -70,8 +88,7 @@ export const Header: React.FC = () => {
                 setAboutUsModalAnchor(event.currentTarget)
                 setAboutUsModalOpen(true)
                 blurContent()
-              }}
-            >
+              }}>
               {translate('header.aboutUs')}
             </Typography>
             <Typography
@@ -80,26 +97,34 @@ export const Header: React.FC = () => {
                 setCommunityModalAnchor(event.currentTarget)
                 setCommunityModalOpen(true)
                 blurContent()
-              }}
-            >
+              }}>
               {translate('header.community')}
             </Typography>
-            <Grid style={{ marginRight: 22, display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-              <Typography className={classNames(classes.route, classes.blocked)} style={{ marginRight: 8 }}>{translate('header.blog')}</Typography>
-              <SoonMark className={classes.mark} />
-            </Grid>
+            <Link href='/blog' passHref>
+              <a style={{ textDecoration: 'none' }}>
+                <Grid
+                  className={classes.linkWithMark}>
+                  <Typography
+                    className={classes.route}
+                    style={{ marginRight: 8 }}>
+                    {translate('header.blog')}
+                  </Typography>
+                  <NewMark className={classes.mark} />
+                </Grid>
+              </a>
+            </Link>
           </Grid>
 
-          <Button
-            className={classes.tradeLink}
-            href={links.app.main}
-            variant='contained'
-          >
+          <Button className={classes.tradeLink} href={links.app.main} variant='contained' target='_blank' rel='noopener noreferrer'>
             {translate('header.trade')}
           </Button>
 
           <Grid className={classes.hideOnMdUp}>
-            <Divider orientation='vertical' className={classes.verticalDivider} style={{ marginLeft: 20 }} />
+            <Divider
+              orientation='vertical'
+              className={classes.verticalDivider}
+              style={{ marginLeft: 20 }}
+            />
             <IconButton
               className={classes.dehazeButton}
               onClick={(event: React.MouseEvent<HTMLButtonElement>) => {

@@ -1,4 +1,4 @@
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 import { makeStyles, Theme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -23,10 +23,9 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     [theme.breakpoints.down('md')]: {
       width: 174,
-      height: 82,
+      height: 92,
       borderRadius: 6,
-      paddingTop: 9,
-      paddingBottom: 13,
+      paddingBlock: 9,
       paddingInline: 9
     },
 
@@ -39,55 +38,51 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   token: {
-    fontSize: 28,
-    lineHeight: '28px',
-    fontWeight: 600,
+    ...typography.heading2,
     color: colors.navy.veryLightGrey,
 
     [theme.breakpoints.down('md')]: {
-      fontSize: 22,
-      lineHeight: '22px'
+      ...typography.heading4
     }
   },
   tokenName: {
-    fontSize: 13,
-    lineHeight: '13px',
+    ...typography.body4,
     color: colors.navy.info,
+    position: 'relative',
+    top: -6,
 
     [theme.breakpoints.down('md')]: {
-      fontSize: 10,
-      lineHeight: '10px'
+      top: -4,
+      ...typography.caption1
     }
   },
   value: {
-    fontSize: 25,
-    lineHeight: '25px',
-    fontWeight: 700,
+    ...typography.heading4,
     color: colors.navy.veryLightGrey,
     marginLeft: 4,
 
     [theme.breakpoints.down('md')]: {
-      fontSize: 18
+      ...typography.subtitle1
     }
   },
   chg: {
     justifySelf: 'flex-end',
-    fontSize: 13,
+    ...typography.subtitle2,
     color: colors.navy.navButton,
     marginRight: 9,
 
     [theme.breakpoints.down('md')]: {
-      fontSize: 10,
+      ...typography.caption1,
       marginRight: 3
     }
   },
   percent: {
     justifySelf: 'flex-end',
-    fontSize: 16,
+    ...typography.subtitle1,
     color: colors.navy.veryLightGrey,
 
     [theme.breakpoints.down('md')]: {
-      fontSize: 10
+      ...typography.caption2
     }
   },
   change: {

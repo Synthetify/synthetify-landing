@@ -12,6 +12,7 @@ import whiteLogoVertical from '@static/svg/brand/synthetify_vertical_logo_white.
 import whiteLogoHorizontal from '@static/svg/brand/synthetify_horizontal_logo_white.svg'
 import whiteLogoBorder from '@static/svg/brand/synthetify_logo_white_border.svg'
 import useStyles from '@pagesStyles/brand/style'
+import { BrandMetatags } from '@components/Metatags/BrandMetatags'
 
 export const Brand: React.FC = () => {
   const classes = useStyles()
@@ -19,6 +20,7 @@ export const Brand: React.FC = () => {
 
   return (
     <>
+      <BrandMetatags />
       <PageHeader
         title={translate('brand.title')}
         description={translate('brand.description')}

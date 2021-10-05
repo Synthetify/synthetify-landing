@@ -9,12 +9,15 @@ import { LanguageProvider } from '@providers/LanguageProvider/LanguageProvider'
 import Footer from '@components/Footer/Footer'
 import SocialMediaWidget from '@components/SocialMediaWidget/SocialMediaWidget'
 import Background from '@components/Background/Background'
+import { useRouter } from 'next/router'
 import './index.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter()
+
   return (
     <ThemeProvider theme={theme}>
-      <Background />
+      {(router.asPath === '/') && <Background />}
       <LanguageProvider>
         <div id={toBlur} style={{ position: 'absolute', zIndex: 1, width: '100%' }}>
           <Metatags />

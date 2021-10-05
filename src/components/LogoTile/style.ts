@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   logoTile: {
@@ -35,14 +35,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   logoLabel: {
-    fontSize: 22,
-    lineHeight: '40px',
+    ...typography.body2,
     color: colors.navy.grey,
     marginLeft: 9,
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 16,
-      lineHeight: '32px',
+      ...typography.subtitle2,
       marginLeft: 6
     }
   },

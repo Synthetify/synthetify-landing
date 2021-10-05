@@ -27,18 +27,93 @@ export const colors = {
   navy: {
     background: '#0C0D2C',
     dark: '#0E0E2A',
-    component: '#1E1E43',
+    component: '#1D1D49',
     navBar: '#F9F9FB',
-    navButton: '#3D3F72',
+    navButton: '#3A3A85',
     grey: '#A3A8CE',
     lightGrey: '#DADCF1',
     veryLightGrey: '#FBFBFB',
-    button: '#6C6BC7',
-    info: '#6F6EAA',
+    button: '#655ed4',
+    info: '#6261a3',
     darkGrey: '#292956',
-    '8584D2': '#8584D2'
+    '8584D2': '#8584D2',
+    tooltip: '#5452CE'
   }
 }
+
+export const typography = {
+  heading1: {
+    fontSize: 40,
+    lineHeight: '49px',
+    fontWeight: 800
+  },
+  heading2: {
+    fontSize: 32,
+    lineHeight: '40px',
+    fontWeight: 800
+  },
+  heading3: {
+    fontSize: 27,
+    lineHeight: '35px',
+    fontWeight: 800
+  },
+  heading4: {
+    fontSize: 24,
+    lineHeight: '33px',
+    fontWeight: 800
+  },
+  body1: {
+    fontSize: 22,
+    lineHeight: '30px',
+    fontWeight: 800
+  },
+  body2: {
+    fontSize: 22,
+    lineHeight: '30px',
+    fontWeight: 600
+  },
+  subtitle1: {
+    fontSize: 16,
+    lineHeight: '24px',
+    fontWeight: 800
+  },
+  subtitle2: {
+    fontSize: 16,
+    lineHeight: '24px',
+    fontWeight: 600
+  },
+  body3: {
+    fontSize: 13,
+    lineHeight: '20px',
+    fontWeight: 800
+  },
+  body4: {
+    fontSize: 13,
+    lineHeight: '20px',
+    fontWeight: 600
+  },
+  caption1: {
+    fontSize: 11,
+    lineHeight: '16px',
+    fontWeight: 600
+  },
+  caption2: {
+    fontSize: 11,
+    lineHeight: '16px',
+    fontWeight: 800
+  },
+  caption3: {
+    fontSize: 9,
+    lineHeight: '14px',
+    fontWeight: 600
+  },
+  caption4: {
+    fontSize: 9,
+    lineHeight: '14px',
+    fontWeight: 800
+  }
+}
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -54,22 +129,17 @@ export const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: 'Inter',
-    body1: {
-      fontSize: 22
-    },
-    body2: {
-      fontSize: 16
-    },
-    h1: {
-      fontSize: 56
-    },
-    h2: {
-      fontSize: 40
-    },
-    h3: {
-      fontSize: 32
-    }
+    fontFamily: 'Be Vietnam',
+    fontWeightRegular: 600,
+    h1: typography.heading1,
+    h2: typography.heading2,
+    h3: typography.heading3,
+    h4: typography.heading4,
+    body1: typography.body2,
+    subtitle1: typography.subtitle1,
+    subtitle2: typography.subtitle2,
+    body2: typography.body4,
+    caption: typography.caption1
   }
 })
 

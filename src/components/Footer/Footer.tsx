@@ -26,18 +26,14 @@ export const InsideLink: React.FC<ILinkProps> = ({ href, name, description, isNe
     <Link href={href} passHref>
       <a className={classes.a}>
         <Grid className={classes.linkWrapper}>
-          {
-            isNew
-              ? (
-                <Grid className={classes.linkWithMarkWrapper}>
-                  <Typography className={classes.link}>{name}</Typography>
-                  <NewMark className={classes.mark} />
-                </Grid>
-              )
-              : (
-                <Typography className={classes.link}>{name}</Typography>
-              )
-          }
+          {isNew ? (
+            <Grid className={classes.linkWithMarkWrapper}>
+              <Typography className={classes.link}>{name}</Typography>
+              <NewMark className={classes.mark} />
+            </Grid>
+          ) : (
+            <Typography className={classes.link}>{name}</Typography>
+          )}
           <Typography className={classes.description}>{description}</Typography>
         </Grid>
       </a>
@@ -49,7 +45,7 @@ export const OutsideLink: React.FC<ILinkProps> = ({ href, name, description }) =
   const classes = useStyles()
 
   return (
-    <a href={href} className={classes.a}>
+    <a href={href} className={classes.a} target='_blank' rel='noopener noreferrer'>
       <Grid className={classes.linkWrapper}>
         <Typography className={classes.link}>{name}</Typography>
         <Typography className={classes.description}>{description}</Typography>
@@ -79,19 +75,62 @@ export const Footer: React.FC = () => {
   return (
     <>
       <Divider className={classes.divider} />
-      <Grid container className={classes.logos} wrap='nowrap' alignItems='center' justifyContent="space-between">
+      <Grid
+        container
+        className={classes.logos}
+        wrap='nowrap'
+        alignItems='center'
+        justifyContent='space-between'>
         <CardMedia className={classes.snyLogo} image={snyLogo} component='img' />
-        <Grid className={classes.socials} container item wrap='nowrap' alignItems='center' justifyContent="flex-end">
-          <CardMedia className={classes.circle} image={github} onClick={() => window.open(links.socialMedia.github)} />
-          <CardMedia className={classes.circle} image={linkedin} onClick={() => window.open(links.socialMedia.linkedin)} />
-          <CardMedia className={classes.circle} image={twitter} onClick={() => window.open(links.socialMedia.twitter)} />
-          <CardMedia className={classes.circle} image={discord} onClick={() => window.open(links.socialMedia.discord)} />
+        <Grid
+          className={classes.socials}
+          container
+          item
+          wrap='nowrap'
+          alignItems='center'
+          justifyContent='flex-end'>
+          <a
+            href={links.socialMedia.github}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <CardMedia className={classes.circle} image={github} />
+          </a>
+          <a
+            href={links.socialMedia.linkedin}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <CardMedia className={classes.circle} image={linkedin} />
+          </a>
+          <a
+            href={links.socialMedia.twitter}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <CardMedia className={classes.circle} image={twitter} />
+          </a>
+          <a
+            href={links.socialMedia.discord}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <CardMedia className={classes.circle} image={discord} />
+          </a>
         </Grid>
       </Grid>
-      <Grid container className={classes.routes} wrap='nowrap' justifyContent="space-between">
-        <Grid container item className={classNames(classes.column, classes.hideOnSm)} direction='column'>
+      <Grid container className={classes.routes} wrap='nowrap' justifyContent='space-between'>
+        <Grid
+          container
+          item
+          className={classNames(classes.column, classes.hideOnSm)}
+          direction='column'>
           <Link href='/' passHref>
-            <a className={classes.a}><Typography className={classes.columnHeader} style={{ cursor: 'pointer' }}>{translate('header.home')}</Typography></a>
+            <a className={classes.a}>
+              <Typography className={classes.columnHeader} style={{ cursor: 'pointer' }}>
+                {translate('header.home')}
+              </Typography>
+            </a>
           </Link>
         </Grid>
 
@@ -102,9 +141,11 @@ export const Footer: React.FC = () => {
             name={translate('header.whitepaper')}
             description={translate('header.whitepaperDescription')}
           />
-          <SoonLink
+          <InsideLink
+            href='/faq'
             name={translate('header.faq')}
             description={translate('header.faqDescription')}
+            isNew
           />
           <InsideLink
             href='/brand'
@@ -139,10 +180,14 @@ export const Footer: React.FC = () => {
         </Grid>
 
         <Grid container item className={classNames(classes.column, classes.hideOnSm)} direction='column'>
-          <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
-            <Typography className={classNames(classes.columnHeader, classes.blocked)}>{translate('header.blog')}</Typography>
-            <SoonMark className={classes.mark} />
-          </Grid>
+          <Link href='/blog' passHref>
+            <a className={classes.a}>
+              <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
+                <Typography className={classes.columnHeader}>{translate('header.blog')}</Typography>
+                <NewMark className={classes.mark} />
+              </Grid>
+            </a>
+          </Link>
         </Grid>
 
         <Grid container item className={classes.column} direction='column'>
@@ -159,7 +204,12 @@ export const Footer: React.FC = () => {
           />
         </Grid>
       </Grid>
-      <Grid container className={classes.copyrightWrapper} wrap='nowrap' alignItems='center' justifyContent='space-between'>
+      <Grid
+        container
+        className={classes.copyrightWrapper}
+        wrap='nowrap'
+        alignItems='center'
+        justifyContent='space-between'>
         <Typography className={classes.copyright}>© 2021 Synthetify Labs</Typography>
         <a href={links.privacyPolicy} style={{ textDecoration: 'none' }}>
           <Typography className={classNames(classes.copyright, classes.policy)}>

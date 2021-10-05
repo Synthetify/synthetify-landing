@@ -1,41 +1,45 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     background: colors.navy.component,
     borderRadius: 10,
     marginTop: 13,
-    paddingInline: 24,
-    paddingBlock: 10,
+    padding: 8,
 
     [theme.breakpoints.down('sm')]: {
       marginTop: 24
     }
   },
   name: {
-    fontSize: 22,
-    lineHeight: '40px',
+    ...typography.body2,
     color: colors.navy.grey
   },
   listItem: {
     color: colors.navy.grey,
-    borderRadius: 10,
-    paddingBlock: 8,
-    paddingLeft: 5,
-    minWidth: 130,
-    marginBottom: 5,
+    borderRadius: 8,
+    paddingTop: 4,
+    paddingLeft: 12,
+    minWidth: 142,
+    height: 40,
     cursor: 'pointer',
+
+    '&:not(:last-child)': {
+      marginBottom: 4
+    },
+
+    '&:hover': {
+      backgroundColor: colors.navy.navButton
+    },
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
-      fontWeight: 600
+      ...typography.body1
     }
   },
   current: {
-    fontSize: 22,
-    lineHeight: '40px',
-    fontWeight: 600,
+    ...typography.body1,
     color: colors.navy.veryLightGrey
   },
   paper: {

@@ -10,8 +10,7 @@ class MyDocument extends Document {
         <Head>
           <style jsx global>
             {`
-              @import url('https://fonts.googleapis.com/css?family=Inter:400,500,700,900');
-
+              @import url('https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,600,700,800,900');
               * {
                 min-width: 0;
                 min-height: 0;
@@ -19,10 +18,12 @@ class MyDocument extends Document {
               }
               body {
                 margin: 0;
-                font-family: 'Inter';
+                font-family: 'Be Vietnam';
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                 background-color: #0c0d2c;
+                letter-spacing: -0.01em;
+                font-weight: 500;
               }
             `}
           </style>
