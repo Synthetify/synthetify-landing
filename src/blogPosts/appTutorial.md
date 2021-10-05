@@ -1,7 +1,7 @@
 ---
-title: "Hello there!"
+title: "Application tutorial"
 date: "2021-10-04"
-description: "Synthetify DEX described"
+description: "The milestone reached!"
 image: "/blog/appTutorial.png"
 ---
 
