@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       textAlign: 'right'
     },
     [theme.breakpoints.down('xs')]: {
-      width: 120
+      width: 130
     }
   },
   image: {
