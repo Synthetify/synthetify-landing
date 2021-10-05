@@ -55,16 +55,25 @@ const useStyles = makeStyles((theme: Theme) => ({
       maxWidth: '100%'
     },
 
-    '& p, & ul': {
+    '& p, & ul, & ol': {
       ...typography.body2,
       marginBottom: 0,
       textAlign: 'justify',
-      width: '100%',
-      maxWidth: 800,
 
       [theme.breakpoints.down('sm')]: {
         ...typography.subtitle2
       }
+    },
+
+    '& p': {
+      width: '100%',
+      maxWidth: 800
+    },
+
+    '& ul, & ol': {
+      width: 'calc(100% - 20px)',
+      maxWidth: 780,
+      paddingInlineStart: 20
     },
 
     '& p strong': {

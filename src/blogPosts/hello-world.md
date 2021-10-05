@@ -1,6 +1,6 @@
 ---
 title: "Hello world!"
-date: "2021-09-16"
+date: "2021-09-16 12:00:00"
 description: "Welcome on our all-new blog!"
 image: "/blog/snyHello.png"
 ---
