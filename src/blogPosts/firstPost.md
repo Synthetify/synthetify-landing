@@ -16,5 +16,5 @@ What you should know now:
 2. In the beginning, you can swap five different synthetic assets: xUSD, xBTC, xSOL, xFF and xETH.
 3. You have approx. 40h to subscribe for the first staking round. In this round, the total rewards pool is 20.000 SNY. It increases every week.
 
-We prepared a [quick guide]() on Synthetify.
+We prepared a [quick guide](../appTutorial) on Synthetify.
 
