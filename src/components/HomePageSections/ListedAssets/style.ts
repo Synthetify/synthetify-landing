@@ -1,39 +1,35 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    marginBottom: 241,
+    marginBottom: 155,
     marginInline: 'auto',
     width: 'fit-content',
 
     [theme.breakpoints.down('md')]: {
-      marginBottom: 157
+      marginBottom: 145
     },
 
     [theme.breakpoints.down('sm')]: {
-      marginBottom: 110
+      marginBottom: 70
     },
 
     [theme.breakpoints.down('xs')]: {
-      marginBottom: 77
+      marginBottom: 65
     }
   },
   title: {
-    fontSize: 30,
-    lineHeight: '40px',
+    ...typography.heading2,
     color: colors.navy.lightGrey,
     marginInline: 'auto',
-    fontWeight: 700,
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 16,
-      lineHeight: '30px'
+      ...typography.subtitle1
     }
   },
   description: {
-    fontSize: 20,
-    lineHeight: '25px',
+    ...typography.subtitle2,
     color: colors.navy.info,
     marginInline: 'auto',
     marginBottom: 50,
@@ -45,8 +41,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 10,
-      lineHeight: '13px',
+      ...typography.caption1,
       marginBottom: 36,
       maxWidth: 274
     },

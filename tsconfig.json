@@ -36,6 +36,9 @@
       ],
       "@providers/*": [
         "./src/providers/*"
+      ],
+      "@blogPosts/*": [
+        "./src/blogPosts/*"
       ]
     }
   },

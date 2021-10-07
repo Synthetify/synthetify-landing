@@ -1,66 +1,54 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    paddingTop: 200,
+    paddingTop: 80,
+
+    [theme.breakpoints.down('lg')]: {
+      paddingTop: 60
+    },
 
     [theme.breakpoints.down('md')]: {
-      paddingTop: 120
+      paddingTop: 40
     },
 
     [theme.breakpoints.down('sm')]: {
-      paddingTop: 70
+      paddingTop: 36
     },
 
     [theme.breakpoints.down('xs')]: {
-      paddingTop: 60
+      paddingTop: 25
     }
   },
   title: {
-    fontSize: 100,
-    lineHeight: '100px',
-    fontWeight: 700,
+    fontSize: 60,
+    lineHeight: '49px',
+    fontWeight: 800,
     color: colors.white.main,
+    textAlign: 'center',
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 67,
-      lineHeight: '67px'
+      fontSize: 50
     },
 
     [theme.breakpoints.down('xs')]: {
-      fontSize: 50,
-      lineHeight: '50px'
+      fontSize: 35
     }
   },
   description: {
-    fontSize: 32,
-    lineHeight: '40px',
+    ...typography.heading3,
     color: colors.navy.info,
+    marginTop: 20,
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 20
+      fontSize: 20,
+      marginTop: 10
     },
 
     [theme.breakpoints.down('xs')]: {
-      fontSize: 15
-    }
-  },
-  divider: {
-    width: 622,
-    background: colors.navy.veryLightGrey,
-    marginTop: 40,
-    marginBottom: 20,
-
-    [theme.breakpoints.down('sm')]: {
-      width: 344,
-      marginTop: 27,
-      marginBottom: 6
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 246,
-      marginTop: 22
+      fontSize: 16,
+      marginTop: 0
     }
   }
 }))

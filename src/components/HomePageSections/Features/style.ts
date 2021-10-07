@@ -1,67 +1,42 @@
 import { makeStyles, Theme } from '@material-ui/core/styles'
-import { colors } from '@static/theme'
+import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    marginBottom: 241,
+    marginBottom: 160,
     marginInline: 'auto',
     width: 'fit-content',
 
     [theme.breakpoints.down('md')]: {
-      marginBottom: 157
+      marginBottom: 150
     },
 
     [theme.breakpoints.down('sm')]: {
-      marginBottom: 110
+      marginBottom: 75
     },
 
     [theme.breakpoints.down('xs')]: {
-      marginBottom: 77
+      marginBottom: 60
     }
   },
   title: {
-    fontSize: 30,
-    lineHeight: '40px',
+    ...typography.heading2,
     color: colors.navy.lightGrey,
     marginInline: 'auto',
-    fontWeight: 700,
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 16,
-      lineHeight: '30px'
+      ...typography.subtitle1
     }
   },
   description: {
-    fontSize: 20,
-    lineHeight: '25px',
+    ...typography.subtitle2,
     color: colors.navy.info,
     marginInline: 'auto',
     marginBottom: 50,
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 10,
-      lineHeight: '13px',
+      ...typography.caption1,
       marginBottom: 36
-    }
-  },
-  left: {
-    marginRight: 58,
-
-    [theme.breakpoints.down('lg')]: {
-      marginRight: 20
-    },
-
-    [theme.breakpoints.down('md')]: {
-      marginRight: 24
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      marginRight: 13
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      marginRight: 0,
-      marginBottom: 20
     }
   },
   icon: {
@@ -92,82 +67,77 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   featureTitle: {
-    fontSize: 30,
-    lineHeight: '40px',
+    ...typography.heading1,
     fontWeight: 700,
     transition: 'transform 300ms linear',
 
+    [theme.breakpoints.down('md')]: {
+      ...typography.heading2
+    },
+
     [theme.breakpoints.down('sm')]: {
-      fontSize: 19
+      ...typography.body1
     }
   },
   featureDescription: {
-    fontSize: 16,
-    lineHeight: '25px',
+    ...typography.subtitle2,
     color: colors.navy.lightGrey,
     transition: 'transform 300ms linear',
 
     [theme.breakpoints.down('md')]: {
-      fontSize: 12,
-      lineHeight: '20px'
+      ...typography.body4
     },
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: 10,
-      lineHeight: '15px'
+      ...typography.caption3
     }
   },
   feature: {
-    width: 607,
     transition: 'transform 300ms linear',
-
-    '&:not(:last-child)': {
-      marginBottom: 40
-    },
 
     [theme.breakpoints.up('lg')]: {
       '&:hover': {
-        transform: 'scale(1.11) translateX(4%)'
+        transform: 'scale(1.11)'
       },
 
-      '$left &:hover': {
-        transform: 'scale(1.11)'
+      '&:nth-child(n+4):hover': {
+        transform: 'scale(1.11) translateX(4%)'
       },
 
       '&:hover $featureDescription, &:hover $featureTitle': {
         transform: 'translateX(-4px)'
       }
-    },
-
-    [theme.breakpoints.down('lg')]: {
-      width: 570
-    },
-
-    [theme.breakpoints.down('md')]: {
-      width: 439,
-
-      '&:not(:last-child)': {
-        marginBottom: 17
-      }
-    },
-
-    [theme.breakpoints.down('sm')]: {
-      width: 278,
-
-      '&:not(:last-child)': {
-        marginBottom: 20
-      }
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 285
     }
   },
   featuresWrapper: {
-    flexDirection: 'row',
+    display: 'grid',
+    gridAutoFlow: 'column',
+    marginInline: 'auto',
+    width: 1272,
+    gridTemplateRows: 'auto auto auto',
+    columnGap: 58,
+    rowGap: 40,
+
+    [theme.breakpoints.down('lg')]: {
+      width: 1160,
+      columnGap: 20
+    },
+
+    [theme.breakpoints.down('md')]: {
+      width: 902,
+      columnGap: 24,
+      rowGap: 17
+    },
+
+    [theme.breakpoints.down('sm')]: {
+      width: 569,
+      columnGap: 13,
+      rowGap: 20
+    },
 
     [theme.breakpoints.down('xs')]: {
-      flexDirection: 'column'
+      gridTemplateRows: 'repeat(6, auto)',
+      width: 285
     }
   }
 }))
