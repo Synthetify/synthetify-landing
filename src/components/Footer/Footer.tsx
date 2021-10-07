@@ -89,32 +89,16 @@ export const Footer: React.FC = () => {
           wrap='nowrap'
           alignItems='center'
           justifyContent='flex-end'>
-          <a
-            href={links.socialMedia.github}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <a href={links.socialMedia.github} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={github} />
           </a>
-          <a
-            href={links.socialMedia.linkedin}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <a href={links.socialMedia.linkedin} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={linkedin} />
           </a>
-          <a
-            href={links.socialMedia.twitter}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <a href={links.socialMedia.twitter} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={twitter} />
           </a>
-          <a
-            href={links.socialMedia.discord}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <a href={links.socialMedia.discord} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={discord} />
           </a>
         </Grid>
@@ -179,7 +163,11 @@ export const Footer: React.FC = () => {
           />
         </Grid>
 
-        <Grid container item className={classNames(classes.column, classes.hideOnSm)} direction='column'>
+        <Grid
+          container
+          item
+          className={classNames(classes.column, classes.hideOnSm)}
+          direction='column'>
           <Link href='/blog' passHref>
             <a className={classes.a}>
               <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
