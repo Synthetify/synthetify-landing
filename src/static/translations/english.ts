@@ -17,7 +17,7 @@ const dictionary = {
   'header.discordDescription': 'Join our Discord server',
   'header.twitterDescription': 'Visit our Twitter profile',
   'header.telegramDescription': 'Join our Telegram server',
-  'header.githublDescription': 'Find us on Github',
+  'header.githubDescription': 'Find us on Github',
   'footer.staking': 'Staking',
   'footer.stats': 'Stats',
   'footer.exchange': 'Exchange',
