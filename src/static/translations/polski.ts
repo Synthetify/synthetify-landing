@@ -35,9 +35,9 @@ const dictionary = {
     'Wykorzystaj swoje ulubione aktywa jako zabezpieczenie lub stwórz ich syntetyczne wersje.',
   'home.features': 'CECHY',
   'home.features.description': 'Poznaj nowy wymiar syntetycznych aktywów',
-  'home.features.instantTransactions': 'Błyskawiczne transakcje',
+  'home.features.instantTransactions': 'Błyskawiczna',
   'home.features.instantTransactions.description':
-    'Platforma Synthetify wykorzystuje infrastrukturę blockchain Solana, aby umożliwić najwyższą jakość transakcji z sub-sekundowym czasem rozliczenia.',
+    'Platforma Synthetify wykorzystuje infrastrukturę blockchain Solana, aby umożliwić najlepszą jakość transakcji z milisekundowym czasem rozliczenia.',
   'home.features.reliablePriceOracles': 'Niezawodność',
   'home.features.reliablePriceOracles.description':
     'Sieć Pyth zapewnia stały przepływ aktualizacji cen pochodzących od najbardziej zaufanych żródeł.',
@@ -47,7 +47,7 @@ const dictionary = {
   'home.features.layerOneSolution': 'Layer-one.',
   'home.features.layerOneSolution.description':
     'Synthetify przenosi złożoność bloku DeFi na następny poziom. Nasza platforma i aktywa działają na blockchainie Solana i mogą być łatwo zintegrowane z czołowymi aplikacjami, takimi jak Serum.',
-  'home.features.userFriendly': 'Przyjazny dla użytkownika',
+  'home.features.userFriendly': 'Przyjazna',
   'home.features.userFriendly.description':
     'Możesz korzystać z platformy Synthetify na dowolnym urządzeniu. Obsługujemy wszystkie laptopy, tablety i telefony.',
   'home.features.nonCustodial': 'Bezpieczeństwo',
@@ -62,7 +62,7 @@ const dictionary = {
   'home.statistics.synthetics': 'Syntetyki',
   'home.statistics.liquidation': 'Likwidacja',
   'home.ourInvestors': 'INWESTORZY',
-  'home.ourInvestors.description': 'Wspierani przez wiodących inwestorów funduszu inwestycyjnego.',
+  'home.ourInvestors.description': 'Wspierani przez wiodących inwestorów funduszy inwestycyjnych.',
   'home.assets.BTC': 'Bitcoin',
   'home.assets.ETH': 'Ethereum',
   'home.assets.FTT': 'FTX Token',
