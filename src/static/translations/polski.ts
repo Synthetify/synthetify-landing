@@ -38,7 +38,7 @@ const dictionary = {
   'home.features.instantTransactions': 'Błyskawiczna',
   'home.features.instantTransactions.description':
     'Platforma Synthetify wykorzystuje infrastrukturę blockchain Solana, aby umożliwić najlepszą jakość transakcji z milisekundowym czasem rozliczenia.',
-  'home.features.reliablePriceOracles': 'Niezawodność',
+  'home.features.reliablePriceOracles': 'Niezawodna',
   'home.features.reliablePriceOracles.description':
     'Sieć Pyth zapewnia stały przepływ aktualizacji cen pochodzących od najbardziej zaufanych żródeł.',
   'home.features.decentralized': 'Zdecentralizowana',
