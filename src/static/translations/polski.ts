@@ -2,7 +2,7 @@ const dictionary = {
   'header.home': 'Home',
   'header.aboutUs': 'O nas',
   'header.community': 'Społeczność',
-  'header.trade': 'Handel',
+  'header.trade': 'Trade',
   'header.blog': 'Blog',
   'header.whitepaper': 'Whitepaper',
   'header.faq': 'FAQ',
@@ -25,7 +25,7 @@ const dictionary = {
   'footer.statsDescription': ' Sprawdź swoje statystyki',
   'footer.exchangeDescription': 'Wymień swoje aktywa',
   'footer.privacyPolicy': 'Polityka prywatności',
-  'home.banner.builtOn': 'Zbudowany na',
+  'home.banner.builtOn': 'Built on',
   'home.banner.header': 'Zdecentralizowana giełda aktywów syntetycznych',
   'home.banner.intro': 'Kupuj, handluj i zarabiaj pieniądze.',
   'home.banner.description':
@@ -38,32 +38,31 @@ const dictionary = {
   'home.features.instantTransactions': 'Błyskawiczne transakcje',
   'home.features.instantTransactions.description':
     'Platforma Synthetify wykorzystuje infrastrukturę blockchain Solana, aby umożliwić najwyższą jakość transakcji z sub-sekundowym czasem rozliczenia.',
-  'home.features.reliablePriceOracles': 'Niezawodne wyrocznie cenowe',
+  'home.features.reliablePriceOracles': 'Niezawodność',
   'home.features.reliablePriceOracles.description':
-    'Sieć Pyth zapewnia stały przepływ aktualizacji cen pochodzących od najbardziej zaufanych stron.',
+    'Sieć Pyth zapewnia stały przepływ aktualizacji cen pochodzących od najbardziej zaufanych żródeł.',
   'home.features.decentralized': 'Zdecentralizowana',
   'home.features.decentralized.description':
     'Uzyskaj dostęp do świata syntetycznych akcji, kryptowalut i innych aktywów bez żadnych ograniczeń.',
-  'home.features.layerOneSolution': 'Rozwiązanie typu Layer-one.',
+  'home.features.layerOneSolution': 'Layer-one.',
   'home.features.layerOneSolution.description':
-    'Synthetify przenosi złożoność bloku DeFi na następny poziom. Nasza platforma i aktywa działają na blockchainie Solana i mogą być łatwo zintegrowane z wiodącymi aplikacjami, takimi jak Serum.',
+    'Synthetify przenosi złożoność bloku DeFi na następny poziom. Nasza platforma i aktywa działają na blockchainie Solana i mogą być łatwo zintegrowane z czołowymi aplikacjami, takimi jak Serum.',
   'home.features.userFriendly': 'Przyjazny dla użytkownika',
   'home.features.userFriendly.description':
     'Możesz korzystać z platformy Synthetify na dowolnym urządzeniu. Obsługujemy wszystkie laptopy, tablety i telefony.',
-  'home.features.nonCustodial': 'Bez nadzoru',
+  'home.features.nonCustodial': 'Bezpieczeństwo',
   'home.features.nonCustodial.description':
     'Synthetify nie przechowuje Twoich aktywów. Zawsze zachowujesz pełne prawo własności do swojego konta i wszystkich swoich syntetycznych aktywów.',
   'home.statistics': 'STATYSTYKI',
   'home.statistics.description': 'Śledź nasz rosnący ekosystem aktywów pochodnych',
-  'home.statistics.current': 'Aktualny',
+  'home.statistics.current': 'Aktualnie',
   'home.statistics.last24h': 'Ostatnie 24 h',
   'home.statistics.volume': 'Wolumen',
   'home.statistics.collaterals': 'Zabezpieczenia',
   'home.statistics.synthetics': 'Syntetyki',
   'home.statistics.liquidation': 'Likwidacja',
   'home.ourInvestors': 'INWESTORZY',
-  'home.ourInvestors.description':
-    'Wspierani przez wiodących inwestorów kapitału podwyższonego ryzyka',
+  'home.ourInvestors.description': 'Wspierani przez wiodących inwestorów funduszu inwestycyjnego.',
   'home.assets.BTC': 'Bitcoin',
   'home.assets.ETH': 'Ethereum',
   'home.assets.FTT': 'FTX Token',
