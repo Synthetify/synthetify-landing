@@ -50,7 +50,7 @@ const dictionary = {
   'home.features.userFriendly': 'Przyjazna',
   'home.features.userFriendly.description':
     'Możesz korzystać z platformy Synthetify na dowolnym urządzeniu. Obsługujemy wszystkie laptopy, tablety i telefony.',
-  'home.features.nonCustodial': 'Bezpieczeństwo',
+  'home.features.nonCustodial': 'Bezpieczna',
   'home.features.nonCustodial.description':
     'Synthetify nie przechowuje Twoich aktywów. Zawsze zachowujesz pełne prawo własności do swojego konta i wszystkich swoich syntetycznych aktywów.',
   'home.statistics': 'STATYSTYKI',
