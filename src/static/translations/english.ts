@@ -1,6 +1,4 @@
 const dictionary = {
-  'blog.title': 'Blog',
-  'blog.subtitle': 'Follow the latest news and updates',
   'header.home': 'Home',
   'header.aboutUs': 'About us',
   'header.community': 'Community',
@@ -13,6 +11,7 @@ const dictionary = {
   'header.twitter': 'Twitter',
   'header.telegram': 'Telegram',
   'header.github': 'Github',
+  'header.linkedin': 'Linkedin',
   'header.whitepaperDescription': 'Learn more about Synthetify',
   'header.faqDescription': 'Frequently asked questions',
   'header.brandDescription': 'Company resources',
@@ -20,6 +19,7 @@ const dictionary = {
   'header.twitterDescription': 'Visit our Twitter profile',
   'header.telegramDescription': 'Join our Telegram server',
   'header.githubDescription': 'Find us on Github',
+  'header.linkedinDescription': 'Visit our Linkedin profile',
   'footer.staking': 'Staking',
   'footer.stats': 'Stats',
   'footer.exchange': 'Exchange',
@@ -83,6 +83,8 @@ const dictionary = {
   'brand.whiteLogoHorizontal': 'White logo horizontal',
   'blog.backButton': 'Back to Blog',
   'blog.shareOn': 'Share on',
+  'blog.title': 'Blog',
+  'blog.subtitle': 'Follow the latest news and updates',
   'faq.title': 'FAQ',
   'faq.description': 'Frequently asked questions',
   'faq.questions': [

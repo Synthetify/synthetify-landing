@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingBlock: 18,
     paddingInline: 13,
     width: 69,
-    height: 225,
+    height: 270,
     borderRadius: 56.5,
     backdropFilter: 'blur(4px)',
     backgroundColor: 'rgba(157, 160, 174, 0.1)',

@@ -6,6 +6,7 @@ import discord from '@static/svg/discord.svg'
 import twitter from '@static/svg/twitter.svg'
 import telegram from '@static/svg/telegram.svg'
 import github from '@static/svg/github.svg'
+import linkedin from '@static/svg/linkedin-circle.svg'
 import useStyles from './style'
 
 export interface ICommunityModal {
@@ -120,6 +121,27 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
             </Grid>
             <Typography className={classes.description}>
               {translate('header.githubDescription')}
+            </Typography>
+          </Grid>
+        </a>
+        <a href={links.socialMedia.linkedin} style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+          <Grid
+            item
+            container
+            direction='column'
+            className={classes.listItem}
+            onClick={() => {
+              handleClose()
+            }}
+          >
+            <Grid container item direction='row' wrap='nowrap'>
+              <Typography className={classes.name}>
+                {translate('header.linkedin')}
+              </Typography>
+              <CardMedia className={classes.icon} style={{ marginTop: 9 }} image={linkedin} />
+            </Grid>
+            <Typography className={classes.description}>
+              {translate('header.linkedinDescription')}
             </Typography>
           </Grid>
         </a>
