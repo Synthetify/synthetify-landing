@@ -41,17 +41,17 @@ export const ChangeLanguageModal: React.FC<IChangeLanguageModal> = ({
           <Grid
             item
             key={`languages-${language.label}`}
-            className={classNames(classes.listItem, current === language.label ? classes.current : undefined)}
+            className={classNames(
+              classes.listItem,
+              current === language.label ? classes.current : undefined
+            )}
             onClick={() => {
               onSelect(language.language)
+              localStorage.setItem('language', language.language)
               handleClose()
             }}>
-            <Typography className={classes.name}>
-              {language.label}
-            </Typography>
-            <Typography className={classes.greeting}>
-              {language.greeting}
-            </Typography>
+            <Typography className={classes.name}>{language.label}</Typography>
+            <Typography className={classes.greeting}>{language.greeting}</Typography>
           </Grid>
         ))}
       </Grid>

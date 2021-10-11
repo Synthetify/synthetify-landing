@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={theme}>
-      {(router.asPath === '/') && <Background />}
+      {router.asPath === '/' && <Background />}
       <LanguageProvider>
         <div id={toBlur} style={{ position: 'absolute', zIndex: 1, width: '100%' }}>
           <Metatags />

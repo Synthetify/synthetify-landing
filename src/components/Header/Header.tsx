@@ -27,6 +27,10 @@ export const Header: React.FC = () => {
     english: {
       label: 'English',
       greeting: 'Hello!'
+    },
+    polski: {
+      label: 'Polski',
+      greeting: 'Cześć!'
     }
   }
 
@@ -34,12 +38,10 @@ export const Header: React.FC = () => {
   const [routesModalAnchor, setRoutesModalAnchor] = React.useState<HTMLButtonElement | null>(null)
 
   const [aboutUsModalOpen, setAboutUsModalOpen] = React.useState(false)
-  const [aboutUsModalAnchor, setAboutUsModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null
-  >(null)
+  const [aboutUsModalAnchor, setAboutUsModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
 
   const [communityModalOpen, setCommunityModalOpen] = React.useState(false)
-  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null
-  >(null)
+  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
 
   return (
     <>
@@ -102,11 +104,8 @@ export const Header: React.FC = () => {
             </Typography>
             <Link href='/blog' passHref>
               <a style={{ textDecoration: 'none' }}>
-                <Grid
-                  className={classes.linkWithMark}>
-                  <Typography
-                    className={classes.route}
-                    style={{ marginRight: 8 }}>
+                <Grid className={classes.linkWithMark}>
+                  <Typography className={classes.route} style={{ marginRight: 8 }}>
                     {translate('header.blog')}
                   </Typography>
                   <NewMark className={classes.mark} />
@@ -115,7 +114,12 @@ export const Header: React.FC = () => {
             </Link>
           </Grid>
 
-          <Button className={classes.tradeLink} href={links.app.main} variant='contained' target='_blank' rel='noopener noreferrer'>
+          <Button
+            className={classes.tradeLink}
+            href={links.app.main}
+            variant='contained'
+            target='_blank'
+            rel='noopener noreferrer'>
             {translate('header.trade')}
           </Button>
 

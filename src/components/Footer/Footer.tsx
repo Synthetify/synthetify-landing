@@ -5,6 +5,7 @@ import snyLogo from '@static/svg/brand/synthetify_horizontal_logo_white.svg'
 import linkedin from '@static/svg/linkedin-circle.svg'
 import github from '@static/svg/github-circle.svg'
 import discord from '@static/svg/discord-circle.svg'
+import telegram from '@static/svg/telegram-circle.svg'
 import twitter from '@static/svg/twitter-circle.svg'
 import links from '@static/constants/links'
 import Link from 'next/link'
@@ -89,33 +90,20 @@ export const Footer: React.FC = () => {
           wrap='nowrap'
           alignItems='center'
           justifyContent='flex-end'>
-          <a
-            href={links.socialMedia.github}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <a href={links.socialMedia.github} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={github} />
           </a>
-          <a
-            href={links.socialMedia.linkedin}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <a href={links.socialMedia.linkedin} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={linkedin} />
           </a>
-          <a
-            href={links.socialMedia.twitter}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <a href={links.socialMedia.twitter} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={twitter} />
           </a>
-          <a
-            href={links.socialMedia.discord}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <a href={links.socialMedia.discord} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={discord} />
+          </a>
+          <a href={links.socialMedia.telegram} target='_blank' rel='noopener noreferrer'>
+            <CardMedia className={classes.circle} image={telegram} />
           </a>
         </Grid>
       </Grid>
@@ -177,9 +165,17 @@ export const Footer: React.FC = () => {
             name={translate('header.github')}
             description={translate('header.githubDescription')}
           />
+          <OutsideLink
+            href={links.socialMedia.linkedin}
+            name={translate('header.linkedin')}
+            description={translate('header.linkedinDescription')}
+          />
         </Grid>
-
-        <Grid container item className={classNames(classes.column, classes.hideOnSm)} direction='column'>
+        <Grid
+          container
+          item
+          className={classNames(classes.column, classes.hideOnSm)}
+          direction='column'>
           <Link href='/blog' passHref>
             <a className={classes.a}>
               <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
