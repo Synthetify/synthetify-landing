@@ -5,6 +5,7 @@ import snyLogo from '@static/svg/brand/synthetify_horizontal_logo_white.svg'
 import linkedin from '@static/svg/linkedin-circle.svg'
 import github from '@static/svg/github-circle.svg'
 import discord from '@static/svg/discord-circle.svg'
+import telegram from '@static/svg/telegram-circle.svg'
 import twitter from '@static/svg/twitter-circle.svg'
 import links from '@static/constants/links'
 import Link from 'next/link'
@@ -101,6 +102,9 @@ export const Footer: React.FC = () => {
           <a href={links.socialMedia.discord} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={discord} />
           </a>
+          <a href={links.socialMedia.telegram} target='_blank' rel='noopener noreferrer'>
+            <CardMedia className={classes.circle} image={telegram} />
+          </a>
         </Grid>
       </Grid>
       <Grid container className={classes.routes} wrap='nowrap' justifyContent='space-between'>
@@ -161,8 +165,12 @@ export const Footer: React.FC = () => {
             name={translate('header.github')}
             description={translate('header.githubDescription')}
           />
+          <OutsideLink
+            href={links.socialMedia.linkedin}
+            name={translate('header.linkedin')}
+            description={translate('header.linkedinDescription')}
+          />
         </Grid>
-
         <Grid
           container
           item
