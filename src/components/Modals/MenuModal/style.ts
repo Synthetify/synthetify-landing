@@ -35,7 +35,9 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
-      ...typography.body1
+      ...typography.body1,
+      position: 'relative',
+      top: 2
     }
   },
   current: {

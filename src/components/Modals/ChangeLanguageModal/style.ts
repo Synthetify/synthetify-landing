@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.body4,
     color: colors.navy.info,
     position: 'relative',
-    top: -3
+    top: -4
   },
   listItem: {
     borderRadius: 8,
@@ -45,7 +45,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '&:hover $greeting': {
-      color: '#9D9CEE'
+      color: '#9D9CEE',
+      top: 0
     }
   },
   current: {
@@ -55,7 +56,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '& $greeting': {
-      color: '#9D9CEE'
+      color: '#9D9CEE',
+      top: 0
     }
   },
   paper: {

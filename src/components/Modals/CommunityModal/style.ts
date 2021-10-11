@@ -3,7 +3,7 @@ import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   icon: {
-    marginTop: 9,
+    marginTop: 6,
     marginLeft: 10,
     width: 16,
     height: 16,
@@ -27,8 +27,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   listItem: {
     borderRadius: 8,
-    paddingLeft: 8,
-    paddingTop: 1,
+    padding: '6px 8px 0 8px',
     minWidth: 158,
     height: 51,
     cursor: 'pointer',
@@ -47,7 +46,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '&:hover $description': {
-      color: '#9D9CEE'
+      color: '#9D9CEE',
+      top: 1
     },
 
     '&:hover $icon': {
@@ -58,7 +58,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.body4,
     color: colors.navy.info,
     position: 'relative',
-    top: -3
+    top: -3,
+    lineHeight: '12px'
   },
   paper: {
     background: 'transparent',

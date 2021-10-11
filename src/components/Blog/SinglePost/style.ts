@@ -3,7 +3,7 @@ import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   mainContainer: {
-    fontFamily: 'Be Vietnam',
+    fontFamily: 'Nunito Sans',
     display: 'flex',
     flexDirection: 'column',
     alignContent: 'center',

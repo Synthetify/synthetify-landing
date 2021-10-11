@@ -15,13 +15,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   name: {
     ...typography.body2,
     color: colors.navy.grey,
-    position: 'relative',
-    top: -1
   },
   listItem: {
     borderRadius: 8,
-    paddingLeft: 8,
-    paddingTop: 2,
+    padding: '6px 0 51px 8px',
     minWidth: 184,
     height: 51,
     cursor: 'pointer',
@@ -40,7 +37,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '&:hover $description': {
-      color: '#9D9CEE'
+      color: '#9D9CEE',
+      top: 1
     }
   },
   description: {

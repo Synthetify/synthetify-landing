@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.body4,
     color: colors.navy.info,
     position: 'relative',
-    top: -6,
+    top: -7,
 
     [theme.breakpoints.down('md')]: {
       top: -4,
