@@ -1,7 +1,9 @@
 import { Context, createContext, useContext } from 'react'
 import dictionary, { Language } from '@static/translations'
-
-export const LanguageContext: Context<{ language: Language, setLanguage: (chosen: Language) => void }> = createContext({
+export const LanguageContext: Context<{
+  language: Language
+  setLanguage: (chosen: Language) => void
+}> = createContext<{ language: Language, setLanguage: (chosen: Language) => void }>({
   language: 'english',
   setLanguage: (_chosen: Language) => {}
 })
@@ -14,6 +16,6 @@ export const useTranslate = () => {
       return dictionary[language][key][index] ?? ''
     }
 
-    return dictionary[language][key] as string ?? ''
+    return (dictionary[language][key] as string) ?? ''
   }
 }

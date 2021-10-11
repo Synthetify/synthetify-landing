@@ -1,6 +1,4 @@
 const dictionary = {
-  'blog.title': 'Blog',
-  'blog.subtitle': 'Follow the latest news and updates',
   'header.home': 'Home',
   'header.aboutUs': 'About us',
   'header.community': 'Community',
@@ -83,6 +81,8 @@ const dictionary = {
   'brand.whiteLogoHorizontal': 'White logo horizontal',
   'blog.backButton': 'Back to Blog',
   'blog.shareOn': 'Share on',
+  'blog.title': 'Blog',
+  'blog.subtitle': 'Follow the latest news and updates',
   'faq.title': 'FAQ',
   'faq.description': 'Frequently asked questions',
   'faq.questions': [
