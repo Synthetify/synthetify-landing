@@ -33,6 +33,8 @@ export const Question = ({ question, answer }: Props) => {
   const isVisible = (text: string): boolean => {
     return typeof text === 'string' ? ((ref.current?.scrollHeight as number) > getMoreThanTwoLinesTextHeight()) : false
   }
+  console.log(isVisible(answer))
+  console.log(answer)
   return (
     <>
       <Grid container direction='column' classes={{ container: classes.container }}>
