@@ -4,10 +4,8 @@ import { Language } from '@static/translations'
 
 export const LanguageProvider: React.FC = ({ children }) => {
   const actualLanguage =
-    typeof window !== 'undefined'
+    typeof window !== 'undefined' && (localStorage.getItem('language') as Language)
       ? (localStorage.getItem('language') as Language)
-        ? (localStorage.getItem('language') as Language)
-        : ('english' as Language)
       : ('english' as Language)
 
   const [language, setLanguage] = useState<Language>(actualLanguage)
