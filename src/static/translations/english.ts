@@ -1,10 +1,8 @@
 const dictionary = {
-  'blog.title': 'Blog',
-  'blog.subtitle': 'Follow the latest news and updates',
   'header.home': 'Home',
   'header.aboutUs': 'About us',
   'header.community': 'Community',
-  'header.trade': 'Trade',
+  'header.trade': 'App',
   'header.blog': 'Blog',
   'header.whitepaper': 'Whitepaper',
   'header.faq': 'FAQ',
@@ -13,6 +11,7 @@ const dictionary = {
   'header.twitter': 'Twitter',
   'header.telegram': 'Telegram',
   'header.github': 'Github',
+  'header.linkedin': 'Linkedin',
   'header.whitepaperDescription': 'Learn more about Synthetify',
   'header.faqDescription': 'Frequently asked questions',
   'header.brandDescription': 'Company resources',
@@ -20,6 +19,9 @@ const dictionary = {
   'header.twitterDescription': 'Visit our Twitter profile',
   'header.telegramDescription': 'Join our Telegram server',
   'header.githubDescription': 'Find us on Github',
+  'header.linkedinDescription': 'Visit our Linkedin profile',
+  'header.new': 'NEW',
+  'header.soon': 'SOON',
   'footer.staking': 'Staking',
   'footer.stats': 'Stats',
   'footer.exchange': 'Exchange',
@@ -48,7 +50,7 @@ const dictionary = {
     'Access the world of synthetic stocks, crypto and other assets without any restrictions.',
   'home.features.layerOneSolution': 'Layer-one solution',
   'home.features.layerOneSolution.description':
-    'Synthetify takes the compostability of DeFi block to the next level. Our platform and assets work on Solana blockchain and can be easily integrated into leading applications like Serum.',
+    'Synthetify takes the composability of DeFi block to the next level. Our platform and assets work on Solana blockchain and can be easily integrated into leading applications like Serum.',
   'home.features.userFriendly': 'User-friendly',
   'home.features.userFriendly.description':
     'You can use Synthetify platform on any device. We support all laptops, tablets and phones.',
@@ -83,6 +85,8 @@ const dictionary = {
   'brand.whiteLogoHorizontal': 'White logo horizontal',
   'blog.backButton': 'Back to Blog',
   'blog.shareOn': 'Share on',
+  'blog.title': 'Blog',
+  'blog.subtitle': 'Follow the latest news and updates',
   'faq.title': 'FAQ',
   'faq.description': 'Frequently asked questions',
   'faq.questions': [

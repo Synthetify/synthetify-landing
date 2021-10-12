@@ -152,7 +152,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       minWidth: 168,
 
       '& a:not(:first-child)': {
-        marginLeft: 16
+        marginLeft: 12
       }
     }
   },
