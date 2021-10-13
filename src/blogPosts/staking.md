@@ -14,6 +14,7 @@ Today, we will talk about staking.
 I would say, that there are two levels of staking:
 1. **Depositing collateral**
 2. **Minting synthetic assets**
+
 Each one gives you different benefits.
 
 Let’s go into the details of the first one!
