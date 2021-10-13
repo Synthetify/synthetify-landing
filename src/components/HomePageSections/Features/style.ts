@@ -69,7 +69,6 @@ const useStyles = makeStyles((theme: Theme) => ({
   featureTitle: {
     ...typography.heading1,
     fontWeight: 700,
-    padding: '0 0 3px 0',
     transition: 'transform 300ms linear',
 
     [theme.breakpoints.down('md')]: {
@@ -85,7 +84,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.lightGrey,
     transition: 'transform 300ms linear',
     position: 'relative',
-    top: -3,
 
     [theme.breakpoints.down('md')]: {
       ...typography.body4

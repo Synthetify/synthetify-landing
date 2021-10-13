@@ -49,10 +49,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.body4,
     color: colors.navy.info,
     position: 'relative',
-    top: -7,
+    lineHeight: '12px',
 
     [theme.breakpoints.down('md')]: {
-      top: -4,
       ...typography.caption1
     }
   },

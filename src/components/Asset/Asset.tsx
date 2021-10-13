@@ -74,7 +74,7 @@ export const Asset: React.FC<IAsset> = ({
       onMouseLeave={onMouseLeave}>
       <Grid container item alignItems='flex-start'>
         {icon}
-        <Grid style={{ marginLeft: 6, position: 'relative', top: 0 }}>
+        <Grid style={{ marginLeft: 6 }}>
           <Typography className={classes.token}>{symbol}</Typography>
           <Typography className={classes.tokenName}>{name}</Typography>
         </Grid>
