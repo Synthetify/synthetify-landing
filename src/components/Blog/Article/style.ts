@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   desc: {
     color: colors.navy.veryLightGrey,
-    marginTop: 70,
+    marginTop: 12,
     marginLeft: 7,
     ...typography.subtitle2,
     [theme.breakpoints.down('sm')]: {

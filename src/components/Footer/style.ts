@@ -85,11 +85,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginBottom: 20,
 
     [theme.breakpoints.down('sm')]: {
-      ...typography.subtitle1,
+      ...typography.body1,
       marginBottom: 15
     },
 
     [theme.breakpoints.down('xs')]: {
+      ...typography.subtitle1,
       marginBottom: 10
     }
   },
@@ -218,7 +219,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.info,
 
     [theme.breakpoints.down('sm')]: {
-      ...typography.caption3
+      ...typography.caption3,
+      position: 'relative',
+      top: -2
     },
 
     [theme.breakpoints.down('xs')]: {

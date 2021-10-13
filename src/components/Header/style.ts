@@ -83,8 +83,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     padding: 0,
 
     '&:hover': {
-      background: colors.navy.navButton,
-      
+      background: colors.navy.navButton
     }
   },
   dehazeIcon: {
@@ -98,7 +97,6 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:hover': {
       color: '#CFCFCF'
-      
     }
   },
   mark: {
