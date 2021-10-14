@@ -6,7 +6,7 @@ description: "The milestone reached! Here we prepared a tutorial for you."
 image: "/blog/appTutorial.png"
 ---
 
-![appTutorial](/blog/appTutorial.png)
+![appTutorial](/blog/appTutorial.png "horizontal")
 
 **Hello there!**
 
@@ -30,16 +30,16 @@ In the central part you can choose between variety of actions:
 
 In the bottom-most part you can find your staked and synthetic tokens grouped into their responding categories.
 
-![Staking gif](/blog/staking.gif)
+![Staking gif](/blog/staking.gif "horizontal")
 				
 Furthermore, Synthetify application provides you with exchange functionality, which can be found in exchange tab in the right upper corner.
 On the left hand side you can select one of the available synthetic tokens and below choose another one to be obtained in exchange for the first one. Now you can see the exchange rate for a pair and you can accept by clicking on the green button. You can confirm that the transaction succeeded going to staking tab and checking if amounts of your synthetic assets changed.
 The greatest advantage of our DEX is infinite liquidity of each of the synthetic assets. Those are only limited by their max supply, which can be seen on the right hand side of the screen.
 
-![Exchange gif](/blog/exchange.gif)
+![Exchange gif](/blog/exchange.gif "horizontal")
 				
 Last but not least, the stats. There you can view global statistics of the Synthetify application. Here you can find collateral, volume and many other figures you can utilize to optimize your investment decisions.
 
-![Stats pic](/blog/STATS.png)
+![Stats pic](/blog/STATS.png "horizontal")
 				
 Hope you guys are as excited as we are and remember: to the **MOON!**
