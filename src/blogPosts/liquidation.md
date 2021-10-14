@@ -1,7 +1,7 @@
 ---
 title: "Introduction to liquidation"
 date: "2021-10-14 12:00:00"
-description: "Everything what you need to know about liqudation is here"
+description: "Everything what you need to know about liquidation is here"
 image: "/blog/liquidation/liquidation1.png"
 ---
 ![Liquidation post](/blog/liquidation/liquidation2.png)
