@@ -5,7 +5,7 @@ description: "The long awaited day! See what you need to know!"
 image: "/blog/firstPost.png"
 ---
 
-![First post](/blog/firstPost.png)
+![First post](/blog/firstPost.png "horizontal")
 
 **Hi everyone!**
 
