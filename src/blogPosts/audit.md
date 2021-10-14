@@ -4,7 +4,7 @@ date: "2021-10-13 12:00:00"
 description: "Our protocol has positively passed the security audit"
 image: "/blog/audit/audit1.png"
 ---
-![First post](/blog/audit/audit2.png)
+![First post](/blog/audit/audit2.png "horizontal")
 
 After months of work, we can finally proudly announce that we have successfully passed the audit prepared by 
 **Kudelski Security** - a recognized company with many years of experience.
@@ -17,7 +17,7 @@ As we said, our code is totally open-source, so if you also want to see whole co
 **Our app code was also verified by Anchor** ⚓
 
 Anchor is a framework for Solana's Sealevel runtime providing several convenient developer tools for writing smart contracts.
-![anchor](/blog/audit/anchor.png)
+![anchor](/blog/audit/anchor.png "horizontal")
 If you want to see more detail [CLICK HERE](https://anchor.projectserum.com/build/10)
 
 
