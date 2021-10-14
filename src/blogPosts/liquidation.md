@@ -4,7 +4,7 @@ date: "2021-10-14 12:00:00"
 description: "Everything what you need to know about liquidation is here"
 image: "/blog/liquidation/liquidation1.png"
 ---
-![Liquidation post](/blog/liquidation/liquidation2.png "vetical")
+![Liquidation post](/blog/liquidation/liquidation2.png "horizontal")
 
 
 **Hey folks!** 👋  
@@ -20,7 +20,7 @@ Liquidation deadline is set. If after a certain buffer time the user doesn't dep
 Important - when your position is going to be liquidated, your rewards for the current round will also be lost.  
 
 In Synthetify, we do not liquidate your position immediately when the debt exceeds your collateral, we give you some time to avoid liquidation.
-![Debt status](/blog/liquidation/debt_status.png "vetical")
+![Debt status](/blog/liquidation/debt_status.png "horizontal")
 On our app, you can track your liquidation threshold, in the panel being shown above.
 The further from the right the bar is, the better - you're safe.
 Likewise, the closer you are to the right edge, the closer you are to the liquidation.
@@ -34,7 +34,7 @@ To do that, we will need a three values:
 2. **Price of collateral token**
 3. **Collateral Ratio (const value, currently it is 0.3, for each collaterals)**
 Let’s assume you have 100 $SNY tokens, and its price is 4,78$.
-![Liqudation code](/blog/liquidation/liquidation_code.png "vetical")
+![Liqudation code](/blog/liquidation/liquidation_code.png "horizontal")
 In this way, we calculated the maximum possible debt, which is **143.4$**.  
 If this value is exceeded, your position may be liquidated.  
 Unless, you deposit some collateral or burn synthetics.  
