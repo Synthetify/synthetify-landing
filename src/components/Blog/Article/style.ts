@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   infoBar: {
     alignSelf: 'flex-end',
     width: '100%',
-    height: 74,
+    height: 67,
     backgroundColor: '#1D1D49',
     color: colors.navy.veryLightGrey,
     display: 'flex',
@@ -42,14 +42,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     zIndex: 2,
     position: 'absolute',
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 47
+      maxHeight: 41
     }
   },
   title: {
     ...typography.body1,
     alignSelf: 'flex-start',
     marginTop: 8,
-    marginLeft: 8,
+    marginLeft: 12,
     color: colors.navy.veryLightGrey,
     [theme.breakpoints.down('sm')]: {
       ...typography.body3
@@ -59,16 +59,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.body4,
     alignSelf: 'baseline',
     textAlign: 'right',
-    width: 'max-content',
+    width: 160,
     justifyContent: 'space-evenly',
-    backgroundColor: colors.navy.lightGrey,
+    backgroundColor: `${colors.navy.navBar}76`,
     color: colors.navy.background,
     zIndex: 2,
     padding: 8,
     display: 'grid',
     borderRadius: '0px 20px',
     [theme.breakpoints.down('md')]: {
-      width: 160,
       textAlign: 'right'
     },
     [theme.breakpoints.down('xs')]: {
@@ -88,9 +87,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.veryLightGrey,
     marginTop: 7,
     marginLeft: 7,
-    ...typography.subtitle2,
+    ...typography.body4,
     [theme.breakpoints.down('sm')]: {
-      ...typography.body4
+      ...typography.caption3
     }
   },
   articleAndDesc: {
