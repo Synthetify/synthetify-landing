@@ -1,5 +1,5 @@
 ---
-title: "$SOL and $USDC now available as collaterals 💰"
+title: "$SOL and $USDC now available as collaterals"
 date: "2021-10-15 12:00:00"
 description: "From now, you can use $USDC and $SOL as collaterals in our app"
 image: "/blog/collaterals/new_collateral1.png"
@@ -8,7 +8,7 @@ image: "/blog/collaterals/new_collateral1.png"
 
 **Hello!** 👋
 
-**We have just introduced two new collateral tokens:** 
+**💰 We have just introduced two new collateral tokens:** 
 * **$USDC** 
 * **$SOL**  
 
