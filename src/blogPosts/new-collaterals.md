@@ -6,7 +6,9 @@ image: "/blog/collaterals/new_collateral1.png"
 ---
 ![First post](/blog/collaterals/new_collateral2.png "horizontal")
 
-**We have just introduced two new collateral tokens** 
+**Hello!** 👋
+
+**We have just introduced two new collateral tokens:** 
 * **$USDC** 
 * **$SOL**  
 
