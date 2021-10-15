@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   listItem: {
     borderRadius: 8,
-    padding: '6px 8px 0 8px',
+    padding: '3px 8px 0 8px',
     minWidth: 158,
     height: 61,
     cursor: 'pointer',
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:hover $description': {
       color: '#9D9CEE',
-      lineHeight: '10px'
+      lineHeight: '14px'
     },
 
     '&:hover $icon': {
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   description: {
     ...typography.body4,
     color: colors.navy.info,
-    lineHeight: '14px'
+    lineHeight: '18px'
   },
   paper: {
     background: 'transparent',

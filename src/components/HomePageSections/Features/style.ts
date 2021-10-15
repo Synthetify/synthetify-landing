@@ -83,7 +83,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.subtitle2,
     color: colors.navy.lightGrey,
     transition: 'transform 300ms linear',
-    position: 'relative',
 
     [theme.breakpoints.down('md')]: {
       ...typography.body4
