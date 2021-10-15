@@ -10,7 +10,7 @@ image: "/blog/collaterals/new_collateral1.png"
 * **$USDC** 
 * **$SOL**  
 
-In result, using our application will be even easier and will help our synthetic assets reach a broader range of customers.
+In result, using our application will be even easier and will help our synthetic assets reach a broader range of customers 🚀
 
 Newly added tokens have collateralization levels set at **30%** 🛡️  
 (same as **$SNY**).
