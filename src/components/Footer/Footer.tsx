@@ -133,13 +133,22 @@ export const Footer: React.FC = () => {
             href='/faq'
             name={translate('header.faq')}
             description={translate('header.faqDescription')}
-            isNew
           />
           <InsideLink
             href='/brand'
             name={translate('header.brand')}
             description={translate('header.brandDescription')}
+          />
+          <OutsideLink
+            href={links.audit}
+            name={translate('footer.audit')}
+            description={translate('footer.auditDescription')}
             isNew
+          />
+          <OutsideLink
+            href={links.docs}
+            name={translate('footer.docs')}
+            description={translate('footer.docsDescription')}
           />
         </Grid>
 
@@ -176,14 +185,32 @@ export const Footer: React.FC = () => {
           item
           className={classNames(classes.column, classes.hideOnSm)}
           direction='column'>
-          <Link href='/blog' passHref>
-            <a className={classes.a}>
-              <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
-                <Typography className={classes.columnHeader}>{translate('header.blog')}</Typography>
-                <NewMark className={classes.mark} />
-              </Grid>
-            </a>
-          </Link>
+          <a className={classes.a}>
+            <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
+              <Typography className={classes.columnHeader}>{translate('header.blog')}</Typography>
+              <NewMark className={classes.mark} />
+            </Grid>
+            <OutsideLink
+              href={'https://www.synthetify.io/blog/liquidation/'}
+              name={translate('footer.liquidation')}
+              description={translate('footer.liquidationDescription')}
+            />
+            <OutsideLink
+              href={'https://www.synthetify.io/blog/audit/'}
+              name={translate('footer.audit')}
+              description={translate('footer.auditDescription')}
+            />
+            <OutsideLink
+              href={'https://www.synthetify.io/blog/staking/'}
+              name={translate('footer.staking')}
+              description={translate('footer.stakingDesc')}
+            />
+            <OutsideLink
+              href={'https://www.synthetify.io/blog/app-tutorial/'}
+              name={translate('footer.tutorial')}
+              description={translate('footer.tutorialDescription')}
+            />
+          </a>
         </Grid>
 
         <Grid container item className={classes.column} direction='column'>

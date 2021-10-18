@@ -117,7 +117,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               <Typography className={classes.name}>
                 {translate('header.github')}
               </Typography>
-              <CardMedia className={classes.icon} style={{ marginTop: 8 }} image={github} />
+              <CardMedia className={classes.icon} image={github} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.githubDescription')}
@@ -138,7 +138,7 @@ export const CommunityModal: React.FC<ICommunityModal> = ({
               <Typography className={classes.name}>
                 {translate('header.linkedin')}
               </Typography>
-              <CardMedia className={classes.icon} style={{ marginTop: 9 }} image={linkedin} />
+              <CardMedia className={classes.icon} image={linkedin} />
             </Grid>
             <Typography className={classes.description}>
               {translate('header.linkedinDescription')}
