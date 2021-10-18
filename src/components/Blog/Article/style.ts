@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   title: {
     ...typography.body1,
     alignSelf: 'flex-start',
-    marginTop: 8,
+    marginTop: 3,
     marginLeft: 12,
     color: colors.navy.veryLightGrey,
     [theme.breakpoints.down('sm')]: {
