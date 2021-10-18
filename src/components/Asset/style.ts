@@ -48,11 +48,13 @@ const useStyles = makeStyles((theme: Theme) => ({
   tokenName: {
     ...typography.body4,
     color: colors.navy.info,
-    position: 'relative',
-    lineHeight: '12px',
+    lineHeight: '2px',
+    padding: '0 0 0 1px',
 
     [theme.breakpoints.down('md')]: {
-      ...typography.caption1
+      ...typography.caption1,
+      padding: '0 0 0 .5px',
+      lineHeight: '6px'
     }
   },
   value: {
