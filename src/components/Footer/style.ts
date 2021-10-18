@@ -195,14 +195,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   mark: {
-    [theme.breakpoints.down('md')]: {
-      paddingBlock: 4.5,
-      paddingInline: 6
-    },
-
+    fontFamily: 'Nunito Sans',
+    paddingTop: 7,
+    paddingInline: 6,
+    borderRadius: 6,
+    opacity: 0.7,
     [theme.breakpoints.down('sm')]: {
       paddingBottom: 4,
-      paddingTop: 3,
+      paddingTop: 5,
       paddingInline: 5,
       fontSize: 9,
       lineHeight: '9px'
