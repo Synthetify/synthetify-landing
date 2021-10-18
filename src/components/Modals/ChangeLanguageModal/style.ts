@@ -15,14 +15,12 @@ const useStyles = makeStyles((theme: Theme) => ({
   name: {
     ...typography.body2,
     color: colors.navy.grey,
-    position: 'relative',
-    top: -1
+    lineHeight: '32px'
   },
   greeting: {
     ...typography.body4,
     color: colors.navy.info,
-    position: 'relative',
-    top: -3
+    lineHeight: '14px'
   },
   listItem: {
     borderRadius: 8,
@@ -41,21 +39,25 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
-      ...typography.body1
+      ...typography.body1,
+      lineHeight: '32px'
     },
 
     '&:hover $greeting': {
-      color: '#9D9CEE'
+      color: '#9D9CEE',
+      lineHeight: '14px'
     }
   },
   current: {
     '& $name': {
       color: colors.navy.veryLightGrey,
-      ...typography.body1
+      ...typography.body1,
+      lineHeight: '32px'
     },
 
     '& $greeting': {
-      color: '#9D9CEE'
+      color: '#9D9CEE',
+      lineHeight: '14px'
     }
   },
   paper: {
