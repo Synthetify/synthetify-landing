@@ -35,12 +35,14 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
-      ...typography.body1
+      ...typography.body1,
+      lineHeight: '32px'
     }
   },
   current: {
     ...typography.body1,
-    color: colors.navy.veryLightGrey
+    color: colors.navy.veryLightGrey,
+    lineHeight: '32px'
   },
   paper: {
     background: 'transparent',
