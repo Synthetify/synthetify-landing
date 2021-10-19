@@ -42,14 +42,23 @@ export const InsideLink: React.FC<ILinkProps> = ({ href, name, description, isNe
   )
 }
 
-export const OutsideLink: React.FC<ILinkProps> = ({ href, name, description }) => {
+export const OutsideLink: React.FC<ILinkProps> = ({ href, name, description, isNew = false }) => {
   const classes = useStyles()
 
   return (
     <a href={href} className={classes.a} target='_blank' rel='noopener noreferrer'>
       <Grid className={classes.linkWrapper}>
-        <Typography className={classes.link}>{name}</Typography>
-        <Typography className={classes.description}>{description}</Typography>
+        <Grid className={classes.linkWrapper}>
+          {isNew ? (
+            <Grid className={classes.linkWithMarkWrapper}>
+              <Typography className={classes.link}>{name}</Typography>
+              <NewMark className={classes.mark} />
+            </Grid>
+          ) : (
+            <Typography className={classes.link}>{name}</Typography>
+          )}
+          <Typography className={classes.description}>{description}</Typography>
+        </Grid>
       </Grid>
     </a>
   )
@@ -140,15 +149,14 @@ export const Footer: React.FC = () => {
             description={translate('header.brandDescription')}
           />
           <OutsideLink
-            href={links.audit}
-            name={translate('footer.audit')}
-            description={translate('footer.auditDescription')}
-            isNew
-          />
-          <OutsideLink
             href={links.docs}
             name={translate('footer.docs')}
             description={translate('footer.docsDescription')}
+          />
+          <OutsideLink
+            href={links.audit}
+            name={translate('footer.audit')}
+            description={translate('footer.auditDescription')}
           />
         </Grid>
 
@@ -187,7 +195,7 @@ export const Footer: React.FC = () => {
           direction='column'>
 
           <a className={classes.a}>
-            <Link href='/blog' passHref>
+            <Link href='/blog/' passHref>
               <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
                 <Typography className={classes.columnHeader}>{translate('header.blog')}</Typography>
                 <NewMark className={classes.mark} />

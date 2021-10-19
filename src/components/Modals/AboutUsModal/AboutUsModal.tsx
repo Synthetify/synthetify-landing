@@ -59,7 +59,6 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               }}>
               <Grid className={classes.linkWithMarkWrapper}>
                 <Typography className={classes.name}>{translate('header.faq')}</Typography>
-                <NewMark className={classes.mark} />
               </Grid>
               <Typography className={classes.description}>
                 {translate('header.faqDescription')}
@@ -81,7 +80,6 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               }}>
               <Grid className={classes.linkWithMarkWrapper}>
                 <Typography className={classes.name}>{translate('header.brand')}</Typography>
-                <NewMark className={classes.mark} />
               </Grid>
               <Typography className={classes.description}>
                 {translate('header.brandDescription')}
