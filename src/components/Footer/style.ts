@@ -196,8 +196,6 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   mark: {
     fontFamily: 'Nunito Sans',
-    paddingTop: 7,
-    paddingInline: 6,
     borderRadius: 6,
     opacity: 0.7,
     [theme.breakpoints.down('sm')]: {
