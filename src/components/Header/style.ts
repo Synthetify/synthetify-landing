@@ -48,12 +48,15 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   route: {
     ...typography.subtitle2,
-    marginRight: 22,
+    marginRight: 37,
     color: '#CFCFCF',
     cursor: 'pointer',
 
     '&:hover': {
       color: colors.navy.veryLightGrey
+    },
+    [theme.breakpoints.down('md')]: {
+      marginRight: 24
     }
   },
   snyShort: {
@@ -97,9 +100,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   mark: {
-    paddingBlock: 5,
-    paddingInline: 6,
-    fontSize: 11
+    padding: '5px 7px 4px 7px',
+    fontSize: 11,
+    [theme.breakpoints.down('sm')]: {
+      marginTop: 5
+    }
   },
   hideOnMdUp: {
     display: 'none',
@@ -116,7 +121,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   linkWithMark: {
-    marginRight: 22,
+    marginRight: 26,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',

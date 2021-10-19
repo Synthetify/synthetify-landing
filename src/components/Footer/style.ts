@@ -85,11 +85,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginBottom: 20,
 
     [theme.breakpoints.down('sm')]: {
-      ...typography.subtitle1,
+      ...typography.body1,
       marginBottom: 15
     },
 
     [theme.breakpoints.down('xs')]: {
+      ...typography.subtitle1,
       marginBottom: 10
     }
   },
@@ -194,14 +195,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   mark: {
-    [theme.breakpoints.down('md')]: {
-      paddingBlock: 4.5,
-      paddingInline: 6
-    },
-
+    fontFamily: 'Nunito Sans',
+    paddingTop: 7,
+    paddingInline: 6,
+    borderRadius: 6,
+    opacity: 0.7,
     [theme.breakpoints.down('sm')]: {
       paddingBottom: 4,
-      paddingTop: 3,
+      paddingTop: 5,
       paddingInline: 5,
       fontSize: 9,
       lineHeight: '9px'
@@ -218,7 +219,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.info,
 
     [theme.breakpoints.down('sm')]: {
-      ...typography.caption3
+      ...typography.caption3,
+      position: 'relative',
+      top: -2
     },
 
     [theme.breakpoints.down('xs')]: {

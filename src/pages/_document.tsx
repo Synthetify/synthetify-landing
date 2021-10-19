@@ -18,7 +18,7 @@ class MyDocument extends Document {
               }
               body {
                 margin: 0;
-                font-family: 'Be Vietnam';
+                font-family: 'Nunito Sans';
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                 background-color: #0c0d2c;
