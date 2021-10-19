@@ -148,7 +148,7 @@ export const Footer: React.FC = () => {
             name={translate('header.brand')}
             description={translate('header.brandDescription')}
           />
-          <OutsideLink
+          <InsideLink
             href={links.docs}
             name={translate('footer.docs')}
             description={translate('footer.docsDescription')}
@@ -201,7 +201,7 @@ export const Footer: React.FC = () => {
                 <NewMark className={classes.mark} />
               </Grid>
             </Link>
-            <OutsideLink
+            <InsideLink
               href={'https://www.synthetify.io/blog/liquidation/'}
               name={translate('footer.liquidation')}
               description={translate('footer.liquidationDescription')}
@@ -211,12 +211,12 @@ export const Footer: React.FC = () => {
               name={translate('footer.audit')}
               description={translate('footer.auditDescription')}
             />
-            <OutsideLink
+            <InsideLink
               href={'https://www.synthetify.io/blog/staking/'}
               name={translate('footer.staking')}
               description={translate('footer.stakingDesc')}
             />
-            <OutsideLink
+            <InsideLink
               href={'https://www.synthetify.io/blog/app-tutorial/'}
               name={translate('footer.tutorial')}
               description={translate('footer.tutorialDescription')}
