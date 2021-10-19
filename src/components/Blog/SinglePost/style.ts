@@ -89,7 +89,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '& p strong': {
-      fontWeight: 800
+      fontWeight: 800,
+      color: colors.white.main
     },
 
     '& a': {
