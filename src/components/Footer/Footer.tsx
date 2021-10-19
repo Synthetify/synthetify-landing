@@ -185,11 +185,14 @@ export const Footer: React.FC = () => {
           item
           className={classNames(classes.column, classes.hideOnSm)}
           direction='column'>
+
           <a className={classes.a}>
-            <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
-              <Typography className={classes.columnHeader}>{translate('header.blog')}</Typography>
-              <NewMark className={classes.mark} />
-            </Grid>
+            <Link href='/blog' passHref>
+              <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
+                <Typography className={classes.columnHeader}>{translate('header.blog')}</Typography>
+                <NewMark className={classes.mark} />
+              </Grid>
+            </Link>
             <OutsideLink
               href={'https://www.synthetify.io/blog/liquidation/'}
               name={translate('footer.liquidation')}
