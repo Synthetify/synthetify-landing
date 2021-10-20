@@ -4,7 +4,6 @@ import { useTranslate } from '@utils/translations'
 import useStyles from './style'
 import links from '@static/constants/links'
 import classNames from 'classnames'
-import { NewMark } from '@components/LinkMarks/LinkMarks'
 import Link from 'next/link'
 
 export interface IAboutUsModal {
