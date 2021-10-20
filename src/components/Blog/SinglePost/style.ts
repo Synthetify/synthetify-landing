@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexDirection: 'column',
     alignContent: 'center',
     alignItems: 'center',
-    color: colors.white.main,
+    color: colors.navy.lightGrey,
     marginInline: 'auto',
     marginTop: 80,
     marginBottom: 90,
@@ -89,7 +89,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '& p strong': {
-      fontWeight: 800
+      fontWeight: 800,
+      color: colors.white.main
     },
 
     '& a': {

@@ -4,7 +4,6 @@ import { useTranslate } from '@utils/translations'
 import useStyles from './style'
 import links from '@static/constants/links'
 import classNames from 'classnames'
-import { NewMark } from '@components/LinkMarks/LinkMarks'
 import Link from 'next/link'
 
 export interface IAboutUsModal {
@@ -59,7 +58,6 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               }}>
               <Grid className={classes.linkWithMarkWrapper}>
                 <Typography className={classes.name}>{translate('header.faq')}</Typography>
-                <NewMark className={classes.mark} />
               </Grid>
               <Typography className={classes.description}>
                 {translate('header.faqDescription')}
@@ -81,10 +79,51 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               }}>
               <Grid className={classes.linkWithMarkWrapper}>
                 <Typography className={classes.name}>{translate('header.brand')}</Typography>
-                <NewMark className={classes.mark} />
               </Grid>
               <Typography className={classes.description}>
                 {translate('header.brandDescription')}
+              </Typography>
+            </Grid>
+          </a>
+        </Link>
+
+        <Link href={links.audit} passHref>
+          <a style={{ textDecoration: 'none' }}>
+            <Grid
+              item
+              className={classNames(
+                classes.listItem,
+                current === '/audit/' ? classes.current : undefined
+              )}
+              onClick={() => {
+                handleClose()
+              }}>
+              <Grid className={classes.linkWithMarkWrapper}>
+                <Typography className={classes.name}>{translate('footer.audit')}</Typography>
+              </Grid>
+              <Typography className={classes.description}>
+                {translate('footer.auditDescription')}
+              </Typography>
+            </Grid>
+          </a>
+        </Link>
+
+        <Link href={links.docs} passHref>
+          <a style={{ textDecoration: 'none' }}>
+            <Grid
+              item
+              className={classNames(
+                classes.listItem,
+                current === '/faq/' ? classes.current : undefined
+              )}
+              onClick={() => {
+                handleClose()
+              }}>
+              <Grid className={classes.linkWithMarkWrapper}>
+                <Typography className={classes.name}>{translate('footer.docs')}</Typography>
+              </Grid>
+              <Typography className={classes.description}>
+                {translate('footer.docsDescription')}
               </Typography>
             </Grid>
           </a>
