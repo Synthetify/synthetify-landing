@@ -9,7 +9,7 @@ export const links = {
   whitepaper: '/resources/synthetify-whitepaper.pdf',
   audit: '/resources/audit.pdf',
   privacyPolicy: '/resources/privacy_policy.pdf',
-  tutorial: '/resources/SNY_TUTORIAL.pdf',
+  tutorial: '/resources/tutorial.pdf',
   socialMedia: {
     twitter: 'https://twitter.com/synthetify',
     linkedin: 'https://www.linkedin.com/company/synthetify',
