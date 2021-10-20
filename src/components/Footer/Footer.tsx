@@ -128,11 +128,11 @@ export const Footer: React.FC = () => {
               <Typography className={classes.columnHeader} style={{ cursor: 'pointer' }}>
                 {translate('header.home')}
               </Typography>
-              <InsideLink
+              {/* <InsideLink
                 href={links.tutorial}
                 name={translate('footer.tutorial')}
                 description={translate('footer.tutorialDescription')}
-              />
+              /> */}
               <InsideLink
                 href='/blog/'
                 name={translate('footer.blog')}
