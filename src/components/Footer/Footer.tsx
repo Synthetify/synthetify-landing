@@ -128,23 +128,23 @@ export const Footer: React.FC = () => {
               <Typography className={classes.columnHeader} style={{ cursor: 'pointer' }}>
                 {translate('header.home')}
               </Typography>
-              {/* <InsideLink
-                href={links.tutorial}
-                name={translate('footer.tutorial')}
-                description={translate('footer.tutorialDescription')}
-              /> */}
-              <InsideLink
-                href='/blog/'
-                name={translate('footer.blog')}
-                description={translate('footer.blogDescription')}
-              />
-              <InsideLink
-                href={links.privacyPolicy}
-                name={translate('footer.privacyPolicy')}
-                description={translate('footer.privacyPolicyDescription')}
-              />
             </a>
           </Link>
+          <InsideLink
+            href={links.tutorial}
+            name={translate('footer.tutorial')}
+            description={translate('footer.tutorialDescription')}
+          />
+          <InsideLink
+            href='/blog/'
+            name={translate('footer.blog')}
+            description={translate('footer.blogDescription')}
+          />
+          <InsideLink
+            href={links.privacyPolicy}
+            name={translate('footer.privacyPolicy')}
+            description={translate('footer.privacyPolicyDescription')}
+          />
         </Grid>
 
         <Grid container item className={classes.column} direction='column'>
@@ -210,34 +210,35 @@ export const Footer: React.FC = () => {
           className={classNames(classes.column, classes.hideOnSm)}
           direction='column'>
 
-          <a className={classes.a}>
-            <Link href='/blog/' passHref>
+          <Link href='/blog/' passHref>
+            <a className={classes.a}>
               <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
                 <Typography className={classes.columnHeader}>{translate('header.blog')}</Typography>
                 <NewMark className={classes.mark} />
               </Grid>
-            </Link>
-            <InsideLink
-              href={'https://www.synthetify.io/blog/liquidation/'}
-              name={translate('footer.liquidation')}
-              description={translate('footer.liquidationDescription')}
-            />
-            <OutsideLink
-              href={'https://www.synthetify.io/blog/audit/'}
-              name={translate('footer.audit')}
-              description={translate('footer.auditDescription')}
-            />
-            <InsideLink
-              href={'https://www.synthetify.io/blog/staking/'}
-              name={translate('footer.staking')}
-              description={translate('footer.stakingDesc')}
-            />
-            <InsideLink
-              href={'https://www.synthetify.io/blog/app-tutorial/'}
-              name={translate('footer.tutorial')}
-              description={translate('footer.tutorialDescription')}
-            />
-          </a>
+            </a>
+          </Link>
+          <InsideLink
+            href={'https://www.synthetify.io/blog/liquidation/'}
+            name={translate('footer.liquidation')}
+            description={translate('footer.liquidationDescription')}
+          />
+          <OutsideLink
+            href={'https://www.synthetify.io/blog/audit/'}
+            name={translate('footer.audit')}
+            description={translate('footer.auditDescription')}
+          />
+          <InsideLink
+            href={'https://www.synthetify.io/blog/staking/'}
+            name={translate('footer.staking')}
+            description={translate('footer.stakingDesc')}
+          />
+          <InsideLink
+            href={'https://www.synthetify.io/blog/app-tutorial/'}
+            name={translate('footer.tutorial')}
+            description={translate('footer.tutorialDescription')}
+          />
+
         </Grid>
 
         <Grid container item className={classes.column} direction='column'>
@@ -259,6 +260,7 @@ export const Footer: React.FC = () => {
           />
         </Grid>
       </Grid>
+
       <Grid
         container
         className={classes.copyrightWrapper}
