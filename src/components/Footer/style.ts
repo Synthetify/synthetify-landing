@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   link: {
     ...typography.body2,
     color: colors.navy.grey,
-    
+
     [theme.breakpoints.down('xs')]: {
       ...typography.subtitle2
     }
@@ -247,7 +247,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     '&:hover $link': {
       color: colors.navy.grey
     },
-
     '&:hover $description': {
       color: colors.navy.info
     }
