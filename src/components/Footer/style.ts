@@ -83,7 +83,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.heading4,
     color: colors.navy.veryLightGrey,
     marginBottom: 20,
-
     [theme.breakpoints.down('sm')]: {
       ...typography.body1,
       marginBottom: 15
@@ -97,7 +96,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   link: {
     ...typography.body2,
     color: colors.navy.grey,
-
+    
     [theme.breakpoints.down('xs')]: {
       ...typography.subtitle2
     }
@@ -213,9 +212,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   description: {
-    ...typography.caption1,
+    ...typography.body4,
     color: colors.navy.info,
-
     [theme.breakpoints.down('sm')]: {
       ...typography.caption3,
       position: 'relative',

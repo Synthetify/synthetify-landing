@@ -117,6 +117,7 @@ export const Footer: React.FC = () => {
         </Grid>
       </Grid>
       <Grid container className={classes.routes} wrap='nowrap' justifyContent='space-between'>
+
         <Grid
           container
           item
@@ -127,6 +128,21 @@ export const Footer: React.FC = () => {
               <Typography className={classes.columnHeader} style={{ cursor: 'pointer' }}>
                 {translate('header.home')}
               </Typography>
+              <InsideLink
+                href={links.tutorial}
+                name={translate('footer.tutorial')}
+                description={translate('footer.tutorialDescription')}
+              />
+              <InsideLink
+                href='/blog/'
+                name={translate('footer.blog')}
+                description={translate('footer.blogDescription')}
+              />
+              <InsideLink
+                href={links.privacyPolicy}
+                name={translate('footer.privacyPolicy')}
+                description={translate('footer.privacyPolicyDescription')}
+              />
             </a>
           </Link>
         </Grid>
@@ -230,6 +246,11 @@ export const Footer: React.FC = () => {
             href={links.app.staking}
             name={translate('footer.staking')}
             description={translate('footer.stakingDescription')}
+          />
+          <OutsideLink
+            href={links.app.stats}
+            name={translate('footer.stats')}
+            description={translate('footer.statsDescription')}
           />
           <OutsideLink
             href={links.app.exchange}
