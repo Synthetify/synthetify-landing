@@ -83,7 +83,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.heading4,
     color: colors.navy.veryLightGrey,
     marginBottom: 20,
-
     [theme.breakpoints.down('sm')]: {
       ...typography.body1,
       marginBottom: 15
@@ -196,8 +195,6 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   mark: {
     fontFamily: 'Nunito Sans',
-    paddingTop: 7,
-    paddingInline: 6,
     borderRadius: 6,
     opacity: 0.7,
     [theme.breakpoints.down('sm')]: {
@@ -215,9 +212,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   description: {
-    ...typography.caption1,
+    ...typography.body4,
     color: colors.navy.info,
-
     [theme.breakpoints.down('sm')]: {
       ...typography.caption3,
       position: 'relative',
@@ -251,7 +247,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     '&:hover $link': {
       color: colors.navy.grey
     },
-
     '&:hover $description': {
       color: colors.navy.info
     }
