@@ -48,11 +48,12 @@ const useStyles = makeStyles((theme: Theme) => ({
   title: {
     ...typography.body1,
     alignSelf: 'flex-start',
-    marginTop: 8,
+    marginTop: 6,
     marginLeft: 12,
     color: colors.navy.veryLightGrey,
     [theme.breakpoints.down('sm')]: {
-      ...typography.body3
+      ...typography.body3,
+      marginTop: 4
     }
   },
   date: {
