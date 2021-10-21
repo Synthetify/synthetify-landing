@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   title: {
     ...typography.body1,
     alignSelf: 'flex-start',
-    marginTop: 3,
+    marginTop: 8,
     marginLeft: 12,
     color: colors.navy.veryLightGrey,
     [theme.breakpoints.down('sm')]: {
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.body4,
     alignSelf: 'baseline',
     textAlign: 'right',
-    width: 160,
+    width: 110,
     justifyContent: 'space-evenly',
     backgroundColor: `${colors.navy.navBar}76`,
     color: colors.navy.background,
@@ -67,11 +67,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     padding: 8,
     display: 'grid',
     borderRadius: '0px 20px',
-    [theme.breakpoints.down('md')]: {
-      textAlign: 'right'
+    [theme.breakpoints.down('sm')]: {
+      width: 98
     },
     [theme.breakpoints.down('xs')]: {
-      width: 130
+      ...typography.caption3,
+      width: 73
     }
   },
   image: {
@@ -84,7 +85,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     transition: 'all .5s ease-out'
   },
   desc: {
-    color: colors.navy.veryLightGrey,
+    color: colors.navy.navBar,
     marginTop: 12,
     marginLeft: 7,
     ...typography.body4,
