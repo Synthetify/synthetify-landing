@@ -91,6 +91,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexDirection: 'row',
     alignItems: 'center',
     flexWrap: 'nowrap'
+  },
+  tokenWrapper: {
+    marginLeft: 3
   }
 }))
 
