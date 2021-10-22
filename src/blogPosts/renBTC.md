@@ -8,7 +8,7 @@ image: "/blog/renBTC/renBTC1.png"
 
 **GM!** 👋
 
-We are very pleased with the positive feedback and huge utility of previously added collateral tokens.
+We are very pleased with the positive feedback and huge utility of previously added collateral tokens.  
 Currently, **$SOL** and **$USDC**, which we added previously, constitute **46%** of the entire collateral in our app 💰  
 
 That's why we decided to add a new token to make even more diversified pools of collaterals and increase TVL.  
