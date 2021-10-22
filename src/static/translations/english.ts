@@ -32,7 +32,7 @@ const dictionary = {
   'footer.privacyPolicy': 'Privacy Policy',
   'footer.privacyPolicyDescription': 'Our policies about data',
   'footer.audit': 'Audit',
-  'footer.auditDescription': 'Report after security audit',
+  'footer.auditDescription': 'Security audit report',
   'footer.liquidation': 'Liquidation',
   'footer.liquidationDescription': 'Introduction to liquidation',
   'footer.docs': 'Documentation',
