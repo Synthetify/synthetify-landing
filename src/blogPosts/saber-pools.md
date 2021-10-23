@@ -1,5 +1,5 @@
 ---
-title: "Saber Launches First xUSD poll!"
+title: "Saber launches first xUSD poll!"
 date: "2021-10-23 12:00:00"
 description: "From now it is possible to buy xUSD on Saber"
 image: "/blog/saberPools/saber1.png"
