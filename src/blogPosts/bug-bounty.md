@@ -2,9 +2,9 @@
 title: "Synthetify Bug Bounty Program"
 date: "2021-10-29 12:00:00"
 description: "Read about the basis of our bug bounty program"
-image: "/blog/bug-bounty/bugBounty2.png"
+image: "/blog/bug-bounty/bugBounty1.png"
 ---
-![Bug bounty](/blog/bug-bounty/bugBounty1.png "horizontal")
+![Bug bounty](/blog/bug-bounty/bugBounty2.png "horizontal")
 
 **GM!** 👋
 
