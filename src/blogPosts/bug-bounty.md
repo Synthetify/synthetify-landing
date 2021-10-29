@@ -4,7 +4,7 @@ date: "2021-10-29 12:00:00"
 description: "Read about the basis of our bug bounty program"
 image: "/blog/bug-bounty/bugBounty2.png"
 ---
-![First post](/blog/bug-bounty/bugBounty1.png "horizontal")
+![Bug bounty](/blog/bug-bounty/bugBounty1.png "horizontal")
 
 **GM!** 👋
 
@@ -17,7 +17,7 @@ Please notify us promptly before disclosing the vulnerability to the outside wor
 
 We'd like to ask you to not use any other form of communication to report bugs as this makes it much harder to track pending tickets.
 
-Rewards are distributed according to bugs classification with the scale from **LOW** to **CRITICAL**. Our reward brackets are (in US Dollars): ![First post](/blog/bug-bounty/bountyTab.png "horizontal")
+Rewards are distributed according to bugs classification with the scale from **LOW** to **CRITICAL**. Our reward brackets are (in US Dollars): ![Bounty table](/blog/bug-bounty/bountyTab.png "horizontal")
 
 
 Actual prize size is determined based on a combination of different factors including, but not limited to, severity, value at risk, and likelihood of being exploited.  
