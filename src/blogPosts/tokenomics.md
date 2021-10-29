@@ -2,9 +2,9 @@
 title: "Tokenomics 🪙"
 date: "2021-10-30 12:00:00"
 description: "Everything you need to know about Synthetify Token"
-image: "/blog/tokenomics/tokenomics2.png"
+image: "/blog/tokenomics/tokenomics1.png"
 ---
-![Tokenomics](/blog/tokenomics/tokenomics1.png "horizontal")
+![Tokenomics](/blog/tokenomics/tokenomics2.png "horizontal")
 
 **GM!** 👋
 
@@ -13,7 +13,7 @@ and in the future as voting power in governance decisions.
 
 ✔️ **Supply and distribution**  
 Max supply of Synthetify token is **100.000.000**.  
-We plan to release it in four years from our launch (October 2021).  
+We plan to release it in four years from our launch (April 2021).  
 The initial distribution of SNY is as follows:
 ![Tokenomics table](/blog/tokenomics/tokenomicsTable.png "horizontal")
 
@@ -38,7 +38,7 @@ If you want to know more about staking and rewards [CLICK HERE](https://www.synt
 ✔️ **Future plans**  
 In the future, we are going to introduce additional features that will increase its usability, ie. **voting in governance decisions**. 
 
-✔️ **How Synthetify earn**  
+✔️ **How Synthetify generates revenue**  
 The basic form of income for us is 20% of the fee (which is 0.3%) from each transaction.
 Another form of income is the Interest rate that is associated with:
 * **Debt pool** 
@@ -49,7 +49,7 @@ Another form of income is the Interest rate that is associated with:
 
 Borrowing and Swapline are not yet available, but we are working to make them available to you as soon as possible.
 
-**What will we do with revenue?**
-In the near future we will introduce a “buy and burn” mechanism.
-It consists in the fact that, once a month, we will buy $SNY on exchanges, and burn it.  
+**What will we do with revenue?**  
+In the near future we will introduce a **“buy and burn” mechanism**.  
+It meaning that we will buy $SNY in exchanges and burn it once a month.  
 Every month, we will buy **$SNY equal to the profit** from the sources presented above.
