@@ -51,5 +51,5 @@ Borrowing and Swapline are not yet available, but we are working to make them av
 
 **What will we do with revenue?**  
 In the near future we will introduce a **“buy and burn” mechanism**.  
-It meaning we will buy $SNY in exchanges and burn it once a month.  
+It meaning that we will buy $SNY in exchanges and burn it once a month.  
 Every month, we will buy **$SNY equal to the profit** from the sources presented above.
