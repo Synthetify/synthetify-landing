@@ -10,7 +10,7 @@ image: "/blog/new-collateral-ratios/collateral_ratio_main.png"
 We decided to change the health factor and collateral ratio values for most of the tokens.
 
 Now, these values are as follows:  
-* health factor 70% -> **80%**  
+* Health factor 70% -> **80%**  
 
 Collateral ratios:
 * $USDC 30% -> **80%**
@@ -29,7 +29,7 @@ For example, consider you deposited 100$ in $USDC 💲
 
 
 **Why we did that?**  
-Two issues motivated us to make these changes:  
+Three issues motivated us to make these changes:  
 1) Differentiation of the collateral structure, as the vast majority own either $SNY or $SOL.
 2) Spreading synthetic assets to the external market.
 3) Utilize collateral more effectively.
