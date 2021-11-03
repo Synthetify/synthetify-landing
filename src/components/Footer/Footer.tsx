@@ -219,24 +219,24 @@ export const Footer: React.FC = () => {
             </a>
           </Link>
           <InsideLink
-            href={'https://www.synthetify.io/blog/liquidation/'}
-            name={translate('footer.liquidation')}
-            description={translate('footer.liquidationDescription')}
+            href={'https://www.synthetify.io/blog/tokenomics/'}
+            name={translate('footer.blogTitle1')}
+            description={translate('footer.blogDescription1')}
           />
           <OutsideLink
-            href={'https://www.synthetify.io/blog/audit/'}
-            name={translate('footer.audit')}
-            description={translate('footer.auditDescription')}
+            href={'https://www.synthetify.io/blog/bug-bounty/'}
+            name={translate('footer.blogTitle2')}
+            description={translate('footer.blogDescription2')}
           />
           <InsideLink
-            href={'https://www.synthetify.io/blog/staking/'}
-            name={translate('footer.staking')}
-            description={translate('footer.stakingDesc')}
+            href={'https://www.synthetify.io/blog/saber-pools/'}
+            name={translate('footer.blogTitle3')}
+            description={translate('footer.blogDescription3')}
           />
           <InsideLink
-            href={'https://www.synthetify.io/blog/app-tutorial/'}
-            name={translate('footer.tutorial')}
-            description={translate('footer.tutorialDescription')}
+            href={'https://www.synthetify.io/blog/renBTC/'}
+            name={translate('footer.blogTitle4')}
+            description={translate('footer.blogDescription4')}
           />
 
         </Grid>

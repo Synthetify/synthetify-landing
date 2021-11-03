@@ -138,7 +138,15 @@ const dictionary = {
     '4dmKkXNHdgYsXqBHCuMikNQWwVomZURhYvkkX5c4pQ7y',
     'Obecna podaż w obiegu wynosi 5,625,000 SNY. Możesz sprawdzić aktualną kapitalizację rynkową na stronach takich jak: CoinMarketCap lub Coingecko.',
     'IDO odbyło się 29 i 30 czerwca 2021 r.'
-  ]
+  ],
+  'footer.blogTitle1': 'Tokenomics',
+  'footer.blogDescription1': 'Informacje o $SNY',
+  'footer.blogTitle2': 'Bug Bounty',
+  'footer.blogDescription2': 'Informacje o Bug Bounty',
+  'footer.blogTitle3': 'Liquidity pools',
+  'footer.blogDescription3': 'Pierwsze poole na Saber',
+  'footer.blogTitle4': '$renBTC',
+  'footer.blogDescription4': 'Nowy collateral'
 }
 
 export default dictionary
