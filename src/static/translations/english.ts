@@ -138,7 +138,15 @@ const dictionary = {
     'It’s: 4dmKkXNHdgYsXqBHCuMikNQWwVomZURhYvkkX5c4pQ7y',
     'Current circulating supply is 5,625,000 SNY. You can check the current market cap on sites like: CoinMarketCap or Coingecko.',
     'The IDO took place on 29th and 30th June 2021.'
-  ]
+  ],
+  'footer.blogTitle1': 'Tokenomics',
+  'footer.blogDescription1': 'Everything about $SNY',
+  'footer.blogTitle2': 'Bug Bounty',
+  'footer.blogDescription2': 'Introduction to Bug Bounty',
+  'footer.blogTitle3': 'Liquidity pools',
+  'footer.blogDescription3': 'Our first pool on Saber',
+  'footer.blogTitle4': '$renBTC',
+  'footer.blogDescription4': 'New collateral'
 }
 
 export default dictionary
