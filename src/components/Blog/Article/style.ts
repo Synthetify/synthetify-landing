@@ -48,8 +48,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   title: {
     ...typography.body1,
     alignSelf: 'flex-start',
-    marginTop: 6,
+    marginTop: 9,
     marginLeft: 12,
+    marginRight: 12,
     color: colors.navy.veryLightGrey,
     [theme.breakpoints.down('sm')]: {
       ...typography.body3,
@@ -89,6 +90,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.navBar,
     marginTop: 12,
     marginLeft: 7,
+    opacity: 0.75,
     ...typography.body4,
     [theme.breakpoints.down('sm')]: {
       ...typography.caption3
