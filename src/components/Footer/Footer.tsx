@@ -207,7 +207,7 @@ export const Footer: React.FC = () => {
         <Grid
           container
           item
-          className={classNames(classes.column, classes.hideOnSm)}
+          className={classNames(classes.column, classes.hideOnMd)}
           direction='column'>
 
           <Link href='/blog/' passHref>
@@ -219,22 +219,22 @@ export const Footer: React.FC = () => {
             </a>
           </Link>
           <InsideLink
-            href={'https://www.synthetify.io/blog/tokenomics/'}
+            href={'https://www.synthetify.io/blog/new-collateral-ratios/'}
             name={translate('footer.blogTitle1')}
             description={translate('footer.blogDescription1')}
           />
-          <OutsideLink
-            href={'https://www.synthetify.io/blog/bug-bounty/'}
+          <InsideLink
+            href={'https://www.synthetify.io/blog/tokenomics/'}
             name={translate('footer.blogTitle2')}
             description={translate('footer.blogDescription2')}
           />
           <InsideLink
-            href={'https://www.synthetify.io/blog/saber-pools/'}
+            href={'https://www.synthetify.io/blog/bug-bounty/'}
             name={translate('footer.blogTitle3')}
             description={translate('footer.blogDescription3')}
           />
           <InsideLink
-            href={'https://www.synthetify.io/blog/renBTC/'}
+            href={'https://www.synthetify.io/blog/saber-pools/'}
             name={translate('footer.blogTitle4')}
             description={translate('footer.blogDescription4')}
           />
