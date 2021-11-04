@@ -17,4 +17,5 @@ We believe that additional collateral tokens will help us in further diversifica
 We are going to set $whETH’s collateralization level at 60% and $whFTT’s one at 50%.
 
 
-Wormhole is a communication bridge between Solana and other top DeFi networks, which allows fast transfer of any kind of information from one chain to another. If you would like to know more about this protocol, check out their [website](https://wormholebridge.com/#/) and [Twitter](https://twitter.com/wormholecrypto)
+Wormhole is a communication bridge between Solana and other top DeFi networks, which allows fast transfer of any kind of information from one chain to another.  
+If you would like to know more about this protocol, check out their [website](https://wormholebridge.com/#/) and [Twitter](https://twitter.com/wormholecrypto).
