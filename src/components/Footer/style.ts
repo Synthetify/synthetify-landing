@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     background: colors.navy.darkGrey
   },
   column: {
-    width: 161,
+    width: 210,
 
     [theme.breakpoints.down('md')]: {
       width: 141
@@ -253,6 +253,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   hideOnSm: {
     [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  },
+  hideOnMd: {
+    [theme.breakpoints.down('md')]: {
       display: 'none'
     }
   }
