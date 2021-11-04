@@ -1,5 +1,5 @@
 ---
-title: "$whETH & $whFTT are now available as new collateral"
+title: "$whETH & $whFTT are now available as new collateral 🛡️"
 date: "2021-11-4 12:00:00"
 description: "Now you can use ETH and FTT in the Solana ecosystem!"
 image: "/blog/whETH-whFTT/whFTT_whETH1.png"
@@ -14,7 +14,8 @@ As we want to make our application as much user-friendly as possible, we are ver
 * **$whFTT**  
 
 We believe that additional collateral tokens will help us in further diversification of collateral pools and will increase TVL.  
-We are going to set $whETH’s collateralization level at 60% and $whFTT’s one at 50%.
+We are going to set $whETH’s collateralization level at 60% and $whFTT’s one at 50%.  
+If you want to learn more about collateralization levels check our [blog post](https://www.synthetify.io/blog/new-collateral-ratios/)
 
 
 Wormhole is a communication bridge between Solana and other top DeFi networks, which allows fast transfer of any kind of information from one chain to another.  
