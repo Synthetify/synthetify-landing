@@ -4,7 +4,7 @@ import useStyles from '@pagesStyles/custom404/style'
 import snyLogo from '@static/svg/sny_404.svg'
 import { CardMedia, Grid, Typography, Button } from '@material-ui/core'
 
-export default function T404() {
+export default function Custom404() {
   const classes = useStyles()
 
   return <>
