@@ -8,7 +8,7 @@ import HomePageStatisticsContainer from 'src/containers/HomePageStatisticsContai
 export default function Home() {
   return (
     <>
-      <TopBanner       id="test22"/>
+      <TopBanner />
       <ListedAssetsContainer />
       <Features />
       <HomePageStatisticsContainer/>
