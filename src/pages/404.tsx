@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
-import useStyles from '@pagesStyles/Custom404/style'
+import useStyles from '@pagesStyles/custom404/style'
 import snyLogo from '@static/svg/sny_404.svg'
 import { CardMedia, Grid, Typography, Button } from '@material-ui/core'
 import { blurContent, unblurContent } from '@utils/uiUtils'
@@ -9,15 +9,15 @@ export default function T404() {
   const classes = useStyles()
   // {translate('header.trade')}
   useEffect(() => {
-    blurContent()
     // el.style.filter = 'blur(4px) brightness(0.4)'
   }, [])
   return <>
 
+    <div className={classes.blur}></div>
     <Grid
       className={classes.root}
       container
-      id='toBlur'
+      id='without'
     >
 
       <CardMedia className={classes.image} alt=' ' src={snyLogo} component='img' />
@@ -37,7 +37,7 @@ export default function T404() {
             variant='contained'
             target='_blank'
             rel='noopener noreferrer'>
-              home
+              Close
           </Button>
         </a>
       </Link>

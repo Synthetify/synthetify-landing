@@ -2,12 +2,18 @@ import { makeStyles, Theme } from '@material-ui/core/styles'
 import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
+  '*:not(#without)': {
+    opacity: 0
+  },
   root: {
     flexDirection: 'column',
     justifyContent: 'center',
     height: '100vh',
+    width: '100vw',
     alignItems: 'center',
-    //height: '100vh'
+    zIndex: 100,
+    position: 'relative',
+    color: '#ffff'
   },
   image: {
     width: 185,
@@ -41,6 +47,15 @@ const useStyles = makeStyles((theme: Theme) => ({
       // opacity: 1,
       backgroundColor: colors.green.actionButton
     }
+  },
+  blur: {
+    filter: 'blur(4px)',
+    zIndex: 99,
+    position: 'absolute',
+    width: '100vw',
+    height: '100%',
+    top: '-1px',
+    backdropFilter: 'blur(2px)'
   }
 }))
 
