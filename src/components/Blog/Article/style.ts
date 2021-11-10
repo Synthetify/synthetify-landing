@@ -42,18 +42,18 @@ const useStyles = makeStyles((theme: Theme) => ({
     zIndex: 2,
     position: 'absolute',
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 41
+      maxHeight: 51
     }
   },
   title: {
     ...typography.body1,
     alignSelf: 'flex-start',
-    marginTop: 6,
+    marginTop: 7,
     marginLeft: 12,
+    marginRight: 12,
     color: colors.navy.veryLightGrey,
     [theme.breakpoints.down('sm')]: {
-      ...typography.body3,
-      marginTop: 4
+      ...typography.body3
     }
   },
   date: {
@@ -89,6 +89,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.navBar,
     marginTop: 12,
     marginLeft: 7,
+    opacity: 0.75,
     ...typography.body4,
     [theme.breakpoints.down('sm')]: {
       ...typography.caption3
