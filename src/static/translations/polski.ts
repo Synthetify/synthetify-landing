@@ -146,7 +146,8 @@ const dictionary = {
   'footer.blogTitle3': 'Bug Bounty',
   'footer.blogDescription3': 'Informacje o Bug Bounty',
   'footer.blogTitle4': 'Liquidity pools',
-  'footer.blogDescription4': 'Pierwsze poole na Saber'
+  'footer.blogDescription4': 'Pierwsze poole na Saber',
+  '404.subTitle': 'STRONA NIE ZOSTAŁA ZNALEZIONA'
 }
 
 export default dictionary
