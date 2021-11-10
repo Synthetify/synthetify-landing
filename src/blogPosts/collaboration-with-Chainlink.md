@@ -1,5 +1,5 @@
 ---
-title: "Collaboration with Chainlink"
+title: "Synthetify is Integrating Chainlink Price Feeds"
 date: "2021-11-10 12:00:00"
 description: "Synthetify is Integrating Chainlink Price Feeds for Accurate, Tamper-Proof Pricing of Synthetic Assets"
 image: "/blog/chainlink_collaboration/photo1.png"
