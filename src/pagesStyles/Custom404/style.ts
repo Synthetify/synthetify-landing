@@ -17,11 +17,21 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   subTitle: {
     marginTop: 36,
+    marginBottom: 152,
     fontWeight: 400,
     fontSize: 27,
     lineHeight: '35px',
     color: colors.navy.navBar,
-    opacity: 0.76
+    opacity: 0.76,
+    [theme.breakpoints.down('md')]: {
+      marginBottom: 172
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: 203
+    },
+    [theme.breakpoints.down('xs')]: {
+      marginBottom: 167
+    }
   }
 }))
 

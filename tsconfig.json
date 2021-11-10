@@ -45,8 +45,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/pages/404.tsx"  ],
+    "**/*.tsx"],
   "exclude": [
     "node_modules"
   ]
