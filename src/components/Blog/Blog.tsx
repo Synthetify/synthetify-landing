@@ -37,7 +37,7 @@ export const Blog: React.FC<IProps> = ({ data }) => {
       />
       <Grid className={classes.articlesWrapper} id="arcWrapper">
         {data.map((article: DataForArticles, index) => (
-          <Article key={index} title={article.title} date={isSafari ?? false ? article.date.replace(/-/g, '/') : article.date} image={article.image} description={article.description} slug={article.slug} />
+          <Article key={index} title={article.title} date={isSafari ? article.date.replace(/-/g, '/') : article.date} image={article.image} description={article.description} slug={article.slug} />
         )
         )}
       </Grid>

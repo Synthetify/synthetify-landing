@@ -35,7 +35,7 @@ export const SinglePost: React.FC<IProps> = ({ singlePost, title, date }) => {
     <>
       <PageHeader
         title={title}
-        description={(new Date(isSafari ?? false ? date.replace(/-/g, '/') : date)).toLocaleDateString('en-US', { dateStyle: 'long' })}
+        description={(new Date(isSafari ? date.replace(/-/g, '/') : date)).toLocaleDateString('en-US', { dateStyle: 'long' })}
       />
       <Grid container item justifyContent='center' className={classes.mainContainer}>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{singlePost}</ReactMarkdown>
