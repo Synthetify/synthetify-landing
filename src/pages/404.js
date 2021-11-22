@@ -2,7 +2,7 @@ import React from 'react'
 import useStyles from '@pagesStyles/custom404/style'
 import { Grid, Typography } from '@material-ui/core'
 
-export default function Custom404() {
+export default function Custom404 () {
   const classes = useStyles()
 
   return <>
