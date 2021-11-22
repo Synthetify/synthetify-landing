@@ -7,7 +7,7 @@ module.exports = withPlugins([[
   }
 ]], {
   reactStrictMode: true,
-  trailingSlash: true,
+  //trailingSlash: true,
   images: {
     disableStaticImages: true,
   }
