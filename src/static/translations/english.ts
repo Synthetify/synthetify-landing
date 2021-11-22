@@ -148,6 +148,7 @@ const dictionary = {
   'footer.blogTitle4': 'Bug Bounty',
   'footer.blogDescription4': 'Introduction to Bug Bounty',
   '404.subTitle': 'PAGE NOT FOUND'
+
 }
 
 export default dictionary

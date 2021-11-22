@@ -146,6 +146,7 @@ const dictionary = {
   'footer.blogTitle3': 'Tokenomics',
   'footer.blogDescription3': 'Informacje o $SNY',
   'footer.blogTitle4': 'Bug Bounty',
+  'footer.blogDescription4': 'Informacje o Bug Bounty',
   '404.subTitle': 'STRONA NIE ZOSTAŁA ZNALEZIONA'
 }
 
