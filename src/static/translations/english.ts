@@ -139,16 +139,13 @@ const dictionary = {
     'Current circulating supply is 5,625,000 SNY. You can check the current market cap on sites like: CoinMarketCap or Coingecko.',
     'The IDO took place on 29th and 30th June 2021.'
   ],
-  'footer.blogTitle1': 'Collaboration with Chainlink',
-  'footer.blogDescription1': 'We announce collaboration with Chainlink',
-  'footer.blogTitle2': 'New collateral ratios',
-  'footer.blogDescription2': 'We raised collateral ratio for most of the tokens.',
-  'footer.blogTitle3': 'Tokenomics',
-  'footer.blogDescription3': 'Everything about $SNY',
-  'footer.blogTitle4': 'Bug Bounty',
-  'footer.blogDescription4': 'Introduction to Bug Bounty',
-  '404.subTitle': 'PAGE NOT FOUND'
-
-}
+  'footer.blogTitle1': '$mSOL',
+  'footer.blogDescription1': 'New collateral token',
+  'footer.blogTitle2': 'Collaboration with Chainlink',
+  'footer.blogDescription2': 'We announce collaboration with Chainlink',
+  'footer.blogTitle3': 'New collateral ratios',
+  'footer.blogDescription3': 'We raised collateral ratio for most of the tokens',
+  'footer.blogTitle4': 'Tokenomics',
+  'footer.blogDescription4': 'Everything about $SNY'}
 
 export default dictionary

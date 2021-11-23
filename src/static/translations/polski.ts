@@ -139,15 +139,14 @@ const dictionary = {
     'Obecna podaż w obiegu wynosi 5,625,000 SNY. Możesz sprawdzić aktualną kapitalizację rynkową na stronach takich jak: CoinMarketCap lub Coingecko.',
     'IDO odbyło się 29 i 30 czerwca 2021 r.'
   ],
-  'footer.blogTitle1': 'Współpraca z Chainlink',
-  'footer.blogDescription1': 'Z dumą ogłaszamy początek naszej współpracy z Chainlink',
-  'footer.blogTitle2': 'Nowe collateral ratio',
-  'footer.blogDescription2': 'Podnieśliśmy collateral ratio dla większości tokenów',
-  'footer.blogTitle3': 'Tokenomics',
-  'footer.blogDescription3': 'Informacje o $SNY',
-  'footer.blogTitle4': 'Bug Bounty',
-  'footer.blogDescription4': 'Informacje o Bug Bounty',
-  '404.subTitle': 'STRONA NIE ZOSTAŁA ZNALEZIONA'
+  'footer.blogTitle1': '$mSOL',
+  'footer.blogDescription1': 'Nowy token zabezpieczający',
+  'footer.blogTitle2': 'Współpraca z Chainlink',
+  'footer.blogDescription2': 'Z dumą ogłaszamy początek naszej współpracy z Chainlink',
+  'footer.blogTitle3': 'Nowe collateral ratio',
+  'footer.blogDescription3': 'Podnieśliśmy collateral ratio dla większości tokenów',
+  'footer.blogTitle4': 'Tokenomics',
+  'footer.blogDescription4': 'Informacje o $SNY'
 }
 
 export default dictionary
