@@ -13,7 +13,9 @@ As we want to appreciate our community members who help us in seeking these weak
 We believe that the analytical view of independent researchers allows us to provide users with even better applications.  
 
 To report a bug, contact us via email: **contact@synthetify.io** 📬  
-Please notify us promptly before disclosing the vulnerability to the outside world, so that we can take the necessary measures. Practice responsible disclosure.
+Please notify us promptly before disclosing the vulnerability to the outside world, so that we can take the necessary measures. Practice responsible disclosure.  
+
+**Bug Bounty Program concerns only bugs in smart contracts!**
 
 We'd like to ask you to not use any other form of communication to report bugs as this makes it much harder to track pending tickets.
 
