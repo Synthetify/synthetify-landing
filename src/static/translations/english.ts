@@ -146,6 +146,7 @@ const dictionary = {
   'footer.blogTitle3': 'New collateral ratios',
   'footer.blogDescription3': 'We raised collateral ratio for most of the tokens',
   'footer.blogTitle4': 'Tokenomics',
-  'footer.blogDescription4': 'Everything about $SNY'}
+  'footer.blogDescription4': 'Everything about $SNY'
+}
 
 export default dictionary

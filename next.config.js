@@ -6,8 +6,8 @@ module.exports = withPlugins([[
     handleImages: ['svg', 'png']
   }
 ]], {
-  reactStrictMode: true,
   trailingSlash: false,
+  reactStrictMode: true,
   images: {
     disableStaticImages: true,
   }
