@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 export default function Custom404 () {
   const classes = useStyles()
+  
   return <>
     <Grid className={classes.root} container direction="column" justifyContent="center" alignItems="center">
       <Grid item>
