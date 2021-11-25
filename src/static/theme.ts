@@ -29,7 +29,7 @@ export const colors = {
     dark: '#0E0E2A',
     component: '#1D1D49',
     navBar: '#F9F9FB',
-    navButton: '#3D3F72',
+    navButton: '#3A3A85',
     grey: '#A3A8CE',
     lightGrey: '#DADCF1',
     veryLightGrey: '#FBFBFB',
@@ -50,67 +50,67 @@ export const typography = {
   heading2: {
     fontSize: 32,
     lineHeight: '40px',
-    fontWeight: 700
+    fontWeight: 800
   },
   heading3: {
     fontSize: 27,
     lineHeight: '35px',
-    fontWeight: 600
+    fontWeight: 800
   },
   heading4: {
     fontSize: 24,
-    lineHeight: '33px',
+    lineHeight: '30px',
     fontWeight: 800
   },
   body1: {
     fontSize: 22,
-    lineHeight: '30px',
-    fontWeight: 800
+    lineHeight: '28px',
+    fontWeight: 900
   },
   body2: {
     fontSize: 22,
-    lineHeight: '30px',
-    fontWeight: 500
+    lineHeight: '32px',
+    fontWeight: 600
   },
   subtitle1: {
     fontSize: 16,
     lineHeight: '24px',
-    fontWeight: 800
+    fontWeight: 900
   },
   subtitle2: {
     fontSize: 16,
     lineHeight: '24px',
-    fontWeight: 500
+    fontWeight: 600
   },
   body3: {
     fontSize: 13,
-    lineHeight: '20px',
-    fontWeight: 800
+    lineHeight: '19px',
+    fontWeight: 900
   },
   body4: {
     fontSize: 13,
-    lineHeight: '20px',
-    fontWeight: 500
+    lineHeight: '19px',
+    fontWeight: 600
   },
   caption1: {
     fontSize: 11,
-    lineHeight: '16px',
-    fontWeight: 500
+    lineHeight: '15px',
+    fontWeight: 600
   },
   caption2: {
     fontSize: 11,
     lineHeight: '16px',
-    fontWeight: 800
+    fontWeight: 900
   },
   caption3: {
     fontSize: 9,
-    lineHeight: '14px',
-    fontWeight: 500
+    lineHeight: '12px',
+    fontWeight: 600
   },
   caption4: {
     fontSize: 9,
     lineHeight: '14px',
-    fontWeight: 800
+    fontWeight: 900
   }
 }
 
@@ -129,8 +129,8 @@ export const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: 'Be Vietnam',
-    fontWeightRegular: 500,
+    fontFamily: 'Nunito Sans',
+    fontWeightRegular: 600,
     h1: typography.heading1,
     h2: typography.heading2,
     h3: typography.heading3,

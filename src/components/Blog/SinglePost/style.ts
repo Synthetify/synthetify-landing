@@ -3,12 +3,12 @@ import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   mainContainer: {
-    fontFamily: 'Be Vietnam',
+    fontFamily: 'Nunito Sans',
     display: 'flex',
     flexDirection: 'column',
     alignContent: 'center',
     alignItems: 'center',
-    color: colors.white.main,
+    color: colors.navy.lightGrey,
     marginInline: 'auto',
     marginTop: 80,
     marginBottom: 90,
@@ -30,45 +30,67 @@ const useStyles = makeStyles((theme: Theme) => ({
       paddingInline: 26
     },
 
-    '& img': {
-      borderRadius: 20,
-      maxWidth: 800,
-      display: 'block',
-      margin: '90px auto',
-      width: '100%',
-
-      [theme.breakpoints.down('md')]: {
-        marginBlock: 55
-      },
-
-      [theme.breakpoints.down('sm')]: {
-        marginBlock: 20
-      }
-    },
-
     '& p:first-child': {
       maxWidth: '100%'
     },
-
     '& p:first-child img': {
       marginTop: 0,
       maxWidth: '100%'
     },
+    '& img': {
+      borderRadius: 20,
+      display: 'block',
+      margin: '90px auto',
+      pointerEvents: 'none',
+      [theme.breakpoints.down('md')]: {
+        marginBlock: 44
+      },
+      [theme.breakpoints.down('sm')]: {
+        marginBlock: 27
+      }
+    },
+    '& img[title=vertical]': {
+      maxWidth: '100%',
+      maxHeight: '700px',
+      [theme.breakpoints.down('md')]: {
+        maxHeight: '500px'
+      },
+      [theme.breakpoints.down('sm')]: {
+        maxHeight: '400px'
+      },
+      [theme.breakpoints.down('xs')]: {
+        maxHeight: '300px'
+      }
+    },
+    '& img[title=horizontal]': {
+      maxWidth: '100%',
+      height: 'auto'
+    },
 
-    '& p, & ul': {
+    '& p, & ul, & ol': {
       ...typography.body2,
       marginBottom: 0,
       textAlign: 'justify',
-      width: '100%',
-      maxWidth: 800,
 
       [theme.breakpoints.down('sm')]: {
         ...typography.subtitle2
       }
     },
 
+    '& p': {
+      width: '100%',
+      maxWidth: 800
+    },
+
+    '& ul, & ol': {
+      width: 'calc(100% - 20px)',
+      maxWidth: 780,
+      paddingInlineStart: 20
+    },
+
     '& p strong': {
-      fontWeight: 800
+      fontWeight: 800,
+      color: colors.white.main
     },
 
     '& a': {

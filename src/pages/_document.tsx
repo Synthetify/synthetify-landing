@@ -11,7 +11,6 @@ class MyDocument extends Document {
           <style jsx global>
             {`
               @import url('https://fonts.googleapis.com/css?family=Be+Vietnam:400,500,600,700,800,900');
-
               * {
                 min-width: 0;
                 min-height: 0;
@@ -19,7 +18,7 @@ class MyDocument extends Document {
               }
               body {
                 margin: 0;
-                font-family: 'Be Vietnam';
+                font-family: 'Nunito Sans';
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                 background-color: #0c0d2c;

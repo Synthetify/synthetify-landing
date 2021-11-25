@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   infoBar: {
     alignSelf: 'flex-end',
     width: '100%',
-    height: 74,
+    height: 67,
     backgroundColor: '#1D1D49',
     color: colors.navy.veryLightGrey,
     display: 'flex',
@@ -42,14 +42,15 @@ const useStyles = makeStyles((theme: Theme) => ({
     zIndex: 2,
     position: 'absolute',
     [theme.breakpoints.down('sm')]: {
-      maxHeight: 47
+      maxHeight: 51
     }
   },
   title: {
     ...typography.body1,
     alignSelf: 'flex-start',
-    marginTop: 8,
-    marginLeft: 8,
+    marginTop: 7,
+    marginLeft: 12,
+    marginRight: 12,
     color: colors.navy.veryLightGrey,
     [theme.breakpoints.down('sm')]: {
       ...typography.body3
@@ -59,20 +60,20 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.body4,
     alignSelf: 'baseline',
     textAlign: 'right',
-    width: 'max-content',
+    width: 110,
     justifyContent: 'space-evenly',
-    backgroundColor: colors.navy.lightGrey,
+    backgroundColor: `${colors.navy.navBar}76`,
     color: colors.navy.background,
     zIndex: 2,
     padding: 8,
     display: 'grid',
     borderRadius: '0px 20px',
-    [theme.breakpoints.down('md')]: {
-      width: 160,
-      textAlign: 'right'
+    [theme.breakpoints.down('sm')]: {
+      width: 98
     },
     [theme.breakpoints.down('xs')]: {
-      width: 120
+      ...typography.caption3,
+      width: 73
     }
   },
   image: {
@@ -85,9 +86,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     transition: 'all .5s ease-out'
   },
   desc: {
-    color: colors.navy.veryLightGrey,
-    marginTop: 7,
+    color: colors.navy.navBar,
+    marginTop: 12,
     marginLeft: 7,
+    opacity: 0.75,
     ...typography.body4,
     [theme.breakpoints.down('sm')]: {
       ...typography.caption3

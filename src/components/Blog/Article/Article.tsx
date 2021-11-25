@@ -14,7 +14,7 @@ export const Article: React.FC<DataForArticles> = ({ title, date, image, slug, d
           <div className={classes.aspectRatioBox}>
             <Grid container className={classes.root} justifyContent='space-between'>
               <Typography className={classes.date}>
-                {new Date(date).toLocaleDateString('en-US', { dateStyle: 'long' })}
+                {new Date(date).toLocaleDateString('en-US', { dateStyle: 'medium' })}
               </Typography>
               <CardMedia className={classes.image} alt=' ' src={image} component='img' />
               <Grid item className={classes.infoBar}>

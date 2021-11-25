@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     background: colors.navy.darkGrey
   },
   column: {
-    width: 161,
+    width: 210,
 
     [theme.breakpoints.down('md')]: {
       width: 141
@@ -83,13 +83,13 @@ const useStyles = makeStyles((theme: Theme) => ({
     ...typography.heading4,
     color: colors.navy.veryLightGrey,
     marginBottom: 20,
-
     [theme.breakpoints.down('sm')]: {
-      ...typography.subtitle1,
+      ...typography.body1,
       marginBottom: 15
     },
 
     [theme.breakpoints.down('xs')]: {
+      ...typography.subtitle1,
       marginBottom: 10
     }
   },
@@ -152,7 +152,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       minWidth: 168,
 
       '& a:not(:first-child)': {
-        marginLeft: 16
+        marginLeft: 12
       }
     }
   },
@@ -194,13 +194,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   mark: {
-    [theme.breakpoints.down('md')]: {
-      paddingBlock: 4.5,
-      paddingInline: 6
-    },
-
+    fontFamily: 'Nunito Sans',
+    borderRadius: 6,
+    opacity: 0.7,
     [theme.breakpoints.down('sm')]: {
-      paddingBlock: 4,
+      paddingBottom: 4,
+      paddingTop: 5,
       paddingInline: 5,
       fontSize: 9,
       lineHeight: '9px'
@@ -213,11 +212,12 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
   },
   description: {
-    ...typography.caption1,
+    ...typography.body4,
     color: colors.navy.info,
-
     [theme.breakpoints.down('sm')]: {
-      ...typography.caption3
+      ...typography.caption3,
+      position: 'relative',
+      top: -2
     },
 
     [theme.breakpoints.down('xs')]: {
@@ -247,13 +247,17 @@ const useStyles = makeStyles((theme: Theme) => ({
     '&:hover $link': {
       color: colors.navy.grey
     },
-
     '&:hover $description': {
       color: colors.navy.info
     }
   },
   hideOnSm: {
     [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  },
+  hideOnMd: {
+    [theme.breakpoints.down('md')]: {
       display: 'none'
     }
   }

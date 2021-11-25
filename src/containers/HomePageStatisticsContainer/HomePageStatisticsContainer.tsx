@@ -2,26 +2,18 @@ import React, { useEffect, useState } from 'react'
 import Statistics from '@components/HomePageSections/Statistics/Statistics'
 
 const HomePageStatisticsContainer = () => {
-  const [data, setData] = useState<number[]>([])
+  const [data, setData] = useState<number[]>([0, 0, 0])
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch('https://api.synthetify.io/stats/devnet')
+      await fetch('https://api.synthetify.io/stats/mainnet')
         .then(async response => {
-          const helperVariable = await response.json()
-          helperVariable.reverse()
-          let volume: number = 0
-          let collateral: number = 0
-          let synthetic: number = 0
-          helperVariable.slice(0, 30).map((oneDayData: {volume: number, collateral: number, synthetic: number}, index: number) => {
-            volume += oneDayData.volume
-            collateral += oneDayData.collateral
-            synthetic += oneDayData.synthetic ?? 0
-          })
-          setData([volume, collateral, synthetic])
+          const snapshots = await response.json()
+          const lastSnap = snapshots.at(-1)
+          setData([lastSnap.volume, lastSnap.collateralAll, lastSnap.synthetic])
         })
     }
-    fetchData()
+    fetchData().then(() => {}, () => {})
   }, [])
 
   return (

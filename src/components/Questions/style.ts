@@ -17,10 +17,13 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   question: {
     ...typography.body1,
+    marginBottom: 4,
+
     [theme.breakpoints.down('sm')]: {
       ...typography.subtitle1
     },
     [theme.breakpoints.down('xs')]: {
+      marginBottom: 2,
       ...typography.body3
     }
   },

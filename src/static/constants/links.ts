@@ -2,11 +2,14 @@ export const links = {
   app: {
     main: 'https://app.synthetify.io',
     staking: 'https://app.synthetify.io/staking',
-    exchange: 'https://app.synthetify.io/exchange'
+    exchange: 'https://app.synthetify.io/exchange',
+    stats: 'https://app.synthetify.io/stats'
   },
   docs: 'https://docs.synthetify.io/',
   whitepaper: '/resources/synthetify-whitepaper.pdf',
+  audit: '/resources/audit.pdf',
   privacyPolicy: '/resources/privacy_policy.pdf',
+  tutorial: '/resources/tutorial.pdf',
   socialMedia: {
     twitter: 'https://twitter.com/synthetify',
     linkedin: 'https://www.linkedin.com/company/synthetify',

@@ -3,7 +3,7 @@ import { colors, typography } from '@static/theme'
 
 const useStyles = makeStyles((theme: Theme) => ({
   icon: {
-    marginTop: 9,
+    marginTop: 7,
     marginLeft: 10,
     width: 16,
     height: 16,
@@ -13,8 +13,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     background: colors.navy.component,
     borderRadius: 10,
     marginTop: 13,
-    paddingInline: 24,
-    paddingBlock: 10,
+    padding: 8,
 
     [theme.breakpoints.down('sm')]: {
       marginTop: 24
@@ -25,29 +24,40 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: colors.navy.grey
   },
   listItem: {
-    borderRadius: 10,
-    paddingBlock: 8,
-    paddingInline: 8,
-    minWidth: 175,
-    marginBottom: 5,
+    borderRadius: 8,
+    padding: '3px 8px 0 8px',
+    minWidth: 158,
+    height: 61,
     cursor: 'pointer',
+
+    '&:hover': {
+      backgroundColor: colors.navy.navButton
+    },
+
+    'a:not(:last-child) &': {
+      marginBottom: 4
+    },
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
-      ...typography.body1
+      ...typography.body1,
+      lineHeight: '34px'
     },
 
     '&:hover $description': {
-      color: colors.navy['8584D2']
+      color: '#9D9CEE',
+      lineHeight: '14px'
     },
 
     '&:hover $icon': {
-      opacity: 1
+      opacity: 1,
+      lineHeight: '18px'
     }
   },
   description: {
-    ...typography.caption1,
-    color: colors.navy.info
+    ...typography.body4,
+    color: colors.navy.info,
+    lineHeight: '18px'
   },
   paper: {
     background: 'transparent',

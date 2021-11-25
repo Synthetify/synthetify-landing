@@ -4,11 +4,9 @@ import { colors, typography } from '@static/theme'
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     background: colors.navy.component,
-    width: 160,
     borderRadius: 10,
     marginTop: 13,
-    paddingInline: 20,
-    paddingBlock: 10,
+    padding: 8,
 
     [theme.breakpoints.down('sm')]: {
       marginTop: 24
@@ -16,37 +14,50 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   name: {
     ...typography.body2,
-    color: colors.navy.grey
+    color: colors.navy.grey,
+    lineHeight: '32px'
   },
   greeting: {
-    ...typography.caption1,
-    color: colors.navy.info
+    ...typography.body4,
+    color: colors.navy.info,
+    lineHeight: '14px'
   },
   listItem: {
-    borderRadius: 10,
-    paddingBlock: 8,
+    borderRadius: 8,
     paddingLeft: 8,
-    minWidth: 122,
-    marginBottom: 5,
+    paddingTop: 2,
+    minWidth: 120,
+    height: 51,
     cursor: 'pointer',
+    '&:hover': {
+      backgroundColor: colors.navy.navButton
+    },
+
+    '&:not(:last-child)': {
+      marginBottom: 4
+    },
 
     '&:hover $name': {
       color: colors.navy.veryLightGrey,
-      ...typography.body1
+      ...typography.body1,
+      lineHeight: '32px'
     },
 
     '&:hover $greeting': {
-      color: colors.navy['8584D2']
+      color: '#9D9CEE',
+      lineHeight: '14px'
     }
   },
   current: {
     '& $name': {
       color: colors.navy.veryLightGrey,
-      ...typography.body1
+      ...typography.body1,
+      lineHeight: '32px'
     },
 
     '& $greeting': {
-      color: colors.navy['8584D2']
+      color: '#9D9CEE',
+      lineHeight: '14px'
     }
   },
   paper: {

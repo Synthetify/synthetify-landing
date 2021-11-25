@@ -32,7 +32,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      posts: posts.sort((a, b) => (new Date(a.date)).getTime() - (new Date(b.date)).getTime())
+      posts: posts.sort((a, b) => (new Date(b.date)).getTime() - (new Date(a.date)).getTime())
     }
   }
 }

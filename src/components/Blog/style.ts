@@ -10,18 +10,18 @@ const useStyles = makeStyles((theme: Theme) => ({
     width: 1615,
     gridTemplateColumns: '1fr 1fr 1fr',
     columnGap: 80,
-    rowGap: 88,
+    rowGap: 41,
     justifyContent: 'center',
     marginBlock: 90,
     marginInline: 'auto',
     [theme.breakpoints.down('lg')]: {
       gridTemplateColumns: '1fr 1fr',
-      width: 1050,
-      rowGap: 97
+      width: 1050
     },
     [theme.breakpoints.down('md')]: {
       width: 'calc(100% - 98px)',
-      columnGap: 38
+      columnGap: 38,
+      rowGap: 27
     },
     [theme.breakpoints.down('sm')]: {
       columnGap: 18,
@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       gridTemplateColumns: '1fr',
-      rowGap: 38,
       justifyContent: 'center',
       width: 'calc(100% - 62px)',
       marginBlock: 40
