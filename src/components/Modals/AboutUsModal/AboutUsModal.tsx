@@ -15,7 +15,6 @@ export interface IAboutUsModal {
 export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleClose, current }) => {
   const classes = useStyles()
   const translate = useTranslate()
-
   return (
     <Popover
       classes={{ paper: classes.paper }}
