@@ -92,8 +92,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
             <Grid
               item
               className={classNames(
-                classes.listItem,
-                current === '/audit' ? classes.current : undefined
+                classes.listItem
               )}
               onClick={() => {
                 handleClose()
