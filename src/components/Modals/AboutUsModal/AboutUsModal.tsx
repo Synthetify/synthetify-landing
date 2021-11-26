@@ -51,7 +51,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               item
               className={classNames(
                 classes.listItem,
-                current === '/faq/' ? classes.current : undefined
+                current === '/faq' ? classes.current : undefined
               )}
               onClick={() => {
                 handleClose()
@@ -72,7 +72,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               item
               className={classNames(
                 classes.listItem,
-                current === '/brand/' ? classes.current : undefined
+                current === '/brand' ? classes.current : undefined
               )}
               onClick={() => {
                 handleClose()
@@ -93,7 +93,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               item
               className={classNames(
                 classes.listItem,
-                current === '/audit/' ? classes.current : undefined
+                current === '/audit' ? classes.current : undefined
               )}
               onClick={() => {
                 handleClose()
@@ -108,26 +108,20 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
           </a>
         </Link>
 
-        <Link href={links.docs} passHref>
-          <a style={{ textDecoration: 'none' }}>
-            <Grid
-              item
-              className={classNames(
-                classes.listItem,
-                current === '/faq/' ? classes.current : undefined
-              )}
-              onClick={() => {
-                handleClose()
-              }}>
-              <Grid className={classes.linkWithMarkWrapper}>
-                <Typography className={classes.name}>{translate('footer.docs')}</Typography>
-              </Grid>
-              <Typography className={classes.description}>
-                {translate('footer.docsDescription')}
-              </Typography>
-            </Grid>
-          </a>
-        </Link>
+        <a href={links.docs} style={{ textDecoration: 'none' }}>
+          <Grid
+            item
+            className={classes.listItem}
+            onClick={() => {
+              handleClose()
+            }}>
+            <Typography className={classes.name}>{translate('footer.docs')}</Typography>
+            <Typography className={classes.description}>
+              {translate('footer.docsDescription')}
+            </Typography>
+          </Grid>
+        </a>
+
       </Grid>
     </Popover>
   )
