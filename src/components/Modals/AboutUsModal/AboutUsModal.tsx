@@ -12,6 +12,7 @@ export interface IAboutUsModal {
   handleClose: () => void
   current?: string
 }
+
 export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleClose, current }) => {
   const classes = useStyles()
   const translate = useTranslate()
