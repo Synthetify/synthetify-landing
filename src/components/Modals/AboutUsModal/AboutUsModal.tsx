@@ -15,7 +15,6 @@ export interface IAboutUsModal {
 export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleClose, current }) => {
   const classes = useStyles()
   const translate = useTranslate()
-
   return (
     <Popover
       classes={{ paper: classes.paper }}
@@ -51,7 +50,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               item
               className={classNames(
                 classes.listItem,
-                current === '/faq/' ? classes.current : undefined
+                current === '/faq' ? classes.current : undefined
               )}
               onClick={() => {
                 handleClose()
@@ -72,7 +71,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
               item
               className={classNames(
                 classes.listItem,
-                current === '/brand/' ? classes.current : undefined
+                current === '/brand' ? classes.current : undefined
               )}
               onClick={() => {
                 handleClose()
@@ -92,8 +91,7 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
             <Grid
               item
               className={classNames(
-                classes.listItem,
-                current === '/audit/' ? classes.current : undefined
+                classes.listItem
               )}
               onClick={() => {
                 handleClose()
@@ -107,21 +105,15 @@ export const AboutUsModal: React.FC<IAboutUsModal> = ({ open, anchorEl, handleCl
             </Grid>
           </a>
         </Link>
-
         <Link href={links.docs} passHref>
           <a style={{ textDecoration: 'none' }}>
             <Grid
               item
-              className={classNames(
-                classes.listItem,
-                current === '/faq/' ? classes.current : undefined
-              )}
+              className={classes.listItem}
               onClick={() => {
                 handleClose()
               }}>
-              <Grid className={classes.linkWithMarkWrapper}>
-                <Typography className={classes.name}>{translate('footer.docs')}</Typography>
-              </Grid>
+              <Typography className={classes.name}>{translate('footer.docs')}</Typography>
               <Typography className={classes.description}>
                 {translate('footer.docsDescription')}
               </Typography>
