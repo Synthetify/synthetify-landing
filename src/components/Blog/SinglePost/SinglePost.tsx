@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Button, CardMedia, Divider, Grid, Tooltip, Typography } from '@material-ui/core'
 import { useTranslate } from '@utils/translations'
 import ReactMarkdown from 'react-markdown'
@@ -15,6 +15,7 @@ interface IProps{
   date: string
 }
 export const SinglePost: React.FC<IProps> = ({ singlePost, title, date }) => {
+  const [isSafari, setIsSafari] = useState(false)
   const classes = useStyles()
   const translate = useTranslate()
 
@@ -26,11 +27,15 @@ export const SinglePost: React.FC<IProps> = ({ singlePost, title, date }) => {
     window.open(`https://twitter.com/share?text=Look, I've found something interesting on Synthetify's blog:&url=${window.location.href.replace('http://', 'https://')}`, '_blank')
   }
 
+  useEffect(() => {
+    setIsSafari(navigator.userAgent.includes('Safari'))
+  }, [])
+
   return (
     <>
       <PageHeader
         title={title}
-        description={(new Date(date)).toLocaleDateString('en-US', { dateStyle: 'long' })}
+        description={(new Date(isSafari ? date.replace(/-/g, '/') : date)).toLocaleDateString('en-US', { dateStyle: 'long' })}
       />
       <Grid container item justifyContent='center' className={classes.mainContainer}>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{singlePost}</ReactMarkdown>
