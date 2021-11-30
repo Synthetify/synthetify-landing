@@ -26,6 +26,7 @@
     "gray-matter": "^4.0.3",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
+    "net": "^1.0.2",
     "next": "^11.1.0",
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
@@ -36,6 +37,7 @@
     "react-markdown": "^7.0.1",
     "remark-gfm": "^2.0.0",
     "storybook-builder-vite": "0.0.12",
+    "tls": "^0.0.1",
     "vite": "^2.3.8"
   },
   "devDependencies": {
