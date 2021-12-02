@@ -98,7 +98,7 @@ export const MenuModal: React.FC<IMenuModal> = ({
           >
             <a style={{ textDecoration: 'none' }}>
               <Grid className={classes.linkWithMarkWrapper}>
-                <Typography className={classNames(classes.name, current === '/blog/' ? classes.current : undefined)}>
+                <Typography className={classNames(classes.name, current === '/blog' ? classes.current : undefined)}>
                   {translate('header.blog')}
                 </Typography>
                 <NewMark className={classes.mark} />
