@@ -14,7 +14,7 @@ Now, to encourage you to use this token, together with Marinade, we decided to i
 **How is it works?**  
 To start participating, you need to deposit $mSOL as a collateral in our app and mint a debt.
 The higher the debt and the amount of $mSOL - the higher the reward.
-Each week we will distribute to you 19,231.00 units of $MNDE - Marinade token 💰  
+Each week we will distribute to you $MNDE - Marinade token 💰  
 We will also automatically send it to your wallet, there will be no need to claim it.
 
 **How are we calculating it?**    
@@ -24,7 +24,7 @@ Which will be calculated from the two values.
 * mSOL balance - amount of your deposited mSOL
 
 **Because of this feature it will be possible to get even two rewards** 🎁🎁  
-First, for participating in the debt and the second one for depositing $mSOL and minting a debt exactly as described above.
+First in $SNY, for participating in the debt and the second one in $MNDE for depositing $mSOL.
 
 
 **About $mSOL and Marinade**  
