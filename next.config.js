@@ -10,12 +10,5 @@ module.exports = withPlugins([[
   trailingSlash: false,
   images: {
     disableStaticImages: true,
-  },
-  redirects: async () => [
-    {
-      source: '/\\?(.*)',
-      destination: '/',
-      permanent: true
-    }
-  ]
+  }
 })
