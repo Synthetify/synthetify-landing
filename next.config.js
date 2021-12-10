@@ -13,7 +13,7 @@ module.exports = withPlugins([[
   },
   redirects: () => [
     {
-      source: '/\\?*',
+      source: '/\\?(.*)',
       destination: '/',
       permanent: false
     }
