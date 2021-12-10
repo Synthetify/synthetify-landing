@@ -15,7 +15,7 @@ module.exports = withPlugins([[
     {
       source: '/\\?(.*)',
       destination: '/',
-      permanent: false
+      permanent: true
     }
   ]
 })
