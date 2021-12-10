@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from '@material-ui/core'
 import { Metatags } from '@components/Metatags/Metatags'
@@ -14,15 +14,6 @@ import './index.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
-
-  useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector('#jss-server-side')
-    // eslint-disable-next-line @typescript-eslint/prefer-optional-chain
-    if (jssStyles !== null && jssStyles.parentElement !== null) {
-      jssStyles.parentElement.removeChild(jssStyles)
-    }
-  }, [])
 
   return (
     <ThemeProvider theme={theme}>

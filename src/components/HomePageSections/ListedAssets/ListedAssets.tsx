@@ -22,7 +22,7 @@ export const ListedAssets: React.FC<IListedAssets> = ({ prices, changes, assetCo
       <Grid className={classes.assets}>
         {Object.entries(prices).map(([symbol, price], index) => (
           <Asset
-            key={`asset${index}`}
+            key={index}
             symbol={symbol}
             price={price}
             change={changes[symbol as ListedAsset]}
