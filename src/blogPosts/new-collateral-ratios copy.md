@@ -37,7 +37,7 @@ For example, consider you deposited 100$ in USDC 💲
 Previously the ratio in liquidation penalty was 5/5.  
 It meant that 5% of the liquidated amount went to the liquidator and another 5% to the protocol.  
 Now, we're changing this ratio to 8/1.
-This means that the liquidated amount will be lower by 1%. Of which 7% will go to the liquidator and 1% to the protocol
+This means that the liquidated amount will be lower by 1%. And 7% of this amount will go to the liquidator and 1% to the protocol.
 
 
 If you'd like to know more about **liquidation**, check out our [blog post about it](https://synthetify.io/blog/liquidation).
