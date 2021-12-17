@@ -1,5 +1,5 @@
 ---
-title: "We introduce new collateral ratio, health factor and liquidation penalty 📈"
+title: "Adjusted collateral ratio, health factor and liquidation penalty 📈"
 date: "2021-12-17 12:00:00"
 description: "We changed the values of collateral ratios, health factor and liquidation penalty."
 image: "/blog/collateral-ratios/2.png"
@@ -7,7 +7,7 @@ image: "/blog/collateral-ratios/2.png"
 ![Collateral ratios thumbnail](/blog/collateral-ratios/1.png "horizontal")
 
 **GM!** 👋  
-We decided to increase the collateral ratio, health factor and change liquidation penalty.
+We decided to increase the collateral ratio, the health factor and change the liquidation penalty.
 
 Now, these values are as follows:  
 💊 Health factor 80% -> **90%**  
@@ -34,7 +34,7 @@ For example, consider you deposited 100$ in USDC 💲
 
 
 **Liquidation penalty**  
-Previously the ratio in liquidation penalty was 5/5.  
+Previously, the ratio in liquidation penalty was 5/5.  
 It meant that 5% of the liquidated amount went to the liquidator and another 5% to the protocol.  
 Now, we're changing this ratio to 8/1.
 This means that the liquidated amount will be lower by 1%. And 7% of this amount will go to the liquidator and 1% to the protocol.
