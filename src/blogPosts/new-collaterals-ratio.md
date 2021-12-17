@@ -25,7 +25,7 @@ Now, these values are as follows:
 
 **What will it change?** 🤔  
 In short, you'll be able to mint more synthetic assets having the same amount of collateral. 🤑
-Also, when you'll be liquidated, you loss less collateral 😎
+Also, when you'll be liquidated, you lose less collateral 😎
 
 **How much exactly?**  
 For example, consider you deposited 100$ in USDC 💲
