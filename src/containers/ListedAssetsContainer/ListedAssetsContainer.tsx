@@ -230,9 +230,9 @@ export const ListedAssetsContainer: React.FC = () => {
     //   name: translate('home.assets.LTC')
     // },
     DOT: {
-      borderHue: 217,
-      borderSaturation: 66,
-      borderLuminosity: 57,
+      borderHue: 328,
+      borderSaturation: 100,
+      borderLuminosity: 68,
       icon: <CardMedia image={DOT} className={classes.DOT} />,
       name: translate('home.assets.DOT')
     },
@@ -258,9 +258,9 @@ export const ListedAssetsContainer: React.FC = () => {
     //   name: translate('home.assets.BNB')
     // },
     LUNA: {
-      borderHue: 43,
-      borderSaturation: 89,
-      borderLuminosity: 57,
+      borderHue: 42,
+      borderSaturation: 100,
+      borderLuminosity: 52,
       icon: <CardMedia image={LUNA} className={classes.LUNA} />,
       name: translate('home.assets.LUNA')
     },
