@@ -84,6 +84,8 @@ const dictionary = {
   'home.assets.FTT': 'FTX Token',
   'home.assets.BNB': 'Binance',
   'home.assets.LTC': 'Litecoin',
+  'home.assets.LUNA': 'Terra',
+  'home.assets.DOT': 'Polkadot',
   'home.assets.SOL': 'Solana',
   'home.assets.SRM': 'Serum',
   'home.assets.USD': 'Dollar',

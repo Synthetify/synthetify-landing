@@ -75,7 +75,7 @@ export const Asset: React.FC<IAsset> = ({
       <Grid container item alignItems='flex-start'>
         {icon}
         <Grid className={classes.tokenWrapper}>
-          <Typography className={classes.token}>{symbol}</Typography>
+          <Typography className={symbol.length > 3 ? classes.longToken : classes.token}>{symbol}</Typography>
           <Typography className={classes.tokenName}>{name}</Typography>
         </Grid>
         <AssetPlot data={ data } />

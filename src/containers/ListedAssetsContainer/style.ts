@@ -29,13 +29,27 @@ const useStyles = makeStyles((theme: Theme) => ({
       height: 39
     }
   },
-  LTC: {
+  // LTC: {
+  //   width: 50,
+  //   height: 50,
+
+  //   [theme.breakpoints.down('md')]: {
+  //     width: 46,
+  //     height: 46
+  //   },
+
+  //   [theme.breakpoints.down('xs')]: {
+  //     width: 43,
+  //     height: 43
+  //   }
+  // },
+  DOT: {
     width: 50,
     height: 50,
 
     [theme.breakpoints.down('md')]: {
-      width: 46,
-      height: 46
+      width: 43,
+      height: 43
     },
 
     [theme.breakpoints.down('xs')]: {
@@ -71,9 +85,23 @@ const useStyles = makeStyles((theme: Theme) => ({
       height: 40
     }
   },
-  BNB: {
-    width: 53,
-    height: 53,
+  // BNB: {
+  //   width: 53,
+  //   height: 53,
+
+  //   [theme.breakpoints.down('md')]: {
+  //     width: 44,
+  //     height: 44
+  //   },
+
+  //   [theme.breakpoints.down('xs')]: {
+  //     width: 41,
+  //     height: 41
+  //   }
+  // },
+  LUNA: {
+    width: 50,
+    height: 50,
 
     [theme.breakpoints.down('md')]: {
       width: 44,

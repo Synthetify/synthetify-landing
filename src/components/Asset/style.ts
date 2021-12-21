@@ -45,6 +45,15 @@ const useStyles = makeStyles((theme: Theme) => ({
       ...typography.heading4
     }
   },
+  longToken: {
+    ...typography.heading3,
+    color: colors.navy.veryLightGrey,
+
+    [theme.breakpoints.down('md')]: {
+      ...typography.heading4,
+      fontSize: 20
+    }
+  },
   tokenName: {
     ...typography.body4,
     color: colors.navy.info,
