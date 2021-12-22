@@ -71,9 +71,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     [theme.breakpoints.down('xs')]: {
-      width: 338,
-      columnGap: 10,
-      rowGap: 10
+      columnGap: 8,
+      rowGap: 8
     }
   }
 }))
