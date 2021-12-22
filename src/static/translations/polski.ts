@@ -139,14 +139,14 @@ const dictionary = {
     'Obecna podaż w obiegu wynosi 5,625,000 SNY. Możesz sprawdzić aktualną kapitalizację rynkową na stronach takich jak: CoinMarketCap lub Coingecko.',
     'IDO odbyło się 29 i 30 czerwca 2021 r.'
   ],
-  'footer.blogTitle1': '$mSOL',
-  'footer.blogDescription1': 'Nowy token zabezpieczający',
-  'footer.blogTitle2': 'Współpraca z Chainlink',
-  'footer.blogDescription2': 'Z dumą ogłaszamy początek naszej współpracy z Chainlink',
-  'footer.blogTitle3': 'Nowe collateral ratio',
-  'footer.blogDescription3': 'Podnieśliśmy collateral ratio dla większości tokenów',
-  'footer.blogTitle4': 'Tokenomics',
-  'footer.blogDescription4': 'Informacje o $SNY'
+  'footer.blogTitle1': 'xDOT nowym syntetycznym tokenem',
+  'footer.blogDescription1': 'Syntetyczna Polkadot już dostępna',
+  'footer.blogTitle2': 'Zmiana kluczowych parametrów',
+  'footer.blogDescription2': 'Zmieniliśmy wartości collateral ratios, health factor oraz liquidation penalty.',
+  'footer.blogTitle3': 'xLUNA nowym syntetycznym tokenem',
+  'footer.blogDescription3': 'Syntetyczna LUNA już dostępna',
+  'footer.blogTitle4': 'Dodatkowe nagrody',
+  'footer.blogDescription4': 'Od teraz, możesz otrzymywać dodatkowe nagrody, za używanie $mSOL'
 }
 
 export default dictionary
