@@ -139,14 +139,14 @@ const dictionary = {
     'Current circulating supply is 5,625,000 SNY. You can check the current market cap on sites like: CoinMarketCap or Coingecko.',
     'The IDO took place on 29th and 30th June 2021.'
   ],
-  'footer.blogTitle1': '$mSOL',
-  'footer.blogDescription1': 'New collateral token',
-  'footer.blogTitle2': 'Collaboration with Chainlink',
-  'footer.blogDescription2': 'We announce collaboration with Chainlink',
-  'footer.blogTitle3': 'New collateral ratios',
-  'footer.blogDescription3': 'We raised collateral ratio for most of the tokens',
-  'footer.blogTitle4': 'Tokenomics',
-  'footer.blogDescription4': 'Everything about $SNY'
+  'footer.blogTitle1': 'xDOT is our new synthetic token',
+  'footer.blogDescription1': 'Synthetic Polkadot is now available',
+  'footer.blogTitle2': 'Adjusted main parameters',
+  'footer.blogDescription2': 'We changed the values of collateral ratios, health factor and liquidation penalty.',
+  'footer.blogTitle3': 'xLUNA is our new synthetic token',
+  'footer.blogDescription3': 'Synthetic LUNA is now available',
+  'footer.blogTitle4': 'Extra rewards',
+  'footer.blogDescription4': 'From now you can receive extra rewards for using $mSOL'
 }
 
 export default dictionary
