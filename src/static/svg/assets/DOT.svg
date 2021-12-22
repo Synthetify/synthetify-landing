@@ -4,17 +4,13 @@
 <svg
    width="1920"
    height="1920"
-   viewBox="0 0 508 508.00001"
+   viewBox="0 0 507.99999 508.00001"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    sodipodi:docname="DOT.svg"
-   inkscape:export-filename="C:\Users\Aga\Desktop\Luna.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -27,342 +23,197 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.32"
-     inkscape:cx="562.5"
-     inkscape:cy="940.625"
+     units="px"
+     inkscape:zoom="0.33540614"
+     inkscape:cx="44.7219"
+     inkscape:cy="748.34646"
      inkscape:window-width="2560"
      inkscape:window-height="1346"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer10"
-     width="1920px"
-     units="px"
-     showguides="false" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2">
-    <rect
-       id="SVGID_1_"
-       width="24"
-       height="24"
-       x="0"
-       y="0" />
-    <defs
-       id="defs13128">
-      <rect
-         id="rect13177"
-         width="24"
-         height="24"
-         x="0"
-         y="0" />
-    </defs>
-    <clipPath
-       id="SVGID_2_">
-      <use
-         xlink:href="#SVGID_1_"
-         style="overflow:visible"
-         id="use13130"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-    </clipPath>
-    <linearGradient
-       id="SVGID_3_"
-       gradientUnits="userSpaceOnUse"
-       x1="20.644199"
-       y1="1011.5057"
-       x2="24.3328"
-       y2="998.83948"
-       gradientTransform="matrix(5.2106239,0,0,-5.2106239,694.79015,4518.4303)">
-      <stop
-         offset="0"
-         style="stop-color:#03B8FF"
-         id="stop13133" />
-      <stop
-         offset="1"
-         style="stop-color:#FA52A0"
-         id="stop13135" />
-    </linearGradient>
-    <linearGradient
-       id="SVGID_4_"
-       gradientUnits="userSpaceOnUse"
-       x1="23.681801"
-       y1="1012.3904"
-       x2="27.370501"
-       y2="999.72412"
-       gradientTransform="matrix(1.3786443,0,0,-1.3786443,183.8299,1195.5014)">
-      <stop
-         offset="0"
-         style="stop-color:#03B8FF"
-         id="stop13140" />
-      <stop
-         offset="1"
-         style="stop-color:#FA52A0"
-         id="stop13142" />
-    </linearGradient>
-    <linearGradient
-       id="SVGID_5_"
-       gradientUnits="userSpaceOnUse"
-       x1="17.615999"
-       y1="1010.6239"
-       x2="21.304701"
-       y2="997.95758"
-       gradientTransform="matrix(1.3786443,0,0,-1.3786443,183.8299,1195.5014)">
-      <stop
-         offset="0"
-         style="stop-color:#03B8FF"
-         id="stop13147" />
-      <stop
-         offset="1"
-         style="stop-color:#FA52A0"
-         id="stop13149" />
-    </linearGradient>
-    <rect
-       id="SVGID_1_-5"
-       width="800"
-       height="800"
-       x="0"
-       y="0" />
     <filter
        style="color-interpolation-filters:sRGB"
-       id="filter5855"
+       id="filter2929"
        inkscape:label="filtr0"
-       x="-0.46992717"
-       y="-0.3611139"
-       width="1.9398543"
-       height="1.7222278">
+       x="-0.19278186"
+       y="-0.18126309"
+       width="1.3855637"
+       height="1.3625262">
       <feGaussianBlur
-         stdDeviation="45.197788461538458"
-         id="feGaussianBlur5861" />
+         stdDeviation="97.836754807692301"
+         id="feGaussianBlur2933" />
       <feBlend
          mode="normal"
          in2="SourceGraphic"
-         id="feBlend5857" />
+         id="feBlend2931" />
     </filter>
-    <filter
-       style="color-interpolation-filters:sRGB"
-       id="filter5859"
-       inkscape:label="filtr1" />
   </defs>
   <g
+     inkscape:label="Warstwa 1"
      inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="BLACK"
-     style="display:inline;opacity:1" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer7"
-     inkscape:label="Z jasny"
-     style="display:inline;opacity:1" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer9"
-     inkscape:label="Z ciemny"
-     style="display:inline;opacity:1" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="Logo"
-     style="display:inline" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer10"
-     inkscape:label="Logo 1">
+     id="layer1">
     <g
-       id="g1780"
-       transform="matrix(0.71064071,0,0,0.71064071,28.384204,-387.80212)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86">
+       id="g881"
+       transform="matrix(0.26458333,0,0,0.26458333,0.00377736,-4.8744425e-6)"
+       style="fill:#e6007a;fill-opacity:1;filter:url(#filter2929)">
       <g
-         id="g6059" />
-    </g>
-    <g
-       id="g6063"
-       transform="matrix(0.60686307,0,0,0.60686307,-27.855055,-148.08249)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6053"
-       transform="matrix(0.60686307,0,0,0.60686307,232.36338,-487.80841)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6049"
-       transform="matrix(0.60686307,0,0,0.60686307,-171.45989,-245.61329)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6045"
-       transform="matrix(0.60686307,0,0,0.60686307,3.3507054,-409.95146)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6033"
-       transform="matrix(0.60686307,0,0,0.60686307,40.254264,-474.55765)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6037"
-       transform="matrix(0.60686307,0,0,0.60686307,-96.677492,-143.55345)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6041"
-       transform="matrix(0.60686307,0,0,0.60686307,98.491999,-384.19358)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g1780-6"
-       transform="matrix(0.71064071,0,0,0.71064071,149.65987,-201.67739)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86">
+         id="Warstwa_2"
+         style="fill:#e6007a;fill-opacity:1">
+	
+</g>
       <g
-         id="g6059-3" />
-    </g>
-    <g
-       id="g6063-1"
-       transform="matrix(0.60686307,0,0,0.60686307,184.34003,-487.79899)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6053-8"
-       transform="matrix(0.60686307,0,0,0.60686307,-9.2876323,-143.60682)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6049-2"
-       transform="matrix(0.60686307,0,0,0.60686307,312.42334,-280.31705)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6045-8"
-       transform="matrix(0.60686307,0,0,0.60686307,222.59742,-133.49877)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g6033-9"
-       transform="matrix(0.60686307,0,0,0.60686307,-74.954381,-227.88872)"
-       inkscape:export-filename="C:\Users\Aga\Desktop\MERCH\zielony bialy.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86" />
-    <g
-       id="g1038"
-       style="fill:#00b398;fill-opacity:1"
-       transform="matrix(0.60686307,0,0,0.60686307,-222.09198,262.39927)">
-      <g
-         id="g919"
-         style="fill:#00b398;fill-opacity:1" />
-    </g>
-    <g
-       transform="matrix(1.1526361,0,0,1.1526361,-370.45034,-1275.573)"
-       id="g2995"
-       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
-      <g
-         id="g2993">
-        <g
-           id="g2991" />
-      </g>
-    </g>
-    <g
-       id="g30492"
-       transform="matrix(0.03120412,0,0,0.03120412,185.81934,473.95951)">
-      <circle
-         class="st0"
-         cx="1551.1"
-         cy="1145.8"
-         r="1000"
-         id="circle30471"
-         clip-path="url(#SVGID_2_)" />
-      <g
-         id="g30477" />
-    </g>
-    <g
-       id="g52180"
-       transform="translate(-0.650825,-0.441295)" />
-    <g
-       inkscape:export-filename="C:\Users\Aga\Desktop\polka.png"
-       inkscape:export-xdpi="86"
-       inkscape:export-ydpi="86"
-       id="g6050"
-       style="fill:#e8047d;fill-opacity:1;filter:url(#filter5855)">
-      <g
-         inkscape:label="Warstwa 1"
-         id="layer1-0"
-         style="display:inline;fill:#e8047d;fill-opacity:1" />
-      <g
-         id="layer2-0"
-         inkscape:label="Warstwa 2"
-         style="display:inline;fill:#e8047d;fill-opacity:1">
-        <g
-           id="g2692"
-           style="fill:#e8047d;fill-opacity:1"
-           transform="matrix(5.3039201,0,0,5.3039201,-382.00358,-212.69223)">
-          <path
-             style="fill:#e8047d;fill-opacity:1;stroke-width:0.0846667"
-             d="m 104.80616,113.51724 c -0.1128,-0.94349 0.50255,-3.39919 3.45535,-17.179064 2.30155,-10.740656 3.55107,-16.405274 3.68287,-16.695971 0.49439,-1.489136 2.16286,-1.991451 3.63194,-1.675559 1.40765,0.337475 2.20446,1.788422 2.05277,2.717006 -0.0822,0.542 -0.0855,1.184925 -1.36392,7.060857 -1.59108,7.313078 -1.99112,9.219209 -1.99112,9.487238 0,0.215906 10e-4,0.215851 1.94733,-0.08012 0.62865,-0.09561 2.19018,-0.251932 3.47007,-0.347379 2.5895,-0.193109 3.84922,-0.407111 5.25554,-0.892813 6.19275,-2.138804 10.38781,-7.748239 10.63497,-14.220596 0.14832,-3.884121 -1.02829,-7.449699 -3.44858,-10.4505 -3.01699,-3.74063 -7.41943,-5.844731 -12.229,-5.844731 -4.04564,0 -7.6536,1.416807 -10.694,4.199408 -2.8995,2.653657 -4.79324,6.611526 -4.99758,10.444823 -0.10677,2.002873 0.10269,3.846829 0.62465,5.499144 0.53758,1.787623 0.3232,3.709706 -1.3902,4.384659 -2.61554,0.911693 -3.923768,-0.849229 -4.425907,-2.54638 -0.62678,-2.174038 -0.86778,-3.925272 -0.86995,-6.321423 -0.002,-2.530656 0.2684,-4.35575 0.97318,-6.561667 2.668027,-8.350775 9.931337,-14.235365 18.660407,-15.11829 1.92745,-0.194957 4.87409,-0.02248 6.76919,0.39623 5.0568,1.117262 9.64873,4.070161 12.75571,8.202727 3.60083,4.789423 5.06136,10.855518 4.04892,16.816591 -0.73453,4.324749 -2.87749,8.464365 -6.00103,11.592311 -1.70703,1.709447 -3.39336,2.953735 -5.44063,4.014469 -2.8831,1.4938 -5.45893,2.17148 -9.33544,2.45605 -1.02446,0.0752 -2.19222,0.19176 -2.595,0.25902 -2.65762,0.44375 -4.94966,2.30407 -5.91418,4.80018 -0.13106,0.33919 -0.49191,1.79781 -0.80188,3.24138 -0.30996,1.44357 -0.62513,2.79105 -0.70037,2.9944 -0.25893,0.9822 -1.11785,1.74645 -2.25962,1.78194 -1.6995,-0.0331 -3.33368,-0.40122 -3.50449,-2.41394 z"
-             id="path836"
-             sodipodi:nodetypes="cscccssssssssssccccsssssssscssccc" />
-          <circle
-             style="fill:#e8047d;fill-opacity:1;stroke:none;stroke-width:0.804138;stop-color:#000000"
-             id="path958"
-             cx="120.69341"
-             cy="112.98883"
-             r="3.6954074" />
-        </g>
-      </g>
+         id="svg5-5"
+         inkscape:export-xdpi="86"
+         inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+         style="fill:#e6007a;fill-opacity:1">
+	
+		<sodipodi:namedview
+   bordercolor="#666666"
+   borderopacity="1.0"
+   id="namedview7-8"
+   inkscape:current-layer="layer10"
+   inkscape:cx="3456"
+   inkscape:cy="840"
+   inkscape:document-units="mm"
+   inkscape:pagecheckerboard="0"
+   inkscape:pageopacity="0.0"
+   inkscape:pageshadow="2"
+   inkscape:window-height="1346"
+   inkscape:window-maximized="1"
+   inkscape:window-width="2560"
+   inkscape:window-x="-11"
+   inkscape:window-y="-11"
+   inkscape:zoom="0.125"
+   pagecolor="#ffffff"
+   showgrid="false"
+   showguides="false"
+   units="px"
+   width="1920px">
+		</sodipodi:namedview>
+
+	<g
+   id="layer2"
+   inkscape:groupmode="layer"
+   inkscape:label="BLACK"
+   style="fill:#e6007a;fill-opacity:1">
+	</g>
+
+	<g
+   id="layer7"
+   inkscape:groupmode="layer"
+   inkscape:label="Z jasny"
+   style="fill:#e6007a;fill-opacity:1">
+	</g>
+
+	<g
+   id="layer9"
+   inkscape:groupmode="layer"
+   inkscape:label="Z ciemny"
+   style="fill:#e6007a;fill-opacity:1">
+	</g>
+
+	<g
+   id="layer5"
+   inkscape:groupmode="layer"
+   inkscape:label="Logo"
+   style="fill:#e6007a;fill-opacity:1">
+	</g>
+
+	<g
+   id="layer1-4"
+   inkscape:groupmode="layer"
+   inkscape:label="Logo 2"
+   style="fill:#e6007a;fill-opacity:1">
+		<g
+   id="g9563"
+   transform="translate(100.93434,113.37573)"
+   style="fill:#e6007a;fill-opacity:1">
+		</g>
+
+	</g>
+
+	<g
+   id="g853"
+   style="fill:#e6007a;fill-opacity:1">
+		<g
+   id="g839"
+   style="fill:#e6007a;fill-opacity:1">
+			<ellipse
+   cx="960"
+   cy="447.70001"
+   rx="233"
+   ry="135.39999"
+   id="ellipse835"
+   style="fill:#e6007a;fill-opacity:1" />
+
+			<ellipse
+   cx="960"
+   cy="1472.3"
+   rx="233"
+   ry="135.39999"
+   id="ellipse837"
+   style="fill:#e6007a;fill-opacity:1" />
+
+		</g>
+
+		<g
+   id="g845"
+   style="fill:#e6007a;fill-opacity:1">
+			<ellipse
+   transform="matrix(0.4999,-0.8661,0.8661,0.4999,-351.4258,799.1625)"
+   cx="516.29999"
+   cy="703.90002"
+   rx="233"
+   ry="135.39999"
+   id="ellipse841"
+   style="fill:#e6007a;fill-opacity:1" />
+
+			<ellipse
+   transform="matrix(0.4999,-0.8661,0.8661,0.4999,-351.2731,1823.8669)"
+   cx="1403.7"
+   cy="1216.1"
+   rx="233"
+   ry="135.39999"
+   id="ellipse843"
+   style="fill:#e6007a;fill-opacity:1" />
+
+		</g>
+
+		<g
+   id="g851"
+   style="fill:#e6007a;fill-opacity:1">
+			<ellipse
+   transform="matrix(0.8662,-0.4997,0.4997,0.8662,-538.6067,420.7242)"
+   cx="516.29999"
+   cy="1216"
+   rx="135.39999"
+   ry="233"
+   id="ellipse847"
+   style="fill:#e6007a;fill-opacity:1" />
+
+			<ellipse
+   transform="matrix(0.8662,-0.4997,0.4997,0.8662,-163.9507,795.7184)"
+   cx="1403.7"
+   cy="704"
+   rx="135.39999"
+   ry="233"
+   id="ellipse849"
+   style="fill:#e6007a;fill-opacity:1" />
+
+		</g>
+
+	</g>
+
+</g>
     </g>
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="Logo 2">
-    <g
-       id="g9563"
-       transform="translate(100.93434,113.37573)" />
-  </g>
   <style
      type="text/css"
-     id="style10738">
-	.st0{fill:#FF007A;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FF007A;}
-</style>
-  <style
-     type="text/css"
-     id="style13125">
-	.st0{clip-path:url(#SVGID_2_);}
-	.st1{fill:url(#SVGID_3_);}
-	.st2{fill:url(#SVGID_4_);}
-	.st3{fill:url(#SVGID_5_);}
-	.st4{fill:#0E0F23;}
-	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-	.st6{fill:#FFFFFF;}
-</style>
-  <style
-     type="text/css"
-     id="style30469">
-	.st0{fill:#172852;}
-	.st1{fill:#FFD83D;}
-	.st2{fill:#FF6F03;}
-</style>
-  <style
-     type="text/css"
-     id="style33438">
-	.st0{clip-path:url(#SVGID_2_);}
-	.st1{fill:url(#SVGID_3_);}
-	.st2{fill:#FFFFFF;}
+     id="style824">
+	.st0{fill:#00B398;}
 </style>
 </svg>
