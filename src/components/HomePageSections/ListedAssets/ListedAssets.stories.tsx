@@ -10,7 +10,7 @@ import ETH from '@static/svg/assets/ETH.svg'
 import LUNA from '@static/svg/assets/LUNA.svg'
 import FTT from '@static/svg/assets/FTT.svg'
 import SOL from '@static/svg/assets/SOL.svg'
-import SRM from '@static/svg/assets/SRM.svg'
+import AVAX from '@static/svg/assets/AVAX.svg'
 import USD from '@static/svg/assets/USD.svg'
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -80,12 +80,12 @@ storiesOf('ListedAssets', module)
               icon: <CardMedia image={LUNA} className={classes.icon} />,
               name: 'LUNA'
             },
-            SRM: {
+            AVAX: {
               borderHue: 186,
               borderSaturation: 75,
               borderLuminosity: 67,
-              icon: <CardMedia image={SRM} className={classes.icon} />,
-              name: 'SRM'
+              icon: <CardMedia image={AVAX} className={classes.icon} />,
+              name: 'AVAX'
             },
             USD: {
               borderHue: 233,
@@ -102,7 +102,7 @@ storiesOf('ListedAssets', module)
             SOL: 0,
             FTT: 0,
             LUNA: 0,
-            SRM: 0,
+            AVAX: 0,
             USD: 0
           }}
           prices={{
@@ -112,7 +112,7 @@ storiesOf('ListedAssets', module)
             SOL: 0,
             FTT: 0,
             LUNA: 0,
-            SRM: 0,
+            AVAX: 0,
             USD: 1
           }}
           data={{
@@ -140,7 +140,7 @@ storiesOf('ListedAssets', module)
               { x: 0, y: 1 },
               { x: 1, y: 1 }
             ],
-            SRM: [
+            AVAX: [
               { x: 0, y: 1 },
               { x: 1, y: 1 }
             ],
