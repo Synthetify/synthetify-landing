@@ -5,8 +5,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: '44px',
     width: '96px',
     [theme.breakpoints.down('md')]: {
-      width: '33%',
-      height: '35px'
+      width: 56,
+      height: 28
     }
   }
 }))

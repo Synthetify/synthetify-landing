@@ -24,17 +24,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('md')]: {
       width: 174,
       height: 92,
-      borderRadius: 6,
-      paddingBlock: 9,
-      paddingInline: 9
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 164,
-      height: 87,
-      borderRadius: 6,
-      paddingBottom: 12,
-      paddingInline: 8
+      paddingTop: 12,
+      paddingInline: 9,
+      paddingBottom: 3
     }
   },
   token: {
@@ -43,6 +35,15 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     [theme.breakpoints.down('md')]: {
       ...typography.heading4
+    }
+  },
+  longToken: {
+    ...typography.heading3,
+    color: colors.navy.veryLightGrey,
+
+    [theme.breakpoints.down('md')]: {
+      ...typography.heading4,
+      fontSize: 20
     }
   },
   tokenName: {
@@ -91,9 +92,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexDirection: 'row',
     alignItems: 'center',
     flexWrap: 'nowrap'
-  },
-  tokenWrapper: {
-    marginLeft: 3
   }
 }))
 
