@@ -19,15 +19,6 @@ const useStyles = makeStyles((theme: Theme) => ({
       height: 42
     }
   },
-  // LTC: {
-  //   width: 50,
-  //   height: 50,
-
-  //   [theme.breakpoints.down('md')]: {
-  //     width: 46,
-  //     height: 46
-  //   }
-  // },
   DOT: {
     width: 50,
     height: 50,
@@ -55,15 +46,6 @@ const useStyles = makeStyles((theme: Theme) => ({
       height: 41
     }
   },
-  // BNB: {
-  //   width: 53,
-  //   height: 53,
-
-  //   [theme.breakpoints.down('md')]: {
-  //     width: 44,
-  //     height: 44
-  //   }
-  // },
   LUNA: {
     width: 50,
     height: 50,
@@ -73,13 +55,13 @@ const useStyles = makeStyles((theme: Theme) => ({
       height: 39
     }
   },
-  SRM: {
+  AVAX: {
     width: 50,
     height: 50,
 
     [theme.breakpoints.down('md')]: {
-      width: 42,
-      height: 42
+      width: 40,
+      height: 40
     }
   },
   USD: {

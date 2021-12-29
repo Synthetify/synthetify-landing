@@ -88,6 +88,7 @@ const dictionary = {
   'home.assets.DOT': 'Polkadot',
   'home.assets.SOL': 'Solana',
   'home.assets.SRM': 'Serum',
+  'home.assets.AVAX': 'Avalanche',
   'home.assets.USD': 'Dolar',
   'brand.title': 'Logo',
   'brand.description': 'Zasoby Synthetify',
