@@ -84,8 +84,11 @@ const dictionary = {
   'home.assets.FTT': 'FTX Token',
   'home.assets.BNB': 'Binance',
   'home.assets.LTC': 'Litecoin',
+  'home.assets.LUNA': 'Terra',
+  'home.assets.DOT': 'Polkadot',
   'home.assets.SOL': 'Solana',
   'home.assets.SRM': 'Serum',
+  'home.assets.AVAX': 'Avalanche',
   'home.assets.USD': 'Dollar',
   'brand.title': 'Brand',
   'brand.description': "Synthetify's resources",
@@ -139,14 +142,14 @@ const dictionary = {
     'Current circulating supply is 5,625,000 SNY. You can check the current market cap on sites like: CoinMarketCap or Coingecko.',
     'The IDO took place on 29th and 30th June 2021.'
   ],
-  'footer.blogTitle1': 'xDOT is our new synthetic token',
-  'footer.blogDescription1': 'Synthetic Polkadot is now available',
-  'footer.blogTitle2': 'Adjusted main parameters',
-  'footer.blogDescription2': 'We changed the values of collateral ratios, health factor and liquidation penalty.',
-  'footer.blogTitle3': 'xLUNA is our new synthetic token',
-  'footer.blogDescription3': 'Synthetic LUNA is now available',
-  'footer.blogTitle4': 'Extra rewards',
-  'footer.blogDescription4': 'From now you can receive extra rewards for using $mSOL'
+  'footer.blogTitle1': 'xAVAX is our new synthetic token',
+  'footer.blogDescription1': 'Synthetic Avalanche is now available',
+  'footer.blogTitle2': 'xDOT is our new synthetic token',
+  'footer.blogDescription2': 'Synthetic Polkadot is now available',
+  'footer.blogTitle3': 'Adjusted main parameters',
+  'footer.blogDescription3': 'We changed the values of collateral ratios, health factor and liquidation penalty.',
+  'footer.blogTitle4': 'xLUNA is our new synthetic token',
+  'footer.blogDescription4': 'Synthetic LUNA is now available'
 }
 
 export default dictionary

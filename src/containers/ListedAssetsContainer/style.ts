@@ -8,11 +8,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('md')]: {
       width: 41,
       height: 41
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 39,
-      height: 39
     }
   },
   ETH: {
@@ -22,23 +17,13 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('md')]: {
       width: 42,
       height: 42
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 39,
-      height: 39
     }
   },
-  LTC: {
+  DOT: {
     width: 50,
     height: 50,
 
     [theme.breakpoints.down('md')]: {
-      width: 46,
-      height: 46
-    },
-
-    [theme.breakpoints.down('xs')]: {
       width: 43,
       height: 43
     }
@@ -50,11 +35,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('md')]: {
       width: 42,
       height: 42
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 40,
-      height: 40
     }
   },
   FTT: {
@@ -64,37 +44,22 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('md')]: {
       width: 41,
       height: 41
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 40,
-      height: 40
     }
   },
-  BNB: {
-    width: 53,
-    height: 53,
-
-    [theme.breakpoints.down('md')]: {
-      width: 44,
-      height: 44
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 41,
-      height: 41
-    }
-  },
-  SRM: {
+  LUNA: {
     width: 50,
     height: 50,
 
     [theme.breakpoints.down('md')]: {
-      width: 42,
-      height: 42
-    },
+      width: 39,
+      height: 39
+    }
+  },
+  AVAX: {
+    width: 50,
+    height: 50,
 
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('md')]: {
       width: 40,
       height: 40
     }
@@ -106,11 +71,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down('md')]: {
       width: 42,
       height: 42
-    },
-
-    [theme.breakpoints.down('xs')]: {
-      width: 40,
-      height: 40
     }
   }
 }))

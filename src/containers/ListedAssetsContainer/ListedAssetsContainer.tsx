@@ -3,13 +3,13 @@ import { CardMedia } from '@material-ui/core'
 import { ListedAsset, assetsAccounts } from '@static/constants/assets'
 import Binance, { DailyStatsResult } from 'binance-api-node'
 import { parsePriceData } from '@pythnetwork/client'
-import BNB from '@static/svg/assets/BNB.svg'
+import LUNA from '@static/svg/assets/LUNA.svg'
 import BTC from '@static/svg/assets/BTC.svg'
 import ETH from '@static/svg/assets/ETH.svg'
-import LTC from '@static/svg/assets/LTC.svg'
+import DOT from '@static/svg/assets/DOT.svg'
 import FTT from '@static/svg/assets/FTT.svg'
 import SOL from '@static/svg/assets/SOL.svg'
-import SRM from '@static/svg/assets/SRM.svg'
+import AVAX from '@static/svg/assets/AVAX.svg'
 import USD from '@static/svg/assets/USD.svg'
 import ListedAssets from '@components/HomePageSections/ListedAssets/ListedAssets'
 import { getConnection } from '@utils/web3'
@@ -29,7 +29,7 @@ export const ListedAssetsContainer: React.FC = () => {
       { x: firstTimestamp, y: 1 },
       { x: firstTimestamp + 1, y: 1 }
     ],
-    LTC: [
+    DOT: [
       { x: firstTimestamp, y: 1 },
       { x: firstTimestamp + 1, y: 1 }
     ],
@@ -41,11 +41,11 @@ export const ListedAssetsContainer: React.FC = () => {
       { x: firstTimestamp, y: 1 },
       { x: firstTimestamp + 1, y: 1 }
     ],
-    BNB: [
+    LUNA: [
       { x: firstTimestamp, y: 1 },
       { x: firstTimestamp + 1, y: 1 }
     ],
-    SRM: [
+    AVAX: [
       { x: firstTimestamp, y: 1 },
       { x: firstTimestamp + 1, y: 1 }
     ],
@@ -58,33 +58,33 @@ export const ListedAssetsContainer: React.FC = () => {
   const [prices, setPrices] = useState<{ [key in ListedAsset]: number }>({
     BTC: 0,
     ETH: 0,
-    LTC: 0,
+    DOT: 0,
     SOL: 0,
     FTT: 0,
-    BNB: 0,
-    SRM: 0,
+    LUNA: 0,
+    AVAX: 0,
     USD: 1
   })
 
   const tmpPrices = useRef<{ [key in ListedAsset]: number }>({
     BTC: 0,
     ETH: 0,
-    LTC: 0,
+    DOT: 0,
     SOL: 0,
     FTT: 0,
-    BNB: 0,
-    SRM: 0,
+    LUNA: 0,
+    AVAX: 0,
     USD: 1
   })
 
   const [changes, setChanges] = useState<{ [key in ListedAsset]: number }>({
     BTC: 0,
     ETH: 0,
-    LTC: 0,
+    DOT: 0,
     SOL: 0,
     FTT: 0,
-    BNB: 0,
-    SRM: 0,
+    LUNA: 0,
+    AVAX: 0,
     USD: 0
   })
 
@@ -98,11 +98,11 @@ export const ListedAssetsContainer: React.FC = () => {
     const binanceSymbols = {
       BTC: 'BTCUSDT',
       ETH: 'ETHUSDT',
-      LTC: 'LTCUSDT',
+      DOT: 'DOTUSDT',
       SOL: 'SOLUSDT',
       FTT: 'FTTUSDT',
-      BNB: 'BNBUSDT',
-      SRM: 'SRMUSDT'
+      LUNA: 'LUNAUSDT',
+      AVAX: 'AVAXUSDT'
     }
 
     const connectEvents = () => {
@@ -122,11 +122,11 @@ export const ListedAssetsContainer: React.FC = () => {
       const tmpChanges: { [key in ListedAsset]: number } = {
         BTC: 0,
         ETH: 0,
-        LTC: 0,
+        DOT: 0,
         SOL: 0,
         FTT: 0,
-        BNB: 0,
-        SRM: 0,
+        LUNA: 0,
+        AVAX: 0,
         USD: 0
       }
       const tmpData: { [key in ListedAsset]: Array<{ x: number, y: number }> } = {
@@ -138,7 +138,7 @@ export const ListedAssetsContainer: React.FC = () => {
           { x: firstTimestamp, y: 1 },
           { x: firstTimestamp + 1, y: 1 }
         ],
-        LTC: [
+        DOT: [
           { x: firstTimestamp, y: 1 },
           { x: firstTimestamp + 1, y: 1 }
         ],
@@ -150,11 +150,11 @@ export const ListedAssetsContainer: React.FC = () => {
           { x: firstTimestamp, y: 1 },
           { x: firstTimestamp + 1, y: 1 }
         ],
-        BNB: [
+        LUNA: [
           { x: firstTimestamp, y: 1 },
           { x: firstTimestamp + 1, y: 1 }
         ],
-        SRM: [
+        AVAX: [
           { x: firstTimestamp, y: 1 },
           { x: firstTimestamp + 1, y: 1 }
         ],
@@ -222,12 +222,12 @@ export const ListedAssetsContainer: React.FC = () => {
       icon: <CardMedia image={ETH} className={classes.ETH} />,
       name: translate('home.assets.ETH')
     },
-    LTC: {
-      borderHue: 217,
-      borderSaturation: 66,
-      borderLuminosity: 57,
-      icon: <CardMedia image={LTC} className={classes.LTC} />,
-      name: translate('home.assets.LTC')
+    DOT: {
+      borderHue: 328,
+      borderSaturation: 100,
+      borderLuminosity: 68,
+      icon: <CardMedia image={DOT} className={classes.DOT} />,
+      name: translate('home.assets.DOT')
     },
     SOL: {
       borderHue: 284,
@@ -243,19 +243,19 @@ export const ListedAssetsContainer: React.FC = () => {
       icon: <CardMedia image={FTT} className={classes.FTT} />,
       name: translate('home.assets.FTT')
     },
-    BNB: {
-      borderHue: 43,
-      borderSaturation: 89,
-      borderLuminosity: 57,
-      icon: <CardMedia image={BNB} className={classes.BNB} />,
-      name: translate('home.assets.BNB')
+    LUNA: {
+      borderHue: 42,
+      borderSaturation: 100,
+      borderLuminosity: 52,
+      icon: <CardMedia image={LUNA} className={classes.LUNA} />,
+      name: translate('home.assets.LUNA')
     },
-    SRM: {
-      borderHue: 186,
-      borderSaturation: 75,
-      borderLuminosity: 67,
-      icon: <CardMedia image={SRM} className={classes.SRM} />,
-      name: translate('home.assets.SRM')
+    AVAX: {
+      borderHue: 0,
+      borderSaturation: 79,
+      borderLuminosity: 59,
+      icon: <CardMedia image={AVAX} className={classes.AVAX} />,
+      name: translate('home.assets.AVAX')
     },
     USD: {
       borderHue: 233,

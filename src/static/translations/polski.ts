@@ -84,9 +84,12 @@ const dictionary = {
   'home.assets.FTT': 'FTX Token',
   'home.assets.BNB': 'Binance',
   'home.assets.LTC': 'Litecoin',
+  'home.assets.LUNA': 'Terra',
+  'home.assets.DOT': 'Polkadot',
   'home.assets.SOL': 'Solana',
   'home.assets.SRM': 'Serum',
-  'home.assets.USD': 'Dollar',
+  'home.assets.AVAX': 'Avalanche',
+  'home.assets.USD': 'Dolar',
   'brand.title': 'Logo',
   'brand.description': 'Zasoby Synthetify',
   'brand.greenLogo': 'Zielone logo',
@@ -139,14 +142,14 @@ const dictionary = {
     'Obecna podaż w obiegu wynosi 5,625,000 SNY. Możesz sprawdzić aktualną kapitalizację rynkową na stronach takich jak: CoinMarketCap lub Coingecko.',
     'IDO odbyło się 29 i 30 czerwca 2021 r.'
   ],
-  'footer.blogTitle1': 'xDOT nowym syntetycznym tokenem',
-  'footer.blogDescription1': 'Syntetyczna Polkadot już dostępna',
-  'footer.blogTitle2': 'Zmiana kluczowych parametrów',
-  'footer.blogDescription2': 'Zmieniliśmy wartości collateral ratios, health factor oraz liquidation penalty.',
-  'footer.blogTitle3': 'xLUNA nowym syntetycznym tokenem',
-  'footer.blogDescription3': 'Syntetyczna LUNA już dostępna',
-  'footer.blogTitle4': 'Dodatkowe nagrody',
-  'footer.blogDescription4': 'Od teraz, możesz otrzymywać dodatkowe nagrody, za używanie $mSOL'
+  'footer.blogTitle1': 'xAVAX nowym syntetycznym tokenem',
+  'footer.blogDescription1': 'Syntetyczny Avalanche już dostępny',
+  'footer.blogTitle2': 'xDOT nowym syntetycznym tokenem',
+  'footer.blogDescription2': 'Syntetyczna Polkadot już dostępna',
+  'footer.blogTitle3': 'Zmiana kluczowych parametrów',
+  'footer.blogDescription3': 'Zmieniliśmy wartości collateral ratios, health factor oraz liquidation penalty.',
+  'footer.blogTitle4': 'LUNA nowym syntetycznym tokenem',
+  'footer.blogDescription4': 'Syntetyczna LUNA już dostępna'
 }
 
 export default dictionary

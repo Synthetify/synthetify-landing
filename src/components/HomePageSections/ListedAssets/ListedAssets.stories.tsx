@@ -4,13 +4,13 @@ import { withKnobs } from '@storybook/addon-knobs'
 import ListedAssets from './ListedAssets'
 import { colors } from '@static/theme'
 import { CardMedia, makeStyles, Theme } from '@material-ui/core'
-import BNB from '@static/svg/assets/BNB.svg'
+import DOT from '@static/svg/assets/DOT.svg'
 import BTC from '@static/svg/assets/BTC.svg'
 import ETH from '@static/svg/assets/ETH.svg'
-import LTC from '@static/svg/assets/LTC.svg'
+import LUNA from '@static/svg/assets/LUNA.svg'
 import FTT from '@static/svg/assets/FTT.svg'
 import SOL from '@static/svg/assets/SOL.svg'
-import SRM from '@static/svg/assets/SRM.svg'
+import AVAX from '@static/svg/assets/AVAX.svg'
 import USD from '@static/svg/assets/USD.svg'
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -52,12 +52,12 @@ storiesOf('ListedAssets', module)
               icon: <CardMedia image={ETH} className={classes.icon} />,
               name: 'ETH'
             },
-            LTC: {
+            DOT: {
               borderHue: 217,
               borderSaturation: 66,
               borderLuminosity: 57,
-              icon: <CardMedia image={LTC} className={classes.icon} />,
-              name: 'LTC'
+              icon: <CardMedia image={DOT} className={classes.icon} />,
+              name: 'DOT'
             },
             SOL: {
               borderHue: 284,
@@ -73,19 +73,19 @@ storiesOf('ListedAssets', module)
               icon: <CardMedia image={FTT} className={classes.icon} />,
               name: 'FTT'
             },
-            BNB: {
+            LUNA: {
               borderHue: 43,
               borderSaturation: 89,
               borderLuminosity: 57,
-              icon: <CardMedia image={BNB} className={classes.icon} />,
-              name: 'BNB'
+              icon: <CardMedia image={LUNA} className={classes.icon} />,
+              name: 'LUNA'
             },
-            SRM: {
+            AVAX: {
               borderHue: 186,
               borderSaturation: 75,
               borderLuminosity: 67,
-              icon: <CardMedia image={SRM} className={classes.icon} />,
-              name: 'SRM'
+              icon: <CardMedia image={AVAX} className={classes.icon} />,
+              name: 'AVAX'
             },
             USD: {
               borderHue: 233,
@@ -98,21 +98,21 @@ storiesOf('ListedAssets', module)
           changes={{
             BTC: 0,
             ETH: 0,
-            LTC: 0,
+            DOT: 0,
             SOL: 0,
             FTT: 0,
-            BNB: 0,
-            SRM: 0,
+            LUNA: 0,
+            AVAX: 0,
             USD: 0
           }}
           prices={{
             BTC: 0,
             ETH: 0,
-            LTC: 0,
+            DOT: 0,
             SOL: 0,
             FTT: 0,
-            BNB: 0,
-            SRM: 0,
+            LUNA: 0,
+            AVAX: 0,
             USD: 1
           }}
           data={{
@@ -124,7 +124,7 @@ storiesOf('ListedAssets', module)
               { x: 0, y: 1 },
               { x: 1, y: 1 }
             ],
-            LTC: [
+            DOT: [
               { x: 0, y: 1 },
               { x: 1, y: 1 }
             ],
@@ -136,11 +136,11 @@ storiesOf('ListedAssets', module)
               { x: 0, y: 1 },
               { x: 1, y: 1 }
             ],
-            BNB: [
+            LUNA: [
               { x: 0, y: 1 },
               { x: 1, y: 1 }
             ],
-            SRM: [
+            AVAX: [
               { x: 0, y: 1 },
               { x: 1, y: 1 }
             ],
