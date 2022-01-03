@@ -1,6 +1,12 @@
 const prettierConfigStandard = require('prettier-config-standard')
 const modifiedConfig = {
-  ...prettierConfigStandard,
+  arrowParens: 'avoid',
+  bracketSpacing: true,
+  quoteProps: 'as-needed',
+  semi: false,
+  tabWidth: 2,
+  trailingComma: 'none',
+  useTabs: false,
   singleQuote: true,
   jsxSingleQuote: true,
   spaceBeforeFunctionParen: true,
