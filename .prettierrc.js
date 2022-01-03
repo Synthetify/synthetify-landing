@@ -1,4 +1,3 @@
-const prettierConfigStandard = require('prettier-config-standard')
 const modifiedConfig = {
   arrowParens: 'avoid',
   bracketSpacing: true,
@@ -10,8 +9,7 @@ const modifiedConfig = {
   singleQuote: true,
   jsxSingleQuote: true,
   spaceBeforeFunctionParen: true,
-  printWidth: 100,
-  parser: 'typescript'
+  printWidth: 100
   // ... other modified settings here
 }
 

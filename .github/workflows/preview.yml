@@ -21,5 +21,3 @@ jobs:
           VERCEL_SCOPE: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
           PRODUCTION: false
-
-
