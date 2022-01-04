@@ -34,8 +34,8 @@
     "react-dom": "17.0.2",
     "react-markdown": "^7.0.1",
     "remark-gfm": "^2.0.0",
-    "storybook-builder-vite": "0.0.12",
-    "vite": "2.3.8"
+    "storybook-builder-vite": "0.1.13",
+    "vite": "^2.7.10"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.2.9",
