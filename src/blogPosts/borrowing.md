@@ -36,7 +36,7 @@ You can see all necessary information there, including the amount of the deposit
 
 **To repay your position**,  
 🔹 Click the repay button in the upper left corner.  
-🔹Select the pair and the amount you wish to pay back, then click the repay button.  
+🔹 Select the pair and the amount you wish to pay back, then click the repay button.  
 
 Once you pay off your debt, you are able to withdraw your previously deposited collateral.  
 
