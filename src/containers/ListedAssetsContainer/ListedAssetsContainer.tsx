@@ -21,7 +21,7 @@ export const ListedAssetsContainer: React.FC = () => {
   const classes = useStyles()
   const { t } = useTranslation()
   const firstTimestamp = Date.now()
-  const [data, setData] = useState<{ [key in ListedAsset]: Array<IListedAsset> }>({
+  const [data, setData] = useState<{ [key in ListedAsset]: IListedAsset[] }>({
     BTC: [
       { x: firstTimestamp, y: 1 },
       { x: firstTimestamp + 1, y: 1 }
@@ -130,7 +130,7 @@ export const ListedAssetsContainer: React.FC = () => {
         AVAX: 0,
         USD: 0
       }
-      const tmpData: { [key in ListedAsset]: Array<{ x: number; y: number }> } = {
+      const tmpData: { [key in ListedAsset]: IListedAsset[] } = {
         BTC: [
           { x: firstTimestamp, y: 1 },
           { x: firstTimestamp + 1, y: 1 }
@@ -166,7 +166,7 @@ export const ListedAssetsContainer: React.FC = () => {
       }
 
       Object.entries(binanceSymbols).forEach(([name, symbol]) => {
-        let newData: Array<{ x: number; y: number }>
+        let newData: IListedAsset[]
         binanceClient
           .candles({
             symbol: symbol,
