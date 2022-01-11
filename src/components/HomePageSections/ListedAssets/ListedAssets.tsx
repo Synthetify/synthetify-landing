@@ -5,6 +5,11 @@ import React from 'react'
 import useStyles from './style'
 import { useTranslation } from 'react-i18next'
 import '@static/translations/init18n'
+
+export interface IListedAsset {
+  x: number
+  y: number
+}
 export interface IListedAssets {
   prices: { [key in ListedAsset]: number }
   changes: { [key in ListedAsset]: number }
@@ -14,7 +19,7 @@ export interface IListedAssets {
       'icon' | 'borderHue' | 'borderSaturation' | 'borderLuminosity' | 'name'
     >
   }
-  data: { [key in ListedAsset]: Array<{ x: number, y: number }> }
+  data: { [key in ListedAsset]: Array<IListedAsset> }
 }
 
 export const ListedAssets: React.FC<IListedAssets> = ({ prices, changes, assetConsts, data }) => {

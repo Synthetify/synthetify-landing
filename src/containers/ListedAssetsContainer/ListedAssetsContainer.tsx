@@ -11,7 +11,7 @@ import FTT from '@static/svg/assets/FTT.svg'
 import SOL from '@static/svg/assets/SOL.svg'
 import AVAX from '@static/svg/assets/AVAX.svg'
 import USD from '@static/svg/assets/USD.svg'
-import ListedAssets from '@components/HomePageSections/ListedAssets/ListedAssets'
+import ListedAssets, { IListedAsset } from '@components/HomePageSections/ListedAssets/ListedAssets'
 import { getConnection } from '@utils/web3'
 import useStyles from './style'
 import { useTranslation } from 'react-i18next'
@@ -21,7 +21,7 @@ export const ListedAssetsContainer: React.FC = () => {
   const classes = useStyles()
   const { t } = useTranslation()
   const firstTimestamp = Date.now()
-  const [data, setData] = useState<{ [key in ListedAsset]: Array<{ x: number, y: number }> }>({
+  const [data, setData] = useState<{ [key in ListedAsset]: Array<IListedAsset> }>({
     BTC: [
       { x: firstTimestamp, y: 1 },
       { x: firstTimestamp + 1, y: 1 }
@@ -130,7 +130,7 @@ export const ListedAssetsContainer: React.FC = () => {
         AVAX: 0,
         USD: 0
       }
-      const tmpData: { [key in ListedAsset]: Array<{ x: number, y: number }> } = {
+      const tmpData: { [key in ListedAsset]: Array<{ x: number; y: number }> } = {
         BTC: [
           { x: firstTimestamp, y: 1 },
           { x: firstTimestamp + 1, y: 1 }
@@ -166,7 +166,7 @@ export const ListedAssetsContainer: React.FC = () => {
       }
 
       Object.entries(binanceSymbols).forEach(([name, symbol]) => {
-        let newData: Array<{ x: number, y: number }>
+        let newData: Array<{ x: number; y: number }>
         binanceClient
           .candles({
             symbol: symbol,

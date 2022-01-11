@@ -21,6 +21,11 @@ import {
   setlanguageIn18n
 } from '@providers/LanguageProvider/LanguageProvider'
 
+interface Greeting {
+  label: string
+  greeting: string
+}
+
 export const Header: React.FC = () => {
   const classes = useStyles()
   const { t } = useTranslation()
@@ -33,7 +38,7 @@ export const Header: React.FC = () => {
     setlanguageIn18n(language)
   }, [language])
 
-  const languages: { [key in Language]: { label: string, greeting: string } } = {
+  const languages: { [key in Language]: Greeting } = {
     english: {
       label: 'English',
       greeting: 'Hello!'
