@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
     setlanguageIn18n(language)
   }, [language])
 
-  const languages: { [key in Language]: { label: string, greeting: string } } = {
+  const languages: { [key in Language]: { label: string; greeting: string } } = {
     english: {
       label: 'English',
       greeting: 'Hello!'
