@@ -19,7 +19,7 @@ export interface IListedAssets {
       'icon' | 'borderHue' | 'borderSaturation' | 'borderLuminosity' | 'name'
     >
   }
-  data: { [key in ListedAsset]: Array<IListedAsset> }
+  data: { [key in ListedAsset]: IListedAsset[] }
 }
 
 export const ListedAssets: React.FC<IListedAssets> = ({ prices, changes, assetConsts, data }) => {
