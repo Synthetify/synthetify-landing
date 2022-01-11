@@ -1,9 +1,10 @@
 import AnimatedNumber from '@components/AnimatedNumber'
 import { Divider, Grid, Typography } from '@material-ui/core'
-import { useTranslate } from '@utils/translations'
 import classNames from 'classnames'
 import React from 'react'
 import useStyles from './style'
+import { useTranslation } from 'react-i18next'
+import '@static/translations/init18n'
 interface IProps {
   volume: number
   collaterals: number
@@ -12,7 +13,7 @@ interface IProps {
 
 export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) => {
   const classes = useStyles()
-  const translate = useTranslate()
+  const { t } = useTranslation()
   const formatValue = (value: number) => {
     if (value < 10) {
       return value.toFixed(4)
@@ -39,64 +40,66 @@ export const Partners: React.FC<IProps> = ({ volume, collaterals, synthetics }) 
 
   return (
     <Grid container className={classes.root} direction='column'>
-      <Typography className={classes.title}>{translate('home.statistics')}</Typography>
-      <Typography className={classes.description}>{translate('home.statistics.description')}</Typography>
+      <Typography className={classes.title}>{t('home.statistics')}</Typography>
+      <Typography className={classes.description}>{t('home.statistics.description')}</Typography>
       <Grid container className={classes.wrapper} direction='row' justifyContent='space-between'>
-        <Grid container direction='column' className={classes.field} justifyContent='center' alignItems='center'>
-          <Typography className={classNames(classes.fieldName, classes.devnet)}>{translate('home.statistics.volume')}</Typography>
+        <Grid
+          container
+          direction='column'
+          className={classes.field}
+          justifyContent='center'
+          alignItems='center'
+        >
+          <Typography className={classNames(classes.fieldName, classes.devnet)}>
+            {t('home.statistics.volume')}
+          </Typography>
           <Typography className={classes.fieldValue}>
             $
-            <AnimatedNumber
-              value={volume}
-              duration={300}
-              formatValue={formatValue}
-            />
-            {volume >= 10000
-              ? (volume >= 1000000 ? 'M' : 'K')
-              : ''
-            }
+            <AnimatedNumber value={volume} duration={300} formatValue={formatValue} />
+            {volume >= 10000 ? (volume >= 1000000 ? 'M' : 'K') : ''}
           </Typography>
-          <Typography className={classes.fieldName}>{translate('home.statistics.last24h')}</Typography>
+          <Typography className={classes.fieldName}>{t('home.statistics.last24h')}</Typography>
         </Grid>
 
         <Divider orientation='vertical' className={classes.divider} />
 
-        <Grid container direction='column' className={classes.field} justifyContent='center' alignItems='center'>
-
-          <Typography className={classNames(classes.fieldName, classes.devnet)}>{translate('home.statistics.collaterals')}</Typography>
+        <Grid
+          container
+          direction='column'
+          className={classes.field}
+          justifyContent='center'
+          alignItems='center'
+        >
+          <Typography className={classNames(classes.fieldName, classes.devnet)}>
+            {t('home.statistics.collaterals')}
+          </Typography>
 
           <Typography className={classes.fieldValue}>
-          $
-            <AnimatedNumber
-              value={collaterals}
-              duration={300}
-              formatValue={formatValue}
-            />
-            {collaterals >= 10000
-              ? (collaterals >= 1000000 ? 'M' : 'K')
-              : ''
-            }
+            $
+            <AnimatedNumber value={collaterals} duration={300} formatValue={formatValue} />
+            {collaterals >= 10000 ? (collaterals >= 1000000 ? 'M' : 'K') : ''}
           </Typography>
-          <Typography className={classes.fieldName}>{translate('home.statistics.current')}</Typography>
+          <Typography className={classes.fieldName}>{t('home.statistics.current')}</Typography>
         </Grid>
 
         <Divider orientation='vertical' className={classes.divider} />
 
-        <Grid container direction='column' className={classes.field} justifyContent='center' alignItems='center'>
-          <Typography className={classNames(classes.fieldName, classes.devnet)}>{translate('home.statistics.synthetics')}</Typography>
-          <Typography className={classes.fieldValue}>
-          $
-            <AnimatedNumber
-              value={synthetics}
-              duration={300}
-              formatValue={formatValue}
-            />
-            {synthetics >= 10000
-              ? (synthetics >= 1000000 ? 'M' : 'K')
-              : ''
-            }
+        <Grid
+          container
+          direction='column'
+          className={classes.field}
+          justifyContent='center'
+          alignItems='center'
+        >
+          <Typography className={classNames(classes.fieldName, classes.devnet)}>
+            {t('home.statistics.synthetics')}
           </Typography>
-          <Typography className={classes.fieldName}>{translate('home.statistics.current')}</Typography>
+          <Typography className={classes.fieldValue}>
+            $
+            <AnimatedNumber value={synthetics} duration={300} formatValue={formatValue} />
+            {synthetics >= 10000 ? (synthetics >= 1000000 ? 'M' : 'K') : ''}
+          </Typography>
+          <Typography className={classes.fieldName}>{t('home.statistics.current')}</Typography>
         </Grid>
       </Grid>
     </Grid>
