@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Grid, IconButton, Divider, Hidden, Button, Typography, CardMedia } from '@material-ui/core'
 import { Menu } from '@material-ui/icons'
 import MenuModal from '@components/Modals/MenuModal/MenuModal'
@@ -8,22 +8,37 @@ import snyLong from '@static/svg/brand/synthetify_horizontal_logo_green.svg'
 import ChangeLanguageButton from './ChangeLanguageButton/ChangeLanguageButton'
 import Link from 'next/link'
 import links from '@static/constants/links'
-import { LanguageContext, useTranslate } from '@utils/translations'
 import { Language } from '@static/translations'
 import AboutUsModal from '@components/Modals/AboutUsModal/AboutUsModal'
 import { useRouter } from 'next/router'
 import CommunityModal from '@components/Modals/CommunityModal/CommunityModal'
 import { NewMark } from '@components/LinkMarks/LinkMarks'
 import useStyles from './style'
+import { useTranslation } from 'react-i18next'
+import '@static/translations/init18n'
+import {
+  getLanguageFromLocalStorage,
+  setlanguageIn18n
+} from '@providers/LanguageProvider/LanguageProvider'
+
+interface Greeting {
+  label: string
+  greeting: string
+}
 
 export const Header: React.FC = () => {
   const classes = useStyles()
-  const translate = useTranslate()
+  const { t } = useTranslation()
   const router = useRouter()
 
-  const { setLanguage, language } = useContext(LanguageContext)
+  const actualLanguage = getLanguageFromLocalStorage()
+  const [language, setLanguage] = useState<Language>(actualLanguage)
 
-  const languages: { [key in Language]: { label: string, greeting: string } } = {
+  useEffect(() => {
+    setlanguageIn18n(language)
+  }, [language])
+
+  const languages: { [key in Language]: Greeting } = {
     english: {
       label: 'English',
       greeting: 'Hello!'
@@ -33,15 +48,18 @@ export const Header: React.FC = () => {
       greeting: 'Cześć!'
     }
   }
-
   const [routesModalOpen, setRoutesModalOpen] = React.useState(false)
   const [routesModalAnchor, setRoutesModalAnchor] = React.useState<HTMLButtonElement | null>(null)
 
   const [aboutUsModalOpen, setAboutUsModalOpen] = React.useState(false)
-  const [aboutUsModalAnchor, setAboutUsModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
+  const [aboutUsModalAnchor, setAboutUsModalAnchor] = React.useState<
+    HTMLButtonElement | HTMLSpanElement | null
+  >(null)
 
   const [communityModalOpen, setCommunityModalOpen] = React.useState(false)
-  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
+  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<
+    HTMLButtonElement | HTMLSpanElement | null
+  >(null)
 
   return (
     <>
@@ -50,7 +68,8 @@ export const Header: React.FC = () => {
         className={classes.root}
         wrap='nowrap'
         alignItems='center'
-        justifyContent='space-between'>
+        justifyContent='space-between'
+      >
         <Grid container item wrap='nowrap' alignItems='center'>
           <Link href='/' passHref>
             <a>
@@ -81,7 +100,7 @@ export const Header: React.FC = () => {
           <Grid className={classes.hideOnSm}>
             <Link href='/' passHref>
               <a style={{ textDecoration: 'none' }}>
-                <Typography className={classes.route}>{translate('header.home')}</Typography>
+                <Typography className={classes.route}>{t('header.home')}</Typography>
               </a>
             </Link>
             <Typography
@@ -90,8 +109,9 @@ export const Header: React.FC = () => {
                 setAboutUsModalAnchor(event.currentTarget)
                 setAboutUsModalOpen(true)
                 blurContent()
-              }}>
-              {translate('header.aboutUs')}
+              }}
+            >
+              {t('header.aboutUs')}
             </Typography>
             <Typography
               className={classes.route}
@@ -99,14 +119,15 @@ export const Header: React.FC = () => {
                 setCommunityModalAnchor(event.currentTarget)
                 setCommunityModalOpen(true)
                 blurContent()
-              }}>
-              {translate('header.community')}
+              }}
+            >
+              {t('header.community')}
             </Typography>
             <Link href='/blog' passHref>
               <a style={{ textDecoration: 'none' }}>
                 <Grid className={classes.linkWithMark}>
                   <Typography className={classes.route} style={{ marginRight: 8 }}>
-                    {translate('header.blog')}
+                    {t('header.blog')}
                   </Typography>
                   <NewMark className={classes.mark} />
                 </Grid>
@@ -119,8 +140,9 @@ export const Header: React.FC = () => {
             href={links.app.main}
             variant='contained'
             target='_blank'
-            rel='noopener noreferrer'>
-            {translate('header.trade')}
+            rel='noopener noreferrer'
+          >
+            {t('header.trade')}
           </Button>
 
           <Grid className={classes.hideOnMdUp}>
@@ -135,7 +157,8 @@ export const Header: React.FC = () => {
                 setRoutesModalAnchor(event.currentTarget)
                 setRoutesModalOpen(true)
                 blurContent()
-              }}>
+              }}
+            >
               <Menu className={classes.dehazeIcon} />
             </IconButton>
             <MenuModal
