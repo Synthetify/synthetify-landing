@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Grid, IconButton, Divider, Hidden, Button, Typography, CardMedia } from '@material-ui/core'
 import { Menu } from '@material-ui/icons'
 import MenuModal from '@components/Modals/MenuModal/MenuModal'
@@ -8,7 +8,6 @@ import snyLong from '@static/svg/brand/synthetify_horizontal_logo_green.svg'
 import ChangeLanguageButton from './ChangeLanguageButton/ChangeLanguageButton'
 import Link from 'next/link'
 import links from '@static/constants/links'
-import { LanguageContext } from '@utils/translations'
 import { Language } from '@static/translations'
 import AboutUsModal from '@components/Modals/AboutUsModal/AboutUsModal'
 import { useRouter } from 'next/router'
@@ -17,12 +16,22 @@ import { NewMark } from '@components/LinkMarks/LinkMarks'
 import useStyles from './style'
 import { useTranslation } from 'react-i18next'
 import '@static/translations/init18n'
+import {
+  getLanguageFromLocalStorage,
+  setlanguageIn18n
+} from '@providers/LanguageProvider/LanguageProvider'
 
 export const Header: React.FC = () => {
   const classes = useStyles()
   const { t } = useTranslation()
   const router = useRouter()
-  const { setLanguage, language } = useContext(LanguageContext)
+
+  const actualLanguage = getLanguageFromLocalStorage()
+  const [language, setLanguage] = useState<Language>(actualLanguage)
+
+  useEffect(() => {
+    setlanguageIn18n(language)
+  }, [language])
 
   const languages: { [key in Language]: { label: string, greeting: string } } = {
     english: {
@@ -43,7 +52,9 @@ export const Header: React.FC = () => {
   >(null)
 
   const [communityModalOpen, setCommunityModalOpen] = React.useState(false)
-  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
+  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<
+    HTMLButtonElement | HTMLSpanElement | null
+  >(null)
 
   return (
     <>
