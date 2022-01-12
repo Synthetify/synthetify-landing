@@ -1,25 +1,29 @@
 import PageHeader from '@components/PageHeader/PageHeader'
-import { useTranslate } from '@utils/translations'
 import { Grid } from '@material-ui/core'
 import { Question } from '@components/Questions/Question'
 import React from 'react'
 import useStyles from './style'
+import { useTranslation } from 'react-i18next'
+import '@static/translations/init18n'
+import dictionary from '@static/translations/english'
 
 const FAQ: React.FC = () => {
   const classes = useStyles()
-  const translate = useTranslate()
-  const questions: JSX.Element[] = Array.from(translate('faq.questions')).map((item, index) => {
-    return (<Grid key={index}
-      item className={classes.questionBlock}>
-      <Question key={index} question={item} answer={translate('faq.answers', index)} />
-    </Grid>)
+  const { t } = useTranslation()
+  const questions: JSX.Element[] = dictionary['faq.questions'].map((_item, index) => {
+    return (
+      <Grid key={index} item className={classes.questionBlock}>
+        <Question
+          key={index}
+          question={t(`faq.questions.${index}`)}
+          answer={t(`faq.answers.${index}`)}
+        />
+      </Grid>
+    )
   })
   return (
     <>
-      <PageHeader
-        title={translate('faq.title')}
-        description={translate('faq.description')}
-      />
+      <PageHeader title={t('faq.title')} description={t('faq.description')} />
       <Grid container direction='column' className={classes.container}>
         {questions}
       </Grid>

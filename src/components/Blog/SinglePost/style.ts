@@ -77,6 +77,10 @@ const useStyles = makeStyles((theme: Theme) => ({
       }
     },
 
+    '& h1 + p, & h2 + p, & h3 + p, & h4 + p, & h5 + p, & h6 + p': {
+      marginTop: 0
+    },
+
     '& p': {
       width: '100%',
       maxWidth: 800
