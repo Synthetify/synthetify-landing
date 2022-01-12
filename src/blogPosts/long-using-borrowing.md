@@ -4,7 +4,7 @@ date: "2022-01-12 12:00:00"
 description: "In this post, we will explain how to long single asset using borrowing"
 image: "/blog/long/1.png"
 ---
-![First post](/blog/long/1.png "horizontal")
+![How to long](/blog/long/1.png "horizontal")
 
 In the first part of the series, in which we are going to introduce you to earn opportunities on our platform, we will focus on setting a long position using borrowing 📈  
 
@@ -24,6 +24,6 @@ When you use Vaults in our app to long any tokens, you will also use leverage un
 How to long, and how to do it with the leverage?  
 We have explained this in the graphic below.  
 In this example we long xSOL 📈
-![anchor](/blog/long/how-to-long.png "vertical")
+![how to long example](/blog/long/how-to-long.png "vertical")
 
 
