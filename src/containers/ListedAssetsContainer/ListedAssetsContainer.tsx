@@ -11,16 +11,17 @@ import FTT from '@static/svg/assets/FTT.svg'
 import SOL from '@static/svg/assets/SOL.svg'
 import AVAX from '@static/svg/assets/AVAX.svg'
 import USD from '@static/svg/assets/USD.svg'
-import ListedAssets from '@components/HomePageSections/ListedAssets/ListedAssets'
+import ListedAssets, { IListedAsset } from '@components/HomePageSections/ListedAssets/ListedAssets'
 import { getConnection } from '@utils/web3'
-import { useTranslate } from '@utils/translations'
 import useStyles from './style'
+import { useTranslation } from 'react-i18next'
+import '@static/translations/init18n'
 
 export const ListedAssetsContainer: React.FC = () => {
   const classes = useStyles()
-  const translate = useTranslate()
+  const { t } = useTranslation()
   const firstTimestamp = Date.now()
-  const [data, setData] = useState<{ [key in ListedAsset]: Array<{ x: number, y: number }> }>({
+  const [data, setData] = useState<{ [key in ListedAsset]: IListedAsset[] }>({
     BTC: [
       { x: firstTimestamp, y: 1 },
       { x: firstTimestamp + 1, y: 1 }
@@ -129,7 +130,7 @@ export const ListedAssetsContainer: React.FC = () => {
         AVAX: 0,
         USD: 0
       }
-      const tmpData: { [key in ListedAsset]: Array<{ x: number, y: number }> } = {
+      const tmpData: { [key in ListedAsset]: IListedAsset[] } = {
         BTC: [
           { x: firstTimestamp, y: 1 },
           { x: firstTimestamp + 1, y: 1 }
@@ -165,33 +166,39 @@ export const ListedAssetsContainer: React.FC = () => {
       }
 
       Object.entries(binanceSymbols).forEach(([name, symbol]) => {
-        let newData: Array<{ x: number, y: number }>
+        let newData: IListedAsset[]
         binanceClient
           .candles({
             symbol: symbol,
             interval: '1h',
             limit: 24
           })
-          .then(async (candles) => {
-            newData = candles.map(candle => ({
-              x: candle.closeTime,
-              y: +candle.close
-            }))
+          .then(
+            async candles => {
+              newData = candles.map(candle => ({
+                x: candle.closeTime,
+                y: +candle.close
+              }))
 
-            tmpData[name as ListedAsset] = newData
+              tmpData[name as ListedAsset] = newData
 
-            return binanceClient.dailyStats({ symbol })
-          }, () => {})
-          .then(value => {
-            tmpChanges[name as ListedAsset] = +(value as DailyStatsResult).priceChangePercent
-            newData.sort((a, b) => a.x - b.x)
-            newData[0].x = (value as DailyStatsResult).openTime
-            newData[0].y = +(value as DailyStatsResult).openPrice
-            newData[23].x = (value as DailyStatsResult).closeTime
-            newData[23].y = +(value as DailyStatsResult).lastPrice
-          }, () => {
-            tmpChanges[name as ListedAsset] = 0
-          })
+              return binanceClient.dailyStats({ symbol })
+            },
+            () => {}
+          )
+          .then(
+            value => {
+              tmpChanges[name as ListedAsset] = +(value as DailyStatsResult).priceChangePercent
+              newData.sort((a, b) => a.x - b.x)
+              newData[0].x = (value as DailyStatsResult).openTime
+              newData[0].y = +(value as DailyStatsResult).openPrice
+              newData[23].x = (value as DailyStatsResult).closeTime
+              newData[23].y = +(value as DailyStatsResult).lastPrice
+            },
+            () => {
+              tmpChanges[name as ListedAsset] = 0
+            }
+          )
       })
 
       setChanges(tmpChanges)
@@ -200,9 +207,12 @@ export const ListedAssetsContainer: React.FC = () => {
     connectEvents()
 
     return () => {
-      subscriptions.current.forEach((id) => {
+      subscriptions.current.forEach(id => {
         const connection = getConnection()
-        connection.removeAccountChangeListener(id).then(() => {}, () => {})
+        connection.removeAccountChangeListener(id).then(
+          () => {},
+          () => {}
+        )
       })
     }
   }, [])
@@ -213,56 +223,56 @@ export const ListedAssetsContainer: React.FC = () => {
       borderSaturation: 100,
       borderLuminosity: 52,
       icon: <CardMedia image={BTC} className={classes.BTC} />,
-      name: translate('home.assets.BTC')
+      name: t('home.assets.BTC')
     },
     ETH: {
       borderHue: 228,
       borderSaturation: 45,
       borderLuminosity: 77,
       icon: <CardMedia image={ETH} className={classes.ETH} />,
-      name: translate('home.assets.ETH')
+      name: t('home.assets.ETH')
     },
     DOT: {
       borderHue: 328,
       borderSaturation: 100,
       borderLuminosity: 68,
       icon: <CardMedia image={DOT} className={classes.DOT} />,
-      name: translate('home.assets.DOT')
+      name: t('home.assets.DOT')
     },
     SOL: {
       borderHue: 284,
       borderSaturation: 89,
       borderLuminosity: 59,
       icon: <CardMedia image={SOL} className={classes.SOL} />,
-      name: translate('home.assets.SOL')
+      name: t('home.assets.SOL')
     },
     FTT: {
       borderHue: 189,
       borderSaturation: 66,
       borderLuminosity: 62,
       icon: <CardMedia image={FTT} className={classes.FTT} />,
-      name: translate('home.assets.FTT')
+      name: t('home.assets.FTT')
     },
     LUNA: {
       borderHue: 42,
       borderSaturation: 100,
       borderLuminosity: 52,
       icon: <CardMedia image={LUNA} className={classes.LUNA} />,
-      name: translate('home.assets.LUNA')
+      name: t('home.assets.LUNA')
     },
     AVAX: {
       borderHue: 0,
       borderSaturation: 79,
       borderLuminosity: 59,
       icon: <CardMedia image={AVAX} className={classes.AVAX} />,
-      name: translate('home.assets.AVAX')
+      name: t('home.assets.AVAX')
     },
     USD: {
       borderHue: 233,
       borderSaturation: 58,
       borderLuminosity: 85,
       icon: <CardMedia image={USD} className={classes.USD} />,
-      name: translate('home.assets.USD')
+      name: t('home.assets.USD')
     }
   }
 

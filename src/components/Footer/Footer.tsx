@@ -1,6 +1,5 @@
 import React from 'react'
 import { CardMedia, Divider, Grid, Typography } from '@material-ui/core'
-import { useTranslate } from '@utils/translations'
 import snyLogo from '@static/svg/brand/synthetify_horizontal_logo_white.svg'
 import linkedin from '@static/svg/linkedin-circle.svg'
 import github from '@static/svg/github-circle.svg'
@@ -12,6 +11,8 @@ import Link from 'next/link'
 import classNames from 'classnames'
 import { NewMark, SoonMark } from '@components/LinkMarks/LinkMarks'
 import useStyles from './style'
+import { useTranslation } from 'react-i18next'
+import '@static/translations/init18n'
 
 interface ILinkProps {
   href: string
@@ -80,7 +81,7 @@ export const SoonLink: React.FC<Omit<ILinkProps, 'href'>> = ({ name, description
 
 export const Footer: React.FC = () => {
   const classes = useStyles()
-  const translate = useTranslate()
+  const { t } = useTranslation()
 
   return (
     <>
@@ -90,7 +91,8 @@ export const Footer: React.FC = () => {
         className={classes.logos}
         wrap='nowrap'
         alignItems='center'
-        justifyContent='space-between'>
+        justifyContent='space-between'
+      >
         <CardMedia className={classes.snyLogo} image={snyLogo} component='img' />
         <Grid
           className={classes.socials}
@@ -98,7 +100,8 @@ export const Footer: React.FC = () => {
           item
           wrap='nowrap'
           alignItems='center'
-          justifyContent='flex-end'>
+          justifyContent='flex-end'
+        >
           <a href={links.socialMedia.github} target='_blank' rel='noopener noreferrer'>
             <CardMedia className={classes.circle} image={github} />
           </a>
@@ -117,146 +120,141 @@ export const Footer: React.FC = () => {
         </Grid>
       </Grid>
       <Grid container className={classes.routes} wrap='nowrap' justifyContent='space-between'>
-
         <Grid
           container
           item
           className={classNames(classes.column, classes.hideOnSm)}
-          direction='column'>
+          direction='column'
+        >
           <Link href='/' passHref>
             <a className={classes.a}>
               <Typography className={classes.columnHeader} style={{ cursor: 'pointer' }}>
-                {translate('header.home')}
+                {t('header.home')}
               </Typography>
             </a>
           </Link>
           <InsideLink
             href={links.tutorial}
-            name={translate('footer.tutorial')}
-            description={translate('footer.tutorialDescription')}
+            name={t('footer.tutorial')}
+            description={t('footer.tutorialDescription')}
           />
           <InsideLink
             href='/blog/'
-            name={translate('footer.blog')}
-            description={translate('footer.blogDescription')}
+            name={t('footer.blog')}
+            description={t('footer.blogDescription')}
           />
           <InsideLink
             href={links.privacyPolicy}
-            name={translate('footer.privacyPolicy')}
-            description={translate('footer.privacyPolicyDescription')}
+            name={t('footer.privacyPolicy')}
+            description={t('footer.privacyPolicyDescription')}
           />
         </Grid>
 
         <Grid container item className={classes.column} direction='column'>
-          <Typography className={classes.columnHeader}>{translate('header.aboutUs')}</Typography>
+          <Typography className={classes.columnHeader}>{t('header.aboutUs')}</Typography>
           <OutsideLink
             href={links.whitepaper}
-            name={translate('header.whitepaper')}
-            description={translate('header.whitepaperDescription')}
+            name={t('header.whitepaper')}
+            description={t('header.whitepaperDescription')}
           />
-          <InsideLink
-            href='/faq'
-            name={translate('header.faq')}
-            description={translate('header.faqDescription')}
-          />
+          <InsideLink href='/faq' name={t('header.faq')} description={t('header.faqDescription')} />
           <InsideLink
             href='/brand'
-            name={translate('header.brand')}
-            description={translate('header.brandDescription')}
+            name={t('header.brand')}
+            description={t('header.brandDescription')}
           />
           <InsideLink
             href={links.docs}
-            name={translate('footer.docs')}
-            description={translate('footer.docsDescription')}
+            name={t('footer.docs')}
+            description={t('footer.docsDescription')}
           />
           <OutsideLink
             href={links.audit}
-            name={translate('footer.audit')}
-            description={translate('footer.auditDescription')}
+            name={t('footer.audit')}
+            description={t('footer.auditDescription')}
           />
         </Grid>
 
         <Grid container item className={classes.column} direction='column'>
-          <Typography className={classes.columnHeader}>{translate('header.community')}</Typography>
+          <Typography className={classes.columnHeader}>{t('header.community')}</Typography>
           <OutsideLink
             href={links.socialMedia.discord}
-            name={translate('header.discord')}
-            description={translate('header.discordDescription')}
+            name={t('header.discord')}
+            description={t('header.discordDescription')}
           />
           <OutsideLink
             href={links.socialMedia.twitter}
-            name={translate('header.twitter')}
-            description={translate('header.twitterDescription')}
+            name={t('header.twitter')}
+            description={t('header.twitterDescription')}
           />
           <OutsideLink
             href={links.socialMedia.telegram}
-            name={translate('header.telegram')}
-            description={translate('header.telegramDescription')}
+            name={t('header.telegram')}
+            description={t('header.telegramDescription')}
           />
           <OutsideLink
             href={links.socialMedia.github}
-            name={translate('header.github')}
-            description={translate('header.githubDescription')}
+            name={t('header.github')}
+            description={t('header.githubDescription')}
           />
           <OutsideLink
             href={links.socialMedia.linkedin}
-            name={translate('header.linkedin')}
-            description={translate('header.linkedinDescription')}
+            name={t('header.linkedin')}
+            description={t('header.linkedinDescription')}
           />
         </Grid>
         <Grid
           container
           item
           className={classNames(classes.column, classes.hideOnMd)}
-          direction='column'>
-
+          direction='column'
+        >
           <Link href='/blog/' passHref>
             <a className={classes.a}>
               <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
-                <Typography className={classes.columnHeader}>{translate('header.blog')}</Typography>
+                <Typography className={classes.columnHeader}>{t('header.blog')}</Typography>
                 <NewMark className={classes.mark} />
               </Grid>
             </a>
           </Link>
           <InsideLink
             href={'ttps://synthetify.io/blog/xavax/'}
-            name={translate('footer.blogTitle1')}
-            description={translate('footer.blogDescription1')}
+            name={t('footer.blogTitle1')}
+            description={t('footer.blogDescription1')}
           />
           <InsideLink
             href={'https://synthetify.io/blog/xdot/'}
-            name={translate('footer.blogTitle2')}
-            description={translate('footer.blogDescription2')}
+            name={t('footer.blogTitle2')}
+            description={t('footer.blogDescription2')}
           />
           <InsideLink
             href={'https://synthetify.io/blog/new-collaterals-ratio'}
-            name={translate('footer.blogTitle3')}
-            description={translate('footer.blogDescription3')}
+            name={t('footer.blogTitle3')}
+            description={t('footer.blogDescription3')}
           />
           <InsideLink
             href={'https://synthetify.io/blog/xluna'}
-            name={translate('footer.blogTitle4')}
-            description={translate('footer.blogDescription4')}
+            name={t('footer.blogTitle4')}
+            description={t('footer.blogDescription4')}
           />
-
         </Grid>
 
         <Grid container item className={classes.column} direction='column'>
-          <Typography className={classes.columnHeader}>{translate('header.trade')}</Typography>
+          <Typography className={classes.columnHeader}>{t('header.trade')}</Typography>
           <OutsideLink
             href={links.app.staking}
-            name={translate('footer.staking')}
-            description={translate('footer.stakingDescription')}
+            name={t('footer.staking')}
+            description={t('footer.stakingDescription')}
           />
           <OutsideLink
             href={links.app.stats}
-            name={translate('footer.stats')}
-            description={translate('footer.statsDescription')}
+            name={t('footer.stats')}
+            description={t('footer.statsDescription')}
           />
           <OutsideLink
             href={links.app.exchange}
-            name={translate('footer.exchange')}
-            description={translate('footer.exchangeDescription')}
+            name={t('footer.exchange')}
+            description={t('footer.exchangeDescription')}
           />
         </Grid>
       </Grid>
@@ -266,11 +264,12 @@ export const Footer: React.FC = () => {
         className={classes.copyrightWrapper}
         wrap='nowrap'
         alignItems='center'
-        justifyContent='space-between'>
+        justifyContent='space-between'
+      >
         <Typography className={classes.copyright}>© 2021 Synthetify Labs</Typography>
         <a href={links.privacyPolicy} style={{ textDecoration: 'none' }}>
           <Typography className={classNames(classes.copyright, classes.policy)}>
-            {translate('footer.privacyPolicy')}
+            {t('footer.privacyPolicy')}
           </Typography>
         </a>
       </Grid>

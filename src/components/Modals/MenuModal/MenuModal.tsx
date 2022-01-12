@@ -1,11 +1,12 @@
 import React from 'react'
 import { Typography, Popover, Grid } from '@material-ui/core'
 import Link from 'next/link'
-import { useTranslate } from '@utils/translations'
 import { unblurContent } from '@utils/uiUtils'
 import useStyles from './style'
 import { NewMark } from '@components/LinkMarks/LinkMarks'
 import classNames from 'classnames'
+import { useTranslation } from 'react-i18next'
+import '@static/translations/init18n'
 
 export interface IMenuModal {
   open: boolean
@@ -24,7 +25,7 @@ export const MenuModal: React.FC<IMenuModal> = ({
   communityClickHandler
 }) => {
   const classes = useStyles()
-  const translate = useTranslate()
+  const { t } = useTranslation()
 
   return (
     <Popover
@@ -42,7 +43,8 @@ export const MenuModal: React.FC<IMenuModal> = ({
       transformOrigin={{
         vertical: 'top',
         horizontal: 'center'
-      }}>
+      }}
+    >
       <Grid className={classes.root} container alignContent='space-around' direction='column'>
         <Link href='/' passHref>
           <Grid
@@ -54,8 +56,10 @@ export const MenuModal: React.FC<IMenuModal> = ({
             }}
           >
             <a style={{ textDecoration: 'none' }}>
-              <Typography className={classNames(classes.name, current === '/' ? classes.current : undefined)}>
-                {translate('header.home')}
+              <Typography
+                className={classNames(classes.name, current === '/' ? classes.current : undefined)}
+              >
+                {t('header.home')}
               </Typography>
             </a>
           </Grid>
@@ -69,9 +73,7 @@ export const MenuModal: React.FC<IMenuModal> = ({
             handleClose()
           }}
         >
-          <Typography className={classes.name}>
-            {translate('header.aboutUs')}
-          </Typography>
+          <Typography className={classes.name}>{t('header.aboutUs')}</Typography>
         </Grid>
 
         <Grid
@@ -82,9 +84,7 @@ export const MenuModal: React.FC<IMenuModal> = ({
             handleClose()
           }}
         >
-          <Typography className={classes.name}>
-            {translate('header.community')}
-          </Typography>
+          <Typography className={classes.name}>{t('header.community')}</Typography>
         </Grid>
 
         <Link href='/blog' passHref>
@@ -98,8 +98,13 @@ export const MenuModal: React.FC<IMenuModal> = ({
           >
             <a style={{ textDecoration: 'none' }}>
               <Grid className={classes.linkWithMarkWrapper}>
-                <Typography className={classNames(classes.name, current === '/blog' ? classes.current : undefined)}>
-                  {translate('header.blog')}
+                <Typography
+                  className={classNames(
+                    classes.name,
+                    current === '/blog' ? classes.current : undefined
+                  )}
+                >
+                  {t('header.blog')}
                 </Typography>
                 <NewMark className={classes.mark} />
               </Grid>
