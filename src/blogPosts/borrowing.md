@@ -2,7 +2,7 @@
 title: "Introducing borrowing"
 date: "2022-01-04 12:00:00"
 description: "We present to you borrowing page - gamechanger on our platform"
-image: "/blog/borrowing/1.png"
+image: "/blog/borrowing/2.png"
 ---
 ![Borrowing](/blog/borrowing/1.png "horizontal")
 
@@ -53,5 +53,4 @@ Currently 3 pairs are available:
 - mSOL - xUSD
 - xSOL - xUSD  
 
-We will add new ones on a regular basis. You will decide which one will be next. Stay tuned and check out our [Twitter](https://twitter.com/synthetify), we will ask you about what you prefer as a next vault. for your feedback.
-We'll be asking for your feedback on [Twitter](https://twitter.com/synthetify)
+We will add new ones on a regular basis. You will decide which one will be next. Stay tuned and check out our [Twitter](https://twitter.com/synthetify)
