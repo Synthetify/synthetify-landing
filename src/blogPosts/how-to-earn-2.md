@@ -16,18 +16,18 @@ mSOL is a liquid staking token that you receive when you stake SOL on the Marina
 They act as a receipt, allowing you to exchange them back to your staked SOL and the earned rewards.  
 Meanwhile, you can use mSOL in DeFi, while enjoying your staking rewards.  
 You can read more about mSOL and Marinade [here](https://marinade.finance/)
-            
+
 ## How can you earn using mSOL in Synthetify?
 
 ## Rewards
 
-mSOL is a collateral token therefore you can deposit it and mint synthetic assets on our platform, hence you will **receive double rewards**, 
+mSOL is a collateral token therefore you can deposit it and mint synthetic assets on our platform, hence you will **receive double rewards**,
+
 - the first one for participating in the debt pool, paid in $SNY **(currently around 12%)**
-- the second one for using mSOL, paid in $MNDE **(currently around 28%)**   
+- the second one for using mSOL, paid in $MNDE **(currently around 28%)**
 
 Remember, that you can mint a synthetic asset for deposited collateral (mSOL in this case) and then you can earn for trading this synthetic asset.  
 You can learn more about double rewards [here](https://synthetify.io/blog/msol-rewards)
-
 
 ![double rewards](/blog/how-to-earn-2/2.png 'horizontal')
 
@@ -41,7 +41,6 @@ One of the features of borrowing is the ability to LONG and SHORT a single asset
 ![how to long example](/blog/long/how-to-long.png 'vertical')
 ![how to short example](/blog/how-to-earn-2/short.png 'vertical')
 
-
 ## Self repaying loans
 
 As mentioned above, the APY for mSOL stacking is about 7%.
@@ -51,7 +50,8 @@ Therefore, this pair is called self-repaying.
 How to use it?  
 For example, when adding liquidity, the APY for delivering xSOL may be higher than mSOL.
 
-In this case you earn for:  
+In this case you earn for:
+
 - Staking mSOL
 - Participating in the debt pool
 - Using mSOL as collateral
