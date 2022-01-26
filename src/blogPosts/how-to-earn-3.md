@@ -5,7 +5,7 @@ description: 'This time we will focus on liquidity mining using $SNY and our syn
 image: '/blog/how-to-earn-3/1.png'
 ---
 
-![How to long](/blog/how-to-earn-3/1.png 'horizontal')
+![Liquidity mining](/blog/how-to-earn-3/1.png 'horizontal')
 
 gm 👋  
 In this post of the How to Earn series, we are going to show you another way to maximize your profits.  
@@ -21,11 +21,11 @@ A Liquidity Provider is a person, who provides liquidity to liquidity pools for 
 
 You will find liquidity pools on every AMM DEX for example:
 
-- Raydium
-- Saber
-- Sunny\*
-- Orca
-- Tulip  
+- [Raydium](https://raydium.io/)
+- [Saber](https://app.saber.so/#/)
+- [Sunny\*](https://app.sunny.ag/)
+- [Orca](https://www.orca.so/)
+- [Tulip](https://tulip.garden/)  
   \*Sunny is an aggregator, not DEX, but it’s worth mentioning here.
 
 ## How to Provide Liquidity?
