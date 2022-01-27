@@ -8,7 +8,7 @@ image: '/blog/new-pairs/1.png'
 ![New pairs in vaults](/blog/new-pairs/1.png 'horizontal')
 
 gm 👋  
-On Monday, we added a poll asking which token to add next to our vaults.  
+On Monday, we added a poll, where we asked you about, which token to add next to our vaults.  
 You chose xLUNA, but we decided to give you all the tools at your disposal and added all the assets now.  
 
 If you don't know what borrowing is and how to use it, check out our [blog post](https://synthetify.io/blog/long-using-borrowing) about it.
