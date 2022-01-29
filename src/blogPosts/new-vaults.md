@@ -9,16 +9,14 @@ image: '/blog/new-pairs/1.png'
 
 gm 👋  
 On Monday, we added a poll, where we asked you about, which token to add next to our vaults.  
-You chose xLUNA, but we decided to give you all the tools at your disposal and added all the assets now.  
+You chose xLUNA, but we decided to give you all the tools at your disposal and added all the assets now.
 
 If you don't know what borrowing is and how to use it, check out our [blog post](https://synthetify.io/blog/long-using-borrowing) about it.
-
 
 ## How to long and short?
 
 ![how to long example](/blog/long/how-to-long.png 'vertical')
 ![how to short example](/blog/how-to-earn-2/short.png 'vertical')
-
 
 ## Little sneak peak
 
