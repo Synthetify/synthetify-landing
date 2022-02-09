@@ -1,6 +1,6 @@
 ---
 title: 'New pairs in vaults is now available'
-date: '2022-01-27 12:00:00'
+date: '2022-02-09 12:00:00'
 description: 'From now, you can short and long all synthetic asset'
 image: '/blog/new-pairs/1.png'
 ---
@@ -8,7 +8,7 @@ image: '/blog/new-pairs/1.png'
 ![New pairs in vaults](/blog/new-pairs/1.png 'horizontal')
 
 gm 👋  
-On Monday, we added a poll, where we asked you about, which token to add next to our vaults.  
+Some time ago, we added a poll, where we asked you about, which token to add next to our vaults.  
 You chose xLUNA, but we decided to give you all the tools at your disposal and added all the assets now.
 
 If you don't know what borrowing is and how to use it, check out our [blog post](https://synthetify.io/blog/long-using-borrowing) about it.
