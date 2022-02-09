@@ -22,5 +22,5 @@ If you don't know what borrowing is and how to use it, check out our [blog post]
 
 We are going to make this process a lot simpler.  
 We are working on a special place for long and short.  
-How will it look?
+See what it will look like:
 ![leverage](/blog/new-pairs/leverage.png 'vertical')
