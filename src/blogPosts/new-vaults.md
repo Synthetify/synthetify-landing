@@ -1,5 +1,5 @@
 ---
-title: 'New pairs in vaults is now available'
+title: 'New pairs in vaults are now available'
 date: '2022-02-09 12:00:00'
 description: 'From now, you can short and long all synthetic asset'
 image: '/blog/new-pairs/1.png'
