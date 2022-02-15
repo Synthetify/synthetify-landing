@@ -164,6 +164,11 @@ export const Footer: React.FC = () => {
             description={t('header.brandDescription')}
           />
           <InsideLink
+            href={links.roadmap}
+            name={t('footer.roadmap')}
+            description={t('footer.roadmapDescription')}
+          />
+          <InsideLink
             href={links.docs}
             name={t('footer.docs')}
             description={t('footer.docsDescription')}

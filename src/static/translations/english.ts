@@ -41,6 +41,8 @@ const dictionary = {
   'footer.tutorialDescription': 'Application tutorial',
   'footer.blog': 'Blog',
   'footer.blogDescription': 'Read the latest updates',
+  'footer.roadmap': 'Roadmap',
+  'footer.roadmapDescription': 'Check our plans for the future',
   'home.banner.builtOn': 'Built on',
   'home.banner.header': 'Decentralized synthetic assets exchange',
   'home.banner.intro': 'Buy, trade and make money.',

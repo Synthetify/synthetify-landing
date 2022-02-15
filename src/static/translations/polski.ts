@@ -41,6 +41,8 @@ const dictionary = {
   'footer.tutorialDescription': 'Poradnik do aplikacji',
   'footer.blog': 'Blog',
   'footer.blogDescription': 'Zapoznaj się z aktualnościami',
+  'footer.roadmap': 'Roadmap',
+  'footer.roadmapDescription': 'Sprawdź nasze plany na przyszłość',
   'home.banner.builtOn': 'Built on',
   'home.banner.header': 'Zdecentralizowana giełda aktywów syntetycznych',
   'home.banner.intro': 'Kupuj, handluj i zarabiaj pieniądze.',
