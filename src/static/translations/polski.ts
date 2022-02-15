@@ -144,14 +144,14 @@ const dictionary = {
     'Obecna podaż w obiegu wynosi 5,625,000 SNY. Możesz sprawdzić aktualną kapitalizację rynkową na stronach takich jak: CoinMarketCap lub Coingecko.',
     'IDO odbyło się 29 i 30 czerwca 2021 r.'
   ],
-  'footer.blogTitle1': 'xAVAX nowym syntetycznym tokenem',
-  'footer.blogDescription1': 'Syntetyczny Avalanche już dostępny',
-  'footer.blogTitle2': 'xDOT nowym syntetycznym tokenem',
-  'footer.blogDescription2': 'Syntetyczna Polkadot już dostępna',
-  'footer.blogTitle3': 'Zmiana kluczowych parametrów',
-  'footer.blogDescription3': 'Zmieniliśmy wartości collateral ratios, health factor oraz liquidation penalty.',
-  'footer.blogTitle4': 'LUNA nowym syntetycznym tokenem',
-  'footer.blogDescription4': 'Syntetyczna LUNA już dostępna'
+  'footer.blogTitle1': 'Nowe pary w vaultach',
+  'footer.blogDescription1': 'Nowe pary są już dostępne',
+  'footer.blogTitle2': 'How To Earn #3',
+  'footer.blogDescription2': 'Zapewnianie płynności dzięki syntetycznym tokenom',
+  'footer.blogTitle3': 'How To Earn #2',
+  'footer.blogDescription3': 'Maksymalizacja zysków za pomocą mSOL',
+  'footer.blogTitle4': 'How To Earn #1',
+  'footer.blogDescription4': 'Longowanie pojedynczego tokenu uzywajać borrowingu'
 }
 
 export default dictionary
