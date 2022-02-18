@@ -37,7 +37,8 @@ export const colors = {
     info: '#6261a3',
     darkGrey: '#292956',
     '8584D2': '#8584D2',
-    tooltip: '#5452CE'
+    tooltip: '#5452CE',
+    logo: '#00F9BB'
   }
 }
 
