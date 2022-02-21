@@ -1,6 +1,6 @@
 ---
 title: 'How to earn #4: Short using borrowing 📉'
-date: '2022-02-18 12:00:00'
+date: '2022-02-21 12:00:00'
 description: 'In this post, we will explain how to short single asset using borrowing'
 image: '/blog/short/1.png'
 ---
@@ -22,7 +22,6 @@ Normally, when you hodl the tokens and their value decreases you lose.
 It changes when you have a short position 📉  
 Short means - you bet that the value of the chosen token will decrease.
 If your type proves successful - you will earn
-
 
 ## How to short using borrowing
 
