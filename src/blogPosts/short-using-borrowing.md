@@ -18,7 +18,6 @@ If you want to know more about borrowing check our [blog post](https://synthetif
 
 ## What is a short position
 
-
 Normally, when you hodl the tokens and their value decreases you lose.  
 It changes when you have a short position 📉  
 Short means - you bet that the value of the chosen token will decrease.
