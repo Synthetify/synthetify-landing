@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     '& img': {
       borderRadius: 20,
       display: 'block',
-      margin: '90px auto',
+      margin: '45px auto',
       pointerEvents: 'none',
       [theme.breakpoints.down('md')]: {
         marginBlock: 44
@@ -76,9 +76,20 @@ const useStyles = makeStyles((theme: Theme) => ({
         ...typography.subtitle2
       }
     },
+    '& ul > li': {
+      margin: '0 16px'
+    },
 
     '& h1 + p, & h2 + p, & h3 + p, & h4 + p, & h5 + p, & h6 + p': {
       marginTop: 0
+    },
+
+    '& h2': {
+      fontWeight: 900,
+      fontSize: '2em',
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '1.5em'
+      }
     },
 
     '& p': {
@@ -98,7 +109,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 
     '& a': {
-      color: colors.navy.button,
+      color: colors.navy.logo,
       textDecoration: 'none'
     },
 
@@ -128,7 +139,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   shareText: {
     ...typography.subtitle2,
-    color: colors.navy.button,
+    color: colors.navy.logo,
     maxWidth: '100% !important',
     marginBlock: '12px !important'
   },
