@@ -164,6 +164,11 @@ export const Footer: React.FC = () => {
             description={t('header.brandDescription')}
           />
           <InsideLink
+            href={links.roadmap}
+            name={t('footer.roadmap')}
+            description={t('footer.roadmapDescription')}
+          />
+          <InsideLink
             href={links.docs}
             name={t('footer.docs')}
             description={t('footer.docsDescription')}
@@ -218,22 +223,22 @@ export const Footer: React.FC = () => {
             </a>
           </Link>
           <InsideLink
-            href={'ttps://synthetify.io/blog/xavax/'}
+            href={'https://synthetify.io/blog/new-vaults'}
             name={t('footer.blogTitle1')}
             description={t('footer.blogDescription1')}
           />
           <InsideLink
-            href={'https://synthetify.io/blog/xdot/'}
+            href={'https://synthetify.io/blog/how-to-earn-3'}
             name={t('footer.blogTitle2')}
             description={t('footer.blogDescription2')}
           />
           <InsideLink
-            href={'https://synthetify.io/blog/new-collaterals-ratio'}
+            href={'https://synthetify.io/blog/how-to-earn-2'}
             name={t('footer.blogTitle3')}
             description={t('footer.blogDescription3')}
           />
           <InsideLink
-            href={'https://synthetify.io/blog/xluna'}
+            href={'https://synthetify.io/blog/long-using-borrowing'}
             name={t('footer.blogTitle4')}
             description={t('footer.blogDescription4')}
           />
