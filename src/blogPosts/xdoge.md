@@ -22,6 +22,6 @@ Synthetic assets closely track the price of specific assets assigned to them e.g
 
 Dogecoin is a humorous alternative to traditional cryptocurrencies based on the doge meme. DOGE is peer-to-peer, open-source, and based on Litecoin. Also, unlike traditional cryptos, Dogecoin has an unlimited supply of coins. In 2021, its popularity exploded and DOGE became the fifth-largest cryptocurrency by market cap. 📈
 
-We hope that this fact will finally bring Elon Musk to use our app 😎
+We hope that this feature will finally bring Elon Musk to use our app 😎
 
 If you would like to know more about this project, check out their [website](https://dogecoin.com/) and [Twitter](https://twitter.com/dogecoin?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor).
