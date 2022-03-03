@@ -27,7 +27,7 @@ export const Metatags: React.FC = () => {
       <meta
         name='description'
         key='description'
-        content='Synthetify is an upcoming crypto based platform which provides a bridge between synthetic assets and real-world currencies, crypto, stocks and other financial instruments.'
+        content='Synthetify is an crypto based platform which provides a bridge between synthetic assets and real-world currencies, crypto, stocks and other financial instruments.'
       />
 
       {/* Open Graph  */}
@@ -41,7 +41,7 @@ export const Metatags: React.FC = () => {
       <meta
         property='og:description'
         key='og:description'
-        content='Synthetify is an upcoming crypto based platform which provides a bridge between synthetic assets and real-world currencies, crypto, stocks and other financial instruments.'
+        content='Synthetify is an crypto based platform which provides a bridge between synthetic assets and real-world currencies, crypto, stocks and other financial instruments.'
       />
       <meta property='og:image' key='og:image' content={href} />
 
@@ -56,7 +56,7 @@ export const Metatags: React.FC = () => {
       <meta
         property='twitter:description'
         key='twitter:description'
-        content='Synthetify is an upcoming crypto based platform which provides a bridge between synthetic assets and real-world currencies, crypto, stocks and other financial instruments.'
+        content='Synthetify is an crypto based platform which provides a bridge between synthetic assets and real-world currencies, crypto, stocks and other financial instruments.'
       />
       <meta property='twitter:image' key='twitter:image' content={href} />
 
