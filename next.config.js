@@ -15,17 +15,6 @@ module.exports = withPlugins(
     trailingSlash: false,
     images: {
       disableStaticImages: true
-    },
-    webpack: (config, { isServer }) => {
-      if (!isServer) {
-        config.resolve.fallback = {
-          net: false,
-          tls: false,
-          crypto: false
-        }
-      }
-
-      return config
     }
   }
 )
