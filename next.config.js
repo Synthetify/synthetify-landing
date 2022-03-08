@@ -1,14 +1,20 @@
-const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
+const withPlugins = require('next-compose-plugins')
+const optimizedImages = require('next-optimized-images')
 
-module.exports = withPlugins([[
-  optimizedImages, {
-    handleImages: ['svg', 'png']
+module.exports = withPlugins(
+  [
+    [
+      optimizedImages,
+      {
+        handleImages: ['svg', 'png']
+      }
+    ]
+  ],
+  {
+    reactStrictMode: true,
+    trailingSlash: false,
+    images: {
+      disableStaticImages: true
+    }
   }
-]], {
-  reactStrictMode: true,
-  trailingSlash: false,
-  images: {
-    disableStaticImages: true,
-  }
-})
+)
