@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   description: {
     ...typography.heading3,
-    color: colors.navy.info,
+    color: colors.navy.logo,
     marginTop: 20,
 
     [theme.breakpoints.down('sm')]: {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { CardMedia } from '@material-ui/core'
 import { ListedAsset, assetsAccounts } from '@static/constants/assets'
-import Binance, { DailyStatsResult } from 'binance-api-node'
+import Binance, { CandleChartInterval, DailyStatsResult } from 'binance-api-node'
 import { parsePriceData } from '@pythnetwork/client'
 import LUNA from '@static/svg/assets/LUNA.svg'
 import BTC from '@static/svg/assets/BTC.svg'
@@ -170,7 +170,7 @@ export const ListedAssetsContainer: React.FC = () => {
         binanceClient
           .candles({
             symbol: symbol,
-            interval: '1h',
+            interval: CandleChartInterval.ONE_HOUR,
             limit: 24
           })
           .then(
