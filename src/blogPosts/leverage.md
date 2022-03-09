@@ -30,11 +30,11 @@ Long is chosen in case of a contrary scenario - the prediction of token’s valu
 
 ## Opening and closing the position
 
+![Opening the position](/blog/leverage/open.gif 'horizontal')
+
 1. To start you need to choose the collateral token, and token you want to leverage.
 
 2. The next step is choosing your trading strategy - you have 2 options; Long and Short.
-
-![Opening the position](/blog/leverage/open.gif 'horizontal')  
 
 3. Now, you need to choose the leverage level (in most cases it will be between x1.2 and x3).
 
