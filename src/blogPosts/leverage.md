@@ -39,7 +39,7 @@ Long is chosen in case of a contrary scenario - the prediction of token’s valu
 3. Now, you need to choose the leverage level (in most cases it will be between x1.2 and x3).
 
 4. Finally, you can focus on observing your trades.  
-You can finalize the process, by clicking the Close button in the bottom window, whenever you wish to - meaning when you reach a satisfying level of profit.
+   You can finalize the process, by clicking the Close button in the bottom window, whenever you wish to - meaning when you reach a satisfying level of profit.
 
 ![Close the position](/blog/leverage/close.gif 'horizontal')
 
