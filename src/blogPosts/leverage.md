@@ -49,7 +49,7 @@ Earlier we wrote that using the leverage carries the risk of liquidation.
 Now We will explain to you two key values which help you to avoid of being liquidated:
 
 - Liquidation price - represents the price at which the initial deposit you put in, is lost - not entirely; an 8% of the amount is substracted.  
-  **The formula for the Liquidation price is as it follows:** 
+  **The formula for the Liquidation price is as it follows:**
   borrowed amount of USD (Leverage token)/Liquidation ratio\*primary deposit
 
 - Liquidation ratio - is a constant value which compared to the Deposited amount/Current debt ratio defines the result of your bid; in case the Deposited amount/Current debt is higher than the Liquidation ratio, you can close your position and receive profits, on contrary if the Deposited amount/Current debt is lower than the Liquidation ratio, then once you close the position an amount of 8% is substrated from the initial deposit
