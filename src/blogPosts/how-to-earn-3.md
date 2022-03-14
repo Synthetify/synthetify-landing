@@ -13,6 +13,10 @@ This time we will focus on liquidity mining using $SNY and our synthetic tokens.
 
 ## What is liquidity mining?
 
+Liquidity mining is a process in which participants (Liquidity Providers) supply tokens into the liquidity pools. The providers receive rewards and thanks to their contribution, liquidity of the assets is preserved.
+
+## What are liquidity pools??
+
 To know what liquidity mining is, we have to start with explaining liquidity pools.
 In short, they exist on exchanges in place of an order book and swaps take place within liquidity pools.
 A Liquidity Provider is a person, who provides liquidity to liquidity pools for the purpose of earning trading fees
