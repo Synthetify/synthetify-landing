@@ -144,14 +144,14 @@ const dictionary = {
     'Current circulating supply is 5,625,000 SNY. You can check the current market cap on sites like: CoinMarketCap or Coingecko.',
     'The IDO took place on 29th and 30th June 2021.'
   ],
-  'footer.blogTitle1': 'New pairs in vaults',
-  'footer.blogDescription1': 'New pair in vaults is now available',
-  'footer.blogTitle2': 'How To Earn #3',
-  'footer.blogDescription2': 'Liquidity mining',
-  'footer.blogTitle3': 'How To Earn #2',
-  'footer.blogDescription3': 'Trading with mSOL',
-  'footer.blogTitle4': 'How To Earn #1',
-  'footer.blogDescription4': 'Long using borrowing'
+  'footer.blogTitle1': 'Rewarding process',
+  'footer.blogDescription1': 'How rewards works',
+  'footer.blogTitle2': 'DAO',
+  'footer.blogDescription2': 'We became DAO',
+  'footer.blogTitle3': 'Leverage',
+  'footer.blogDescription3': 'How to use it',
+  'footer.blogTitle4': 'xDoge',
+  'footer.blogDescription4': 'xDOGE is a new synthetic asset'
 }
 
 export default dictionary

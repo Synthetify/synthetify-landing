@@ -144,14 +144,14 @@ const dictionary = {
     'Obecna podaż w obiegu wynosi 5,625,000 SNY. Możesz sprawdzić aktualną kapitalizację rynkową na stronach takich jak: CoinMarketCap lub Coingecko.',
     'IDO odbyło się 29 i 30 czerwca 2021 r.'
   ],
-  'footer.blogTitle1': 'Nowe pary w vaultach',
-  'footer.blogDescription1': 'Nowe pary są już dostępne',
-  'footer.blogTitle2': 'How To Earn #3',
-  'footer.blogDescription2': 'Zapewnianie płynności dzięki syntetycznym tokenom',
-  'footer.blogTitle3': 'How To Earn #2',
-  'footer.blogDescription3': 'Maksymalizacja zysków za pomocą mSOL',
-  'footer.blogTitle4': 'How To Earn #1',
-  'footer.blogDescription4': 'Longowanie pojedynczego tokenu uzywajać borrowingu'
+  'footer.blogTitle1': 'System nagród',
+  'footer.blogDescription1': 'Jak działają nagrody',
+  'footer.blogTitle2': 'DAO',
+  'footer.blogDescription2': 'Zostaliśmy DAO',
+  'footer.blogTitle3': 'Dźwignia',
+  'footer.blogDescription3': 'Jak jej używać',
+  'footer.blogTitle4': 'xDoge',
+  'footer.blogDescription4': 'xDOGE jest już dostępny'
 }
 
 export default dictionary
