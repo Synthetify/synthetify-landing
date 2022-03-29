@@ -223,22 +223,22 @@ export const Footer: React.FC = () => {
             </a>
           </Link>
           <InsideLink
-            href={'https://synthetify.io/blog/new-vaults'}
+            href={'https://synthetify.io/blog/rewards'}
             name={t('footer.blogTitle1')}
             description={t('footer.blogDescription1')}
           />
           <InsideLink
-            href={'https://synthetify.io/blog/how-to-earn-3'}
+            href={'https://synthetify.io/blog/dao'}
             name={t('footer.blogTitle2')}
             description={t('footer.blogDescription2')}
           />
           <InsideLink
-            href={'https://synthetify.io/blog/how-to-earn-2'}
+            href={'https://synthetify.io/blog/leverage'}
             name={t('footer.blogTitle3')}
             description={t('footer.blogDescription3')}
           />
           <InsideLink
-            href={'https://synthetify.io/blog/long-using-borrowing'}
+            href={'https://synthetify.io/blog/xdoge'}
             name={t('footer.blogTitle4')}
             description={t('footer.blogDescription4')}
           />
