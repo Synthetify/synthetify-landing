@@ -143,6 +143,11 @@ export const Footer: React.FC = () => {
             name={t('footer.blog')}
             description={t('footer.blogDescription')}
           />
+          <OutsideLink
+            href={links.dao}
+            name={t('footer.dao')}
+            description={t('footer.daoDescription')}
+          />
           <InsideLink
             href={links.privacyPolicy}
             name={t('footer.privacyPolicy')}
