@@ -221,10 +221,7 @@ export const Footer: React.FC = () => {
         >
           <Link href='/blog/' passHref>
             <a className={classes.a}>
-              <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
-                <Typography className={classes.columnHeader}>{t('header.blog')}</Typography>
-                <NewMark className={classes.mark} />
-              </Grid>
+              <Typography className={classes.columnHeader}>{t('header.blog')}</Typography>
             </a>
           </Link>
           <InsideLink
