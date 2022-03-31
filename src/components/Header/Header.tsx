@@ -103,6 +103,15 @@ export const Header: React.FC = () => {
                 <Typography className={classes.route}>{t('header.home')}</Typography>
               </a>
             </Link>
+            <Link href={links.dao} passHref>
+              <a style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+                <Grid className={classes.linkWithMark}>
+                  <Typography className={classes.route} style={{ marginRight: 8 }}>
+                    {t('footer.dao')}
+                  </Typography>
+                </Grid>
+              </a>
+            </Link>
             <Typography
               className={classes.route}
               onClick={(event: React.MouseEvent<HTMLSpanElement>) => {
