@@ -18,8 +18,7 @@ Synthetic assets closely track the price of specific assets assigned to them e.g
 
 ## What is synthetic gold?
 
-It’s an innovative form of bridge between traditional finance and DeFi. Synthetic gold is a combination of real gold and digital cryptocurrency. This is all possible due to the oracles provided by the Pyth Network, which delivers oracles for gold.
-
+It’s an innovative form of bridge between traditional finance and DeFi. Synthetic gold is a combination of real gold and digital cryptocurrency. This is all possible due to the oracles provided by the Pyth Network.
 ## Advantages of Synthetic Gold
 
 - Omits the issues occurring with physical gold: capacity limit, need for storage and transportation and infeasibility of division.
