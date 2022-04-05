@@ -5,6 +5,7 @@ export const links = {
     exchange: 'https://app.synthetify.io/exchange',
     stats: 'https://app.synthetify.io/stats'
   },
+  dao: 'https://realms.today/dao/SNY',
   docs: 'https://docs.synthetify.io/',
   whitepaper: '/resources/synthetify-whitepaper.pdf',
   roadmap: '/resources/roadmap.pdf',

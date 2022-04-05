@@ -52,14 +52,12 @@ export const Header: React.FC = () => {
   const [routesModalAnchor, setRoutesModalAnchor] = React.useState<HTMLButtonElement | null>(null)
 
   const [aboutUsModalOpen, setAboutUsModalOpen] = React.useState(false)
-  const [aboutUsModalAnchor, setAboutUsModalAnchor] = React.useState<
-    HTMLButtonElement | HTMLSpanElement | null
-  >(null)
+  const [aboutUsModalAnchor, setAboutUsModalAnchor] =
+    React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
 
   const [communityModalOpen, setCommunityModalOpen] = React.useState(false)
-  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<
-    HTMLButtonElement | HTMLSpanElement | null
-  >(null)
+  const [communityModalAnchor, setCommunityModalAnchor] =
+    React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
 
   return (
     <>
@@ -70,7 +68,7 @@ export const Header: React.FC = () => {
         alignItems='center'
         justifyContent='space-between'
       >
-        <Grid container item wrap='nowrap' alignItems='center'>
+        <Grid container item wrap='nowrap' alignItems='center' className={classes.left}>
           <Link href='/' passHref>
             <a>
               <CardMedia className={classes.snyShort} image={snyShort} component='img' />
@@ -103,6 +101,16 @@ export const Header: React.FC = () => {
                 <Typography className={classes.route}>{t('header.home')}</Typography>
               </a>
             </Link>
+            <Link href={links.dao} passHref>
+              <a style={{ textDecoration: 'none' }} target='_blank' rel='noopener noreferrer'>
+                <Grid className={classes.linkWithMark}>
+                  <Typography className={classes.route} style={{ marginRight: 8 }}>
+                    {t('footer.dao')}
+                  </Typography>
+                  <NewMark className={classes.mark} />
+                </Grid>
+              </a>
+            </Link>
             <Typography
               className={classes.route}
               onClick={(event: React.MouseEvent<HTMLSpanElement>) => {
@@ -125,12 +133,9 @@ export const Header: React.FC = () => {
             </Typography>
             <Link href='/blog' passHref>
               <a style={{ textDecoration: 'none' }}>
-                <Grid className={classes.linkWithMark}>
-                  <Typography className={classes.route} style={{ marginRight: 8 }}>
-                    {t('header.blog')}
-                  </Typography>
-                  <NewMark className={classes.mark} />
-                </Grid>
+                <Typography className={classes.route} style={{ marginRight: 8 }}>
+                  {t('header.blog')}
+                </Typography>
               </a>
             </Link>
           </Grid>
