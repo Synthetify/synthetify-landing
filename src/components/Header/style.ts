@@ -7,6 +7,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingInline: 40,
     backdropFilter: 'blur(9px)',
 
+    [theme.breakpoints.down('md')]: {
+      paddingInline: 20
+    },
+
     [theme.breakpoints.down('sm')]: {
       height: 60,
       paddingInline: 0
@@ -27,6 +31,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: 41,
     textTransform: 'none',
     borderRadius: 10,
+    marginLeft: 20,
 
     '&:hover': {
       opacity: 1,
@@ -43,7 +48,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     [theme.breakpoints.down('sm')]: {
       width: 95,
-      height: 36
+      height: 36,
+      marginLeft: 0
     }
   },
   route: {
@@ -72,6 +78,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     backgroundSize: '1920px 276px',
     maxWidth: 222,
     marginRight: 25,
+
+    [theme.breakpoints.down('md')]: {
+      marginRight: 12
+    },
 
     [theme.breakpoints.down('sm')]: {
       display: 'none'
@@ -128,6 +138,15 @@ const useStyles = makeStyles((theme: Theme) => ({
 
     '&:hover $route': {
       color: colors.navy.veryLightGrey
+    }
+  },
+  left: {
+    width: 340,
+    minWidth: 340,
+
+    [theme.breakpoints.down('sm')]: {
+      width: 179,
+      minWidth: 179
     }
   }
 }))

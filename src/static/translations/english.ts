@@ -31,6 +31,8 @@ const dictionary = {
   'footer.exchangeDescription': 'Exchange your assets',
   'footer.privacyPolicy': 'Privacy Policy',
   'footer.privacyPolicyDescription': 'Our policies about data',
+  'footer.dao': 'Governance',
+  'footer.daoDescription': 'Decide about the future of Synthetify',
   'footer.audit': 'Audit',
   'footer.auditDescription': 'Security audit report',
   'footer.liquidation': 'Liquidation',

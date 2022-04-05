@@ -143,6 +143,11 @@ export const Footer: React.FC = () => {
             name={t('footer.blog')}
             description={t('footer.blogDescription')}
           />
+          <OutsideLink
+            href={links.dao}
+            name={t('footer.dao')}
+            description={t('footer.daoDescription')}
+          />
           <InsideLink
             href={links.privacyPolicy}
             name={t('footer.privacyPolicy')}
@@ -216,10 +221,7 @@ export const Footer: React.FC = () => {
         >
           <Link href='/blog/' passHref>
             <a className={classes.a}>
-              <Grid className={classNames(classes.linkWithMarkWrapper, classes.headerWithMark)}>
-                <Typography className={classes.columnHeader}>{t('header.blog')}</Typography>
-                <NewMark className={classes.mark} />
-              </Grid>
+              <Typography className={classes.columnHeader}>{t('header.blog')}</Typography>
             </a>
           </Link>
           <InsideLink
