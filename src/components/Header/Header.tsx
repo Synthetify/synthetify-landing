@@ -52,12 +52,14 @@ export const Header: React.FC = () => {
   const [routesModalAnchor, setRoutesModalAnchor] = React.useState<HTMLButtonElement | null>(null)
 
   const [aboutUsModalOpen, setAboutUsModalOpen] = React.useState(false)
-  const [aboutUsModalAnchor, setAboutUsModalAnchor] =
-    React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
+  const [aboutUsModalAnchor, setAboutUsModalAnchor] = React.useState<
+    HTMLButtonElement | HTMLSpanElement | null
+  >(null)
 
   const [communityModalOpen, setCommunityModalOpen] = React.useState(false)
-  const [communityModalAnchor, setCommunityModalAnchor] =
-    React.useState<HTMLButtonElement | HTMLSpanElement | null>(null)
+  const [communityModalAnchor, setCommunityModalAnchor] = React.useState<
+    HTMLButtonElement | HTMLSpanElement | null
+  >(null)
 
   return (
     <>
