@@ -10,7 +10,7 @@ image: '/blog/xc98/1.png'
 **GM!** 👋
 
 Another DAO proposal was approved successfully.
-We are glad, that you are actively participating in the development of our app.  
+We are glad, that you are actively participating in the development of our app.
 
 In this post, we will introduce to you our new synthetic asset - Coin98
 
@@ -23,10 +23,10 @@ Synthetic assets closely track the price of specific assets assigned to them e.g
 Coin98 is a native token of the Coin98 network.  
 C98 is available on many blockchains such as Ethereum, Binance Smart Chain, or Solana.  
 C98 holders own multiple benefits among others:
+
 1. Earning network transaction fees.
 2. Staking their C98 tokens to earn additional rewards.
 3. Possibility to participate in governance.
-
 
 We are excited to see another interesting synthetic token in our app! 🔥
 
