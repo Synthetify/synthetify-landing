@@ -1,14 +1,14 @@
 ---
-title: 'How to earn #5: Holding xUSD'
-date: '2022-05-10 12:00:00'
-description: 'The risks and benefits of holding xUSD.'
+title: 'How to earn #5: Holding debt in xUSD'
+date: '2022-05-11 12:00:00'
+description: 'The risks and benefits of holding debt in xUSD.'
 image: '/blog/how-to-earn-5/1.png'
 ---
 
 ![Holding xUSD](/blog/how-to-earn-5/1.png 'horizontal')
 
 gm 👋  
-In this part of How to Earn series, we will explain to you how to maximalize your profits by holding xUSD.
+In this part of How to Earn series, we will explain to you how to maximalize your profits by holding your debt in xUSD.
 
 ## What is HODLing?
 
@@ -17,11 +17,11 @@ as you can guess a long term.
 
 ## What are the risks?
 
-Even though holding can maximize your profits, you have to remember that by holding only xUSD on our platform, you risk losing in case of other synthetics increases. 📈
+Even though holding can maximize your profits, you have to remember that by holding debt only in xUSD on our platform, you risk losing in case of other synthetics increases. 📈
 
 Why?
 
-**When you hold xUSD, you play against all other synthetic tokens.** You bet their value will decrease, so you basically play short on them. It is a great way to earn when you’re feeling bearish and think that the token is going to decrease.
+**When your whole debt is in xUSD, you play against all other synthetic assets.** You bet their value will decrease, so you basically play short on them. It is a great way to earn when you’re feeling bearish and think that the token is going to decrease.
 
 Look at the example which explaining the core mechanism of profits and the risks while participating in the debt pool below ⬇️
 
