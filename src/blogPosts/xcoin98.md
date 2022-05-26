@@ -1,6 +1,6 @@
 ---
 title: 'xC98 is our new synthetic asset'
-date: '2022-04-28 12:00:00'
+date: '2022-05-26 12:00:00'
 description: 'Synthetic Coin98 is now available on our platform.'
 image: '/blog/xc98/1.png'
 ---
