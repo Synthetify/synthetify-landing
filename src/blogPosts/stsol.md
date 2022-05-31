@@ -21,4 +21,4 @@ Best way to explain it is the real example:
 
 Lido is a DAO that provides its users with more liquidity. The platform lets you use your staked assets to gain yield on top of yield. Users earn SOL rewards for their staked SOL. Moreover, they can sell their staked tokens or use them as collateral on DeFi platforms. The whole process is approved by the validator chosen through the Lido DAO.
 
-If you'd like to know more about Lido, check out their [Twitter](https://synthetify.io/blog/borrowing) and [Website](https://synthetify.io/blog/borrowing).
+If you'd like to know more about Lido, check out their [Twitter](https://twitter.com/lidofinance) and [Website](https://lido.fi/).
