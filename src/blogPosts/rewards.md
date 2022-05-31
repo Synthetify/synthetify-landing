@@ -24,6 +24,7 @@ Of course, you are free to swap xUSD to any other synthetic asset such as xETH, 
 [Introduction to staking - Synthetify](https://synthetify.io/blog/staking)
 
 ## Debt Pool
+
 **Remember, to receive these rewards you have to be a debt pool participant**
 If you don't know how debt pool works, we will explain it to you on quick example:
 ![Debt pool explanation](/blog/how-to-earn-5/2.png 'horizontal')
