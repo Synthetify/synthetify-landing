@@ -24,12 +24,11 @@ Of course, you are free to swap xUSD to any other synthetic asset such as xETH, 
 [Introduction to staking - Synthetify](https://synthetify.io/blog/staking)
 
 ## Debt Pool
-
-**Remember, to receive these rewards you have to be a debt pool participant**
-If you don't know how debt pool works, we will explain it to you on quick example:
+**Remember, to receive these rewards you have to be a debt pool participant**  
+If you don't know how the debt pool works, we will explain it to you in a quick example:
 ![Debt pool explanation](/blog/how-to-earn-5/2.png 'horizontal')
 
-Once it is done you enter our rewarding process, which consists of 3 rounds **(this only applies to the rewards in SNY)**.
+Once it is done you enter our rewarding process, which consists of 3 rounds **(this only applies to the rewards in SNY. MNDE and LIDO rewards are distributed each Monday)**.
 
 In the **subscription phase**, you can receive pro rata shares for taking part in the debt pool. It could change during this phase proportionally to the size of your debt.
 
