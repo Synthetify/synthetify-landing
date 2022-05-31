@@ -13,22 +13,20 @@ As we have been receiving multiple questions about our rewarding process, so we 
 
 ## How to get the rewards?
 
-The rewards are gifted in 2 cases:
+The rewards are gifted in 3 cases:
 
 1.  For participating in a debt pool - through minting and holding synthetic asset (you will receive SNY tokens).
-2.  As an additional gift for using mSOL as a collateral (you will receive MNDE tokens. To get this reward, you also need to be a participant of the debt pool).
+2.  As an additional gift for using mSOL as a collateral (you will receive MNDE tokens. **To get this reward, you also need to be a participant of the debt pool**)
+3.  As an additional gift for using stSOL as a collateral (you will receive LIDO tokens. **To get this reward, you also need to be a participant of the debt pool**)
 
 To be able to receive rewards you firstly need to deposit collateral on Synthetify and mint xUSD. By doing so you become a debt pool participant.  
 Of course, you are free to swap xUSD to any other synthetic asset such as xETH, xSOL or xBTC.  
 [Introduction to staking - Synthetify](https://synthetify.io/blog/staking)
 
-![Bug bounty](/blog/rewards/rewards.png 'vertical')
-
-## How are rewards additionally obtained with mSOL?
-
-Simply deposit collateral with mSOL and mint a synthetic assets. This way you receive a double reward - first in SNY, for participating in the debt and the second one in MNDE for depositing mSOL.
-
-![double rewards](/blog/how-to-earn-2/2.png 'horizontal')
+## Debt Pool
+**Remember, to receive these rewards you have to be a debt pool participant**
+If you don't know how debt pool works, we will explain it to you on quick example:
+![Debt pool explanation](/blog/how-to-earn-5/2.png 'horizontal')
 
 Once it is done you enter our rewarding process, which consists of 3 rounds **(this only applies to the rewards in SNY)**.
 
