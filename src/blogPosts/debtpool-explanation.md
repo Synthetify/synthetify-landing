@@ -23,7 +23,7 @@ Look at the example which explains the benefits and the risks while participatin
 ## Benefits of being a Debt Pool participant
 
 Debt Pool participators on Synthetify get rewards in SNY tokens.  
-For using stSOL or mSOL as collateral, they can receive an extra reward in MNDE or LIDO.  
+For using stSOL or mSOL as collateral, they can receive an extra reward in MNDE or LIDO.
 
 Of course, apart from the rewards, you can also make a profit if the value of your synthetic assets increases, or if you sort them (by holding debt in xUSD) it goes down.  
 Here you can read more about it👇  
