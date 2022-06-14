@@ -16,7 +16,7 @@ In simple words, debt pool is the total market value of all the minted synthetic
 
 ## How does it work
 
-Debt pool participants deposit collateral and mint xUSD (later that they can swap xUSD to any other synthetic asset). They become a counterparty to traders and thanks to the funds provided by them make transactions on the platform possible. The share of specific tokens in the debt isn’t constant - it changes accordingly to the market price fluctuations and the amount of users’ staked tokens.  
+Debt pool participants deposit collateral and mint xUSD (later they can swap xUSD to any other synthetic asset). They become a counterparty to traders and thanks to the funds provided by them make transactions on the platform possible. The share of specific tokens in the debt isn’t constant - it changes accordingly to the market price fluctuations and the amount of users’ staked tokens.  
 Look at the example which explains the benefits and the risks while participating in the debt pool below ⬇️
 ![Debt pool explanation](/blog/how-to-earn-5/2.png 'horizontal')
 
