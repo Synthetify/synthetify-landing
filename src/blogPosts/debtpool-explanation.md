@@ -10,7 +10,7 @@ image: '/blog/debt/1.png'
 In this post, we will explain crucial element of our app - debt pool.  
 What is it, how does it work, and how to use it, to maximize your profit 👇
 
-## What is a debt pool
+# What is a debt pool
 
 In simple words, debt pool is the total market value of all the minted synthetic assets expressed in USD. Debt pool allows the functioning of a platform and assures its stability.
 
