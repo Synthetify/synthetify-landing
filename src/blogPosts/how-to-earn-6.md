@@ -28,3 +28,6 @@ Further in the text, we will provide you with a quite different strategy, which 
 It's a truly effortless process. All you need to do is hold your entire debt in xUSD. By doing so, you become an xUSD debt pool participant and play against all other synthetic assets. You bet their value will decrease, so you basically play short on them. It is an ideal solution for a bear market when token prices are certain to decline.
 
 If you wish to fully understand the method, we recommend you review the case scenario we provided in our blog post - [Debt pool explanation](https://synthetify.io/blog/debtpool-explanation)
+
+**TLDR;**
+![Debt pool explanation](/blog/how-to-earn-5/2.png 'horizontal')
