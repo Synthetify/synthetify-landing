@@ -1,6 +1,6 @@
 ---
 title: 'Debt pool explanation'
-date: '2022-06-14 12:00:00'
+date: '2022-06-10 12:00:00'
 description: 'Everything you need to know about the debt pool'
 image: '/blog/debt/1.png'
 ---
