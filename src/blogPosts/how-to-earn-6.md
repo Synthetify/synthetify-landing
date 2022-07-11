@@ -1,6 +1,6 @@
 ---
 title: 'How to earn #6: Shorting the entire market'
-date: '2022-06-28 12:00:00'
+date: '2022-06-08 12:00:00'
 description: 'In this post, we will introduce to you, how to short an entire market using Synthetify'
 image: '/blog/how-to-earn-6/1.png'
 ---
